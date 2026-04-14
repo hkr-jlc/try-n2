@@ -742,6 +742,65 @@ section {
     display: none !important;
 }
 
+/* Clickable Links in Contents */
+.bab-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bab-card:hover {
+    transform: translateY(-2px);
+}
+
+.bab-card .bab-header {
+    transition: background-color 0.2s ease;
+}
+
+.bab-card:hover .bab-header {
+    background-color: #f3f4f6;
+}
+
+.bab-card .bab-title {
+    color: #1d4ed8;
+    transition: color 0.2s ease;
+}
+
+.bab-card:hover .bab-title {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+.grammar-list-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0.25rem 0.5rem;
+    margin: 0 -0.5rem;
+    border-radius: 0.25rem;
+}
+
+.grammar-list-item:hover {
+    background-color: #f3f4f6;
+}
+
+.grammar-list-item span:first-child {
+    color: #1d4ed8;
+    transition: color 0.2s ease;
+}
+
+.grammar-list-item:hover span:first-child {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+.matome-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.matome-item:hover {
+    background-color: #e5e7eb;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
