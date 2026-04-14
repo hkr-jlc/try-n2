@@ -199,6 +199,113 @@ body {
     opacity: 0.7;
 }
 
+/* Drawer Submenu (Expandable) */
+.drawer-item-expandable {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 0;
+}
+
+.drawer-item-expandable:hover {
+    background: #f3f4f6;
+}
+
+.drawer-item-expandable.active {
+    background: #fef2f2;
+    color: #be123c;
+}
+
+.drawer-item-expandable.active .drawer-item-number {
+    background: #be123c;
+    color: white;
+}
+
+.drawer-expand-icon {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    padding: 0.25rem;
+}
+
+.drawer-expand-icon.expanded {
+    transform: rotate(90deg);
+}
+
+.drawer-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 1rem;
+}
+
+.drawer-submenu.expanded {
+    max-height: 500px;
+}
+
+.drawer-submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 0.125rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.drawer-submenu-item:hover {
+    background: #f3f4f6;
+}
+
+.drawer-submenu-item.active {
+    background: #fef2f2;
+    color: #be123c;
+}
+
+.drawer-submenu-number {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.drawer-submenu-item.active .drawer-submenu-number {
+    background: #be123c;
+    color: white;
+}
+
+.drawer-submenu-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drawer-submenu-page {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-left: 0.5rem;
+}
+
+.drawer-section-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 0.75rem 1rem;
+}
+
 /* ===== TOP NAVIGATION ===== */
 .top-nav {
     position: fixed;
