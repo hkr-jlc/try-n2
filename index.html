@@ -17,21 +17,17 @@
                 <div class="nav-logo">TRY! N2</div>
                 <span class="nav-subtitle">文法から伸ばす日本語</span>
             </div>
-            <div class="nav-links">
-                <button onclick="showSection('contents')" class="nav-btn" id="btn-contents">もくじ</button>
-                <button onclick="showSection('bab1-header')" class="nav-btn active" id="btn-bab1">Bab 1</button>
-                <button onclick="showSection('bab2-header')" class="nav-btn" id="btn-bab2">Bab 2</button>
-                <button onclick="showSection('grammar-list')" class="nav-btn" id="btn-grammar">Grammar</button>
-                <button onclick="showSection('check')" class="nav-btn" id="btn-check">Check</button>
-                <button onclick="showSection('matome')" class="nav-btn" id="btn-matome">まとめ</button>
-            </div>
+            <button onclick="showSection('contents')" class="nav-btn-menu" id="btn-contents">
+                <span class="menu-icon">☰</span>
+                <span class="menu-text">もくじ</span>
+            </button>
         </div>
     </nav>
 
     <div class="main-container">
 
         <!-- DAFTAR ISI - Page 12 -->
-        <section id="contents" class="hidden">
+        <section id="contents">
             <h1 class="contents-title">もくじ <span class="contents-subtitle">CONTENTS</span></h1>
             <div class="divider"></div>
 
@@ -62,7 +58,7 @@
         </section>
 
         <!-- BAB 1 HEADER - Page 18 -->
-        <section id="bab1-header">
+        <section id="bab1-header" class="hidden">
             <!-- Header -->
             <div class="section-header bab-header-section">
                 <div class="bab-header-category">お知らせを読む <span class="text-gray-300">Reading an Announcement</span></div>
@@ -1201,25 +1197,6 @@
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.remove('hidden');
-            }
-
-            // Update nav styling
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Set active button based on section
-            let btnId = '';
-            switch(sectionId) {
-                case 'contents': btnId = 'btn-contents'; break;
-                case 'bab1-header': btnId = 'btn-bab1'; break;
-                case 'bab2-header': btnId = 'btn-bab2'; break;
-                case 'grammar-list': btnId = 'btn-grammar'; break;
-                case 'check': btnId = 'btn-check'; break;
-                case 'matome': btnId = 'btn-matome'; break;
-            }
-            if (btnId) {
-                document.getElementById(btnId).classList.add('active');
             }
 
             // Scroll to subsection if specified
