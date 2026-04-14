@@ -13,14 +13,17 @@
             <item id="hajimeni" halaman="3">
                 <judul_jp>はじめに</judul_jp>
                 <judul_en>Introduction</judul_en>
+                <judul_id>Pendahuluan</judul_id>
             </item>
             <item id="to_learners" halaman="4">
                 <judul_jp>この本をお使いになる皆さんへ</judul_jp>
                 <judul_en>To Learners Using this Book</judul_en>
+                <judul_id>Kepada Para Pembelajar yang Menggunakan Buku Ini</judul_id>
             </item>
             <item id="to_teachers" halaman="10">
                 <judul_jp>この本をお使いになる先生方へ</judul_jp>
                 <judul_en></judul_en>
+                <judul_id>Kepada Para Guru yang Menggunakan Buku Ini</judul_id>
             </item>
         </pengantar>
 
@@ -28,9 +31,11 @@
         <bab id="1" halaman="18">
             <kategori>お知らせを読む</kategori>
             <kategori_en>Reading an Announcement</kategori_en>
+            <kategori_id>Membaca Pengumuman</kategori_id>
             <nomor>1</nomor>
             <judul_jp>スタッフ募集のお知らせ</judul_jp>
             <judul_en>A Job Ad</judul_en>
+            <judul_id>Pengumuman Perekrutan Staf</judul_id>
 
             <grammar_points>
                 <point id="1" halaman="19">オープンにつき</point>
@@ -48,6 +53,12 @@
         <!-- BAB 2 - Page 12 -->
         <bab id="2" halaman="30">
             <kategori>スピーチをする</kategori>
+            <kategori_en>Giving a Speech</kategori_en>
+            <kategori_id>Memberikan Pidato</kategori_id>
+            <nomor>2</nomor>
+            <judul_jp>転任のあいさつ（１）</judul_jp>
+            <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
+            <judul_id>Sambutan Pindah Tugas (1)</judul_id>
             <kategori_en>Giving a Speech</kategori_en>
             <nomor>2</nomor>
             <judul_jp>転任のあいさつ（１）</judul_jp>
@@ -541,28 +552,36 @@
         <sub_bab id="1" halaman="19">
             <nomor>1</nomor>
             <judul>オープンにつき</judul>
+            <judul_id>Karena Pembukaan</judul_id>
             <bintang>★★</bintang>
 
             <dou_tsukau>
                 <judul>どう使う？</judul>
+                <judul_id>Bagaimana Menggunakannya?</judul_id>
                 <penjelasan>
                     <jp>お知らせなどで「雨天につき中止」のように理由を言うときに使われる。</jp>
                     <en>This is used to state a reason in an announcement and the like, as in "雨天につき中止".</en>
+                    <id>Digunakan ketika menyebutkan alasan dalam pengumuman, seperti "Dibatalkan karena hujan".</id>
                 </penjelasan>
                 <pola>Ｎ＋につき</pola>
+                <pola_id>Kata Benda + につき</pola_id>
 
                 <contoh>
                     <item no="1">
                         <jp>清掃中につき、お足元にご注意ください。</jp>
+                        <id>Karena sedang pembersihan, harap hati-hati dengan langkah Anda.</id>
                     </item>
                     <item no="2">
                         <jp>会場内は禁煙につき、おたばこはご遠慮ください。</jp>
+                        <id>Karena area bebas rokok, mohon tidak merokok.</id>
                     </item>
                     <item no="3">
                         <jp>4月15日（木）：佐藤医師、学会出席につき休診。</jp>
+                        <id>15 April (Kamis): Dr. Satou, libur praktik karena menghadiri konferensi medis.</id>
                     </item>
                     <item no="4">
                         <jp>ただ今、改装工事中につき、左記の仮店舗で営業いたしております。</jp>
+                        <id>Saat ini, karena sedang renovasi, kami beroperasi di toko sementara yang tercantum di sebelah kiri.</id>
                     </item>
                 </contoh>
             </dou_tsukau>
