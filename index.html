@@ -6,7 +6,6 @@
     <title>TRY! N2 - 文法から伸ばす日本語</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-<base target="_blank">
 </head>
 <body>
 
@@ -57,22 +56,26 @@
             <div class="home-header">
                 <h1 class="home-title">TRY! N2</h1>
                 <p class="home-subtitle">文法から伸ばす日本語</p>
+                <p class="home-subtitle-id translation-hidden">Belajar Bahasa Jepang dari Tata Bahasa</p>
                 <p class="home-desc">日本語能力試験対策</p>
+                <p class="home-desc-id translation-hidden">Persiapan Ujian Kemampuan Bahasa Jepang</p>
             </div>
             
             <div class="quick-access">
-                <h2 class="quick-access-title">もくじ</h2>
+                <h2 class="quick-access-title">もくじ <span class="title-sub translation-hidden">Daftar Isi</span></h2>
                 
                 <!-- Pengantar Items -->
                 <div class="quick-list" id="pengantar-container">
                     <div class="quick-item" onclick="showSection('contents')">
                         <span class="quick-item-title">はじめに</span>
                         <span class="quick-item-sub">Introduction</span>
+                        <span class="quick-item-sub-id translation-hidden">Pendahuluan</span>
                         <span class="quick-item-page">p.3</span>
                     </div>
                     <div class="quick-item" onclick="showSection('contents')">
                         <span class="quick-item-title">この本をお使いになる皆さんへ</span>
                         <span class="quick-item-sub">To Learners Using this Book</span>
+                        <span class="quick-item-sub-id translation-hidden">Kepada Para Pembelajar yang Menggunakan Buku Ini</span>
                         <span class="quick-item-page">p.4</span>
                     </div>
                 </div>
@@ -81,7 +84,7 @@
                 <div id="bab-container"></div>
 
                 <!-- Bagian Akhir -->
-                <div class="quick-section-title">さくいん・付録</div>
+                <div class="quick-section-title">さくいん・付録 <span class="title-sub translation-hidden">Indeks & Lampiran</span></div>
                 <div class="quick-list" id="index-container"></div>
             </div>
         </section>
@@ -100,7 +103,7 @@
 
             <!-- できること -->
             <div class="dekiru-box">
-                <h3 class="dekiru-title">できること <span class="title-sub">Dapat Melakukan</span></h3>
+                <h3 class="dekiru-title">できること <span class="title-sub translation-hidden">Dapat Melakukan</span></h3>
                 <ul class="space-y-2">
                     <li class="dekiru-item">
                         <span class="dekiru-bullet">●</span>
@@ -125,28 +128,33 @@
             <div class="job-ad">
                 <div class="job-ad-title">
                     <h2>サニー <span class="mx-2"></span> 店内スタッフ募集</h2>
+                    <p class="job-ad-title-id translation-hidden">Sunny - Perekrutan Staf Toko</p>
                 </div>
 
                 <p class="job-ad-subtitle">
                     <span class="highlight">さいわい駅前店オープンにつき、</span>人材を求めています
                 </p>
+                <p class="job-ad-subtitle-id translation-hidden"><span class="highlight">Karena pembukaan toko di depan stasiun Saiwai,</span> kami mencari tenaga kerja</p>
 
                 <div class="space-y-4">
                     <div class="job-section">
-                        <span class="job-section-label">仕事▶</span>
+                        <span class="job-section-label">仕事▶ <span class="label-id translation-hidden">Pekerjaan▶</span></span>
                         <span class="job-section-content">開店業務、販売、清掃、商品管理、閉店業務</span>
+                        <span class="job-section-content-id translation-hidden">Pembukaan toko, penjualan, pembersihan, manajemen produk, penutupan toko</span>
                     </div>
 
                     <div class="job-section">
-                        <span class="job-section-label">資格▶</span>
+                        <span class="job-section-label">資格▶ <span class="label-id translation-hidden">Kualifikasi▶</span></span>
                         <div class="job-section-content">
                             <p><span class="highlight-box">年齢・経験・国籍を問わず</span>、やる気のある方、大歓迎！</p>
+                            <p class="content-id translation-hidden"><span class="highlight-box">Tanpa memandang usia, pengalaman, atau kewarganegaraan</span>, yang bersemangat sangat diterima!</p>
                             <p class="job-note">※商品の案内や接客応対があるため、外国人の方は、日本語能力試験N2レベル以上の方に限り、応募可。</p>
+                            <p class="job-note-id translation-hidden">※Karena ada penjelasan produk dan layanan pelanggan, orang asing dapat melamar hanya jika memiliki level N2 atau lebih tinggi dalam Ujian Kemampuan Bahasa Jepang.</p>
                         </div>
                     </div>
 
                     <div class="job-section">
-                        <span class="job-section-label">給与▶</span>
+                        <span class="job-section-label">給与▶ <span class="label-id translation-hidden">Gaji▶</span></span>
                         <div class="job-section-content">
                             <div class="job-grid">
                                 <span>7時～9時</span><span>1,000円～</span>
@@ -154,27 +162,33 @@
                                 <span>22時～24時30分</span><span>1,125円～</span>
                             </div>
                             <p class="job-note">※経験年数に応じ、時給は考慮します。</p>
+                            <p class="job-note-id translation-hidden">※Gaji per jam akan dipertimbangkan berdasarkan tahun pengalaman.</p>
                         </div>
                     </div>
 
                     <div class="job-section">
-                        <span class="job-section-label">交通費▶</span>
+                        <span class="job-section-label">交通費▶ <span class="label-id translation-hidden">Biaya Transportasi▶</span></span>
                         <span class="job-section-content">往復1,000円まで支給</span>
+                        <span class="job-section-content-id translation-hidden">Diberikan hingga 1.000 yen untuk pergi-pulang</span>
                     </div>
 
                     <div class="job-section" style="border-bottom: none;">
-                        <span class="job-section-label">応募▶</span>
+                        <span class="job-section-label">応募▶ <span class="label-id translation-hidden">Cara Melamar▶</span></span>
                         <div class="job-section-content space-y-1" style="font-size: 0.75rem;">
                             <p>当店所定のフォームに記入し、下記のメールアドレスまでお送りください。電話でのお問い合わせは10時～18時。</p>
+                            <p class="content-id translation-hidden">Silakan isi formulir yang ditentukan toko dan kirim ke alamat email di bawah. Pertanyaan melalui telepon jam 10:00-18:00.</p>
                             <p>書類審査の結果は採否にかかわらず、通知します。</p>
+                            <p class="content-id translation-hidden">Hasil seleksi dokumen akan diberitahukan terlepas dari diterima atau tidak.</p>
                             <p>書類審査後、当店において面接。</p>
+                            <p class="content-id translation-hidden">Setelah seleksi dokumen, wawancara di toko kami.</p>
                             <p>面接の際に、履歴書（写真付き）持参のこと。</p>
+                            <p class="content-id translation-hidden">Saat wawancara, harap membawa riwayat hidup (dengan foto).</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="job-contact">
-                    <p class="font-bold">サニーグループ東京本部</p>
+                    <p class="font-bold">サニーグループ東京本部 <span class="contact-id translation-hidden">Kantor Pusat Grup Sunny Tokyo</span></p>
                     <p>☎ 03-1111-2222</p>
                     <p>http://www.sannie.biz</p>
                     <p>E-mail boshu@sannie.co.jp</p>
@@ -195,7 +209,7 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub">Bagaimana Menggunakannya?</span></h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">お知らせなどで「雨天につき中止」のように理由を言うときに使われる。</p>
                         <p class="dou-tsukau-en">This is used to state a reason in an announcement and the like, as in "雨天につき中止".</p>
                         <p class="dou-tsukau-id translation-hidden">Digunakan ketika menyebutkan alasan dalam pengumuman, seperti "Dibatalkan karena hujan".</p>
@@ -214,20 +228,20 @@
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="quiz-grid">
-                            <div class="quiz-item">1) 10月20日は社員研修につき、・・・</div>
-                            <div class="quiz-item">a) 階段をご利用ください。</div>
-                            <div class="quiz-item">2) キャンペーン期間中につき、・・・</div>
-                            <div class="quiz-item">b) お早めにお召し上がりください。</div>
-                            <div class="quiz-item">3) 生ものにつき、・・・</div>
-                            <div class="quiz-item">c) 入会金無料。</div>
-                            <div class="quiz-item">4) エレベーター点検中につき、・・・</div>
-                            <div class="quiz-item">d) 臨時休業させていただきます。</div>
+                            <div class="quiz-item">1) 10月20日は社員研修につき、・・・<span class="quiz-id translation-hidden">→ 20 Oktober karena pelatihan karyawan, ...</span></div>
+                            <div class="quiz-item">a) 階段をご利用ください。<span class="quiz-id translation-hidden">→ a) Silakan gunakan tangga.</span></div>
+                            <div class="quiz-item">2) キャンペーン期間中につき、・・・<span class="quiz-id translation-hidden">→ 2) Selama periode kampanye, ...</span></div>
+                            <div class="quiz-item">b) お早めにお召し上がりください。<span class="quiz-id translation-hidden">→ b) Silakan segera santap.</span></div>
+                            <div class="quiz-item">3) 生ものにつき、・・・<span class="quiz-id translation-hidden">→ 3) Karena barang segar, ...</span></div>
+                            <div class="quiz-item">c) 入会金無料。<span class="quiz-id translation-hidden">→ c) Biaya pendaftaran gratis.</span></div>
+                            <div class="quiz-item">4) エレベーター点検中につき、・・・<span class="quiz-id translation-hidden">→ 4) Karena sedang pemeriksaan lift, ...</span></div>
+                            <div class="quiz-item">d) 臨時休業させていただきます。<span class="quiz-id translation-hidden">→ d) Kami akan libur sementara.</span></div>
                         </div>
                     </div>
 
-                    <p class="page-ref">p.224 ～につき</p>
+                    <p class="page-ref">p.224 ～につき <span class="page-ref-id translation-hidden">hlm.224 ～につき</span></p>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">19</p>
             </article>
@@ -241,37 +255,41 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。</p>
                         <p class="dou-tsukau-en">This is used in an announcement, written introduction and the like to say "anytime, anywhere, anyone" and such.</p>
+                        <p class="dou-tsukau-id translation-hidden">Digunakan dalam pengumuman, pengenalan tertulis, dan semacamnya untuk mengatakan "kapan saja, di mana saja, siapa saja" dan sebagainya.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋を問わず</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + を問わず</p>
                     </div>
                     <p class="grammar-note">※「昼夜・国の内外・男女・～の有無」などの言葉と一緒に使われる。</p>
+                    <p class="grammar-note-id translation-hidden">※Sering digunakan bersama kata-kata seperti "siang malam", "dalam luar negeri", "laki-laki perempuan", "ada tidaknya ~", dll.</p>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> このスポーツセンターは、年齢を問わず、どなたでも利用できます。</p>
-                        <p class="example-item"><span class="font-bold">②</span> このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 経験の有無を問わず、やる気のある社員を募集します。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 私の国では、老若男女を問わず、みんな、サッカーが好きだ。</p>
+                        <p class="example-item"><span class="font-bold">①</span> このスポーツセンターは、年齢を問わず、どなたでも利用できます。<span class="example-id translation-hidden">→ Pusat olahraga ini dapat digunakan oleh siapa saja tanpa memandang usia.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。<span class="example-id translation-hidden">→ Supermarket ini buka tanpa memandang siang malam, jadi sangat membantu bagi orang yang bekerja larut malam.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 経験の有無を問わず、やる気のある社員を募集します。<span class="example-id translation-hidden">→ Kami merekrut karyawan yang bersemangat tanpa memandang ada tidaknya pengalaman.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 私の国では、老若男女を問わず、みんな、サッカーが好きだ。<span class="example-id translation-hidden">→ Di negaraku, semua orang suka sepak bola tanpa memandang tua muda, laki-laki perempuan.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) 来週の国際交流会は、国籍、職業（　　）どなたでも参加できます。</p>
-                            <p class="ml-4">a. ばかりでなく　b. に対して　c. を問わず</p>
-                            <p>2) 通信販売センターでは昼間（　　）夜も10時まで受け付けています。</p>
-                            <p class="ml-4">a. はもちろん　b. によって　c. を問わず</p>
+                            <p>1) 来週の国際交流会は、国籍、職業（　　）どなたでも参加できます。<span class="quiz-id translation-hidden">→ 1) Pertukaran budaya internasional minggu depan, kewarganegaraan, pekerjaan (　　) siapa saja dapat berpartisipasi.</span></p>
+                            <p class="ml-4">a. ばかりでなく　b. に対して　c. を問わず<span class="quiz-id translation-hidden">→ a. tidak hanya　b. terhadap　c. を問わず</span></p>
+                            <p>2) 通信販売センターでは昼間（　　）夜も10時まで受け付けています。<span class="quiz-id translation-hidden">→ 2) Pusat penjualan melalui pos menerima siang (　　) malam hingga jam 10.</span></p>
+                            <p class="ml-4">a. はもちろん　b. によって　c. を問わず<span class="quiz-id translation-hidden">→ a. tentu saja　b. oleh　c. を問わず</span></p>
                         </div>
                     </div>
 
                     <div class="note-box">
                         <p class="note-text">「問う」という動詞の否定形として、文の最後で使うこともある。</p>
                         <p class="note-en">You can also use the negative form of the verb "問う" at the end of a sentence.</p>
-                        <p class="note-example">この仕事に関心のある方なら、学歴・経験は問いません。</p>
+                        <p class="note-id translation-hidden">Anda juga dapat menggunakan bentuk negatif dari kata kerja "問う" di akhir kalimat.</p>
+                        <p class="note-example">この仕事に関心のある方なら、学歴・経験は問いません。<span class="example-id translation-hidden">→ Jika Anda tertarik dengan pekerjaan ini, kami tidak memandang pendidikan atau pengalaman.</span></p>
                     </div>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">19-20</p>
@@ -286,21 +304,23 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「だけ」という意味で、お知らせなどによく使われる。</p>
                         <p class="dou-tsukau-en">This is often used to mean "only / just" in an announcement and the like.</p>
+                        <p class="dou-tsukau-id translation-hidden">Sering digunakan dengan arti "hanya / cuma" dalam pengumuman dan semacamnya.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋に限り / に限る</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + に限り / に限る</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。</p>
-                        <p class="example-item"><span class="font-bold">②</span> このコーナーのバッグに限り、全品3,000円。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 当動物園は夏休み期間に限り、夜9時まで開園しております。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 初めてのお客様に限り、無料お試しセットをお申し込みいただけます。</p>
-                        <p class="example-item"><span class="font-bold">⑤</span> 工場の見学は予約された方に限ります。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。<span class="example-id translation-hidden">→ Hanya untuk hari ini, kami menyediakan daging sapi dengan harga normal 1.500 yen per 100 gram dengan harga setengah.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> このコーナーのバッグに限り、全品3,000円。<span class="example-id translation-hidden">→ Hanya untuk tas di sudut ini, semua barang 3.000 yen.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 当動物園は夏休み期間に限り、夜9時まで開園しております。<span class="example-id translation-hidden">→ Kebun binatang kami hanya selama periode liburan musim panas buka hingga jam 9 malam.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 初めてのお客様に限り、無料お試しセットをお申し込みいただけます。<span class="example-id translation-hidden">→ Hanya untuk pelanggan pertama kali, Anda dapat memesan set uji coba gratis.</span></p>
+                        <p class="example-item"><span class="font-bold">⑤</span> 工場の見学は予約された方に限ります。<span class="example-id translation-hidden">→ Tur pabrik hanya untuk mereka yang telah membuat reservasi.</span></p>
                     </div>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">20</p>
@@ -315,27 +335,29 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。</p>
                         <p class="dou-tsukau-en">Use "～に応じ…" when you want to say that something "depends on conditions such as a desire, change, location, situation, age, ability or experience."</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～に応じ…" ketika Anda ingin mengatakan bahwa sesuatu "tergantung pada kondisi seperti keinginan, perubahan, lokasi, situasi, usia, kemampuan, atau pengalaman."</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋に応じ / に応じて / に応じた＋Ｎ</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + に応じ / に応じて / に応じた + Kata Benda</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 給料は能力や経験に応じ、決めさせていただきます。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 新年会はご予算に応じていろいろなコースがございます。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 社会人なら、場所や場合に応じた服装を心がけるべきだ。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 会社は社員の要望に応じて社員食堂のメニューを増やした。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 給料は能力や経験に応じ、決めさせていただきます。<span class="example-id translation-hidden">→ Gaji akan kami tentukan sesuai dengan kemampuan dan pengalaman.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 新年会はご予算に応じていろいろなコースがございます。<span class="example-id translation-hidden">→ Untuk pesta tahun baru, ada berbagai paket sesuai dengan anggaran Anda.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 社会人なら、場所や場合に応じた服装を心がけるべきだ。<span class="example-id translation-hidden">→ Sebagai orang dewasa, sebaiknya memperhatikan pakaian yang sesuai dengan tempat dan kesempatan.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 会社は社員の要望に応じて社員食堂のメニューを増やした。<span class="example-id translation-hidden">→ Perusahaan menambah menu kantin karyawan sesuai dengan permintaan karyawan.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) 生物は環境（　　）その体を変化させてきた。</p>
-                            <p class="ml-4">a. に応じて　b. に限って　c. について</p>
+                            <p>1) 生物は環境（　　）その体を変化させてきた。<span class="quiz-id translation-hidden">→ 1) Makhluk hidup telah mengubah tubuhnya sesuai dengan lingkungan (　　).</span></p>
+                            <p class="ml-4">a. に応じて　b. に限って　c. について<span class="quiz-id translation-hidden">→ a. sesuai dengan　b. hanya　c. tentang</span></p>
                         </div>
                     </div>
                 </div>
@@ -351,21 +373,24 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。</p>
                         <p class="dou-tsukau-en">"～にかかわらず…" is used when you want to say "regardless of conditions such as weather, preference, social position, or whether something is there or not there, done or not done, etc."</p>
+                        <p class="dou-tsukau-id translation-hidden">"～にかかわらず…" digunakan ketika Anda ingin mengatakan "terlepas dari kondisi seperti cuaca, preferensi, posisi sosial, atau apakah sesuatu ada atau tidak ada, dilakukan atau tidak dilakukan, dll."</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖる＋Ｖない / Ｎ＋にかかわらず</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja + Kata Kerja negatif / Kata Benda + にかかわらず</p>
                     </div>
                     <p class="grammar-note">※「好き嫌い」「いい悪い」「善悪」など、形容詞、名詞の対立する2語を合わせて使われることもある。</p>
+                    <p class="grammar-note-id translation-hidden">※Sering digunakan bersama dua kata yang berlawanan seperti "suka tidak suka", "baik buruk", "baik jahat", dll.</p>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 区民センターの利用料金が変更になりました。和室は、人数にかかわらず、2時間1,000円になります。</p>
-                        <p class="example-item"><span class="font-bold">②</span> セール品のため、理由のいかんにかかわらず、返品はお受けできません。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 会議で発言するしないにかかわらず、自分の意見はまとめておくべきです。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 今回の旅行は晴雨にかかわらず、実施します。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 区民センターの利用料金が変更になりました。和室は、人数にかかわらず、2時間1,000円になります。<span class="example-id translation-hidden">→ Biaya penggunaan pusat warga telah berubah. Ruang tatami, terlepas dari jumlah orang, menjadi 1.000 yen untuk 2 jam.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> セール品のため、理由のいかんにかかわらず、返品はお受けできません。<span class="example-id translation-hidden">→ Karena barang diskon, kami tidak dapat menerima pengembalian terlepas dari alasannya.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 会議で発言するしないにかかわらず、自分の意見はまとめておくべきです。<span class="example-id translation-hidden">→ Terlepas dari apakah Anda berbicara atau tidak dalam rapat, Anda harus menyiapkan pendapat Anda sendiri.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 今回の旅行は晴雨にかかわらず、実施します。<span class="example-id translation-hidden">→ Perjalanan kali ini akan dilaksanakan terlepas dari cuaca cerah atau hujan.</span></p>
                     </div>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">22</p>
@@ -380,20 +405,22 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。お知らせやニュースなどで使われることが多い。</p>
                         <p class="dou-tsukau-en">Use "～において" when you want to say a "place, time, field / subject area and so on" as in "京都において・江戸時代においては・生物学における". This is often used in announcements, news and the like.</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～において" ketika Anda ingin mengatakan "tempat, waktu, bidang / area subjek dan sebagainya" seperti "di Kyoto, pada zaman Edo, dalam biologi". Ini sering digunakan dalam pengumuman, berita, dan semacamnya.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋において / における＋Ｎ</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + において / における + Kata Benda</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 入学式は、3階のホールにおいて行われます。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 日本だけでなく、ほかの国においても、環境汚染は深刻な問題だ。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 彼のようなすばらしい人に出会えたのは人生における最大の幸運だった。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 今回の風力発電施設の建設は自然エネルギー開発において大きな意味があると言われている。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 入学式は、3階のホールにおいて行われます。<span class="example-id translation-hidden">→ Upacara masuk sekolah akan dilaksanakan di aula lantai 3.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 日本だけでなく、ほかの国においても、環境汚染は深刻な問題だ。<span class="example-id translation-hidden">→ Tidak hanya di Jepang, tetapi juga di negara lain, polusi lingkungan adalah masalah serius.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 彼のようなすばらしい人に出会えたのは人生における最大の幸運だった。<span class="example-id translation-hidden">→ Bertemu dengan orang yang luar biasa seperti dia adalah keberuntungan terbesar dalam hidup.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 今回の風力発電施設の建設は自然エネルギー開発において大きな意味があると言われている。<span class="example-id translation-hidden">→ Dikatakan bahwa pembangunan fasilitas pembangkit listrik tenaga angin kali ini memiliki arti besar dalam pengembangan energi alam.</span></p>
                     </div>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">23</p>
@@ -412,33 +439,37 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～際」は、「～場合」という意味で、説明書や案内などで使われる。後ろに「してください・必要です・お願いします」などの文が来ることが多い。</p>
                         <p class="dou-tsukau-en">"～際" is used in manuals, guides and the like to mean "if / when ～". Phrases such as "してください・必要です・お願いします" often come afterward.</p>
+                        <p class="dou-tsukau-id translation-hidden">"～際" digunakan dalam manual, panduan, dan semacamnya dengan arti "jika / ketika ～". Frasa seperti "してください・必要です・お願いします" sering muncul setelahnya.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖる/Ｖた / Ｎの＋際（に）</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja / Kata Kerja lampau / Kata Benda + の + 際（に）</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> カードを紛失した際はサービスセンターにご連絡ください。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 入学手続きの際に必要なものは下記の通り。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 目上の人と話す際には、言葉だけでなく態度にも気をつけてください。</p>
+                        <p class="example-item"><span class="font-bold">①</span> カードを紛失した際はサービスセンターにご連絡ください。<span class="example-id translation-hidden">→ Jika Anda kehilangan kartu, silakan hubungi pusat layanan.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 入学手続きの際に必要なものは下記の通り。<span class="example-id translation-hidden">→ Hal-hal yang diperlukan saat prosedur masuk sekolah adalah sebagai berikut.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 目上の人と話す際には、言葉だけでなく態度にも気をつけてください。<span class="example-id translation-hidden">→ Ketika berbicara dengan orang yang lebih tinggi, harap perhatikan tidak hanya kata-kata tetapi juga sikap.</span></p>
                     </div>
 
                     <!-- Plus Section -->
                     <div class="plus-section">
                         <h4 class="plus-header">
                             <span class="plus-icon">➕</span>
-                            <span class="plus-title">Plus ～に際して</span>
+                            <span class="plus-title">Plus ～に際して <span class="title-sub translation-hidden">Plus ～に際して</span></span>
                         </h4>
                         <p class="plus-pattern">Ｎ＋に際して</p>
+                        <p class="plus-pattern-id translation-hidden">Kata Benda + に際して</p>
                         <p class="plus-desc">Another form is "Ｎ＋に際して". It is used in sentences such as warnings, apologies, explanations and the like.</p>
+                        <p class="plus-desc-id translation-hidden">Bentuk lain adalah "Ｎ＋に際して". Digunakan dalam kalimat seperti peringatan, permintaan maaf, penjelasan, dan semacamnya.</p>
                         <div class="mt-2 space-y-1 text-xs">
-                            <p>① 各種書類の提出に際しては、期限を厳守してください。</p>
-                            <p>② 振り込みに際して、手数料はお客様のご負担となります。</p>
-                            <p>③ 商品発送に際して、一部商品の発送が遅れましたことを深くおわびいたします。</p>
+                            <p>① 各種書類の提出に際しては、期限を厳守してください。<span class="example-id translation-hidden">→ ① Saat mengajukan berbagai dokumen, harap patuhi batas waktu dengan ketat.</span></p>
+                            <p>② 振り込みに際して、手数料はお客様のご負担となります。<span class="example-id translation-hidden">→ ② Saat transfer, biaya admin menjadi tanggungan pelanggan.</span></p>
+                            <p>③ 商品発送に際して、一部商品の発送が遅れましたことを深くおわびいたします。<span class="example-id translation-hidden">→ ③ Saat pengiriman barang, kami meminta maaf yang sebesar-besarnya atas keterlambatan pengiriman sebagian barang.</span></p>
                         </div>
                     </div>
                 </div>
@@ -454,37 +485,39 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">規則や注意事項を説明するときに使う。</p>
                         <p class="dou-tsukau-en">This is often used to explain a rule or warning.</p>
+                        <p class="dou-tsukau-id translation-hidden">Sering digunakan untuk menjelaskan aturan atau peringatan.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖる/Ｖない / Ｎの＋こと</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja / Kata Kerja negatif / Kata Benda + の + こと</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 願書は1月28日必着のこと。窓口での受け付けは行っておりません。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 寮の台所はきれいに使用すること。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 試験中は携帯電話の電源を切ること。筆記用具以外は机の上に置かないこと。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 寮のシャワーは夜11時以降、使用しないこと。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 願書は1月28日必着のこと。窓口での受け付けは行っておりません。<span class="example-id translation-hidden">→ Surat lamaran harus sampai paling lambat 28 Januari. Kami tidak menerima di loket.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 寮の台所はきれいに使用すること。<span class="example-id translation-hidden">→ Gunakan dapur asrama dengan bersih.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 試験中は携帯電話の電源を切ること。筆記用具以外は机の上に置かないこと。<span class="example-id translation-hidden">→ Selama ujian, matikan ponsel. Jangan letakkan apa pun di atas meja selain alat tulis.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 寮のシャワーは夜11時以降、使用しないこと。<span class="example-id translation-hidden">→ Jangan gunakan shower asrama setelah jam 11 malam.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="quiz-grid">
-                            <div class="quiz-item">1) 履歴書の記入は、・・・</div>
-                            <div class="quiz-item">a) プールサイドでは走らないこと。</div>
-                            <div class="quiz-item">2) 危険なので、・・・</div>
-                            <div class="quiz-item">b) きちんと分別すること。</div>
-                            <div class="quiz-item">3) 外出するときは、・・・</div>
-                            <div class="quiz-item">c) 黒のボールペンを使用のこと。</div>
-                            <div class="quiz-item">4) ごみを出すときは、・・・</div>
-                            <div class="quiz-item">d) 必ずエアコンを消すこと。</div>
+                            <div class="quiz-item">1) 履歴書の記入は、・・・<span class="quiz-id translation-hidden">→ 1) Pengisian riwayat hidup, ...</span></div>
+                            <div class="quiz-item">a) プールサイドでは走らないこと。<span class="quiz-id translation-hidden">→ a) Jangan berlari di tepi kolam renang.</span></div>
+                            <div class="quiz-item">2) 危険なので、・・・<span class="quiz-id translation-hidden">→ 2) Karena berbahaya, ...</span></div>
+                            <div class="quiz-item">b) きちんと分別すること。<span class="quiz-id translation-hidden">→ b) Pisahkan dengan rapi.</span></div>
+                            <div class="quiz-item">3) 外出するときは、・・・<span class="quiz-id translation-hidden">→ 3) Saat keluar, ...</span></div>
+                            <div class="quiz-item">c) 黒のボールペンを使用のこと。<span class="quiz-id translation-hidden">→ c) Gunakan pulpen hitam.</span></div>
+                            <div class="quiz-item">4) ごみを出すときは、・・・<span class="quiz-id translation-hidden">→ 4) Saat membuang sampah, ...</span></div>
+                            <div class="quiz-item">d) 必ずエアコンを消すこと。<span class="quiz-id translation-hidden">→ d) Pastikan matikan AC.</span></div>
                         </div>
                     </div>
 
-                    <p class="page-ref">p.221 ～こと</p>
+                    <p class="page-ref">p.221 ～こと <span class="page-ref-id translation-hidden">hlm.221 ～こと</span></p>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">25</p>
             </article>
@@ -495,40 +528,40 @@
             <div class="check-box">
                 <div class="check-header">
                     <span class="check-icon">📖</span>
-                    <h2 class="check-title">Check</h2>
-                    <span class="check-ref">▶答え 別冊P. 1</span>
+                    <h2 class="check-title">Check <span class="title-sub translation-hidden">Pemeriksaan</span></h2>
+                    <span class="check-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span>
                 </div>
 
                 <div class="check-grid">
                     <!-- Bagian 1 -->
                     <div class="check-column">
                         <div class="space-y-3 text-sm">
-                            <p class="check-question">1）わが社では経験<span class="blank"></span>、広く人材を募集している。</p>
-                            <p class="check-question">2）カレーの辛さはお客様のご希望<span class="blank"></span>調整いたします。</p>
-                            <p class="check-question">3）進学説明会は6月3日に東ホテル<span class="blank"></span>行われます。</p>
-                            <p class="check-question">4）毎週日曜日は先着10名様<span class="blank"></span>、無料で忍者体験ができます。</p>
+                            <p class="check-question">1）わが社では経験<span class="blank"></span>、広く人材を募集している。<span class="question-id translation-hidden">→ 1) Perusahaan kami merekrut talenta secara luas tanpa memandang pengalaman.</span></p>
+                            <p class="check-question">2）カレーの辛さはお客様のご希望<span class="blank"></span>調整いたします。<span class="question-id translation-hidden">→ 2) Kepedasan kari akan kami sesuaikan sesuai dengan keinginan pelanggan.</span></p>
+                            <p class="check-question">3）進学説明会は6月3日に東ホテル<span class="blank"></span>行われます。<span class="question-id translation-hidden">→ 3) Seminar penjelasan melanjutkan studi akan diadakan di Hotel Higashi pada 3 Juni.</span></p>
+                            <p class="check-question">4）毎週日曜日は先着10名様<span class="blank"></span>、無料で忍者体験ができます。<span class="question-id translation-hidden">→ 4) Setiap hari Minggu, hanya untuk 10 orang pertama, Anda dapat mengalami ninja secara gratis.</span></p>
                         </div>
                         <div class="check-options">
-                            <span>に限り</span>
-                            <span>を問わず</span>
-                            <span>において</span>
-                            <span>に応じて</span>
+                            <span>に限り <span class="option-id translation-hidden">(hanya)</span></span>
+                            <span>を問わず <span class="option-id translation-hidden">(tanpa memandang)</span></span>
+                            <span>において <span class="option-id translation-hidden">(di)</span></span>
+                            <span>に応じて <span class="option-id translation-hidden">(sesuai dengan)</span></span>
                         </div>
                     </div>
 
                     <!-- Bagian 2 -->
                     <div class="check-column">
                         <div class="space-y-3 text-sm">
-                            <p class="check-question">5）お降りの<span class="blank"></span>はバスが止まってから席をお立ちください。</p>
-                            <p class="check-question">6）入学後、引っ越しした場合は学生課に住所変更届を提出する<span class="blank"></span>。</p>
-                            <p class="check-question">7）今回のコンサートは応募者多数<span class="blank"></span>抽選とさせていただきます。</p>
-                            <p class="check-question">8）ご出席、ご欠席<span class="blank"></span>、このはがきは必ずご返送ください。</p>
+                            <p class="check-question">5）お降りの<span class="blank"></span>はバスが止まってから席をお立ちください。<span class="question-id translation-hidden">→ 5) Saat turun, harap berdiri dari kursi setelah bus berhenti.</span></p>
+                            <p class="check-question">6）入学後、引っ越しした場合は学生課に住所変更届を提出する<span class="blank"></span>。<span class="question-id translation-hidden">→ 6) Setelah masuk sekolah, jika Anda pindah, harus mengajukan formulir perubahan alamat ke bagian kemahasiswaan.</span></p>
+                            <p class="check-question">7）今回のコンサートは応募者多数<span class="blank"></span>抽選とさせていただきます。<span class="question-id translation-hidden">→ 7) Konser kali ini karena banyaknya pendaftar, kami akan melakukan undian.</span></p>
+                            <p class="check-question">8）ご出席、ご欠席<span class="blank"></span>、このはがきは必ずご返送ください。<span class="question-id translation-hidden">→ 8) Terlepas dari kehadiran atau ketidakhadiran Anda, harap pastikan mengembalikan kartu pos ini.</span></p>
                         </div>
                         <div class="check-options">
-                            <span>際</span>
-                            <span>こと</span>
-                            <span>にかかわらず</span>
-                            <span>につき</span>
+                            <span>際 <span class="option-id translation-hidden">(saat)</span></span>
+                            <span>こと <span class="option-id translation-hidden">(harus)</span></span>
+                            <span>にかかわらず <span class="option-id translation-hidden">(terlepas dari)</span></span>
+                            <span>につき <span class="option-id translation-hidden">(karena)</span></span>
                         </div>
                     </div>
                 </div>
@@ -540,87 +573,76 @@
         <section id="matome" class="hidden">
             <div class="matome-header">
                 <h2 class="matome-title">まとめの問題 <span class="matome-subtitle">Review questions</span></h2>
-                <p class="matome-ref">▶答え 別冊P.10</p>
+                <p class="matome-subtitle-id translation-hidden">Soal-soal Ringkasan</p>
+                <p class="matome-ref">▶答え 別冊P.10 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 10</span></p>
             </div>
             <div class="matome-content">
 
                 <!-- Mondai 1 -->
                 <div class="mondai-section">
                     <h3 class="mondai-title">
-                        問題1 〈文法形式の判断〉
+                        問題1 〈文法形式の判断〉 <span class="title-sub translation-hidden">Soal 1 (Penentuan Bentuk Tata Bahasa)</span>
                     </h3>
-                    <p class="mondai-instruksi">次の文の（　）に入れるのに最もよいものを1・2・3・4から一つ選びなさい。</p>
+                    <p class="mondai-instruksi">次の文の（　）に入れるのに最もよいものを1・2・3・4から一つ選びなさい。<span class="instruksi-id translation-hidden">→ Pilih yang paling tepat untuk mengisi (　　) dalam kalimat berikut dari 1・2・3・4.</span></p>
 
                     <div class="space-y-4">
                         <div class="soal-item">
-                            <p class="soal-text">1　この体操は体力（　　）、無理のないように行ってください。</p>
+                            <p class="soal-text">1　この体操は体力（　　）、無理のないように行ってください。<span class="soal-id translation-hidden">→ 1) Senam ini sesuai dengan kekuatan fisik (　　), lakukan tanpa memaksakan diri.</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label">
-                                    <input type="radio" name="q1">
-                                    <span>1 に限って</span>
-                                </label>
-                                <label class="pilihan-label">
-                                    <input type="radio" name="q1">
-                                    <span>2 に応じて</span>
-                                </label>
-                                <label class="pilihan-label">
-                                    <input type="radio" name="q1">
-                                    <span>3 にかわり</span>
-                                </label>
-                                <label class="pilihan-label">
-                                    <input type="radio" name="q1">
-                                    <span>4 において</span>
-                                </label>
+                                <label class="pilihan-label"><input type="radio" name="q1"><span>1 に限って <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q1"><span>2 に応じて <span class="pilihan-id translation-hidden">(sesuai dengan)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q1"><span>3 にかわり <span class="pilihan-id translation-hidden">(sebagai pengganti)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q1"><span>4 において <span class="pilihan-id translation-hidden">(di)</span></span></label>
                             </div>
                         </div>
 
                         <div class="soal-item">
-                            <p class="soal-text">2　水泳は子どもからお年寄りまで世代（　　）楽しめるスポーツだと言われている。</p>
+                            <p class="soal-text">2　水泳は子どもからお年寄りまで世代（　　）楽しめるスポーツだと言われている。<span class="soal-id translation-hidden">→ 2) Dikatakan bahwa berenang adalah olahraga yang dapat dinikmati oleh semua generasi dari anak-anak hingga lansia tanpa memandang (　　).</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label"><input type="radio" name="q2"><span>1 ばかりでなく</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q2"><span>2 に限って</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q2"><span>3 を問わず</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q2"><span>4 とおりに</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>1 ばかりでなく <span class="pilihan-id translation-hidden">(tidak hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>2 に限って <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>3 を問わず <span class="pilihan-id translation-hidden">(tanpa memandang)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>4 とおりに <span class="pilihan-id translation-hidden">(sesuai dengan)</span></span></label>
                             </div>
                         </div>
 
                         <div class="soal-item">
-                            <p class="soal-text">3　ただ今、こちらの商品（　　）、全国どこでも210円で配送を承ります。</p>
+                            <p class="soal-text">3　ただ今、こちらの商品（　　）、全国どこでも210円で配送を承ります。<span class="soal-id translation-hidden">→ 3) Saat ini, untuk produk ini (　　), kami menerima pengiriman di mana saja di seluruh negeri dengan harga 210 yen.</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label"><input type="radio" name="q3"><span>1 を問わず</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q3"><span>2 の際は</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q3"><span>3 に限り</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q3"><span>4 に応じて</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>1 を問わず <span class="pilihan-id translation-hidden">(tanpa memandang)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>2 の際は <span class="pilihan-id translation-hidden">(saat)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>3 に限り <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>4 に応じて <span class="pilihan-id translation-hidden">(sesuai dengan)</span></span></label>
                             </div>
                         </div>
 
                         <div class="soal-item">
-                            <p class="soal-text">4　退職の（　　）に必要な手続きについて、ご説明します。</p>
+                            <p class="soal-text">4　退職の（　　）に必要な手続きについて、ご説明します。<span class="soal-id translation-hidden">→ 4) Kami akan menjelaskan tentang prosedur yang diperlukan pada (　　) pensiun.</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label"><input type="radio" name="q4"><span>1 たび</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q4"><span>2 最中</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q4"><span>3 ところ</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q4"><span>4 際</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>1 たび <span class="pilihan-id translation-hidden">(setiap kali)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>2 最中 <span class="pilihan-id translation-hidden">(saat sedang)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>3 ところ <span class="pilihan-id translation-hidden">(saat ini)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>4 際 <span class="pilihan-id translation-hidden">(saat)</span></span></label>
                             </div>
                         </div>
 
                         <div class="soal-item">
-                            <p class="soal-text">5　奨学金を希望する場合はこの欄に丸印を付ける（　　）。</p>
+                            <p class="soal-text">5　奨学金を希望する場合はこの欄に丸印を付ける（　　）。<span class="soal-id translation-hidden">→ 5) Jika Anda menginginkan beasiswa, harus memberi tanda lingkaran di kolom ini (　　).</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label"><input type="radio" name="q5"><span>1 べき</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q5"><span>2 つもり</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q5"><span>3 こと</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q5"><span>4 はず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>1 べき <span class="pilihan-id translation-hidden">(seharusnya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>2 つもり <span class="pilihan-id translation-hidden">(berencana)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>3 こと <span class="pilihan-id translation-hidden">(harus)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>4 はず <span class="pilihan-id translation-hidden">(seharusnya)</span></span></label>
                             </div>
                         </div>
 
                         <div class="soal-item">
-                            <p class="soal-text">6　店を経営するなら、家賃や人件費など、売り上げの多い少ない（　　）毎月費用がかかることを考えなければならない。</p>
+                            <p class="soal-text">6　店を経営するなら、家賃や人件費など、売り上げの多い少ない（　　）毎月費用がかかることを考えなければならない。<span class="soal-id translation-hidden">→ 6) Jika Anda menjalankan toko, Anda harus memikirkan bahwa ada biaya setiap bulan untuk sewa, biaya tenaga kerja, dll. (　　) banyak sedikitnya penjualan.</span></p>
                             <div class="pilihan-grid">
-                                <label class="pilihan-label"><input type="radio" name="q6"><span>1 に応じて</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q6"><span>2 に限り</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q6"><span>3 にかかわらず</span></label>
-                                <label class="pilihan-label"><input type="radio" name="q6"><span>4 につき</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>1 に応じて <span class="pilihan-id translation-hidden">(sesuai dengan)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>2 に限り <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>3 にかかわらず <span class="pilihan-id translation-hidden">(terlepas dari)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>4 につき <span class="pilihan-id translation-hidden">(karena)</span></span></label>
                             </div>
                         </div>
                     </div>
@@ -629,28 +651,28 @@
                 <!-- Mondai 2 -->
                 <div class="mondai-section">
                     <h3 class="mondai-title">
-                        問題2 〈文の組み立て〉
+                        問題2 〈文の組み立て〉 <span class="title-sub translation-hidden">Soal 2 (Penyusunan Kalimat)</span>
                     </h3>
-                    <p class="mondai-instruksi">次の文の★に入る最もよいものを1・2・3・4から一つ選びなさい。</p>
+                    <p class="mondai-instruksi">次の文の★に入る最もよいものを1・2・3・4から一つ選びなさい。<span class="instruksi-id translation-hidden">→ Pilih yang paling tepat untuk mengisi ★ dalam kalimat berikut dari 1・2・3・4.</span></p>
 
                     <div class="space-y-4">
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <p class="mb-3">1　今回のサミット　＿　＿　★　＿　と首相は語った。</p>
+                            <p class="mb-3">1　今回のサミット　＿　＿　★　＿　と首相は語った。<span class="soal-id translation-hidden">→ 1) "KTT kali ini _ _ ★ _," kata Perdana Menteri.</span></p>
                             <div class="pilihan-grid-2">
-                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>1 における</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>2 である</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>3 エネルギー問題</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>4 最重要課題は</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>1 における <span class="pilihan-id translation-hidden">(di)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>2 である <span class="pilihan-id translation-hidden">(adalah)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>3 エネルギー問題 <span class="pilihan-id translation-hidden">(masalah energi)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>4 最重要課題は <span class="pilihan-id translation-hidden">(masalah terpenting adalah)</span></span></label>
                             </div>
                         </div>
 
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <p class="mb-3">2　＿　＿　★　＿　確認しておきましょう。</p>
+                            <p class="mb-3">2　＿　＿　★　＿　確認しておきましょう。<span class="soal-id translation-hidden">→ 2) Mari kita konfirmasi _ _ ★ _.</span></p>
                             <div class="pilihan-grid-2">
-                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>1 際に</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>2 地震の</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>3 避難できる</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>4 場所を</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>1 際に <span class="pilihan-id translation-hidden">(saat)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>2 地震の <span class="pilihan-id translation-hidden">(gempa bumi)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>3 避難できる <span class="pilihan-id translation-hidden">(bisa mengungsi)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>4 場所を <span class="pilihan-id translation-hidden">(tempat)</span></span></label>
                             </div>
                         </div>
                     </div>
@@ -659,32 +681,32 @@
                 <!-- Mondai 3 -->
                 <div>
                     <h3 class="mondai-title">
-                        問題3 〈文章の文法〉
+                        問題3 〈文章の文法〉 <span class="title-sub translation-hidden">Soal 3 (Tata Bahasa dalam Teks)</span>
                     </h3>
-                    <p class="mondai-instruksi">次の文章を読んで、文章全体の内容を考えて、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。</p>
+                    <p class="mondai-instruksi">次の文章を読んで、文章全体の内容を考えて、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。<span class="instruksi-id translation-hidden">→ Baca teks berikut, pertimbangkan keseluruhan isi teks, dan pilih yang paling tepat untuk mengisi [1] sampai [5] dari 1・2・3・4.</span></p>
 
                     <div class="bacaan-box">
-                        <p>日本で映画を見るのに、通常1,800円ぐらいかかりますが、映画館では、通常料金のほかに、特別なサービスがあります。</p>
-                        <p class="mt-2">毎月1日の「映画の日」は、年齢・性別【1】誰でも1,000円です。水曜日は女性【2】、1,000円になる映画館もあります。【3】夫婦のどちらかが50歳以上の場合は、いつでも2人で2,000円です。【4】、チケットを買う【5】は、身分証明書の提示が必要です。</p>
+                        <p>日本で映画を見るのに、通常1,800円ぐらいかかりますが、映画館では、通常料金のほかに、特別なサービスがあります。<span class="example-id translation-hidden">→ Untuk menonton film di Jepang, biasanya membutuhkan sekitar 1.800 yen, tetapi di bioskop, selain biaya normal, ada layanan khusus.</span></p>
+                        <p class="mt-2">毎月1日の「映画の日」は、年齢・性別【1】誰でも1,000円です。水曜日は女性【2】、1,000円になる映画館もあります。【3】夫婦のどちらかが50歳以上の場合は、いつでも2人で2,000円です。【4】、チケットを買う【5】は、身分証明書の提示が必要です。<span class="example-id translation-hidden">→ Pada "Hari Film" setiap tanggal 1, [1] usia dan jenis kelamin, siapa pun 1.000 yen. Ada juga bioskop yang pada hari Rabu [2] menjadi 1.000 yen untuk wanita. [3] jika salah satu pasangan berusia 50 tahun atau lebih, kapan saja 2.000 yen untuk 2 orang. [4], saat membeli tiket [5], perlu menunjukkan kartu identitas.</span></p>
                     </div>
 
                     <div class="space-y-3">
                         <div class="soal-horizontal">
                             <span class="soal-number">【1】</span>
                             <div class="pilihan-horizontal">
-                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>1 によって</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>2 に限り</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>3 を問わず</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>4 に応じ</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>1 によって <span class="pilihan-id translation-hidden">(oleh)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>2 に限り <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>3 を問わず <span class="pilihan-id translation-hidden">(tanpa memandang)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>4 に応じ <span class="pilihan-id translation-hidden">(sesuai dengan)</span></span></label>
                             </div>
                         </div>
                         <div class="soal-horizontal">
                             <span class="soal-number">【2】</span>
                             <div class="pilihan-horizontal">
-                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>1 にかわって</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>2 において</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>3 に限り</span></label>
-                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>4 を問わず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>1 にかわって <span class="pilihan-id translation-hidden">(sebagai pengganti)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>2 において <span class="pilihan-id translation-hidden">(di)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>3 に限り <span class="pilihan-id translation-hidden">(hanya)</span></span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>4 を問わず <span class="pilihan-id translation-hidden">(tanpa memandang)</span></span></label>
                             </div>
                         </div>
                     </div>
@@ -697,23 +719,25 @@
         <section id="bab2-header" class="hidden">
             <!-- Header -->
             <div class="section-header bab-header-section">
-                <div class="bab-header-category">スピーチをする <span class="text-gray-300">Giving a Speech</span></div>
+                <div class="bab-header-category">スピーチをする <span class="text-gray-300">Giving a Speech</span> <span class="category-id translation-hidden">Memberikan Pidato</span></div>
                 <div class="bab-header-title">
                     <span class="bab-header-number">2</span>
                     <h1 class="bab-header-text">転任のあいさつ（１）</h1>
                     <span class="bab-header-en">Addressing Co-workers after Receiving a Transfer Order (1)</span>
+                    <span class="bab-header-id translation-hidden">Pidato Perpisahan setelah Menerima Perintah Mutasi (1)</span>
                 </div>
             </div>
 
             <!-- できること -->
             <div class="dekiru-box">
-                <h3 class="dekiru-title">できること</h3>
+                <h3 class="dekiru-title">できること <span class="title-sub translation-hidden">Dapat Melakukan</span></h3>
                 <ul class="space-y-2">
                     <li class="dekiru-item">
                         <span class="dekiru-bullet">●</span>
                         <div>
                             <p class="font-medium">改まった形で思い出話などをして、お別れのスピーチができる。</p>
                             <p class="dekiru-en">Give a farewell speech with memorable stories and the like in a formal setting.</p>
+                            <p class="dekiru-id translation-hidden">Dapat memberikan pidato perpisahan dengan cerita kenangan dan semacamnya dalam suasana formal.</p>
                         </div>
                     </li>
                 </ul>
@@ -723,6 +747,10 @@
             <div class="bg-white p-6 rounded-lg shadow-md mb-8">
                 <p class="text-gray-800 leading-relaxed">
                     皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。<span class="text-rose-600 font-semibold">入社して以来</span>、この営業部<span class="text-rose-600 font-semibold">において</span>、<span class="text-rose-600 font-semibold">部長をはじめ</span><span class="text-rose-600 font-semibold">先輩方のご指導のもとで</span>、営業について一から学ぶことができ、たいへん幸運でした。<span class="text-rose-600 font-semibold">仕事の進め方はもとより</span>、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「<span class="text-rose-600 font-semibold">人は失敗から学ぶものだ</span>」という言葉は忘れられません。<span class="text-rose-600 font-semibold">仕事をする上で</span>大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、<span class="text-rose-600 font-semibold">残念ながら</span>この職場を離れることになりました。
+                </p>
+                <p class="translation-text translation-hidden mt-4">
+                    <span class="translation-label">Terjemahan Indonesia</span>
+                    Semuanya, terima kasih telah mengadakan acara seperti ini untuk saya hari ini. Sejak bergabung dengan perusahaan, di departemen penjualan ini, di bawah bimbingan Kepala Departemen dan para senior, saya sangat beruntung bisa belajar tentang penjualan dari nol. Saya sangat berterima kasih atas berbagai hal yang diajarkan, tidak hanya cara mengerjakan pekerjaan, tetapi juga cara berinteraksi dengan klien. Terutama, kata-kata Kepala Departemen, "Manusia belajar dari kegagalan," tidak akan pernah saya lupakan. Ada banyak hal penting dalam bekerja yang masih ingin saya pelajari, tetapi kali ini saya diperintahkan untuk bekerja di kantor cabang Osaka, dan sayangnya saya harus meninggalkan tempat kerja ini.
                 </p>
             </div>
             <p class="text-right text-gray-500 text-sm mt-2 page-number">30</p>
@@ -740,38 +768,40 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～以来」は、「～」のときから今までずっと同じ状態が続いているときに使う。</p>
                         <p class="dou-tsukau-en">Use "～以来" when a condition has continued from "～" until now.</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～以来" ketika kondisi telah berlanjut dari "～" hingga sekarang.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖ-て／Ｎ＋以来</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja bentuk -te / Kata Benda + 以来</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 母が入院して以来、家事はすべて私がしています。</p>
-                        <p class="example-item"><span class="font-bold">②</span> ３年前の夏休みに帰国して以来、長い間家族に会っていません。</p>
-                        <p class="example-item"><span class="font-bold">③</span> こちらに引っ越して以来、散歩を日課にしているんです。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 山野君とは卒業以来、まったく連絡が取れない。</p>
-                        <p class="example-item"><span class="font-bold">⑤</span> 彼は2000年4月以来、1日も休まず遺伝子の研究を続けている。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 母が入院して以来、家事はすべて私がしています。<span class="example-id translation-hidden">→ Sejak ibu saya dirawat di rumah sakit, saya yang mengerjakan semua pekerjaan rumah.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> ３年前の夏休みに帰国して以来、長い間家族に会っていません。<span class="example-id translation-hidden">→ Sejak pulang ke kampung halaman pada liburan musim panas 3 tahun lalu, saya belum bertemu keluarga untuk waktu yang lama.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> こちらに引っ越して以来、散歩を日課にしているんです。<span class="example-id translation-hidden">→ Sejak pindah ke sini, saya membuat berjalan-jalan sebagai rutinitas harian.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 山野君とは卒業以来、まったく連絡が取れない。<span class="example-id translation-hidden">→ Sejak lulus, saya sama sekali tidak bisa menghubungi Yamano.</span></p>
+                        <p class="example-item"><span class="font-bold">⑤</span> 彼は2000年4月以来、1日も休まず遺伝子の研究を続けている。<span class="example-id translation-hidden">→ Sejak April 2000, dia terus melakukan penelitian gen tanpa libur sehari pun.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) 1990年に来日して以来、（　　）。</p>
-                            <p class="ml-4">a) ずっと京都に住んでいます　b) 2000年に帰国しました</p>
-                            <p>2) 彼は3年前にプロの選手になって以来、（　　）。</p>
-                            <p class="ml-4">a) 1億円の契約金をもらった　b) 今まで以上に食事に気を遣うようになった</p>
-                            <p>3) この村に工場ができて以来、（　　）。</p>
-                            <p class="ml-4">a) 事故が起きた　b) 人口が増え続けている</p>
-                            <p>4) 子どものとき川に落ちて以来、（　　）。</p>
-                            <p class="ml-4">a) 水が怖くて今も泳げない　b) 大けがをした</p>
+                            <p>1) 1990年に来日して以来、（　　）。<span class="quiz-id translation-hidden">→ 1) Sejak datang ke Jepang pada tahun 1990, (　　).</span></p>
+                            <p class="ml-4">a) ずっと京都に住んでいます　b) 2000年に帰国しました<span class="quiz-id translation-hidden">→ a) Saya tinggal di Kyoto terus-menerus　b) Saya pulang ke kampung halaman pada tahun 2000</span></p>
+                            <p>2) 彼は3年前にプロの選手になって以来、（　　）。<span class="quiz-id translation-hidden">→ 2) Sejak dia menjadi pemain profesional 3 tahun lalu, (　　).</span></p>
+                            <p class="ml-4">a) 1億円の契約金をもらった　b) 今まで以上に食事に気を遣うようになった<span class="quiz-id translation-hidden">→ a) Menerima uang kontrak 100 juta yen　b) Menjadi lebih memperhatikan makanan dari sebelumnya</span></p>
+                            <p>3) この村に工場ができて以来、（　　）。<span class="quiz-id translation-hidden">→ 3) Sejak pabrik dibangun di desa ini, (　　).</span></p>
+                            <p class="ml-4">a) 事故が起きた　b) 人口が増え続けている<span class="quiz-id translation-hidden">→ a) Terjadi kecelakaan　b) Populasi terus meningkat</span></p>
+                            <p>4) 子どものとき川に落ちて以来、（　　）。<span class="quiz-id translation-hidden">→ 4) Sejak jatuh ke sungai saat masih anak-anak, (　　).</span></p>
+                            <p class="ml-4">a) 水が怖くて今も泳げない　b) 大けがをした<span class="quiz-id translation-hidden">→ a) Takut air dan sampai sekarang tidak bisa berenang　b) Mengalami luka parah</span></p>
                         </div>
                     </div>
 
-                    <p class="page-ref">p.224 ～以来</p>
+                    <p class="page-ref">p.224 ～以来 <span class="page-ref-id translation-hidden">hlm.224 ～以来</span></p>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">30</p>
             </article>
@@ -785,33 +815,35 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～をはじめ」は、代表的な例を出して、「～だけでなくほかにもたくさん」と言いたいときに使う。</p>
                         <p class="dou-tsukau-en">Use "～をはじめ" when you want to say "not just ～, but many others" by giving a typical example.</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～をはじめ" ketika Anda ingin mengatakan "bukan hanya ～, tetapi banyak yang lain" dengan memberikan contoh khas.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋をはじめ／をはじめとして／をはじめとする＋Ｎ</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + をはじめ / をはじめとして / をはじめとする + Kata Benda</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 日本には富士山をはじめ、たくさんの美しい山がある。</p>
-                        <p class="example-item"><span class="font-bold">②</span> アジアには中国をはじめとして、約40の国々がある。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 首相をはじめ、多くの政治家が大統領の歓迎会に出席した。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 健康のためには食生活をはじめとする生活習慣の見直しが必要です。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 日本には富士山をはじめ、たくさんの美しい山がある。<span class="example-id translation-hidden">→ Di Jepang, tidak hanya Gunung Fuji, ada banyak gunung indah lainnya.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> アジアには中国をはじめとして、約40の国々がある。<span class="example-id translation-hidden">→ Di Asia, tidak hanya Tiongkok, ada sekitar 40 negara lainnya.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 首相をはじめ、多くの政治家が大統領の歓迎会に出席した。<span class="example-id translation-hidden">→ Tidak hanya Perdana Menteri, banyak politisi lainnya juga menghadiri pesta penyambutan presiden.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 健康のためには食生活をはじめとする生活習慣の見直しが必要です。<span class="example-id translation-hidden">→ Untuk kesehatan, perlu meninjau kembali kebiasaan hidup termasuk pola makan.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) この映画専門学校は、校長をはじめ、（　　）。</p>
-                            <p class="ml-4">a) この春の新作が入荷いたしましたので、ぜひご来店ください。</p>
-                            <p class="ml-4">b) 様々な電気製品が必要だ。</p>
-                            <p class="ml-4">c) 多くの著名人が講師をしている。</p>
-                            <p class="ml-4">d) 東南アジアなどで広く使われている。</p>
-                            <p>2) このスパイスはタイをはじめ、（　　）。</p>
-                            <p>3) 一人暮らしには電子レンジをはじめ、（　　）。</p>
-                            <p>4) ジャケットをはじめ、（　　）。</p>
+                            <p>1) この映画専門学校は、校長をはじめ、（　　）。<span class="quiz-id translation-hidden">→ 1) Sekolah film khusus ini, tidak hanya kepala sekolah, (　　).</span></p>
+                            <p class="ml-4">a) この春の新作が入荷いたしましたので、ぜひご来店ください。<span class="quiz-id translation-hidden">→ a) Karya baru musim semi ini telah tiba, silakan datang.</span></p>
+                            <p class="ml-4">b) 様々な電気製品が必要だ。<span class="quiz-id translation-hidden">→ b) Berbagai peralatan listrik diperlukan.</span></p>
+                            <p class="ml-4">c) 多くの著名人が講師をしている。<span class="quiz-id translation-hidden">→ c) Banyak tokoh terkenal menjadi pengajar.</span></p>
+                            <p class="ml-4">d) 東南アジアなどで広く使われている。<span class="quiz-id translation-hidden">→ d) Digunakan secara luas di Asia Tenggara dan lainnya.</span></p>
+                            <p>2) このスパイスはタイをはじめ、（　　）。<span class="quiz-id translation-hidden">→ 2) Rempah ini, tidak hanya Thailand, (　　).</span></p>
+                            <p>3) 一人暮らしには電子レンジをはじめ、（　　）。<span class="quiz-id translation-hidden">→ 3) Untuk hidup sendiri, tidak hanya microwave, (　　).</span></p>
+                            <p>4) ジャケットをはじめ、（　　）。<span class="quiz-id translation-hidden">→ 4) Tidak hanya jaket, (　　).</span></p>
                         </div>
                     </div>
                 </div>
@@ -827,30 +859,32 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「教授のもと」のように、「何か大きい影響力のあるものの下で」というときや「協力のもと」のように、「その条件や状況の中で」と言いたいときに使う。</p>
                         <p class="dou-tsukau-en">Use this expression when you want to say that something is "under someone with some great influence" as in "教授のもと", or when you want to say that something is "under certain conditions or a situation" as in "協力のもと".</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan ungkapan ini ketika Anda ingin mengatakan bahwa sesuatu "di bawah seseorang dengan pengaruh besar" seperti "di bawah profesor", atau ketika Anda ingin mengatakan bahwa sesuatu "di bawah kondisi atau situasi tertentu" seperti "di bawah kerja sama".</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋のもと（で／に）</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + のもと（で／に）</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 最近は明るい太陽のもとで、元気に遊ぶ子どもが少なくなった。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 彼はすばらしい自然環境のもとでこの作品を作り上げた。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 子育ては夫婦の協力のもとで行われるべきだ。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 合理化の名のもとに多数の従業員が解雇された。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 最近は明るい太陽のもとで、元気に遊ぶ子どもが少なくなった。<span class="example-id translation-hidden">→ Akhir-akhir ini, di bawah sinar matahari yang cerah, anak-anak yang bermain dengan ceria semakin sedikit.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 彼はすばらしい自然環境のもとでこの作品を作り上げた。<span class="example-id translation-hidden">→ Dia menciptakan karya ini di bawah lingkungan alam yang indah.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 子育ては夫婦の協力のもとで行われるべきだ。<span class="example-id translation-hidden">→ Pengasuhan anak seharusnya dilakukan di bawah kerja sama suami istri.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 合理化の名のもとに多数の従業員が解雇された。<span class="example-id translation-hidden">→ Banyak karyawan dipecat atas nama rasionalisasi.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>彼は両親と離れ、＿＿＿＿＿＿のもとで、育てられた。</p>
-                            <p>みきは16歳だが、＿＿＿＿＿＿のもとに結婚が認められた。</p>
-                            <p>私はこの会社で、尊敬する＿＿＿＿＿＿のもとで40年間働いてきた。</p>
-                            <p>海岸の清掃活動は多くの市民の＿＿＿＿＿＿のもとに行われている。</p>
-                            <p class="mt-2 text-gray-600">選択肢：両親の同意・祖父母・協力・社長</p>
+                            <p>彼は両親と離れ、＿＿＿＿＿＿のもとで、育てられた。<span class="quiz-id translation-hidden">→ Dia dipisahkan dari orang tuanya dan dibesarkan di bawah ______.</span></p>
+                            <p>みきは16歳だが、＿＿＿＿＿＿のもとに結婚が認められた。<span class="quiz-id translation-hidden">→ Miki berusia 16 tahun, tetapi pernikahannya diakui di bawah ______.</span></p>
+                            <p>私はこの会社で、尊敬する＿＿＿＿＿＿のもとで40年間働いてきた。<span class="quiz-id translation-hidden">→ Saya telah bekerja di perusahaan ini selama 40 tahun di bawah ______ yang saya hormati.</span></p>
+                            <p>海岸の清掃活動は多くの市民の＿＿＿＿＿＿のもとに行われている。<span class="quiz-id translation-hidden">→ Kegiatan pembersihan pantai dilakukan di bawah ______ banyak warga.</span></p>
+                            <p class="mt-2 text-gray-600">選択肢：両親の同意・祖父母・協力・社長<span class="quiz-id translation-hidden">→ Pilihan: Persetujuan orang tua · Kakek nenek · Kerja sama · Presiden direktur</span></p>
                         </div>
                     </div>
                 </div>
@@ -866,35 +900,37 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～はもとより」は、スピーチ・プレゼンテーションなどで「～はもちろん、～だけでなくそのほかにも」と説明したいときに使う。</p>
                         <p class="dou-tsukau-en">Use "～はもとより" when you want to explain in a speech, presentation or the like that "～" is obvious, or that it is not only "～" but also something more.</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～はもとより" ketika Anda ingin menjelaskan dalam pidato, presentasi, dan semacamnya bahwa "～" sudah jelas, atau bahwa bukan hanya "～" tetapi juga sesuatu yang lebih.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋はもとより</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + はもとより</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> この温泉は、日本人はもとより、外国人にもたいへん人気があります。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 子どもの成長のためには、食事はもとより、睡眠や運動にも気をつけてください。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 優秀な人材の確保は中小企業はもとより、大企業にとっても大きな問題です。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 犯罪防止はもとより、地域の交通安全も警察の大切な仕事です。</p>
+                        <p class="example-item"><span class="font-bold">①</span> この温泉は、日本人はもとより、外国人にもたいへん人気があります。<span class="example-id translation-hidden">→ Pemandian air panas ini, tidak hanya orang Jepang, tetapi juga sangat populer di kalangan orang asing.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 子どもの成長のためには、食事はもとより、睡眠や運動にも気をつけてください。<span class="example-id translation-hidden">→ Untuk pertumbuhan anak, tidak hanya makanan, tetapi harap perhatikan juga tidur dan olahraga.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 優秀な人材の確保は中小企業はもとより、大企業にとっても大きな問題です。<span class="example-id translation-hidden">→ Pengamanan talenta berkualitas, tidak hanya untuk perusahaan kecil dan menengah, tetapi juga merupakan masalah besar bagi perusahaan besar.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 犯罪防止はもとより、地域の交通安全も警察の大切な仕事です。<span class="example-id translation-hidden">→ Pencegahan kejahatan sudah jelas, keselamatan lalu lintas wilayah juga merupakan pekerjaan penting polisi.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 1 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 1</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) すしは日本（　　）いろいろな国で人気がある食べ物です。</p>
-                            <p class="ml-4">a) はもとより　b) においては</p>
-                            <p>2) 事前に予約した場合（　　）無料で参加できます。</p>
-                            <p class="ml-4">a) はもとより　b) に限り</p>
-                            <p>3) スペイン語はスペイン（　　）南米の国々でも使われています。</p>
-                            <p class="ml-4">a) はもとより　b) にもかかわらず</p>
-                            <p>4) 子どもは家族（　　）生活しながら、社会習慣を身につけるべきだ。</p>
-                            <p class="ml-4">a) はもとより　b) のもとで</p>
-                            <p>5) 今後、両国間では経済（　　）文化の交流も活発になるだろう。</p>
-                            <p class="ml-4">a) はもとより　b) のもとで</p>
+                            <p>1) すしは日本（　　）いろいろな国で人気がある食べ物です。<span class="quiz-id translation-hidden">→ 1) Sushi adalah makanan yang populer di Jepang (　　) di berbagai negara.</span></p>
+                            <p class="ml-4">a) はもとより　b) においては<span class="quiz-id translation-hidden">→ a) tidak hanya, sudah jelas　b) di</span></p>
+                            <p>2) 事前に予約した場合（　　）無料で参加できます。<span class="quiz-id translation-hidden">→ 2) Jika memesan terlebih dahulu (　　) dapat berpartisipasi secara gratis.</span></p>
+                            <p class="ml-4">a) はもとより　b) に限り<span class="quiz-id translation-hidden">→ a) tidak hanya, sudah jelas　b) hanya</span></p>
+                            <p>3) スペイン語はスペイン（　　）南米の国々でも使われています。<span class="quiz-id translation-hidden">→ 3) Bahasa Spanyol digunakan di Spanyol (　　) juga di negara-negara Amerika Selatan.</span></p>
+                            <p class="ml-4">a) はもとより　b) にもかかわらず<span class="quiz-id translation-hidden">→ a) tidak hanya, sudah jelas　b) meskipun</span></p>
+                            <p>4) 子どもは家族（　　）生活しながら、社会習慣を身につけるべきだ。<span class="quiz-id translation-hidden">→ 4) Anak-anak harus mempelajari kebiasaan sosial sambil hidup dengan keluarga (　　).</span></p>
+                            <p class="ml-4">a) はもとより　b) のもとで<span class="quiz-id translation-hidden">→ a) tidak hanya, sudah jelas　b) di bawah</span></p>
+                            <p>5) 今後、両国間では経済（　　）文化の交流も活発になるだろう。<span class="quiz-id translation-hidden">→ 5) Ke depannya, di antara kedua negara, ekonomi (　　) pertukaran budaya juga akan menjadi lebih aktif.</span></p>
+                            <p class="ml-4">a) はもとより　b) のもとで<span class="quiz-id translation-hidden">→ a) tidak hanya, sudah jelas　b) di bawah</span></p>
                         </div>
                     </div>
                 </div>
@@ -910,24 +946,26 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">誰でもそう思う、絶対正しいと思っている話者の判断を表す。注意や命令になることもある。偉そうな感じがするので、目上の人には使わないほうがいい。親しい人との会話では、「もんだ」が使われる。</p>
                         <p class="dou-tsukau-en">This expresses the speaker's judgment that anyone would think so or that the speaker thinks it is absolutely correct. You should not use this when speaking to a higher ranking person as it can sound bossy. "もんだ" is used in conversation with a familiar person.</p>
+                        <p class="dou-tsukau-id translation-hidden">Ini menyatakan penilaian pembicara bahwa siapa pun akan berpikir demikian atau bahwa pembicara menganggapnya benar secara mutlak. Ini juga bisa menjadi peringatan atau perintah. Karena terdengar seperti memerintah, sebaiknya tidak digunakan saat berbicara dengan orang yang lebih tinggi. "もんだ" digunakan dalam percakapan dengan orang yang akrab.</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖ-る／Ｖ-ない＋ものだ／もんだ</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja / Kata Kerja negatif + ものだ / もんだ</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> A：うちの息子は最近口答えばかりして、ちっとも言うことを聞かないんですよ。B：子どもは親に反抗するものですから、それも成長のひとつですよ。</p>
-                        <p class="example-item"><span class="font-bold">②</span> A：今まで自由に生きてきたけど、最近さびしさを感じるんだ。B：それはそうさ。人は一人では生きられないものだから。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 誰でもほめられればやる気になるものですから、新入社員を指導するときはぜひいいところを探してください。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 失恋したら、めいっぱいおしゃれをして出かけましょう。おしゃれをすると気分が明るくなるものです。</p>
-                        <p class="example-item"><span class="font-bold">⑤</span> さっきのお前の態度は何だ。人が話しているときには、ちゃんと聞くもんだぞ。</p>
+                        <p class="example-item"><span class="font-bold">①</span> A：うちの息子は最近口答えばかりして、ちっとも言うことを聞かないんですよ。B：子どもは親に反抗するものですから、それも成長のひとつですよ。<span class="example-id translation-hidden">→ A: Anak laki-laki saya akhir-akhir ini sering membantah dan sama sekali tidak mau mendengarkan. B: Anak-anak memang melawan orang tua, jadi itu juga bagian dari pertumbuhan.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> A：今まで自由に生きてきたけど、最近さびしさを感じるんだ。B：それはそうさ。人は一人では生きられないものだから。<span class="example-id translation-hidden">→ A: Saya hidup bebas sampai sekarang, tetapi akhir-akhir ini saya merasa kesepian. B: Tentu saja. Karena manusia tidak bisa hidup sendiri.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 誰でもほめられればやる気になるものですから、新入社員を指導するときはぜひいいところを探してください。<span class="example-id translation-hidden">→ Karena siapa pun akan termotivasi jika dipuji, saat membimbing karyawan baru, harap cari hal-hal baik mereka.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 失恋したら、めいっぱいおしゃれをして出かけましょう。おしゃれをすると気分が明るくなるものです。<span class="example-id translation-hidden">→ Jika patah hati, berdandan semaksimal mungkin dan keluarlah. Karena berdandan membuat perasaan menjadi cerah.</span></p>
+                        <p class="example-item"><span class="font-bold">⑤</span> さっきのお前の態度は何だ。人が話しているときには、ちゃんと聞くもんだぞ。<span class="example-id translation-hidden">→ Apa dengan sikapmu tadi. Saat orang berbicara, kamu harus mendengarkan dengan baik.</span></p>
                     </div>
 
-                    <p class="page-ref">p.224 ～もの／もん</p>
+                    <p class="page-ref">p.224 ～もの／もん <span class="page-ref-id translation-hidden">hlm.224 ～もの／もん</span></p>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">34</p>
             </article>
@@ -941,37 +979,39 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～上で…」は、「～をするとき（…が重要だ・必要だ）」と言いたいときに使われる。</p>
                         <p class="dou-tsukau-en">"～上で…" is used when you want to say that "(something is important or required) when doing something".</p>
+                        <p class="dou-tsukau-id translation-hidden">"～上で…" digunakan ketika Anda ingin mengatakan bahwa "(sesuatu penting atau diperlukan) saat melakukan sesuatu".</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖ-る＋上で</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja bentuk kamus + 上で</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> この本は就職活動をする上での重要なポイントが書かれています。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 国際関係を考える上で、宗教問題は避けられない。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 新店舗を開設する上で、周辺のマーケティング調査は欠かせない。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 会社を経営していく上でコストパフォーマンスは重要な課題だ。</p>
+                        <p class="example-item"><span class="font-bold">①</span> この本は就職活動をする上での重要なポイントが書かれています。<span class="example-id translation-hidden">→ Buku ini berisi poin-poin penting saat melakukan aktivitas mencari pekerjaan.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 国際関係を考える上で、宗教問題は避けられない。<span class="example-id translation-hidden">→ Saat memikirkan hubungan internasional, masalah agama tidak dapat dihindari.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 新店舗を開設する上で、周辺のマーケティング調査は欠かせない。<span class="example-id translation-hidden">→ Saat membuka toko baru, survei pemasaran di sekitar sangat penting.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 会社を経営していく上でコストパフォーマンスは重要な課題だ。<span class="example-id translation-hidden">→ Saat menjalankan perusahaan, cost performance adalah masalah penting.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 2</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 2 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 2</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) 留学生が生活する上で（　　）。</p>
-                            <p class="ml-4">a) 円高は大きな問題だ　b) 高いものは買わない</p>
-                            <p>2) この講座はボランティア活動をする上で（　　）。</p>
-                            <p class="ml-4">a) 難しいです　b) 必要な知識を学びます</p>
-                            <p>3) 進学先を選ぶ上で（　　）。</p>
-                            <p class="ml-4">a) 就職率は重要なポイントだ　b) この大学は簡単に入れました</p>
-                            <p>4) 日本の農業を理解する上で（　　）。</p>
-                            <p class="ml-4">a) 農村に見学に行くつもりだ　b) 気候や地形に対する理解も必要だ</p>
+                            <p>1) 留学生が生活する上で（　　）。<span class="quiz-id translation-hidden">→ 1) Saat mahasiswa asing hidup (　　).</span></p>
+                            <p class="ml-4">a) 円高は大きな問題だ　b) 高いものは買わない<span class="quiz-id translation-hidden">→ a) Penguatan yen adalah masalah besar　b) Tidak membeli barang mahal</span></p>
+                            <p>2) この講座はボランティア活動をする上で（　　）。<span class="quiz-id translation-hidden">→ 2) Kursus ini saat melakukan aktivitas sukarela (　　).</span></p>
+                            <p class="ml-4">a) 難しいです　b) 必要な知識を学びます<span class="quiz-id translation-hidden">→ a) Sulit　b) Mempelajari pengetahuan yang diperlukan</span></p>
+                            <p>3) 進学先を選ぶ上で（　　）。<span class="quiz-id translation-hidden">→ 3) Saat memilih tempat melanjutkan studi (　　).</span></p>
+                            <p class="ml-4">a) 就職率は重要なポイントだ　b) この大学は簡単に入れました<span class="quiz-id translation-hidden">→ a) Tingkat penyerapan kerja adalah poin penting　b) Universitas ini mudah untuk masuk</span></p>
+                            <p>4) 日本の農業を理解する上で（　　）。<span class="quiz-id translation-hidden">→ 4) Saat memahami pertanian Jepang (　　).</span></p>
+                            <p class="ml-4">a) 農村に見学に行くつもりだ　b) 気候や地形に対する理解も必要だ<span class="quiz-id translation-hidden">→ a) Berencana pergi mengunjungi desa pertanian　b) Pemahaman tentang iklim dan topografi juga diperlukan</span></p>
                         </div>
                     </div>
 
-                    <p class="page-ref">p.220 ～上／上</p>
+                    <p class="page-ref">p.220 ～上／上 <span class="page-ref-id translation-hidden">hlm.220 ～上／上</span></p>
                 </div>
                 <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">34</p>
             </article>
@@ -985,35 +1025,38 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub translation-hidden">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">「～ながら」は、「～の状態だが、けれども」と言いたいときに使う。</p>
                         <p class="dou-tsukau-en">Use "～ながら" when you want to say "this is the situation, but..."</p>
+                        <p class="dou-tsukau-id translation-hidden">Gunakan "～ながら" ketika Anda ingin mengatakan "ini adalah situasinya, tetapi..."</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｖ-ます／Ｖ-ない／いＡ／なＡ／Ｎ＋ながら（も）</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Kerja -masu / Kata Kerja negatif / Kata Sifat i / Kata Sifat na / Kata Benda + ながら（も）</p>
                     </div>
                     <p class="grammar-note">※「なＡ／Ｎであり＋ながら」の形もある。</p>
+                    <p class="grammar-note-id translation-hidden">※Ada juga bentuk "Kata Sifat na / Kata Bendaであり + ながら".</p>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 彼とは同じ寮に住んでいながら、ほとんど話をしたことがなかった。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 留学生たちは、難しい言葉はわからないながら、日本人のボランティアと楽しそうにおしゃべりしている。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 彼は若いながらも、立派なプロジェクトリーダーだ。</p>
-                        <p class="example-item"><span class="font-bold">④</span> 練習試合ながら、去年の優勝チームに勝ったのは大きな自信になる。</p>
-                        <p class="example-item"><span class="font-bold">⑤</span> このICレコーダーは小型でありながら、連続24時間の録音が可能だ。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 彼とは同じ寮に住んでいながら、ほとんど話をしたことがなかった。<span class="example-id translation-hidden">→ Meskipun tinggal di asrama yang sama dengannya, saya hampir tidak pernah berbicara dengannya.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 留学生たちは、難しい言葉はわからないながら、日本人のボランティアと楽しそうにおしゃべりしている。<span class="example-id translation-hidden">→ Para mahasiswa asing, meskipun tidak mengerti kata-kata sulit, terlihat senang mengobrol dengan sukarelawan Jepang.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 彼は若いながらも、立派なプロジェクトリーダーだ。<span class="example-id translation-hidden">→ Meskipun dia masih muda, dia adalah pemimpin proyek yang hebat.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> 練習試合ながら、去年の優勝チームに勝ったのは大きな自信になる。<span class="example-id translation-hidden">→ Meskipun hanya pertandingan latihan, menang melawan tim juara tahun lalu menjadi kepercayaan diri yang besar.</span></p>
+                        <p class="example-item"><span class="font-bold">⑤</span> このICレコーダーは小型でありながら、連続24時間の録音が可能だ。<span class="example-id translation-hidden">→ IC recorder ini, meskipun ukurannya kecil, mampu merekam secara terus-menerus selama 24 jam.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
-                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 2</span></h4>
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="title-sub translation-hidden">Ayo Coba!</span> <span class="yatte-miyou-ref">▶答え 別冊P. 2 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 2</span></span></h4>
                         <div class="space-y-1 text-xs">
-                            <p>1) ぜひ北海道へ行きたいと思いながら、（　　）。</p>
-                            <p class="ml-4">a) 何度も行った　b) まだ行ったことがない</p>
-                            <p>2) 山の頂上がすぐ近くに見えていながら、（　　）。</p>
-                            <p class="ml-4">a) なかなか頂上につかない　b) もうすぐ頂上につきそうだ</p>
-                            <p>3) この美術館は小さいながら（　　）。</p>
-                            <p class="ml-4">a) 多くのすばらしい作品を展示している　b) 休日でも入場者は少ない</p>
-                            <p>4) この洗濯機は、旧型ながらとても（　　）。</p>
-                            <p class="ml-4">a) 使いにくい　b) 使いやすい</p>
+                            <p>1) ぜひ北海道へ行きたいと思いながら、（　　）。<span class="quiz-id translation-hidden">→ 1) Meskipun sangat ingin pergi ke Hokkaido, (　　).</span></p>
+                            <p class="ml-4">a) 何度も行った　b) まだ行ったことがない<span class="quiz-id translation-hidden">→ a) Sudah pergi berkali-kali　b) Belum pernah pergi</span></p>
+                            <p>2) 山の頂上がすぐ近くに見えていながら、（　　）。<span class="quiz-id translation-hidden">→ 2) Meskipun puncak gunung terlihat sangat dekat, (　　).</span></p>
+                            <p class="ml-4">a) なかなか頂上につかない　b) もうすぐ頂上につきそうだ<span class="quiz-id translation-hidden">→ a) Sulit untuk mencapai puncak　b) Sepertinya akan segera mencapai puncak</span></p>
+                            <p>3) この美術館は小さいながら（　　）。<span class="quiz-id translation-hidden">→ 3) Museum seni ini, meskipun kecil, (　　).</span></p>
+                            <p class="ml-4">a) 多くのすばらしい作品を展示している　b) 休日でも入場者は少ない<span class="quiz-id translation-hidden">→ a) Menampilkan banyak karya yang indah　b) Pengunjung sedikit bahkan di hari libur</span></p>
+                            <p>4) この洗濯機は、旧型ながらとても（　　）。<span class="quiz-id translation-hidden">→ 4) Mesin cuci ini, meskipun model lama, sangat (　　).</span></p>
+                            <p class="ml-4">a) 使いにくい　b) 使いやすい<span class="quiz-id translation-hidden">→ a) Sulit digunakan　b) Mudah digunakan</span></p>
                         </div>
                     </div>
                 </div>
@@ -1026,38 +1069,38 @@
             <div class="check-box">
                 <div class="check-header">
                     <span class="check-icon">📖</span>
-                    <h2 class="check-title">Check</h2>
-                    <span class="check-ref">▶答え 別冊P. 2</span>
+                    <h2 class="check-title">Check <span class="title-sub translation-hidden">Pemeriksaan</span></h2>
+                    <span class="check-ref">▶答え 別冊P. 2 <span class="ref-id translation-hidden">▶Jawaban Buku Terpisah hlm. 2</span></span>
                 </div>
 
                 <div class="check-grid">
                     <!-- Bagian 1 -->
                     <div class="check-column">
                         <div class="space-y-3 text-sm">
-                            <p class="check-question">1）当社はチョコレート（　　）お菓子の総合メーカーです。</p>
-                            <p class="check-question">2）このアニメは、子ども（　　）、大人でも十分楽しめる作品になっている。</p>
-                            <p class="check-question">3）たまにはゆっくり映画を見たいと思い（　　）、なかなか時間がとれない。</p>
-                            <p class="check-question">4）がんの疑いがあるときは専門医（　　）早期に診断、治療されることをおすすめします。</p>
+                            <p class="check-question">1）当社はチョコレート（　　）お菓子の総合メーカーです。<span class="question-id translation-hidden">→ 1) Perusahaan kami adalah produsen makanan manis komprehensif (　　) cokelat.</span></p>
+                            <p class="check-question">2）このアニメは、子ども（　　）、大人でも十分楽しめる作品になっている。<span class="question-id translation-hidden">→ 2) Anime ini menjadi karya yang dapat dinikmati oleh orang dewasa (　　) anak-anak.</span></p>
+                            <p class="check-question">3）たまにはゆっくり映画を見たいと思い（　　）、なかなか時間がとれない。<span class="question-id translation-hidden">→ 3) Sesekali saya ingin menonton film dengan santai (　　), tetapi sulit untuk menyempatkan waktu.</span></p>
+                            <p class="check-question">4）がんの疑いがあるときは専門医（　　）早期に診断、治療されることをおすすめします。<span class="question-id translation-hidden">→ 4) Jika ada kecurigaan kanker, kami merekomendasikan untuk didiagnosis dan dirawat secara dini (　　) dokter spesialis.</span></p>
                         </div>
                         <div class="check-options">
-                            <span>ながら</span>
-                            <span>のもとで</span>
-                            <span>はもとより</span>
-                            <span>をはじめとする</span>
+                            <span>ながら <span class="option-id translation-hidden">(meskipun)</span></span>
+                            <span>のもとで <span class="option-id translation-hidden">(di bawah)</span></span>
+                            <span>はもとより <span class="option-id translation-hidden">(tidak hanya)</span></span>
+                            <span>をはじめとする <span class="option-id translation-hidden">(termasuk)</span></span>
                         </div>
                     </div>
 
                     <!-- Bagian 2 -->
                     <div class="check-column">
                         <div class="space-y-3 text-sm">
-                            <p class="check-question">5）仕事をする（　　）いちばん大切なのは報告・連絡・相談だと言われている。</p>
-                            <p class="check-question">6）ジョギングを始めて（　　）体の調子もいいし、夜もよく寝られるようになった。</p>
-                            <p class="check-question">7）誰でも後輩の前ではいいところを見せたい（　　）。</p>
+                            <p class="check-question">5）仕事をする（　　）いちばん大切なのは報告・連絡・相談だと言われている。<span class="question-id translation-hidden">→ 5) Dikatakan bahwa yang paling penting saat bekerja (　　) adalah laporan, komunikasi, dan konsultasi.</span></p>
+                            <p class="check-question">6）ジョギングを始めて（　　）体の調子もいいし、夜もよく寝られるようになった。<span class="question-id translation-hidden">→ 6) Sejak memulai jogging (　　), kondisi tubuh saya juga baik, dan saya juga bisa tidur nyenyak di malam hari.</span></p>
+                            <p class="check-question">7）誰でも後輩の前ではいいところを見せたい（　　）。<span class="question-id translation-hidden">→ 7) Siapa pun ingin menunjukkan sisi baik mereka di depan junior (　　).</span></p>
                         </div>
                         <div class="check-options">
-                            <span>ものだ</span>
-                            <span>上で</span>
-                            <span>以来</span>
+                            <span>ものだ <span class="option-id translation-hidden">(memang)</span></span>
+                            <span>上で <span class="option-id translation-hidden">(saat)</span></span>
+                            <span>以来 <span class="option-id translation-hidden">(sejak)</span></span>
                         </div>
                     </div>
                 </div>
@@ -1497,6 +1540,9 @@
             // Re-render all sections with/without translation
             renderHomePage();
             renderDrawerMenu();
+            
+            // Save preference to localStorage
+            localStorage.setItem('showTranslation', showTranslation);
         }
         
         // ===== REFRESH CURRENT SECTION =====
@@ -1518,7 +1564,7 @@
             if (!showTranslation || !element) return '';
             
             const idText = element.querySelector(`${type}_id`)?.textContent || '';
-            return idText ? `<div class="translation-text">${idText}</div>` : '';
+            return idText ? `<div class="translation-text translation-hidden">${idText}</div>` : '';
         }
     </script>
 </body>
