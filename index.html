@@ -24,18 +24,10 @@
         </div>
         
         <div class="drawer-content">
-            <!-- Section: Bab -->
+            <!-- Section: Bab dengan Submenu -->
             <div class="drawer-section">
-                <div class="drawer-section-title">Bab</div>
+                <div class="drawer-section-title">Daftar Isi</div>
                 <div id="drawer-bab-list" class="drawer-list">
-                    <!-- Diisi oleh JavaScript -->
-                </div>
-            </div>
-            
-            <!-- Section: Index -->
-            <div class="drawer-section">
-                <div class="drawer-section-title">Index & Supplement</div>
-                <div id="drawer-index-list" class="drawer-list">
                     <!-- Diisi oleh JavaScript -->
                 </div>
             </div>
@@ -1199,53 +1191,142 @@
             if (!xmlData) return;
 
             const drawerBabList = document.getElementById('drawer-bab-list');
-            const drawerIndexList = document.getElementById('drawer-index-list');
             
-            // Render Bab List untuk Drawer
+            // Render Bab List dengan Submenu
             const babElements = xmlData.querySelectorAll('daftar_isi > bab');
             let babDrawerHTML = '';
+            let globalPointId = 1;
 
             babElements.forEach((bab) => {
                 const id = bab.getAttribute('id') || '';
                 const nomor = bab.querySelector('nomor')?.textContent || '';
                 const judul = bab.querySelector('judul_jp')?.textContent || '';
                 const kategori = bab.querySelector('kategori')?.textContent || '';
+                const halaman = bab.getAttribute('halaman') || '';
                 
                 // Tentukan section target
                 let sectionTarget = '';
-                if (nomor === '1') sectionTarget = 'bab1-header';
-                else if (nomor === '2') sectionTarget = 'bab2-header';
+                let grammarTarget = '';
+                if (nomor === '1') {
+                    sectionTarget = 'bab1-header';
+                    grammarTarget = 'grammar-list';
+                } else if (nomor === '2') {
+                    sectionTarget = 'bab2-header';
+                    grammarTarget = 'bab2-grammar';
+                }
+                
+                // Render Bab Item dengan Expandable Submenu
+                babDrawerHTML += `
+                    <div class="drawer-bab-group" data-bab="${nomor}">
+                        <div class="drawer-item-expandable" onclick="toggleSubmenu('${nomor}')">
+                            <div class="drawer-item-number">${nomor}</div>
+                            <div class="drawer-item-info">
+                                <span class="drawer-item-title">${judul}</span>
+                                <span class="drawer-item-sub">${kategori} · p.${halaman}</span>
+                            </div>
+                            <span class="drawer-expand-icon" id="expand-icon-${nomor}">▶</span>
+                        </div>
+                        <div class="drawer-submenu" id="submenu-${nomor}">
+                            <div class="drawer-submenu-item" onclick="showSection('${sectionTarget}', ${nomor}); closeDrawer();">
+                                <span class="drawer-submenu-text">📖 本文</span>
+                            </div>
+                `;
+                
+                // Render Grammar Points sebagai Submenu
+                const grammarPoints = bab.querySelectorAll('grammar_points > point');
+                grammarPoints.forEach((point) => {
+                    const pointText = point.textContent || '';
+                    const pointHalaman = point.getAttribute('halaman') || '';
+                    const plusMatch = pointText.match(/\(\+Plus\s+(.+)\)/);
+                    let displayText = pointText;
+                    
+                    if (plusMatch) {
+                        displayText = pointText.replace(/\s*\(\+Plus\s+.+\)/, '');
+                    }
+                    
+                    const grammarSubId = `grammar-${globalPointId}`;
+                    
+                    babDrawerHTML += `
+                            <div class="drawer-submenu-item" data-point="${globalPointId}" onclick="showSection('${grammarTarget}', '${grammarSubId}'); closeDrawer();">
+                                <span class="drawer-submenu-number">${globalPointId}</span>
+                                <span class="drawer-submenu-text">${displayText}</span>
+                                <span class="drawer-submenu-page">p.${pointHalaman}</span>
+                            </div>
+                    `;
+                    globalPointId++;
+                });
+                
+                // Tambahkan link ke Matome
+                const matome = bab.querySelector('matome');
+                if (matome) {
+                    let matomeSection = '';
+                    if (nomor === '1') matomeSection = 'matome';
+                    else if (nomor === '2') matomeSection = 'bab2-matome';
+                    
+                    babDrawerHTML += `
+                            <div class="drawer-submenu-item" onclick="showSection('${matomeSection}'); closeDrawer();">
+                                <span class="drawer-submenu-text">📝 まとめの問題</span>
+                            </div>
+                    `;
+                }
                 
                 babDrawerHTML += `
-                    <div class="drawer-item" data-bab="${nomor}" onclick="showSection('${sectionTarget}', ${nomor}); closeDrawer();">
-                        <div class="drawer-item-number">${nomor}</div>
-                        <div class="drawer-item-info">
-                            <span class="drawer-item-title">${judul}</span>
-                            <span class="drawer-item-sub">${kategori}</span>
                         </div>
                     </div>
                 `;
             });
-
-            drawerBabList.innerHTML = babDrawerHTML;
-
-            // Render Index List untuk Drawer
+            
+            // Tambahkan Index & Supplement
             const bagianAkhir = xmlData.querySelector('bagian_akhir');
             if (bagianAkhir) {
-                const items = bagianAkhir.querySelectorAll('item');
-                let indexDrawerHTML = '';
+                babDrawerHTML += `
+                    <div class="drawer-section-divider"></div>
+                `;
                 
+                const items = bagianAkhir.querySelectorAll('item');
                 items.forEach((item) => {
                     const judul = item.querySelector('judul_jp')?.textContent || '';
                     const halaman = item.getAttribute('halaman') || '';
                     
-                    indexDrawerHTML += `
+                    babDrawerHTML += `
                         <div class="drawer-item" onclick="showSection('contents'); closeDrawer();">
                             <div class="drawer-item-info" style="margin-left: 0;">
                                 <span class="drawer-item-title">${judul}</span>
                                 <span class="drawer-item-sub">p.${halaman}</span>
                             </div>
                         </div>
+                    `;
+                });
+            }
+
+            drawerBabList.innerHTML = babDrawerHTML;
+        }
+        
+        // ===== TOGGLE SUBMENU =====
+        function toggleSubmenu(babNumber) {
+            const submenu = document.getElementById(`submenu-${babNumber}`);
+            const icon = document.getElementById(`expand-icon-${babNumber}`);
+            
+            if (submenu.classList.contains('expanded')) {
+                submenu.classList.remove('expanded');
+                icon.classList.remove('expanded');
+                icon.textContent = '▶';
+            } else {
+                // Close all other submenus
+                document.querySelectorAll('.drawer-submenu').forEach(sm => {
+                    sm.classList.remove('expanded');
+                });
+                document.querySelectorAll('.drawer-expand-icon').forEach(ic => {
+                    ic.classList.remove('expanded');
+                    ic.textContent = '▶';
+                });
+                
+                // Open this submenu
+                submenu.classList.add('expanded');
+                icon.classList.add('expanded');
+                icon.textContent = '▼';
+            }
+        }
                     `;
                 });
 
