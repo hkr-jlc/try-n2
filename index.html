@@ -43,7 +43,10 @@
             <div class="nav-title">
                 <span id="current-section-title">TRY! N2</span>
             </div>
-            <div class="nav-spacer"></div>
+            <button type="button" class="translate-btn" id="translate-btn" aria-label="Toggle Translation">
+                <span class="translate-icon">🇮🇩</span>
+                <span class="translate-text">ID</span>
+            </button>
         </div>
     </nav>
 
@@ -97,13 +100,14 @@
 
             <!-- できること -->
             <div class="dekiru-box">
-                <h3 class="dekiru-title">できること</h3>
+                <h3 class="dekiru-title">できること <span class="title-sub">Dapat Melakukan</span></h3>
                 <ul class="space-y-2">
                     <li class="dekiru-item">
                         <span class="dekiru-bullet">●</span>
                         <div>
                             <p class="font-medium">お知らせなどの文章が読める。</p>
                             <p class="dekiru-en">Read announcements and the like.</p>
+                            <p class="dekiru-id translation-hidden">Dapat membaca pengumuman dan semacamnya.</p>
                         </div>
                     </li>
                     <li class="dekiru-item">
@@ -111,6 +115,7 @@
                         <div>
                             <p class="font-medium">求人の条件が理解できる。</p>
                             <p class="dekiru-en">Understand the conditions for a job opening.</p>
+                            <p class="dekiru-id translation-hidden">Dapat memahami syarat-syarat lowongan pekerjaan.</p>
                         </div>
                     </li>
                 </ul>
@@ -190,20 +195,22 @@
 
                 <div class="grammar-content">
                     <div class="dou-tsukau">
-                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <h3 class="dou-tsukau-title">どう使う？ <span class="title-sub">Bagaimana Menggunakannya?</span></h3>
                         <p class="dou-tsukau-text">お知らせなどで「雨天につき中止」のように理由を言うときに使われる。</p>
                         <p class="dou-tsukau-en">This is used to state a reason in an announcement and the like, as in "雨天につき中止".</p>
+                        <p class="dou-tsukau-id translation-hidden">Digunakan ketika menyebutkan alasan dalam pengumuman, seperti "Dibatalkan karena hujan".</p>
                     </div>
 
                     <div class="grammar-pattern">
                         <p class="grammar-pattern-text">Ｎ＋につき</p>
+                        <p class="grammar-pattern-id translation-hidden">Kata Benda + につき</p>
                     </div>
 
                     <div class="example-list">
-                        <p class="example-item"><span class="font-bold">①</span> 清掃中につき、お足元にご注意ください。</p>
-                        <p class="example-item"><span class="font-bold">②</span> 会場内は禁煙につき、おたばこはご遠慮ください。</p>
-                        <p class="example-item"><span class="font-bold">③</span> 4月15日（木）：佐藤医師、学会出席につき休診。</p>
-                        <p class="example-item"><span class="font-bold">④</span> ただ今、改装工事中につき、左記の仮店舗で営業いたしております。</p>
+                        <p class="example-item"><span class="font-bold">①</span> 清掃中につき、お足元にご注意ください。<span class="example-id translation-hidden">→ Karena sedang pembersihan, harap hati-hati dengan langkah Anda.</span></p>
+                        <p class="example-item"><span class="font-bold">②</span> 会場内は禁煙につき、おたばこはご遠慮ください。<span class="example-id translation-hidden">→ Karena area bebas rokok, mohon tidak merokok.</span></p>
+                        <p class="example-item"><span class="font-bold">③</span> 4月15日（木）：佐藤医師、学会出席につき休診。<span class="example-id translation-hidden">→ 15 April (Kamis): Dr. Satou, libur praktik karena menghadiri konferensi medis.</span></p>
+                        <p class="example-item"><span class="font-bold">④</span> ただ今、改装工事中につき、左記の仮店舗で営業いたしております。<span class="example-id translation-hidden">→ Saat ini, karena sedang renovasi, kami beroperasi di toko sementara yang tercantum di sebelah kiri.</span></p>
                     </div>
 
                     <div class="yatte-miyou">
@@ -1065,6 +1072,7 @@
         let xmlData = null;
         let currentSection = 'contents';
         let currentBab = null;
+        let showTranslation = false; // Toggle untuk terjemahan Indonesia
 
         // ===== DRAWER FUNCTIONS =====
         function openDrawer() {
@@ -1146,8 +1154,10 @@
                 const nomor = bab.querySelector('nomor')?.textContent || '';
                 const judul = bab.querySelector('judul_jp')?.textContent || '';
                 const judulEn = bab.querySelector('judul_en')?.textContent || '';
+                const judulId = bab.querySelector('judul_id')?.textContent || '';
                 const kategori = bab.querySelector('kategori')?.textContent || '';
                 const kategoriEn = bab.querySelector('kategori_en')?.textContent || '';
+                const kategoriId = bab.querySelector('kategori_id')?.textContent || '';
                 const halaman = bab.getAttribute('halaman') || '';
                 
                 // Tentukan section target berdasarkan nomor bab
@@ -1155,13 +1165,17 @@
                 if (nomor === '1') sectionTarget = 'bab1-header';
                 else if (nomor === '2') sectionTarget = 'bab2-header';
                 
+                // Terjemahan untuk ditampilkan
+                const displayKategori = showTranslation && kategoriId ? kategoriId : kategori;
+                const displayJudul = showTranslation && judulId ? judulId : judul;
+                
                 // Render Bab Card untuk Home Page
                 babHTML += `
                     <div class="bab-card-home" onclick="showSection('${sectionTarget}', ${nomor})">
                         <div class="bab-number-home">${nomor}</div>
                         <div class="bab-info-home">
-                            <div class="bab-category-home">${kategori}</div>
-                            <div class="bab-title-home">${judul}</div>
+                            <div class="bab-category-home">${displayKategori}</div>
+                            <div class="bab-title-home">${displayJudul}</div>
                         </div>
                         <span class="bab-page-home">p.${halaman}</span>
                     </div>
@@ -1227,7 +1241,9 @@
                 const id = bab.getAttribute('id') || '';
                 const nomor = bab.querySelector('nomor')?.textContent || '';
                 const judul = bab.querySelector('judul_jp')?.textContent || '';
+                const judulId = bab.querySelector('judul_id')?.textContent || '';
                 const kategori = bab.querySelector('kategori')?.textContent || '';
+                const kategoriId = bab.querySelector('kategori_id')?.textContent || '';
                 const halaman = bab.getAttribute('halaman') || '';
                 
                 // Tentukan section target
@@ -1241,20 +1257,24 @@
                     grammarTarget = 'bab2-grammar';
                 }
                 
+                // Terjemahan untuk ditampilkan
+                const displayJudul = showTranslation && judulId ? judulId : judul;
+                const displayKategori = showTranslation && kategoriId ? kategoriId : kategori;
+                
                 // Render Bab Item dengan Expandable Submenu
                 babDrawerHTML += `
                     <div class="drawer-bab-group" data-bab="${nomor}">
                         <div class="drawer-item-expandable" onclick="toggleSubmenu('${nomor}')">
                             <div class="drawer-item-number">${nomor}</div>
                             <div class="drawer-item-info">
-                                <span class="drawer-item-title">${judul}</span>
-                                <span class="drawer-item-sub">${kategori} · p.${halaman}</span>
+                                <span class="drawer-item-title">${displayJudul}</span>
+                                <span class="drawer-item-sub">${displayKategori} · p.${halaman}</span>
                             </div>
                             <span class="drawer-expand-icon" id="expand-icon-${nomor}">▶</span>
                         </div>
                         <div class="drawer-submenu" id="submenu-${nomor}">
                             <div class="drawer-submenu-item" onclick="showSection('${sectionTarget}', ${nomor}); closeDrawer();">
-                                <span class="drawer-submenu-text">📖 本文</span>
+                                <span class="drawer-submenu-text">📖 ${showTranslation ? 'Teks' : '本文'}</span>
                             </div>
                 `;
                 
@@ -1289,9 +1309,11 @@
                     if (nomor === '1') matomeSection = 'matome';
                     else if (nomor === '2') matomeSection = 'bab2-matome';
                     
+                    const matomeText = showTranslation ? '📝 Soal Latihan' : '📝 まとめの問題';
+                    
                     babDrawerHTML += `
                             <div class="drawer-submenu-item" onclick="showSection('${matomeSection}'); closeDrawer();">
-                                <span class="drawer-submenu-text">📝 まとめの問題</span>
+                                <span class="drawer-submenu-text">${matomeText}</span>
                             </div>
                     `;
                 }
@@ -1419,25 +1441,85 @@
             // Setup hamburger button click handler
             const hamburgerBtn = document.getElementById('hamburger-btn');
             if (hamburgerBtn) {
-                // Click handler
                 hamburgerBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    console.log('Hamburger button clicked');
                     toggleDrawer();
                 });
                 
-                // Touch handler for mobile
                 hamburgerBtn.addEventListener('touchstart', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    console.log('Hamburger button touched');
                     toggleDrawer();
                 }, { passive: false });
-            } else {
-                console.error('Hamburger button not found!');
+            }
+            
+            // Setup translate button click handler
+            const translateBtn = document.getElementById('translate-btn');
+            if (translateBtn) {
+                translateBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleTranslation();
+                });
+                
+                translateBtn.addEventListener('touchstart', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleTranslation();
+                }, { passive: false });
             }
         });
+        
+        // ===== TOGGLE TRANSLATION =====
+        function toggleTranslation() {
+            showTranslation = !showTranslation;
+            const translateBtn = document.getElementById('translate-btn');
+            
+            if (showTranslation) {
+                translateBtn.classList.add('active');
+                translateBtn.querySelector('.translate-text').textContent = 'ON';
+                // Show all translations
+                document.querySelectorAll('.translation-hidden').forEach(el => {
+                    el.classList.remove('translation-hidden');
+                    el.classList.add('translation-visible');
+                });
+            } else {
+                translateBtn.classList.remove('active');
+                translateBtn.querySelector('.translate-text').textContent = 'ID';
+                // Hide all translations
+                document.querySelectorAll('.translation-visible').forEach(el => {
+                    el.classList.remove('translation-visible');
+                    el.classList.add('translation-hidden');
+                });
+            }
+            
+            // Re-render all sections with/without translation
+            renderHomePage();
+            renderDrawerMenu();
+        }
+        
+        // ===== REFRESH CURRENT SECTION =====
+        function refreshCurrentSection() {
+            // Hide all sections first
+            document.querySelectorAll('section').forEach(sec => {
+                sec.classList.add('hidden');
+            });
+            
+            // Show current section
+            const targetSection = document.getElementById(currentSection);
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+            }
+        }
+        
+        // ===== GET TRANSLATION TEXT =====
+        function getTranslation(element, type) {
+            if (!showTranslation || !element) return '';
+            
+            const idText = element.querySelector(`${type}_id`)?.textContent || '';
+            return idText ? `<div class="translation-text">${idText}</div>` : '';
+        }
     </script>
 </body>
 </html>
