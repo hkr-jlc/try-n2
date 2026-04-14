@@ -37,7 +37,7 @@
     <!-- Navigation Bar -->
     <nav class="top-nav">
         <div class="nav-container">
-            <button onclick="toggleDrawer()" class="hamburger-btn">
+            <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
                 <span class="hamburger-icon">☰</span>
             </button>
             <div class="nav-title">
@@ -1068,22 +1068,48 @@
 
         // ===== DRAWER FUNCTIONS =====
         function openDrawer() {
-            document.getElementById('sidebar-drawer').classList.add('active');
-            document.getElementById('drawer-overlay').classList.add('active');
-            document.body.style.overflow = 'hidden';
+            console.log('Opening drawer...');
+            const drawer = document.getElementById('sidebar-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            
+            if (drawer && overlay) {
+                drawer.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                console.log('Drawer opened');
+            } else {
+                console.error('Drawer elements not found!');
+            }
         }
 
         function closeDrawer() {
-            document.getElementById('sidebar-drawer').classList.remove('active');
-            document.getElementById('drawer-overlay').classList.remove('active');
-            document.body.style.overflow = '';
+            console.log('Closing drawer...');
+            const drawer = document.getElementById('sidebar-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            
+            if (drawer && overlay) {
+                drawer.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                console.log('Drawer closed');
+            }
         }
 
         function toggleDrawer() {
+            console.log('toggleDrawer called');
             const drawer = document.getElementById('sidebar-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            
+            if (!drawer || !overlay) {
+                console.error('Drawer or overlay element not found!');
+                return;
+            }
+            
             if (drawer.classList.contains('active')) {
+                console.log('Closing drawer');
                 closeDrawer();
             } else {
+                console.log('Opening drawer');
                 openDrawer();
             }
         }
@@ -1395,6 +1421,28 @@
         // ===== INITIALIZE =====
         document.addEventListener('DOMContentLoaded', () => {
             loadDatabase();
+            
+            // Setup hamburger button click handler
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            if (hamburgerBtn) {
+                // Click handler
+                hamburgerBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Hamburger button clicked');
+                    toggleDrawer();
+                });
+                
+                // Touch handler for mobile
+                hamburgerBtn.addEventListener('touchstart', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Hamburger button touched');
+                    toggleDrawer();
+                }, { passive: false });
+            } else {
+                console.error('Hamburger button not found!');
+            }
         });
     </script>
 </body>
