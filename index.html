@@ -1,57 +1,743 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>TRY! N2 Sync</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY! N2 - スタッフ募集のお知らせ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="bg-gray-100 p-6">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="nav-logo">TRY! N2</div>
+                <span class="nav-subtitle">文法から伸ばす日本語</span>
+            </div>
+            <div class="nav-links">
+                <button onclick="showSection('contents')" class="nav-btn" id="btn-contents">もくじ</button>
+                <button onclick="showSection('bab1-header')" class="nav-btn active" id="btn-bab1">Bab 1</button>
+                <button onclick="showSection('grammar-list')" class="nav-btn" id="btn-grammar">Grammar</button>
+                <button onclick="showSection('check')" class="nav-btn" id="btn-check">Check</button>
+                <button onclick="showSection('matome')" class="nav-btn" id="btn-matome">まとめ</button>
+            </div>
+        </div>
+    </nav>
 
-<h1 class="text-2xl font-bold mb-4">TRY! N2 (Auto Sync XML)</h1>
+    <div class="main-container">
 
-<div id="content"></div>
+        <!-- DAFTAR ISI - Page 12 -->
+        <section id="contents" class="hidden">
+            <h1 class="contents-title">もくじ <span class="contents-subtitle">CONTENTS</span></h1>
+            <div class="divider"></div>
 
-<script>
-async function loadXML() {
-    const res = await fetch('database.xml');
-    const text = await res.text();
-    const parser = new DOMParser();
-    return parser.parseFromString(text, "text/xml");
-}
+            <div class="space-y-2 text-sm">
+                <div class="contents-item">
+                    <span>はじめに <span class="text-gray-500">Introduction</span></span>
+                    <span>3</span>
+                </div>
+                <div class="contents-item">
+                    <span>この本をお使いになる皆さんへ <span class="text-gray-500">To Learners Using this Book</span></span>
+                    <span>4</span>
+                </div>
+                <div class="contents-item">
+                    <span>この本をお使いになる先生方へ</span>
+                    <span>10</span>
+                </div>
+            </div>
 
-function render(xml) {
-    let html = "";
+            <!-- Bab 1 -->
+            <div class="bab-card">
+                <div class="bab-header">
+                    <div class="bab-number">1</div>
+                    <div class="bab-info">
+                        <div class="bab-category">お知らせを読む <span class="text-gray-500">Reading an Announcement</span></div>
+                        <h2 class="bab-title">スタッフ募集のお知らせ <span class="text-gray-500 text-base font-normal">A Job Ad</span></h2>
+                    </div>
+                    <span class="bab-page">18</span>
+                </div>
+            </div>
 
-    xml.querySelectorAll("bab").forEach(bab => {
-        const nomor = bab.querySelector("nomor")?.textContent;
-        const jp = bab.querySelector("judul_jp")?.textContent;
-        const en = bab.querySelector("judul_en")?.textContent;
-        const halaman = bab.getAttribute("halaman");
+            <div class="grammar-list">
+                <div class="grammar-list-item"><span>1 オープンにつき</span><span>19</span></div>
+                <div class="grammar-list-item"><span>2 国籍を問わず</span><span>19</span></div>
+                <div class="grammar-list-item"><span>3 N2レベル以上の方に限り</span><span>20</span></div>
+                <div class="grammar-list-item"><span>4 経験年数に応じ</span><span>21</span></div>
+                <div class="grammar-list-item"><span>5 採否にかかわらず</span><span>22</span></div>
+                <div class="grammar-list-item"><span>6 当店において</span><span>23</span></div>
+                <div class="grammar-list-item"><span>7 面接の際に <span class="text-rose-600 text-xs">＋Plus ～に際して</span></span><span>24</span></div>
+                <div class="grammar-list-item"><span>8 履歴書持参のこと</span><span>25</span></div>
+                <div class="matome-item">
+                    <span>まとめの問題</span>
+                    <span>27</span>
+                </div>
+            </div>
 
-        html += `
-        <div class="bg-white p-4 rounded shadow mb-4">
-            <h2 class="text-xl font-bold">
-                Bab ${nomor}: ${jp}
-                <span class="text-gray-500 text-sm">(${en})</span>
-            </h2>
-            <p class="text-sm text-gray-500">Page: ${halaman}</p>
-        `;
+            <!-- Bab 2 -->
+            <div class="bab-card" style="margin-top: 1.5rem;">
+                <div class="bab-header">
+                    <div class="bab-number">2</div>
+                    <div class="bab-info">
+                        <div class="bab-category">スピーチをする <span class="text-gray-500">Giving a Speech</span></div>
+                        <h2 class="bab-title">転任のあいさつ（１） <span class="text-gray-500 text-base font-normal">Addressing Co-workers after Receiving a Transfer Order (1)</span></h2>
+                    </div>
+                    <span class="bab-page">30</span>
+                </div>
+            </div>
 
-        html += `<ul class="mt-3 list-disc ml-5">`;
+            <div class="grammar-list">
+                <div class="grammar-list-item"><span>9 入社して以来</span><span>30</span></div>
+                <div class="grammar-list-item"><span>10 部長をはじめ</span><span>31</span></div>
+                <div class="grammar-list-item"><span>11 先輩方のご指導のもとで</span><span>32</span></div>
+                <div class="grammar-list-item"><span>12 仕事の進め方はもとより</span><span>33</span></div>
+                <div class="grammar-list-item"><span>13 人は失敗から学ぶものだ</span><span>34</span></div>
+                <div class="grammar-list-item"><span>14 仕事をする上で</span><span>34</span></div>
+                <div class="grammar-list-item"><span>15 残念ながら</span><span>35</span></div>
+            </div>
+        </section>
 
-        bab.querySelectorAll("grammar_points point").forEach(p => {
-            html += `<li>${p.textContent} (p.${p.getAttribute("halaman")})</li>`;
+        <!-- BAB 1 HEADER - Page 18 -->
+        <section id="bab1-header">
+            <!-- Header -->
+            <div class="section-header bab-header-section">
+                <div class="bab-header-category">お知らせを読む <span class="text-gray-300">Reading an Announcement</span></div>
+                <div class="bab-header-title">
+                    <span class="bab-header-number">1</span>
+                    <h1 class="bab-header-text">スタッフ募集のお知らせ</h1>
+                    <span class="bab-header-en">A Job Ad</span>
+                </div>
+            </div>
+
+            <!-- できること -->
+            <div class="dekiru-box">
+                <h3 class="dekiru-title">できること</h3>
+                <ul class="space-y-2">
+                    <li class="dekiru-item">
+                        <span class="dekiru-bullet">●</span>
+                        <div>
+                            <p class="font-medium">お知らせなどの文章が読める。</p>
+                            <p class="dekiru-en">Read announcements and the like.</p>
+                        </div>
+                    </li>
+                    <li class="dekiru-item">
+                        <span class="dekiru-bullet">●</span>
+                        <div>
+                            <p class="font-medium">求人の条件が理解できる。</p>
+                            <p class="dekiru-en">Understand the conditions for a job opening.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Job Ad -->
+            <div class="job-ad">
+                <div class="job-ad-title">
+                    <h2>サニー <span class="mx-2"></span> 店内スタッフ募集</h2>
+                </div>
+
+                <p class="job-ad-subtitle">
+                    <span class="highlight">さいわい駅前店オープンにつき、</span>人材を求めています
+                </p>
+
+                <div class="space-y-4">
+                    <div class="job-section">
+                        <span class="job-section-label">仕事▶</span>
+                        <span class="job-section-content">開店業務、販売、清掃、商品管理、閉店業務</span>
+                    </div>
+
+                    <div class="job-section">
+                        <span class="job-section-label">資格▶</span>
+                        <div class="job-section-content">
+                            <p><span class="highlight-box">年齢・経験・国籍を問わず</span>、やる気のある方、大歓迎！</p>
+                            <p class="job-note">※商品の案内や接客応対があるため、外国人の方は、日本語能力試験N2レベル以上の方に限り、応募可。</p>
+                        </div>
+                    </div>
+
+                    <div class="job-section">
+                        <span class="job-section-label">給与▶</span>
+                        <div class="job-section-content">
+                            <div class="job-grid">
+                                <span>7時～9時</span><span>1,000円～</span>
+                                <span>9時～22時</span><span>900円</span>
+                                <span>22時～24時30分</span><span>1,125円～</span>
+                            </div>
+                            <p class="job-note">※経験年数に応じ、時給は考慮します。</p>
+                        </div>
+                    </div>
+
+                    <div class="job-section">
+                        <span class="job-section-label">交通費▶</span>
+                        <span class="job-section-content">往復1,000円まで支給</span>
+                    </div>
+
+                    <div class="job-section" style="border-bottom: none;">
+                        <span class="job-section-label">応募▶</span>
+                        <div class="job-section-content space-y-1" style="font-size: 0.75rem;">
+                            <p>当店所定のフォームに記入し、下記のメールアドレスまでお送りください。電話でのお問い合わせは10時～18時。</p>
+                            <p>書類審査の結果は採否にかかわらず、通知します。</p>
+                            <p>書類審査後、当店において面接。</p>
+                            <p>面接の際に、履歴書（写真付き）持参のこと。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-contact">
+                    <p class="font-bold">サニーグループ東京本部</p>
+                    <p>☎ 03-1111-2222</p>
+                    <p>http://www.sannie.biz</p>
+                    <p>E-mail boshu@sannie.co.jp</p>
+                </div>
+            </div>
+            <p class="text-right text-gray-500 text-sm mt-2 page-number">18</p>
+        </section>
+
+        <!-- GRAMMAR POINTS - Pages 19-25 -->
+        <section id="grammar-list" class="hidden space-y-8">
+
+            <!-- 1. オープンにつき -->
+            <article id="grammar-1" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">1 オープンにつき</h2>
+                    <div class="star text-lg">★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">お知らせなどで「雨天につき中止」のように理由を言うときに使われる。</p>
+                        <p class="dou-tsukau-en">This is used to state a reason in an announcement and the like, as in "雨天につき中止".</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｎ＋につき</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 清掃中につき、お足元にご注意ください。</p>
+                        <p class="example-item"><span class="font-bold">②</span> 会場内は禁煙につき、おたばこはご遠慮ください。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 4月15日（木）：佐藤医師、学会出席につき休診。</p>
+                        <p class="example-item"><span class="font-bold">④</span> ただ今、改装工事中につき、左記の仮店舗で営業いたしております。</p>
+                    </div>
+
+                    <div class="yatte-miyou">
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <div class="quiz-grid">
+                            <div class="quiz-item">1) 10月20日は社員研修につき、・・・</div>
+                            <div class="quiz-item">a) 階段をご利用ください。</div>
+                            <div class="quiz-item">2) キャンペーン期間中につき、・・・</div>
+                            <div class="quiz-item">b) お早めにお召し上がりください。</div>
+                            <div class="quiz-item">3) 生ものにつき、・・・</div>
+                            <div class="quiz-item">c) 入会金無料。</div>
+                            <div class="quiz-item">4) エレベーター点検中につき、・・・</div>
+                            <div class="quiz-item">d) 臨時休業させていただきます。</div>
+                        </div>
+                    </div>
+
+                    <p class="page-ref">p.224 ～につき</p>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">19</p>
+            </article>
+
+            <!-- 2. 国籍を問わず -->
+            <article id="grammar-2" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">2 国籍を問わず</h2>
+                    <div class="star text-lg">★★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。</p>
+                        <p class="dou-tsukau-en">This is used in an announcement, written introduction and the like to say "anytime, anywhere, anyone" and such.</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｎ＋を問わず</p>
+                    </div>
+                    <p class="grammar-note">※「昼夜・国の内外・男女・～の有無」などの言葉と一緒に使われる。</p>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> このスポーツセンターは、年齢を問わず、どなたでも利用できます。</p>
+                        <p class="example-item"><span class="font-bold">②</span> このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 経験の有無を問わず、やる気のある社員を募集します。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 私の国では、老若男女を問わず、みんな、サッカーが好きだ。</p>
+                    </div>
+
+                    <div class="yatte-miyou">
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <div class="space-y-1 text-xs">
+                            <p>1) 来週の国際交流会は、国籍、職業（　　）どなたでも参加できます。</p>
+                            <p class="ml-4">a. ばかりでなく　b. に対して　c. を問わず</p>
+                            <p>2) 通信販売センターでは昼間（　　）夜も10時まで受け付けています。</p>
+                            <p class="ml-4">a. はもちろん　b. によって　c. を問わず</p>
+                        </div>
+                    </div>
+
+                    <div class="note-box">
+                        <p class="note-text">「問う」という動詞の否定形として、文の最後で使うこともある。</p>
+                        <p class="note-en">You can also use the negative form of the verb "問う" at the end of a sentence.</p>
+                        <p class="note-example">この仕事に関心のある方なら、学歴・経験は問いません。</p>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">19-20</p>
+            </article>
+
+            <!-- 3. N2レベル以上の方に限り -->
+            <article id="grammar-3" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">3 N2レベル以上の方に限り</h2>
+                    <div class="star text-lg">★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">「だけ」という意味で、お知らせなどによく使われる。</p>
+                        <p class="dou-tsukau-en">This is often used to mean "only / just" in an announcement and the like.</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｎ＋に限り / に限る</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。</p>
+                        <p class="example-item"><span class="font-bold">②</span> このコーナーのバッグに限り、全品3,000円。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 当動物園は夏休み期間に限り、夜9時まで開園しております。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 初めてのお客様に限り、無料お試しセットをお申し込みいただけます。</p>
+                        <p class="example-item"><span class="font-bold">⑤</span> 工場の見学は予約された方に限ります。</p>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">20</p>
+            </article>
+
+            <!-- 4. 経験年数に応じ -->
+            <article id="grammar-4" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">4 経験年数に応じ</h2>
+                    <div class="star text-lg">★★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。</p>
+                        <p class="dou-tsukau-en">Use "～に応じ…" when you want to say that something "depends on conditions such as a desire, change, location, situation, age, ability or experience."</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｎ＋に応じ / に応じて / に応じた＋Ｎ</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 給料は能力や経験に応じ、決めさせていただきます。</p>
+                        <p class="example-item"><span class="font-bold">②</span> 新年会はご予算に応じていろいろなコースがございます。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 社会人なら、場所や場合に応じた服装を心がけるべきだ。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 会社は社員の要望に応じて社員食堂のメニューを増やした。</p>
+                    </div>
+
+                    <div class="yatte-miyou">
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <div class="space-y-1 text-xs">
+                            <p>1) 生物は環境（　　）その体を変化させてきた。</p>
+                            <p class="ml-4">a. に応じて　b. に限って　c. について</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">21</p>
+            </article>
+
+            <!-- 5. 採否にかかわらず -->
+            <article id="grammar-5" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">5 採否にかかわらず</h2>
+                    <div class="star text-lg">★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。</p>
+                        <p class="dou-tsukau-en">"～にかかわらず…" is used when you want to say "regardless of conditions such as weather, preference, social position, or whether something is there or not there, done or not done, etc."</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｖる＋Ｖない / Ｎ＋にかかわらず</p>
+                    </div>
+                    <p class="grammar-note">※「好き嫌い」「いい悪い」「善悪」など、形容詞、名詞の対立する2語を合わせて使われることもある。</p>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 区民センターの利用料金が変更になりました。和室は、人数にかかわらず、2時間1,000円になります。</p>
+                        <p class="example-item"><span class="font-bold">②</span> セール品のため、理由のいかんにかかわらず、返品はお受けできません。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 会議で発言するしないにかかわらず、自分の意見はまとめておくべきです。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 今回の旅行は晴雨にかかわらず、実施します。</p>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">22</p>
+            </article>
+
+            <!-- 6. 当店において -->
+            <article id="grammar-6" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">6 当店において</h2>
+                    <div class="star text-lg">★★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。お知らせやニュースなどで使われることが多い。</p>
+                        <p class="dou-tsukau-en">Use "～において" when you want to say a "place, time, field / subject area and so on" as in "京都において・江戸時代においては・生物学における". This is often used in announcements, news and the like.</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｎ＋において / における＋Ｎ</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 入学式は、3階のホールにおいて行われます。</p>
+                        <p class="example-item"><span class="font-bold">②</span> 日本だけでなく、ほかの国においても、環境汚染は深刻な問題だ。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 彼のようなすばらしい人に出会えたのは人生における最大の幸運だった。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 今回の風力発電施設の建設は自然エネルギー開発において大きな意味があると言われている。</p>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">23</p>
+            </article>
+
+            <!-- 7. 面接の際に -->
+            <article id="grammar-7" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">7 面接の際に</h2>
+                    <div class="flex items-center space-x-2">
+                        <span class="plus-badge">＋Plus</span>
+                        <span class="text-sm text-green-700">～に際して</span>
+                        <div class="star text-lg">★★</div>
+                    </div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">「～際」は、「～場合」という意味で、説明書や案内などで使われる。後ろに「してください・必要です・お願いします」などの文が来ることが多い。</p>
+                        <p class="dou-tsukau-en">"～際" is used in manuals, guides and the like to mean "if / when ～". Phrases such as "してください・必要です・お願いします" often come afterward.</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｖる/Ｖた / Ｎの＋際（に）</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> カードを紛失した際はサービスセンターにご連絡ください。</p>
+                        <p class="example-item"><span class="font-bold">②</span> 入学手続きの際に必要なものは下記の通り。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 目上の人と話す際には、言葉だけでなく態度にも気をつけてください。</p>
+                    </div>
+
+                    <!-- Plus Section -->
+                    <div class="plus-section">
+                        <h4 class="plus-header">
+                            <span class="plus-icon">➕</span>
+                            <span class="plus-title">Plus ～に際して</span>
+                        </h4>
+                        <p class="plus-pattern">Ｎ＋に際して</p>
+                        <p class="plus-desc">Another form is "Ｎ＋に際して". It is used in sentences such as warnings, apologies, explanations and the like.</p>
+                        <div class="mt-2 space-y-1 text-xs">
+                            <p>① 各種書類の提出に際しては、期限を厳守してください。</p>
+                            <p>② 振り込みに際して、手数料はお客様のご負担となります。</p>
+                            <p>③ 商品発送に際して、一部商品の発送が遅れましたことを深くおわびいたします。</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">24</p>
+            </article>
+
+            <!-- 8. 履歴書持参のこと -->
+            <article id="grammar-8" class="grammar-box grammar-article">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">8 履歴書持参のこと</h2>
+                    <div class="star text-lg">★★</div>
+                </div>
+
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">どう使う？</h3>
+                        <p class="dou-tsukau-text">規則や注意事項を説明するときに使う。</p>
+                        <p class="dou-tsukau-en">This is often used to explain a rule or warning.</p>
+                    </div>
+
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">Ｖる/Ｖない / Ｎの＋こと</p>
+                    </div>
+
+                    <div class="example-list">
+                        <p class="example-item"><span class="font-bold">①</span> 願書は1月28日必着のこと。窓口での受け付けは行っておりません。</p>
+                        <p class="example-item"><span class="font-bold">②</span> 寮の台所はきれいに使用すること。</p>
+                        <p class="example-item"><span class="font-bold">③</span> 試験中は携帯電話の電源を切ること。筆記用具以外は机の上に置かないこと。</p>
+                        <p class="example-item"><span class="font-bold">④</span> 寮のシャワーは夜11時以降、使用しないこと。</p>
+                    </div>
+
+                    <div class="yatte-miyou">
+                        <h4 class="yatte-miyou-title">やってみよう！ <span class="yatte-miyou-ref">▶答え 別冊P. 1</span></h4>
+                        <div class="quiz-grid">
+                            <div class="quiz-item">1) 履歴書の記入は、・・・</div>
+                            <div class="quiz-item">a) プールサイドでは走らないこと。</div>
+                            <div class="quiz-item">2) 危険なので、・・・</div>
+                            <div class="quiz-item">b) きちんと分別すること。</div>
+                            <div class="quiz-item">3) 外出するときは、・・・</div>
+                            <div class="quiz-item">c) 黒のボールペンを使用のこと。</div>
+                            <div class="quiz-item">4) ごみを出すときは、・・・</div>
+                            <div class="quiz-item">d) 必ずエアコンを消すこと。</div>
+                        </div>
+                    </div>
+
+                    <p class="page-ref">p.221 ～こと</p>
+                </div>
+                <p class="text-right text-gray-500 text-sm px-4 pb-2 page-number">25</p>
+            </article>
+        </section>
+
+        <!-- CHECK - Page 26 -->
+        <section id="check" class="hidden">
+            <div class="check-box">
+                <div class="check-header">
+                    <span class="check-icon">📖</span>
+                    <h2 class="check-title">Check</h2>
+                    <span class="check-ref">▶答え 別冊P. 1</span>
+                </div>
+
+                <div class="check-grid">
+                    <!-- Bagian 1 -->
+                    <div class="check-column">
+                        <div class="space-y-3 text-sm">
+                            <p class="check-question">1）わが社では経験<span class="blank"></span>、広く人材を募集している。</p>
+                            <p class="check-question">2）カレーの辛さはお客様のご希望<span class="blank"></span>調整いたします。</p>
+                            <p class="check-question">3）進学説明会は6月3日に東ホテル<span class="blank"></span>行われます。</p>
+                            <p class="check-question">4）毎週日曜日は先着10名様<span class="blank"></span>、無料で忍者体験ができます。</p>
+                        </div>
+                        <div class="check-options">
+                            <span>に限り</span>
+                            <span>を問わず</span>
+                            <span>において</span>
+                            <span>に応じて</span>
+                        </div>
+                    </div>
+
+                    <!-- Bagian 2 -->
+                    <div class="check-column">
+                        <div class="space-y-3 text-sm">
+                            <p class="check-question">5）お降りの<span class="blank"></span>はバスが止まってから席をお立ちください。</p>
+                            <p class="check-question">6）入学後、引っ越しした場合は学生課に住所変更届を提出する<span class="blank"></span>。</p>
+                            <p class="check-question">7）今回のコンサートは応募者多数<span class="blank"></span>抽選とさせていただきます。</p>
+                            <p class="check-question">8）ご出席、ご欠席<span class="blank"></span>、このはがきは必ずご返送ください。</p>
+                        </div>
+                        <div class="check-options">
+                            <span>際</span>
+                            <span>こと</span>
+                            <span>にかかわらず</span>
+                            <span>につき</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right text-gray-500 text-sm mt-2 page-number">26</p>
+        </section>
+
+        <!-- MATOME NO MONDAI - Page 27-28 -->
+        <section id="matome" class="hidden">
+            <div class="matome-header">
+                <h2 class="matome-title">まとめの問題 <span class="matome-subtitle">Review questions</span></h2>
+                <p class="matome-ref">▶答え 別冊P.10</p>
+            </div>
+            <div class="matome-content">
+
+                <!-- Mondai 1 -->
+                <div class="mondai-section">
+                    <h3 class="mondai-title">
+                        問題1 〈文法形式の判断〉
+                    </h3>
+                    <p class="mondai-instruksi">次の文の（　）に入れるのに最もよいものを1・2・3・4から一つ選びなさい。</p>
+
+                    <div class="space-y-4">
+                        <div class="soal-item">
+                            <p class="soal-text">1　この体操は体力（　　）、無理のないように行ってください。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label">
+                                    <input type="radio" name="q1">
+                                    <span>1 に限って</span>
+                                </label>
+                                <label class="pilihan-label">
+                                    <input type="radio" name="q1">
+                                    <span>2 に応じて</span>
+                                </label>
+                                <label class="pilihan-label">
+                                    <input type="radio" name="q1">
+                                    <span>3 にかわり</span>
+                                </label>
+                                <label class="pilihan-label">
+                                    <input type="radio" name="q1">
+                                    <span>4 において</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="soal-item">
+                            <p class="soal-text">2　水泳は子どもからお年寄りまで世代（　　）楽しめるスポーツだと言われている。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>1 ばかりでなく</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>2 に限って</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>3 を問わず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q2"><span>4 とおりに</span></label>
+                            </div>
+                        </div>
+
+                        <div class="soal-item">
+                            <p class="soal-text">3　ただ今、こちらの商品（　　）、全国どこでも210円で配送を承ります。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>1 を問わず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>2 の際は</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>3 に限り</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q3"><span>4 に応じて</span></label>
+                            </div>
+                        </div>
+
+                        <div class="soal-item">
+                            <p class="soal-text">4　退職の（　　）に必要な手続きについて、ご説明します。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>1 たび</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>2 最中</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>3 ところ</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q4"><span>4 際</span></label>
+                            </div>
+                        </div>
+
+                        <div class="soal-item">
+                            <p class="soal-text">5　奨学金を希望する場合はこの欄に丸印を付ける（　　）。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>1 べき</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>2 つもり</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>3 こと</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q5"><span>4 はず</span></label>
+                            </div>
+                        </div>
+
+                        <div class="soal-item">
+                            <p class="soal-text">6　店を経営するなら、家賃や人件費など、売り上げの多い少ない（　　）毎月費用がかかることを考えなければならない。</p>
+                            <div class="pilihan-grid">
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>1 に応じて</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>2 に限り</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>3 にかかわらず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="q6"><span>4 につき</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mondai 2 -->
+                <div class="mondai-section">
+                    <h3 class="mondai-title">
+                        問題2 〈文の組み立て〉
+                    </h3>
+                    <p class="mondai-instruksi">次の文の★に入る最もよいものを1・2・3・4から一つ選びなさい。</p>
+
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-3">1　今回のサミット　＿　＿　★　＿　と首相は語った。</p>
+                            <div class="pilihan-grid-2">
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>1 における</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>2 である</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>3 エネルギー問題</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q1"><span>4 最重要課題は</span></label>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-3">2　＿　＿　★　＿　確認しておきましょう。</p>
+                            <div class="pilihan-grid-2">
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>1 際に</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>2 地震の</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>3 避難できる</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m2q2"><span>4 場所を</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mondai 3 -->
+                <div>
+                    <h3 class="mondai-title">
+                        問題3 〈文章の文法〉
+                    </h3>
+                    <p class="mondai-instruksi">次の文章を読んで、文章全体の内容を考えて、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。</p>
+
+                    <div class="bacaan-box">
+                        <p>日本で映画を見るのに、通常1,800円ぐらいかかりますが、映画館では、通常料金のほかに、特別なサービスがあります。</p>
+                        <p class="mt-2">毎月1日の「映画の日」は、年齢・性別【1】誰でも1,000円です。水曜日は女性【2】、1,000円になる映画館もあります。【3】夫婦のどちらかが50歳以上の場合は、いつでも2人で2,000円です。【4】、チケットを買う【5】は、身分証明書の提示が必要です。</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="soal-horizontal">
+                            <span class="soal-number">【1】</span>
+                            <div class="pilihan-horizontal">
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>1 によって</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>2 に限り</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>3 を問わず</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q1"><span>4 に応じ</span></label>
+                            </div>
+                        </div>
+                        <div class="soal-horizontal">
+                            <span class="soal-number">【2】</span>
+                            <div class="pilihan-horizontal">
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>1 にかわって</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>2 において</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>3 に限り</span></label>
+                                <label class="pilihan-label"><input type="radio" name="m3q2"><span>4 を問わず</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right text-gray-500 text-sm mt-2 page-number">27-28</p>
+        </section>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(sec => {
+                sec.classList.add('hidden');
+            });
+
+            // Show selected
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            // Update nav styling
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Set active button based on section
+            let btnId = '';
+            switch(sectionId) {
+                case 'contents': btnId = 'btn-contents'; break;
+                case 'bab1-header': btnId = 'btn-bab1'; break;
+                case 'grammar-list': btnId = 'btn-grammar'; break;
+                case 'check': btnId = 'btn-check'; break;
+                case 'matome': btnId = 'btn-matome'; break;
+            }
+            if (btnId) {
+                document.getElementById(btnId).classList.add('active');
+            }
+
+            window.scrollTo(0, 0);
+        }
+
+        // Show Bab 1 by default
+        document.addEventListener('DOMContentLoaded', () => {
+            // Default section is already visible, others are hidden via class
         });
-
-        html += `</ul></div>`;
-    });
-
-    document.getElementById("content").innerHTML = html;
-}
-
-loadXML().then(render);
-</script>
-
+    </script>
 </body>
 </html>
