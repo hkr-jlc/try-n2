@@ -6,6 +6,7 @@
     <title>TRY! N2 - スタッフ募集のお知らせ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+<base target="_blank">
 </head>
 <body>
 
@@ -33,7 +34,8 @@
             <h1 class="contents-title">もくじ <span class="contents-subtitle">CONTENTS</span></h1>
             <div class="divider"></div>
 
-            <div class="space-y-2 text-sm">
+            <!-- Pengantar Items -->
+            <div class="space-y-2 text-sm" id="pengantar-container">
                 <div class="contents-item">
                     <span>はじめに <span class="text-gray-500">Introduction</span></span>
                     <span>3</span>
@@ -48,53 +50,13 @@
                 </div>
             </div>
 
-            <!-- Bab 1 -->
-            <div class="bab-card">
-                <div class="bab-header">
-                    <div class="bab-number">1</div>
-                    <div class="bab-info">
-                        <div class="bab-category">お知らせを読む <span class="text-gray-500">Reading an Announcement</span></div>
-                        <h2 class="bab-title">スタッフ募集のお知らせ <span class="text-gray-500 text-base font-normal">A Job Ad</span></h2>
-                    </div>
-                    <span class="bab-page">18</span>
-                </div>
-            </div>
+            <!-- Bab Container - Data dari XML -->
+            <div id="bab-container"></div>
 
-            <div class="grammar-list">
-                <div class="grammar-list-item"><span>1 オープンにつき</span><span>19</span></div>
-                <div class="grammar-list-item"><span>2 国籍を問わず</span><span>19</span></div>
-                <div class="grammar-list-item"><span>3 N2レベル以上の方に限り</span><span>20</span></div>
-                <div class="grammar-list-item"><span>4 経験年数に応じ</span><span>21</span></div>
-                <div class="grammar-list-item"><span>5 採否にかかわらず</span><span>22</span></div>
-                <div class="grammar-list-item"><span>6 当店において</span><span>23</span></div>
-                <div class="grammar-list-item"><span>7 面接の際に <span class="text-rose-600 text-xs">＋Plus ～に際して</span></span><span>24</span></div>
-                <div class="grammar-list-item"><span>8 履歴書持参のこと</span><span>25</span></div>
-                <div class="matome-item">
-                    <span>まとめの問題</span>
-                    <span>27</span>
-                </div>
-            </div>
-
-            <!-- Bab 2 -->
-            <div class="bab-card" style="margin-top: 1.5rem;">
-                <div class="bab-header">
-                    <div class="bab-number">2</div>
-                    <div class="bab-info">
-                        <div class="bab-category">スピーチをする <span class="text-gray-500">Giving a Speech</span></div>
-                        <h2 class="bab-title">転任のあいさつ（１） <span class="text-gray-500 text-base font-normal">Addressing Co-workers after Receiving a Transfer Order (1)</span></h2>
-                    </div>
-                    <span class="bab-page">30</span>
-                </div>
-            </div>
-
-            <div class="grammar-list">
-                <div class="grammar-list-item"><span>9 入社して以来</span><span>30</span></div>
-                <div class="grammar-list-item"><span>10 部長をはじめ</span><span>31</span></div>
-                <div class="grammar-list-item"><span>11 先輩方のご指導のもとで</span><span>32</span></div>
-                <div class="grammar-list-item"><span>12 仕事の進め方はもとより</span><span>33</span></div>
-                <div class="grammar-list-item"><span>13 人は失敗から学ぶものだ</span><span>34</span></div>
-                <div class="grammar-list-item"><span>14 仕事をする上で</span><span>34</span></div>
-                <div class="grammar-list-item"><span>15 残念ながら</span><span>35</span></div>
+            <!-- Bagian Akhir -->
+            <div class="mt-8 pt-4 border-t-2 border-gray-800" id="bagian-akhir-container">
+                <h3 class="text-lg font-bold mb-4">さくいん・付録 <span class="text-gray-500">Index & Supplement</span></h3>
+                <div class="space-y-2 text-sm" id="index-container"></div>
             </div>
         </section>
 
@@ -704,6 +666,141 @@
     </div>
 
     <script>
+        // Global variable untuk menyimpan data XML
+        let xmlData = null;
+
+        // Fungsi untuk load dan parse database.xml
+        async function loadDatabase() {
+            try {
+                const response = await fetch('database.xml');
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                xmlData = parser.parseFromString(xmlText, 'text/xml');
+                renderDaftarIsi();
+            } catch (error) {
+                console.error('Error loading database.xml:', error);
+                document.getElementById('bab-container').innerHTML = 
+                    '<p class="text-red-500 p-4">Gagal memuat database. Pastikan file database.xml tersedia.</p>';
+            }
+        }
+
+        // Fungsi untuk merender daftar isi dari XML
+        function renderDaftarIsi() {
+            if (!xmlData) return;
+
+            const babContainer = document.getElementById('bab-container');
+            const indexContainer = document.getElementById('index-container');
+            
+            // Render Bab-bab
+            const babElements = xmlData.querySelectorAll('daftar_isi > bab');
+            let currentBabNumber = '';
+            let babHTML = '';
+            let globalPointId = 1;
+
+            babElements.forEach((bab) => {
+                const nomor = bab.querySelector('nomor')?.textContent || '';
+                const judul = bab.querySelector('judul_jp')?.textContent || '';
+                const judulEn = bab.querySelector('judul_en')?.textContent || '';
+                const kategori = bab.querySelector('kategori')?.textContent || '';
+                const kategoriEn = bab.querySelector('kategori_en')?.textContent || '';
+                const halaman = bab.getAttribute('halaman') || '';
+                const matome = bab.querySelector('matome')?.getAttribute('halaman') || '';
+
+                // Render Bab Card
+                babHTML += `
+                    <div class="bab-card" style="margin-top: 1.5rem;">
+                        <div class="bab-header">
+                            <div class="bab-number">${nomor}</div>
+                            <div class="bab-info">
+                                <div class="bab-category">${kategori} <span class="text-gray-500">${kategoriEn}</span></div>
+                                <h2 class="bab-title">${judul} <span class="text-gray-500 text-base font-normal">${judulEn}</span></h2>
+                            </div>
+                            <span class="bab-page">${halaman}</span>
+                        </div>
+                    </div>
+                `;
+
+                // Render Grammar Points
+                const grammarPoints = bab.querySelectorAll('grammar_points > point');
+                if (grammarPoints.length > 0) {
+                    babHTML += '<div class="grammar-list">';
+                    grammarPoints.forEach((point) => {
+                        const pointText = point.textContent || '';
+                        const pointHalaman = point.getAttribute('halaman') || '';
+                        const plusMatch = pointText.match(/\(\+Plus\s+(.+)\)/);
+                        let displayText = pointText;
+                        let plusBadge = '';
+                        
+                        if (plusMatch) {
+                            displayText = pointText.replace(/\s*\(\+Plus\s+.+\)/, '');
+                            plusBadge = `<span class="text-rose-600 text-xs">＋Plus ${plusMatch[1]}</span>`;
+                        }
+                        
+                        babHTML += `
+                            <div class="grammar-list-item">
+                                <span>${globalPointId} ${displayText} ${plusBadge}</span>
+                                <span>${pointHalaman}</span>
+                            </div>
+                        `;
+                        globalPointId++;
+                    });
+
+                    // Render Matome jika ada
+                    if (matome) {
+                        babHTML += `
+                            <div class="matome-item">
+                                <span>まとめの問題</span>
+                                <span>${matome}</span>
+                            </div>
+                        `;
+                    }
+                    babHTML += '</div>';
+                }
+            });
+
+            babContainer.innerHTML = babHTML;
+
+            // Render Bagian Akhir (Index & Supplement)
+            const bagianAkhir = xmlData.querySelector('bagian_akhir');
+            if (bagianAkhir) {
+                const items = bagianAkhir.querySelectorAll('item');
+                let indexHTML = '';
+                
+                items.forEach((item) => {
+                    const judul = item.querySelector('judul_jp')?.textContent || '';
+                    const judulEn = item.querySelector('judul_en')?.textContent || '';
+                    const halaman = item.getAttribute('halaman') || '';
+                    
+                    indexHTML += `
+                        <div class="contents-item">
+                            <span>${judul} <span class="text-gray-500">${judulEn}</span></span>
+                            <span>${halaman}</span>
+                        </div>
+                    `;
+                });
+
+                // Supplement
+                const supplement = bagianAkhir.querySelector('supplement');
+                if (supplement) {
+                    const supJudul = supplement.querySelector('judul_jp')?.textContent || '';
+                    const supJudulEn = supplement.querySelector('judul_en')?.textContent || '';
+                    const supItem = supplement.querySelector('item');
+                    if (supItem) {
+                        const supItemJudul = supItem.querySelector('judul_jp')?.textContent || '';
+                        const supItemJudulEn = supItem.querySelector('judul_en')?.textContent || '';
+                        indexHTML += `
+                            <div class="contents-item">
+                                <span>${supJudul}：${supItemJudul} <span class="text-gray-500">${supJudulEn}: ${supItemJudulEn}</span></span>
+                                <span>-</span>
+                            </div>
+                        `;
+                    }
+                }
+
+                indexContainer.innerHTML = indexHTML;
+            }
+        }
+
         function showSection(sectionId) {
             // Hide all sections
             document.querySelectorAll('section').forEach(sec => {
@@ -734,9 +831,9 @@
             window.scrollTo(0, 0);
         }
 
-        // Show Bab 1 by default
+        // Load database dan render daftar isi saat halaman dimuat
         document.addEventListener('DOMContentLoaded', () => {
-            // Default section is already visible, others are hidden via class
+            loadDatabase();
         });
     </script>
 </body>
