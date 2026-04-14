@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buku_try_n2>
+    <metadata>
+        <judul>TRY! N2 日本語能力試験</judul>
+        <deskripsi>Japanese Language Proficiency Test N2 Preparation</deskripsi>
+        <bahasa>Indonesia/Japanese</bahasa>
+    </metadata>
+
+    <daftar_isi>
+        <bab id="intro">
+            <judul_jp>はじめに</judul_jp>
+            <judul_id>Pengantar</judul_id>
+            <halaman>3</halaman>
+        </bab>
+        <bab id="panduan">
+            <judul_jp>この本をお使いになる皆さんへ</judul_jp>
+            <judul_id>Untuk Para Pembelajar</judul_id>
+            <halaman>4</halaman>
+        </bab>
+        <bab id="1" aktif="true">
+            <judul_jp>お知らせを読む</judul_jp>
+            <judul_id>Reading an Announcement</judul_id>
+            <subjudul_jp>スタッフ募集のお知らせ</subjudul_jp>
+            <subjudul_id>Pengumuman Rekrutmen Staf</subjudul_id>
+            <halaman>18</halaman>
+            <ikon>📋</ikon>
+            <grammar_points>
+                <point id="1">オープンにつき</point>
+                <point id="2">国籍を問わず</point>
+                <point id="3">N2レベル以上の方に限り</point>
+                <point id="4">経験年数に応じ</point>
+                <point id="5">採否にかかわらず</point>
+                <point id="6">当店において</point>
+                <point id="7">面接の際に</point>
+                <point id="8">履歴書持参のこと</point>
+            </grammar_points>
+        </bab>
+        <bab id="2">
+            <judul_jp>スピーチをする</judul_jp>
+            <judul_id>Giving a Speech</judul_id>
+            <subjudul_jp>転任のあいさつ（１）</subjudul_jp>
+            <subjudul_id>Pidato Perpisahan Pindah Tugas (1)</subjudul_id>
+            <halaman>30</halaman>
+            <ikon>🎤</ikon>
+        </bab>
+        <bab id="2b">
+            <judul_jp>スピーチをする</judul_jp>
+            <judul_id>Giving a Speech</judul_id>
+            <subjudul_jp>転任のあいさつ（２）</subjudul_jp>
+            <subjudul_id>Pidato Perpisahan Pindah Tugas (2)</subjudul_id>
+            <halaman>38</halaman>
+            <ikon>🎤</ikon>
+        </bab>
+    </daftar_isi>
+
+    <konten_bab id="1">
+        <pengantar>
+            <judul>Sunny 店内スタッフ募集</judul>
+            <deskripsi>さいわい駅前店オープンにつき、人材を求めています</deskripsi>
+            <posisi>Staff Toko Part-time</posisi>
+            <lokasi>Saiwai Ekimae Store</lokasi>
+        </pengantar>
+
+        <grammar_list>
+            <grammar id="nitsuki">
+                <pattern>Ｎ＋につき</pattern>
+                <arti>"Dikarenakan/Disebabkan oleh" - menyatakan alasan dalam pengumuman</arti>
+                <contoh>
+                    <kalimat>清掃中につき、お足元にご注意ください。</kalimat>
+                    <terjemahan>Dikarenakan sedang pembersihan, mohon hati-hati dengan langkah Anda.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>改装工事中につき、左記の仮店舗で営業いたしております。</kalimat>
+                    <terjemahan>Dikarenakan sedang renovasi, kami beroperasi di tempat sementara sebelah kiri.</terjemahan>
+                </contoh>
+                <latihan>
+                    <soal>10月20日は社員研修（　　）、・・・</soal>
+                    <jawaban>d</jawaban>
+                </latihan>
+            </grammar>
+
+            <grammar id="towazu">
+                <pattern>Ｎ＋を問わず</pattern>
+                <arti>"Tanpa memandang/Tidak peduli" - anytime, anywhere, anyone</arti>
+                <contoh>
+                    <kalimat>年齢・経験・国籍を問わず、やる気のある方、大歓迎！</kalimat>
+                    <terjemahan>Tanpa memandang usia, pengalaman, atau kebangsaan, yang bermotivasi sangat diterima!</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>このスポーツセンターは、年齢を問わず、どなたでも利用できます。</kalimat>
+                    <terjemahan>Sport center ini dapat digunakan oleh siapapun tanpa memandang usia.</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="kagiri">
+                <pattern>Ｎ＋に限り / に限る</pattern>
+                <arti>"Hanya/Dibatasi untuk" - only/just</arti>
+                <contoh>
+                    <kalimat>N2レベル以上の方に限り、応募可。</kalimat>
+                    <terjemahan>Hanya yang memiliki level N2 ke atas yang dapat melamar.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供。</kalimat>
+                    <terjemahan>Hanya hari ini, daging sapi yang biasanya 1500 yen per 100gr dijual setengah harga.</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="ouji">
+                <pattern>Ｎ＋に応じて / に応じた＋Ｎ</pattern>
+                <arti>"Sesuai dengan/Berdasarkan" - tergantung pada kondisi</arti>
+                <contoh>
+                    <kalimat>経験年数に応じ、時給は考慮します。</kalimat>
+                    <terjemahan>Upah per jam akan disesuaikan berdasarkan tahun pengalaman.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>給料は能力や経験に応じ、決めさせていただきます。</kalimat>
+                    <terjemahan>Gaji akan ditentukan sesuai dengan kemampuan dan pengalaman.</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="kawarazu">
+                <pattern>Ｎ＋にかかわらず</pattern>
+                <arti>"Tidak tergantung pada/Tanpa memandang" - regardless of</arti>
+                <contoh>
+                    <kalimat>書類審査の結果は採否にかかわらず、通知します。</kalimat>
+                    <terjemahan>Hasil seleksi dokumen akan diberitahukan terlepas dari diterima atau tidak.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>晴雨にかかわらず、実施します。</kalimat>
+                    <terjemahan>Akan dilaksanakan terlepas dari cuaca (hujan atau cerah).</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="oite">
+                <pattern>Ｎ＋において</pattern>
+                <arti>"Di/Dalam (tempat, waktu, bidang)" - in/at</arti>
+                <contoh>
+                    <kalimat>当店において面接。</kalimat>
+                    <terjemahan>Wawancara diadakan di toko kami.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>入学式は、3階のホールにおいて行われます。</kalimat>
+                    <terjemahan>Upacara pembukaan akan diadakan di hall lantai 3.</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="sai">
+                <pattern>Ｖる/Ｖた/Ｎの＋際（に）</pattern>
+                <arti>"Pada saat/Ketika" - if/when (formal)</arti>
+                <contoh>
+                    <kalimat>面接の際に、履歴書（写真付き）持参のこと。</kalimat>
+                    <terjemahan>Pada saat wawancara, wajib membawa riwayat hidup (dengan foto).</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>カードを紛失した際はサービスセンターにご連絡ください。</kalimat>
+                    <terjemahan>Jika kartu hilang, silakan hubungi service center.</terjemahan>
+                </contoh>
+            </grammar>
+
+            <grammar id="koto">
+                <pattern>Ｖる/Ｖない/Ｎの＋こと</pattern>
+                <arti>Menjelaskan aturan atau peringatan formal</arti>
+                <contoh>
+                    <kalimat>願書は1月28日必着のこと。</kalimat>
+                    <terjemahan>Formulir pendaftaran harus sampai paling lambat 28 Januari.</terjemahan>
+                </contoh>
+                <contoh>
+                    <kalimat>試験中は携帯電話の電源を切ること。</kalimat>
+                    <terjemahan>Selama ujian, harus mematikan telepon genggam.</terjemahan>
+                </contoh>
+            </grammar>
+        </grammar_list>
+
+        <latihan_review>
+            <soal id="1">
+                <pertanyaan>わが社では経験（　　）、広く人材を募集している。</pertanyaan>
+                <pilihan>a. に限って b. を問わず c. に応じて d. につき</pilihan>
+                <jawaban>b</jawaban>
+            </soal>
+            <soal id="2">
+                <pertanyaan>毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。</pertanyaan>
+                <pilihan>a. に限り b. を問わず c. において d. に応じて</pilihan>
+                <jawaban>a</jawaban>
+            </soal>
+        </latihan_review>
+    </konten_bab>
+</buku_try_n2>
