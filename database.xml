@@ -1,187 +1,981 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
 <buku_try_n2>
     <metadata>
-        <judul>TRY! N2 日本語能力試験</judul>
-        <deskripsi>Japanese Language Proficiency Test N2 Preparation</deskripsi>
-        <bahasa>Indonesia/Japanese</bahasa>
+        <judul>TRY! N2 文法から伸ばす日本語</judul>
+        <subjudul>日本語能力試験対策</subjudul>
+        <edisi>改訂版</edisi>
     </metadata>
 
+    <!-- DAFTAR ISI LENGKAP - Pages 12-17 -->
     <daftar_isi>
-        <bab id="intro">
-            <judul_jp>はじめに</judul_jp>
-            <judul_id>Pengantar</judul_id>
-            <halaman>3</halaman>
-        </bab>
-        <bab id="panduan">
-            <judul_jp>この本をお使いになる皆さんへ</judul_jp>
-            <judul_id>Untuk Para Pembelajar</judul_id>
-            <halaman>4</halaman>
-        </bab>
-        <bab id="1" aktif="true">
-            <judul_jp>お知らせを読む</judul_jp>
-            <judul_id>Reading an Announcement</judul_id>
-            <subjudul_jp>スタッフ募集のお知らせ</subjudul_jp>
-            <subjudul_id>Pengumuman Rekrutmen Staf</subjudul_id>
-            <halaman>18</halaman>
-            <ikon>📋</ikon>
-            <grammar_points>
-                <point id="1">オープンにつき</point>
-                <point id="2">国籍を問わず</point>
-                <point id="3">N2レベル以上の方に限り</point>
-                <point id="4">経験年数に応じ</point>
-                <point id="5">採否にかかわらず</point>
-                <point id="6">当店において</point>
-                <point id="7">面接の際に</point>
-                <point id="8">履歴書持参のこと</point>
-            </grammar_points>
-        </bab>
-        <bab id="2">
-            <judul_jp>スピーチをする</judul_jp>
-            <judul_id>Giving a Speech</judul_id>
-            <subjudul_jp>転任のあいさつ（１）</subjudul_jp>
-            <subjudul_id>Pidato Perpisahan Pindah Tugas (1)</subjudul_id>
-            <halaman>30</halaman>
-            <ikon>🎤</ikon>
-        </bab>
-        <bab id="2b">
-            <judul_jp>スピーチをする</judul_jp>
-            <judul_id>Giving a Speech</judul_id>
-            <subjudul_jp>転任のあいさつ（２）</subjudul_jp>
-            <subjudul_id>Pidato Perpisahan Pindah Tugas (2)</subjudul_id>
-            <halaman>38</halaman>
-            <ikon>🎤</ikon>
-        </bab>
-    </daftar_isi>
-
-    <konten_bab id="1">
         <pengantar>
-            <judul>Sunny 店内スタッフ募集</judul>
-            <deskripsi>さいわい駅前店オープンにつき、人材を求めています</deskripsi>
-            <posisi>Staff Toko Part-time</posisi>
-            <lokasi>Saiwai Ekimae Store</lokasi>
+            <item id="hajimeni" halaman="3">
+                <judul_jp>はじめに</judul_jp>
+                <judul_en>Introduction</judul_en>
+            </item>
+            <item id="to_learners" halaman="4">
+                <judul_jp>この本をお使いになる皆さんへ</judul_jp>
+                <judul_en>To Learners Using this Book</judul_en>
+            </item>
+            <item id="to_teachers" halaman="10">
+                <judul_jp>この本をお使いになる先生方へ</judul_jp>
+                <judul_en></judul_en>
+            </item>
         </pengantar>
 
-        <grammar_list>
-            <grammar id="nitsuki">
-                <pattern>Ｎ＋につき</pattern>
-                <arti>"Dikarenakan/Disebabkan oleh" - menyatakan alasan dalam pengumuman</arti>
-                <contoh>
-                    <kalimat>清掃中につき、お足元にご注意ください。</kalimat>
-                    <terjemahan>Dikarenakan sedang pembersihan, mohon hati-hati dengan langkah Anda.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>改装工事中につき、左記の仮店舗で営業いたしております。</kalimat>
-                    <terjemahan>Dikarenakan sedang renovasi, kami beroperasi di tempat sementara sebelah kiri.</terjemahan>
-                </contoh>
-                <latihan>
-                    <soal>10月20日は社員研修（　　）、・・・</soal>
-                    <jawaban>d</jawaban>
-                </latihan>
-            </grammar>
+        <!-- BAB 1 - Page 12 -->
+        <bab id="1" halaman="18">
+            <kategori>お知らせを読む</kategori>
+            <kategori_en>Reading an Announcement</kategori_en>
+            <nomor>1</nomor>
+            <judul_jp>スタッフ募集のお知らせ</judul_jp>
+            <judul_en>A Job Ad</judul_en>
 
-            <grammar id="towazu">
-                <pattern>Ｎ＋を問わず</pattern>
-                <arti>"Tanpa memandang/Tidak peduli" - anytime, anywhere, anyone</arti>
-                <contoh>
-                    <kalimat>年齢・経験・国籍を問わず、やる気のある方、大歓迎！</kalimat>
-                    <terjemahan>Tanpa memandang usia, pengalaman, atau kebangsaan, yang bermotivasi sangat diterima!</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>このスポーツセンターは、年齢を問わず、どなたでも利用できます。</kalimat>
-                    <terjemahan>Sport center ini dapat digunakan oleh siapapun tanpa memandang usia.</terjemahan>
-                </contoh>
-            </grammar>
+            <grammar_points>
+                <point id="1" halaman="19">オープンにつき</point>
+                <point id="2" halaman="19">国籍を問わず</point>
+                <point id="3" halaman="20">N2レベル以上の方に限り</point>
+                <point id="4" halaman="21">経験年数に応じ</point>
+                <point id="5" halaman="22">採否にかかわらず</point>
+                <point id="6" halaman="23">当店において</point>
+                <point id="7" halaman="24">面接の際に (+Plus ～に際して)</point>
+                <point id="8" halaman="25">履歴書持参のこと</point>
+            </grammar_points>
+            <matome halaman="27"/>
+        </bab>
 
-            <grammar id="kagiri">
-                <pattern>Ｎ＋に限り / に限る</pattern>
-                <arti>"Hanya/Dibatasi untuk" - only/just</arti>
-                <contoh>
-                    <kalimat>N2レベル以上の方に限り、応募可。</kalimat>
-                    <terjemahan>Hanya yang memiliki level N2 ke atas yang dapat melamar.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供。</kalimat>
-                    <terjemahan>Hanya hari ini, daging sapi yang biasanya 1500 yen per 100gr dijual setengah harga.</terjemahan>
-                </contoh>
-            </grammar>
+        <!-- BAB 2 - Page 12 -->
+        <bab id="2" halaman="30">
+            <kategori>スピーチをする</kategori>
+            <kategori_en>Giving a Speech</kategori_en>
+            <nomor>2</nomor>
+            <judul_jp>転任のあいさつ（１）</judul_jp>
+            <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
 
-            <grammar id="ouji">
-                <pattern>Ｎ＋に応じて / に応じた＋Ｎ</pattern>
-                <arti>"Sesuai dengan/Berdasarkan" - tergantung pada kondisi</arti>
-                <contoh>
-                    <kalimat>経験年数に応じ、時給は考慮します。</kalimat>
-                    <terjemahan>Upah per jam akan disesuaikan berdasarkan tahun pengalaman.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>給料は能力や経験に応じ、決めさせていただきます。</kalimat>
-                    <terjemahan>Gaji akan ditentukan sesuai dengan kemampuan dan pengalaman.</terjemahan>
-                </contoh>
-            </grammar>
+            <grammar_points>
+                <point id="9" halaman="30">入社して以来</point>
+                <point id="10" halaman="31">部長をはじめ</point>
+                <point id="11" halaman="32">先輩方のご指導のもとで</point>
+                <point id="12" halaman="33">仕事の進め方はもとより</point>
+                <point id="13" halaman="34">人は失敗から学ぶものだ</point>
+                <point id="14" halaman="34">仕事をする上で</point>
+                <point id="15" halaman="35">残念ながら</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
 
-            <grammar id="kawarazu">
-                <pattern>Ｎ＋にかかわらず</pattern>
-                <arti>"Tidak tergantung pada/Tanpa memandang" - regardless of</arti>
-                <contoh>
-                    <kalimat>書類審査の結果は採否にかかわらず、通知します。</kalimat>
-                    <terjemahan>Hasil seleksi dokumen akan diberitahukan terlepas dari diterima atau tidak.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>晴雨にかかわらず、実施します。</kalimat>
-                    <terjemahan>Akan dilaksanakan terlepas dari cuaca (hujan atau cerah).</terjemahan>
-                </contoh>
-            </grammar>
+        <!-- BAB 2 (Part 2) - Page 12 -->
+        <bab id="2b" halaman="38">
+            <kategori>スピーチをする</kategori>
+            <kategori_en>Giving a Speech</kategori_en>
+            <nomor>2</nomor>
+            <judul_jp>転任のあいさつ（２）</judul_jp>
+            <judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
 
-            <grammar id="oite">
-                <pattern>Ｎ＋において</pattern>
-                <arti>"Di/Dalam (tempat, waktu, bidang)" - in/at</arti>
-                <contoh>
-                    <kalimat>当店において面接。</kalimat>
-                    <terjemahan>Wawancara diadakan di toko kami.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>入学式は、3階のホールにおいて行われます。</kalimat>
-                    <terjemahan>Upacara pembukaan akan diadakan di hall lantai 3.</terjemahan>
-                </contoh>
-            </grammar>
+            <grammar_points>
+                <point id="16" halaman="38">輸出拡大を目的としたプロジェクト</point>
+                <point id="17" halaman="39">この転勤をきっかけに (+Plus 契機)</point>
+                <point id="18" halaman="40">やるからには (+Plus ～以上は / ～上は)</point>
+                <point id="19" halaman="42">なくなるというわけではありません</point>
+                <point id="20" halaman="43">これまでと変わることなく</point>
+                <point id="21" halaman="44">雨にもかかわらず</point>
+            </grammar_points>
+            <matome halaman="46"/>
+        </bab>
 
-            <grammar id="sai">
-                <pattern>Ｖる/Ｖた/Ｎの＋際（に）</pattern>
-                <arti>"Pada saat/Ketika" - if/when (formal)</arti>
-                <contoh>
-                    <kalimat>面接の際に、履歴書（写真付き）持参のこと。</kalimat>
-                    <terjemahan>Pada saat wawancara, wajib membawa riwayat hidup (dengan foto).</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>カードを紛失した際はサービスセンターにご連絡ください。</kalimat>
-                    <terjemahan>Jika kartu hilang, silakan hubungi service center.</terjemahan>
-                </contoh>
-            </grammar>
+        <!-- BAB 3 - Page 13 -->
+        <bab id="3" halaman="50">
+            <kategori>説明を聞く</kategori>
+            <kategori_en>Listening to an Explanation</kategori_en>
+            <nomor>3</nomor>
+            <judul_jp>ホテルの仕事</judul_jp>
+            <judul_en>A Hotel Job</judul_en>
 
-            <grammar id="koto">
-                <pattern>Ｖる/Ｖない/Ｎの＋こと</pattern>
-                <arti>Menjelaskan aturan atau peringatan formal</arti>
-                <contoh>
-                    <kalimat>願書は1月28日必着のこと。</kalimat>
-                    <terjemahan>Formulir pendaftaran harus sampai paling lambat 28 Januari.</terjemahan>
-                </contoh>
-                <contoh>
-                    <kalimat>試験中は携帯電話の電源を切ること。</kalimat>
-                    <terjemahan>Selama ujian, harus mematikan telepon genggam.</terjemahan>
-                </contoh>
-            </grammar>
-        </grammar_list>
+            <grammar_points>
+                <point id="22" halaman="51">スタッフとしての心構え</point>
+                <point id="23" halaman="51">仕事を続ける限り</point>
+                <point id="24" halaman="53">対応せざるを得ない</point>
+                <point id="25" halaman="53">謝ればいいというものではありません</point>
+                <point id="26" halaman="54">正当なものかどうかはともかくとして</point>
+                <point id="27" halaman="55">信頼を失いかねません</point>
+                <point id="28" halaman="56">お客様というより</point>
+                <point id="29" halaman="57">安心してはいられません</point>
+            </grammar_points>
+            <matome halaman="59"/>
+        </bab>
 
-        <latihan_review>
-            <soal id="1">
-                <pertanyaan>わが社では経験（　　）、広く人材を募集している。</pertanyaan>
-                <pilihan>a. に限って b. を問わず c. に応じて d. につき</pilihan>
-                <jawaban>b</jawaban>
-            </soal>
-            <soal id="2">
-                <pertanyaan>毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。</pertanyaan>
-                <pilihan>a. に限り b. を問わず c. において d. に応じて</pilihan>
-                <jawaban>a</jawaban>
-            </soal>
-        </latihan_review>
-    </konten_bab>
+        <!-- BAB 4 - Page 13 -->
+        <bab id="4" halaman="62">
+            <kategori>ニュースを聞く</kategori>
+            <kategori_en>Listening to the News</kategori_en>
+            <nomor>4</nomor>
+            <judul_jp>台風情報</judul_jp>
+            <judul_en>Typhoon Information</judul_en>
+
+            <grammar_points>
+                <point id="30" halaman="63">速度を速めつつ</point>
+                <point id="31" halaman="63">広範囲にわたって</point>
+                <point id="32" halaman="64">九州沿岸から四国にかけて</point>
+                <point id="33" halaman="65">台風の接近にともない</point>
+                <point id="34" halaman="66">雨が降るおそれがあります</point>
+                <point id="35" halaman="66">強風とともに</point>
+                <point id="36" halaman="67">中継がつながり次第</point>
+            </grammar_points>
+            <matome halaman="69"/>
+        </bab>
+
+        <!-- BAB 5 - Page 13 -->
+        <bab id="5" halaman="72">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>5</nomor>
+            <judul_jp>就職活動（１）</judul_jp>
+            <judul_en>Job Hunting (1)</judul_en>
+
+            <grammar_points>
+                <point id="37" halaman="72">京都に行ったきり</point>
+                <point id="38" halaman="74">旅行どころじゃない</point>
+                <point id="39" halaman="74">情報は集めているものの</point>
+                <point id="40" halaman="75">困ったことに</point>
+                <point id="41" halaman="76">人気の業界にしては</point>
+                <point id="42" halaman="77">何回書いたことか</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 5 (Part 2) - Page 13 -->
+        <bab id="5b" halaman="78">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>5</nomor>
+            <judul_jp>就職活動（２）</judul_jp>
+            <judul_en>Job Hunting (2)</judul_en>
+
+            <grammar_points>
+                <point id="43" halaman="78">やる気さえあれば</point>
+                <point id="44" halaman="79">がんばりようがない</point>
+                <point id="45" halaman="80">苦労したあげく</point>
+                <point id="46" halaman="81">そんなこと考えるもんじゃない</point>
+                <point id="47" halaman="81">出すだけ出してみる</point>
+            </grammar_points>
+            <matome halaman="83"/>
+        </bab>
+
+        <!-- BAB 6 - Page 14 -->
+        <bab id="6" halaman="86">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>6</nomor>
+            <judul_jp>苦労した5年間（１）</judul_jp>
+            <judul_en>A Tough Five Years (1)</judul_en>
+
+            <grammar_points>
+                <point id="48" halaman="86">経験がなかったばかりに</point>
+                <point id="49" halaman="87">あきらめることはない</point>
+                <point id="50" halaman="88">同期の人に比べて</point>
+                <point id="51" halaman="89">負けるものか</point>
+                <point id="52" halaman="90">それが上司というものよ</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 6 (Part 2) - Page 14 -->
+        <bab id="6b" halaman="92">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>6</nomor>
+            <judul_jp>苦労した5年間（２）</judul_jp>
+            <judul_en>A Tough Five Years (2)</judul_en>
+
+            <grammar_points>
+                <point id="53" halaman="92">ぼくのことを思えばこそ</point>
+                <point id="54" halaman="93">わからないことはなかった</point>
+                <point id="55" halaman="94">がんばれるだけがんばろう</point>
+                <point id="56" halaman="95">努力してたんだもん</point>
+                <point id="57" halaman="96">失敗するわけにはいかない</point>
+                <point id="58" halaman="97">自分を信じて進むのみだ</point>
+                <point id="59" halaman="97">スターになったつもりで</point>
+            </grammar_points>
+            <matome halaman="100"/>
+        </bab>
+
+        <!-- BAB 7 - Page 14 -->
+        <bab id="7" halaman="103">
+            <kategori>論説文を読む</kategori>
+            <kategori_en>Reading an Essay</kategori_en>
+            <nomor>7</nomor>
+            <judul_jp>オオカミと生態系（１）</judul_jp>
+            <judul_en>Wolves and the Ecosystem (1)</judul_en>
+
+            <grammar_points>
+                <point id="60" halaman="103">人間の立場から見ると (+Plus ～からいうと／～からいえば／～からいって)</point>
+                <point id="61" halaman="105">その一方で</point>
+                <point id="62" halaman="106">絶滅したことから</point>
+                <point id="63" halaman="107">被害を与えたのみならず</point>
+                <point id="64" halaman="108">ネズミやビーバーといった</point>
+                <point id="65" halaman="108">数が増えるにしたがって (+Plus ～につれて／～につれ)</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 7 (Part 2) - Page 14 -->
+        <bab id="7b" halaman="111">
+            <kategori>論説文を読む</kategori>
+            <kategori_en>Reading an Essay</kategori_en>
+            <nomor>7</nomor>
+            <judul_jp>オオカミと生態系（２）</judul_jp>
+            <judul_en>Wolves and the Ecosystem (2)</judul_en>
+
+            <grammar_points>
+                <point id="66" halaman="112">回復させ得る</point>
+                <point id="67" halaman="112">期待に反して</point>
+                <point id="68" halaman="113">連れてくることに関して</point>
+                <point id="69" halaman="114">成果が期待される反面</point>
+                <point id="70" halaman="114">理論上は</point>
+                <point id="71" halaman="115">増加しつつある</point>
+                <point id="72" halaman="116">アメリカに限らず</point>
+            </grammar_points>
+            <matome halaman="118"/>
+        </bab>
+
+        <!-- BAB 8 - Page 15 -->
+        <bab id="8" halaman="122">
+            <kategori>ビジネス場面の会話</kategori>
+            <kategori_en>Conversation in a Business Setting</kategori_en>
+            <nomor>8</nomor>
+            <judul_jp>取引先で</judul_jp>
+            <judul_en>At a Client</judul_en>
+
+            <grammar_points>
+                <point id="73" halaman="123">佐々木様がお見えになりました</point>
+                <point id="74" halaman="124">ご確認願えますでしょうか</point>
+                <point id="75" halaman="125">ご説明申し上げたい</point>
+                <point id="76" halaman="125">ご連絡いただければと思います</point>
+                <point id="77" halaman="126">日程につきましては</point>
+            </grammar_points>
+            <matome halaman="128"/>
+        </bab>
+
+        <!-- BAB 9 - Page 15 -->
+        <bab id="9" halaman="131">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>9</nomor>
+            <judul_jp>食べ放題（１）</judul_jp>
+            <judul_en>All-You-Can-Eat (1)</judul_en>
+
+            <grammar_points>
+                <point id="78" halaman="131">メニューが多いのなんのって</point>
+                <point id="79" halaman="132">できたて</point>
+                <point id="80" halaman="133">小林君ったら (+Plus ～ってば)</point>
+                <point id="81" halaman="133">変わるようになっている</point>
+                <point id="82" halaman="134">食べられなかったわけだ</point>
+                <point id="83" halaman="135">たくさん食べるどころか</point>
+                <point id="84" halaman="136">そんなことも知らないようじゃ</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 9 (Part 2) - Page 15 -->
+        <bab id="9b" halaman="138">
+            <kategori>友達同士の会話</kategori>
+            <kategori_en>A Conversation with a Friend</kategori_en>
+            <nomor>9</nomor>
+            <judul_jp>食べ放題（２）</judul_jp>
+            <judul_en>All-You-Can-Eat (2)</judul_en>
+
+            <grammar_points>
+                <point id="85" halaman="139">上品ぶってもしょうがない</point>
+                <point id="86" halaman="139">初心者に限って</point>
+                <point id="87" halaman="140">食べ続けることだよ</point>
+                <point id="88" halaman="140">食べ放題という食べ放題</point>
+                <point id="89" halaman="141">罰金を払わされるところだった</point>
+                <point id="90" halaman="142">罰金払うくらいなら</point>
+                <point id="91" halaman="143">がんばったほうがずっとましだ</point>
+            </grammar_points>
+            <matome halaman="145"/>
+        </bab>
+
+        <!-- BAB 10 - Page 15-16 -->
+        <bab id="10" halaman="148">
+            <kategori>エッセーを読む</kategori>
+            <kategori_en>Reading an Essay</kategori_en>
+            <nomor>10</nomor>
+            <judul_jp>満員電車（１）</judul_jp>
+            <judul_en>A Full Train (1)</judul_en>
+
+            <grammar_points>
+                <point id="92" halaman="148">つらいものがある</point>
+                <point id="93" halaman="149">ストレスを感じない人はいるまい</point>
+                <point id="94" halaman="150">乗客を見るにつけ</point>
+                <point id="95" halaman="151">混んでいるわりには</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 10 (Part 2) - Page 16 -->
+        <bab id="10b" halaman="153">
+            <kategori>エッセーを読む</kategori>
+            <kategori_en>Reading an Essay</kategori_en>
+            <nomor>10</nomor>
+            <judul_jp>満員電車（２）</judul_jp>
+            <judul_en>A Full Train (2)</judul_en>
+
+            <grammar_points>
+                <point id="96" halaman="153">立つか立たないかのうちに</point>
+                <point id="97" halaman="154">楽しげにおしゃべりしている</point>
+                <point id="98" halaman="155">くやしいやらうらやましいやら</point>
+                <point id="99" halaman="155">乗客が降りたかと思うと</point>
+            </grammar_points>
+            <matome halaman="157"/>
+        </bab>
+
+        <!-- BAB 11 - Page 16 -->
+        <bab id="11" halaman="160">
+            <kategori>記事を読む</kategori>
+            <kategori_en>Reading an Article</kategori_en>
+            <nomor>11</nomor>
+            <judul_jp>ラーメンの紹介</judul_jp>
+            <judul_en>Introduction to Ramen</judul_en>
+
+            <grammar_points>
+                <point id="100" halaman="161">日本料理にほかならない</point>
+                <point id="101" halaman="161">空腹を満たすものにすぎなかった</point>
+                <point id="102" halaman="162">工夫ができる上に</point>
+                <point id="103" halaman="163">ラーメンといっても</point>
+                <point id="104" halaman="164">ラーメンはしょうゆに限る</point>
+                <point id="105" halaman="165">人気店だけあって</point>
+                <point id="106" halaman="166">スープにしろ具にしろ</point>
+            </grammar_points>
+            <matome halaman="169"/>
+        </bab>
+
+        <!-- BAB 12 - Page 16 -->
+        <bab id="12" halaman="172">
+            <kategori>ビジネス場面の会話</kategori>
+            <kategori_en>Conversation in a Business Setting</kategori_en>
+            <nomor>12</nomor>
+            <judul_jp>ウォーキングシューズの開発（１）</judul_jp>
+            <judul_en>Developing Walking Shoes (1)</judul_en>
+
+            <grammar_points>
+                <point id="107" halaman="172">発売されるとか</point>
+                <point id="108" halaman="174">業界の流れにそって</point>
+                <point id="109" halaman="174">ウォーキングシューズにかけては</point>
+                <point id="110" halaman="175">開発しないことには</point>
+                <point id="111" halaman="176">歩きやすさを重視しがちです</point>
+                <point id="112" halaman="177">ほしいと思いつつも</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 12 (Part 2) - Page 16 -->
+        <bab id="12b" halaman="179">
+            <kategori>ビジネス場面の会話</kategori>
+            <kategori_en>Conversation in a Business Setting</kategori_en>
+            <nomor>12</nomor>
+            <judul_jp>ウォーキングシューズの開発（２）</judul_jp>
+            <judul_en>Developing Walking Shoes (2)</judul_en>
+
+            <grammar_points>
+                <point id="113" halaman="179">新商品を作るとしたら</point>
+                <point id="114" halaman="180">デザイン次第で</point>
+                <point id="115" halaman="181">厳しくなる一方です (+Plus ～ばかり)</point>
+                <point id="116" halaman="182">開発に先立って</point>
+                <point id="117" halaman="182">市場調査をした上で</point>
+                <point id="118" halaman="183">社会人の声にこたえた</point>
+            </grammar_points>
+            <matome halaman="185"/>
+        </bab>
+
+        <!-- BAB 13 - Page 17 -->
+        <bab id="13" halaman="188">
+            <kategori>ストーリーを読む</kategori>
+            <kategori_en>Reading a Story</kategori_en>
+            <nomor>13</nomor>
+            <judul_jp>人生の転機（１）</judul_jp>
+            <judul_en>A Turning Point in One's Life (1)</judul_en>
+
+            <grammar_points>
+                <point id="119" halaman="189">昇進の話はなかったことにする</point>
+                <point id="120" halaman="190">がんばったつもりだった</point>
+                <point id="121" halaman="190">つらくてならなかった</point>
+                <point id="122" halaman="191">できるものなら</point>
+                <point id="123" halaman="192">行こうか行くまいか</point>
+                <point id="124" halaman="193">迷った末</point>
+            </grammar_points>
+            <matome halaman=""/>
+        </bab>
+
+        <!-- BAB 13 (Part 2) - Page 17 -->
+        <bab id="13b" halaman="195">
+            <kategori>ストーリーを読む</kategori>
+            <kategori_en>Reading a Story</kategori_en>
+            <nomor>13</nomor>
+            <judul_jp>人生の転機（２）</judul_jp>
+            <judul_en>A Turning Point in One's Life (2)</judul_en>
+
+            <grammar_points>
+                <point id="125" halaman="196">たとえどんな事情があっても</point>
+                <point id="126" halaman="196">許しがたい</point>
+                <point id="127" halaman="197">男が止めるのもかまわず</point>
+                <point id="128" halaman="198">恥ずかしさのあまり</point>
+                <point id="129" halaman="199">気持ちを込めて</point>
+                <point id="130" halaman="199">荷物運びもすれば切符も売る</point>
+                <point id="131" halaman="200">やりぬくぞ</point>
+            </grammar_points>
+            <matome halaman="202"/>
+        </bab>
+
+        <!-- BAB 14 - Page 17 -->
+        <bab id="14" halaman="205">
+            <kategori>社説を読む</kategori>
+            <kategori_en>Reading an Editorial</kategori_en>
+            <nomor>14</nomor>
+            <judul_jp>オリンピックの開催について</judul_jp>
+            <judul_en>Hosting the Olympics</judul_en>
+
+            <grammar_points>
+                <point id="132" halaman="206">国を挙げて喜んだものだ</point>
+                <point id="133" halaman="207">開催をめぐって</point>
+                <point id="134" halaman="207">抗議の声が上がることになるわけだ</point>
+                <point id="135" halaman="208">オリンピック開催にあたって</point>
+                <point id="136" halaman="209">資金に加えて</point>
+                <point id="137" halaman="209">用意されたとしても</point>
+                <point id="138" halaman="210">理念に基づいて (+Plus ～をもとに／～をもとにして)</point>
+                <point id="139" halaman="211">多くの人が賛同してこそ</point>
+            </grammar_points>
+            <matome halaman="213"/>
+        </bab>
+
+        <!-- INDEX & SUPPLEMENT - Page 17 -->
+        <bagian_akhir>
+            <item id="index" halaman="216">
+                <judul_jp>さくいん</judul_jp>
+                <judul_en>Index</judul_en>
+            </item>
+            <item id="pattern_list" halaman="220">
+                <judul_jp>似ている文型リスト＜N2レベル＞</judul_jp>
+                <judul_en>Similar Sentence Pattern List &lt;Level N2&gt;</judul_en>
+            </item>
+            <item id="can_do_list" halaman="227">
+                <judul_jp>N2「できること」リスト</judul_jp>
+                <judul_en>N2 Can Do List</judul_en>
+            </item>
+            <supplement>
+                <judul_jp>別冊</judul_jp>
+                <judul_en>Supplement</judul_en>
+                <item>
+                    <judul_jp>答え・スクリプト</judul_jp>
+                    <judul_en>Answers &amp; Scripts</judul_en>
+                </item>
+            </supplement>
+        </bagian_akhir>
+    </daftar_isi>
+
+    <!-- KONTEN BAB 1 - Page 18-25 -->
+    <bab1_content>
+        <!-- PAGE 18 - Header & Dekiru Koto -->
+        <header halaman="18">
+            <kategori>お知らせを読む</kategori>
+            <kategori_en>Reading an Announcement</kategori_en>
+            <nomor>1</nomor>
+            <judul>スタッフ募集のお知らせ</judul>
+            <judul_en>A Job Ad</judul_en>
+
+            <dekiru_koto>
+                <judul>できること</judul>
+                <item>
+                    <jp>お知らせなどの文章が読める。</jp>
+                    <en>Read announcements and the like.</en>
+                </item>
+                <item>
+                    <jp>求人の条件が理解できる。</jp>
+                    <en>Understand the conditions for a job opening.</en>
+                </item>
+            </dekiru_koto>
+
+            <job_ad>
+                <judul>サニー 店内スタッフ募集</judul>
+                <subjudul>さいわい駅前店オープンにつき、人材を求めています</subjudul>
+
+                <section type="仕事">
+                    <isi>開店業務、販売、清掃、商品管理、閉店業務</isi>
+                </section>
+
+                <section type="資格">
+                    <isi>年齢・経験・国籍を問わず、やる気のある方、大歓迎！</isi>
+                    <catatan>※商品の案内や接客応対があるため、外国人の方は、日本語能力試験N2レベル以上の方に限り、応募可。</catatan>
+                </section>
+
+                <section type="給与">
+                    <item>7時～9時 1,000円～</item>
+                    <item>9時～22時 900円</item>
+                    <item>22時～24時30分 1,125円～</item>
+                    <catatan>※経験年数に応じ、時給は考慮します。</catatan>
+                </section>
+
+                <section type="交通費">
+                    <isi>往復1,000円まで支給</isi>
+                </section>
+
+                <section type="応募">
+                    <item>当店所定のフォームに記入し、下記のメールアドレスまでお送りください。</item>
+                    <item>電話でのお問い合わせは10時～18時。</item>
+                    <item>書類審査の結果は採否にかかわらず、通知します。</item>
+                    <item>書類審査後、当店において面接。</item>
+                    <item>面接の際に、履歴書（写真付き）持参のこと。</item>
+                </section>
+
+                <kontak>
+                    <nama>サニーグループ東京本部</nama>
+                    <tel>03-1111-2222</tel>
+                    <web>http://www.sannie.biz</web>
+                    <email>boshu@sannie.co.jp</email>
+                </kontak>
+            </job_ad>
+        </header>
+
+        <!-- SUB BAB 1: オープンにつき - Page 19 -->
+        <sub_bab id="1" halaman="19">
+            <nomor>1</nomor>
+            <judul>オープンにつき</judul>
+            <bintang>★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>お知らせなどで「雨天につき中止」のように理由を言うときに使われる。</jp>
+                    <en>This is used to state a reason in an announcement and the like, as in "雨天につき中止".</en>
+                </penjelasan>
+                <pola>Ｎ＋につき</pola>
+
+                <contoh>
+                    <item no="1">
+                        <jp>清掃中につき、お足元にご注意ください。</jp>
+                    </item>
+                    <item no="2">
+                        <jp>会場内は禁煙につき、おたばこはご遠慮ください。</jp>
+                    </item>
+                    <item no="3">
+                        <jp>4月15日（木）：佐藤医師、学会出席につき休診。</jp>
+                    </item>
+                    <item no="4">
+                        <jp>ただ今、改装工事中につき、左記の仮店舗で営業いたしております。</jp>
+                    </item>
+                </contoh>
+            </dou_tsukau>
+
+            <yatte_miyou>
+                <judul>やってみよう！</judul>
+                <jawaban_ref>別冊P. 1</jawaban_ref>
+
+                <soal id="1">
+                    <teks>10月20日は社員研修につき、・・・</teks>
+                    <pilihan id="a">階段をご利用ください。</pilihan>
+                    <pilihan id="b">お早めにお召し上がりください。</pilihan>
+                    <pilihan id="c">入会金無料。</pilihan>
+                    <pilihan id="d">臨時休業させていただきます。</pilihan>
+                </soal>
+
+                <soal id="2">
+                    <teks>キャンペーン期間中につき、・・・</teks>
+                </soal>
+
+                <soal id="3">
+                    <teks>生ものにつき、・・・</teks>
+                </soal>
+
+                <soal id="4">
+                    <teks>エレベーター点検中につき、・・・</teks>
+                </soal>
+            </yatte_miyou>
+
+            <halaman_ref>p.224 ～につき</halaman_ref>
+        </sub_bab>
+
+        <!-- SUB BAB 2: 国籍を問わず - Page 19-20 -->
+        <sub_bab id="2" halaman="19">
+            <nomor>2</nomor>
+            <judul>国籍を問わず</judul>
+            <bintang>★★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。</jp>
+                    <en>This is used in an announcement, written introduction and the like to say "anytime, anywhere, anyone" and such.</en>
+                </penjelasan>
+                <pola>Ｎ＋を問わず</pola>
+                <catatan>※「昼夜・国の内外・男女・～の有無」などの言葉と一緒に使われる。</catatan>
+
+                <contoh>
+                    <item no="1">
+                        <jp>このスポーツセンターは、年齢を問わず、どなたでも利用できます。</jp>
+                    </item>
+                    <item no="2">
+                        <jp>このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。</jp>
+                    </item>
+                    <item no="3">
+                        <jp>経験の有無を問わず、やる気のある社員を募集します。</jp>
+                    </item>
+                    <item no="4">
+                        <jp>私の国では、老若男女を問わず、みんな、サッカーが好きだ。</jp>
+                    </item>
+                </contoh>
+            </dou_tsukau>
+
+            <yatte_miyou>
+                <judul>やってみよう！</judul>
+                <jawaban_ref>別冊P. 1</jawaban_ref>
+
+                <soal id="1">
+                    <teks>来週の国際交流会は、国籍、職業（　　）どなたでも参加できます。</teks>
+                    <pilihan id="a">ばかりでなく</pilihan>
+                    <pilihan id="b">に対して</pilihan>
+                    <pilihan id="c">を問わず</pilihan>
+                </soal>
+
+                <soal id="2">
+                    <teks>通信販売センターでは昼間（　　）夜も10時まで受け付けています。</teks>
+                    <pilihan id="a">はもちろん</pilihan>
+                    <pilihan id="b">によって</pilihan>
+                    <pilihan id="c">を問わず</pilihan>
+                </soal>
+
+                <soal id="3">
+                    <teks>季節（　　）この山に登る人は多い。</teks>
+                    <pilihan id="a">について</pilihan>
+                    <pilihan id="b">というと</pilihan>
+                    <pilihan id="c">を問わず</pilihan>
+                </soal>
+
+                <soal id="4">
+                    <teks>日本のアニメは（　　）を問わず、人気がある。</teks>
+                    <pilihan id="a">国の内外</pilihan>
+                    <pilihan id="b">海外</pilihan>
+                    <pilihan id="c">外国</pilihan>
+                </soal>
+            </yatte_miyou>
+
+            <note>
+                <jp>「問う」という動詞の否定形として、文の最後で使うこともある。</jp>
+                <en>You can also use the negative form of the verb "問う" at the end of a sentence.</en>
+                <contoh>この仕事に関心のある方なら、学歴・経験は問いません。</contoh>
+            </note>
+        </sub_bab>
+
+        <!-- SUB BAB 3: N2レベル以上の方に限り - Page 20 -->
+        <sub_bab id="3" halaman="20">
+            <nomor>3</nomor>
+            <judul>N2レベル以上の方に限り</judul>
+            <bintang>★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>「だけ」という意味で、お知らせなどによく使われる。</jp>
+                    <en>This is often used to mean "only / just" in an announcement and the like.</en>
+                </penjelasan>
+                <pola>Ｎ＋に限り / に限る</pola>
+
+                <contoh>
+                    <item no="1">
+                        <jp>本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。</jp>
+                    </item>
+                    <item no="2">
+                        <jp>このコーナーのバッグに限り、全品3,000円。</jp>
+                    </item>
+                    <item no="3">
+                        <jp>当動物園は夏休み期間に限り、夜9時まで開園しております。</jp>
+                    </item>
+                    <item no="4">
+                        <jp>初めてのお客様に限り、無料お試しセットをお申し込みいただけます。</jp>
+                    </item>
+                    <item no="5">
+                        <jp>工場の見学は予約された方に限ります。</jp>
+                    </item>
+                </contoh>
+            </dou_tsukau>
+        </sub_bab>
+
+        <!-- SUB BAB 4: 経験年数に応じ - Page 21 -->
+        <sub_bab id="4" halaman="21">
+            <nomor>4</nomor>
+            <judul>経験年数に応じ</judul>
+            <bintang>★★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。</jp>
+                    <en>Use "～に応じ…" when you want to say that something "depends on conditions such as a desire, change, location, situation, age, ability or experience."</en>
+                </penjelasan>
+                <pola>Ｎ＋に応じ / に応じて / に応じた＋Ｎ</pola>
+            </dou_tsukau>
+        </sub_bab>
+
+        <!-- SUB BAB 5: 採否にかかわらず - Page 22 -->
+        <sub_bab id="5" halaman="22">
+            <nomor>5</nomor>
+            <judul>採否にかかわらず</judul>
+            <bintang>★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。</jp>
+                    <en>"～にかかわらず…" is used when you want to say "regardless of conditions such as weather, preference, social position, or whether something is there or not there, done or not done, etc."</en>
+                </penjelasan>
+                <pola>Ｖる＋Ｖない / Ｎ＋にかかわらず</pola>
+                <catatan>※「好き嫌い」「いい悪い」「善悪」など、形容詞、名詞の対立する2語を合わせて使われることもある。</catatan>
+            </dou_tsukau>
+        </sub_bab>
+
+        <!-- SUB BAB 6: 当店において - Page 23 -->
+        <sub_bab id="6" halaman="23">
+            <nomor>6</nomor>
+            <judul>当店において</judul>
+            <bintang>★★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。お知らせやニュースなどで使われることが多い。</jp>
+                    <en>Use "～において" when you want to say a "place, time, field / subject area and so on" as in "京都において・江戸時代においては・生物学における". This is often used in announcements, news and the like.</en>
+                </penjelasan>
+                <pola>Ｎ＋において / における＋Ｎ</pola>
+            </dou_tsukau>
+        </sub_bab>
+
+        <!-- SUB BAB 7: 面接の際に - Page 24 -->
+        <sub_bab id="7" halaman="24">
+            <nomor>7</nomor>
+            <judul>面接の際に</judul>
+            <bintang>★★</bintang>
+            <plus>～に際して</plus>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>「～際」は、「～場合」という意味で、説明書や案内などで使われる。後ろに「してください・必要です・お願いします」などの文が来ることが多い。</jp>
+                    <en>"～際" is used in manuals, guides and the like to mean "if / when ～". Phrases such as "してください・必要です・お願いします" often come afterward.</en>
+                </penjelasan>
+                <pola>Ｖる/Ｖた / Ｎの＋際（に）</pola>
+            </dou_tsukau>
+
+            <plus_section>
+                <judul>Plus ～に際して</judul>
+                <pola>Ｎ＋に際して</pola>
+                <penjelasan>It is used in sentences such as warnings, apologies, explanations and the like.</penjelasan>
+            </plus_section>
+        </sub_bab>
+
+        <!-- SUB BAB 8: 履歴書持参のこと - Page 25 -->
+        <sub_bab id="8" halaman="25">
+            <nomor>8</nomor>
+            <judul>履歴書持参のこと</judul>
+            <bintang>★★</bintang>
+
+            <dou_tsukau>
+                <judul>どう使う？</judul>
+                <penjelasan>
+                    <jp>規則や注意事項を説明するときに使う。</jp>
+                    <en>This is often used to explain a rule or warning.</en>
+                </penjelasan>
+                <pola>Ｖる/Ｖない / Ｎの＋こと</pola>
+            </dou_tsukau>
+
+            <yatte_miyou>
+                <judul>やってみよう！</judul>
+                <jawaban_ref>別冊P. 1</jawaban_ref>
+
+                <soal id="1">
+                    <teks>履歴書の記入は、・・・</teks>
+                    <pilihan id="a">プールサイドでは走らないこと。</pilihan>
+                    <pilihan id="b">きちんと分別すること。</pilihan>
+                    <pilihan id="c">黒のボールペンを使用のこと。</pilihan>
+                    <pilihan id="d">必ずエアコンを消すこと。</pilihan>
+                </soal>
+            </yatte_miyou>
+
+            <halaman_ref>p.221 ～こと</halaman_ref>
+        </sub_bab>
+
+        <!-- CHECK - Page 26 -->
+        <check halaman="26">
+            <judul>Check</judul>
+            <jawaban_ref>別冊P. 1</jawaban_ref>
+
+            <bagian1>
+                <soal id="1">
+                    <teks>わが社では経験（　　）、広く人材を募集している。</teks>
+                </soal>
+                <soal id="2">
+                    <teks>カレーの辛さはお客様のご希望（　　）調整いたします。</teks>
+                </soal>
+                <soal id="3">
+                    <teks>進学説明会は6月3日に東ホテル（　　）行われます。</teks>
+                </soal>
+                <soal id="4">
+                    <teks>毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。</teks>
+                </soal>
+                <pilihan_bagian1>
+                    <item>に限り</item>
+                    <item>を問わず</item>
+                    <item>において</item>
+                    <item>に応じて</item>
+                </pilihan_bagian1>
+            </bagian1>
+
+            <bagian2>
+                <soal id="5">
+                    <teks>お降りの（　　）はバスが止まってから席をお立ちください。</teks>
+                </soal>
+                <soal id="6">
+                    <teks>入学後、引っ越しした場合は学生課に住所変更届を提出する（　　）。</teks>
+                </soal>
+                <soal id="7">
+                    <teks>今回のコンサートは応募者多数（　　）抽選とさせていただきます。</teks>
+                </soal>
+                <soal id="8">
+                    <teks>ご出席、ご欠席（　　）、このはがきは必ずご返送ください。</teks>
+                </soal>
+                <pilihan_bagian2>
+                    <item>際</item>
+                    <item>こと</item>
+                    <item>にかかわらず</item>
+                    <item>につき</item>
+                </pilihan_bagian2>
+            </bagian2>
+        </check>
+
+        <!-- MATOME NO MONDAI - Page 27-28 -->
+        <matome halaman_start="27" halaman_end="28">
+            <judul>まとめの問題</judul>
+            <subjudul>Review questions</subjudul>
+            <jawaban_ref>別冊P.10</jawaban_ref>
+
+            <mondai1>
+                <judul>問題1 〈文法形式の判断〉</judul>
+                <instruksi>次の文の（　）に入れるのに最もよいものを1・2・3・4から一つ選びなさい。</instruksi>
+
+                <soal id="1">
+                    <teks>この体操は体力（　　）、無理のないように行ってください。</teks>
+                    <pilihan id="1">に限って</pilihan>
+                    <pilihan id="2">に応じて</pilihan>
+                    <pilihan id="3">にかわり</pilihan>
+                    <pilihan id="4">において</pilihan>
+                </soal>
+
+                <soal id="2">
+                    <teks>水泳は子どもからお年寄りまで世代（　　）楽しめるスポーツだと言われている。</teks>
+                    <pilihan id="1">ばかりでなく</pilihan>
+                    <pilihan id="2">に限って</pilihan>
+                    <pilihan id="3">を問わず</pilihan>
+                    <pilihan id="4">とおりに</pilihan>
+                </soal>
+
+                <soal id="3">
+                    <teks>ただ今、こちらの商品（　　）、全国どこでも210円で配送を承ります。</teks>
+                    <pilihan id="1">を問わず</pilihan>
+                    <pilihan id="2">の際は</pilihan>
+                    <pilihan id="3">に限り</pilihan>
+                    <pilihan id="4">に応じて</pilihan>
+                </soal>
+
+                <soal id="4">
+                    <teks>退職の（　　）に必要な手続きについて、ご説明します。</teks>
+                    <pilihan id="1">たび</pilihan>
+                    <pilihan id="2">最中</pilihan>
+                    <pilihan id="3">ところ</pilihan>
+                    <pilihan id="4">際</pilihan>
+                </soal>
+
+                <soal id="5">
+                    <teks>奨学金を希望する場合はこの欄に丸印を付ける（　　）。</teks>
+                    <pilihan id="1">べき</pilihan>
+                    <pilihan id="2">つもり</pilihan>
+                    <pilihan id="3">こと</pilihan>
+                    <pilihan id="4">はず</pilihan>
+                </soal>
+
+                <soal id="6">
+                    <teks>店を経営するなら、家賃や人件費など、売り上げの多い少ない（　　）毎月費用がかかることを考えなければならない。</teks>
+                    <pilihan id="1">に応じて</pilihan>
+                    <pilihan id="2">に限り</pilihan>
+                    <pilihan id="3">にかかわらず</pilihan>
+                    <pilihan id="4">につき</pilihan>
+                </soal>
+            </mondai1>
+
+            <mondai2>
+                <judul>問題2 〈文の組み立て〉</judul>
+                <instruksi>次の文の★に入る最もよいものを1・2・3・4から一つ選びなさい。</instruksi>
+
+                <soal id="1">
+                    <teks>今回のサミット　＿　＿　★　＿　と首相は語った。</teks>
+                    <pilihan id="1">における</pilihan>
+                    <pilihan id="2">である</pilihan>
+                    <pilihan id="3">エネルギー問題</pilihan>
+                    <pilihan id="4">最重要課題は</pilihan>
+                </soal>
+
+                <soal id="2">
+                    <teks>＿　＿　★　＿　確認しておきましょう。</teks>
+                    <pilihan id="1">際に</pilihan>
+                    <pilihan id="2">地震の</pilihan>
+                    <pilihan id="3">避難できる</pilihan>
+                    <pilihan id="4">場所を</pilihan>
+                </soal>
+            </mondai2>
+
+            <mondai3>
+                <judul>問題3 〈文章の文法〉</judul>
+                <instruksi>次の文章を読んで、文章全体の内容を考えて、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。</instruksi>
+
+                <bacaan>
+                    日本で映画を見るのに、通常1,800円ぐらいかかりますが、映画館では、通常料金のほかに、特別なサービスがあります。
+                    毎月1日の「映画の日」は、年齢・性別【1】誰でも1,000円です。水曜日は女性【2】、1,000円になる映画館もあります。
+                    【3】夫婦のどちらかが50歳以上の場合は、いつでも2人で2,000円です。【4】、チケットを買う【5】は、身分証明書の提示が必要です。
+                </bacaan>
+
+                <soal id="1">
+                    <pilihan id="1">によって</pilihan>
+                    <pilihan id="2">に限り</pilihan>
+                    <pilihan id="3">を問わず</pilihan>
+                    <pilihan id="4">に応じ</pilihan>
+                </soal>
+
+                <soal id="2">
+                    <pilihan id="1">にかわって</pilihan>
+                    <pilihan id="2">において</pilihan>
+                    <pilihan id="3">に限り</pilihan>
+                    <pilihan id="4">を問わず</pilihan>
+                </soal>
+
+                <soal id="3">
+                    <pilihan id="1">ところが</pilihan>
+                    <pilihan id="2">また</pilihan>
+                    <pilihan id="3">しかし</pilihan>
+                    <pilihan id="4">だから</pilihan>
+                </soal>
+
+                <soal id="4">
+                    <pilihan id="1">ただし</pilihan>
+                    <pilihan id="2">それに</pilihan>
+                    <pilihan id="3">すると</pilihan>
+                    <pilihan id="4">そこで</pilihan>
+                </soal>
+
+                <soal id="5">
+                    <pilihan id="1">に応じて</pilihan>
+                    <pilihan id="2">際</pilihan>
+                    <pilihan id="3">うち</pilihan>
+                    <pilihan id="4">に限って</pilihan>
+                </soal>
+            </mondai3>
+        </matome>
+    </bab1_content>
 </buku_try_n2>
