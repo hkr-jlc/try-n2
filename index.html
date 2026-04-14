@@ -2,58 +2,92 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRY! N2 - スタッフ募集のお知らせ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TRY! N2 - 文法から伸ばす日本語</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 <base target="_blank">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="nav-brand">
-                <div class="nav-logo">TRY! N2</div>
-                <span class="nav-subtitle">文法から伸ばす日本語</span>
+    <!-- Overlay untuk menutup drawer -->
+    <div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+
+    <!-- Sidebar Drawer (Telegram Style) -->
+    <aside id="sidebar-drawer" class="sidebar-drawer">
+        <div class="drawer-header">
+            <div class="drawer-brand">
+                <div class="drawer-logo">TRY! N2</div>
+                <div class="drawer-subtitle">文法から伸ばす日本語</div>
             </div>
-            <button onclick="showSection('contents')" class="nav-btn-menu" id="btn-contents">
-                <span class="menu-icon">☰</span>
-                <span class="menu-text">もくじ</span>
+            <button class="drawer-close" onclick="closeDrawer()">✕</button>
+        </div>
+        
+        <div class="drawer-content">
+            <!-- Section: Bab -->
+            <div class="drawer-section">
+                <div class="drawer-section-title">Bab</div>
+                <div id="drawer-bab-list" class="drawer-list">
+                    <!-- Diisi oleh JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Section: Index -->
+            <div class="drawer-section">
+                <div class="drawer-section-title">Index & Supplement</div>
+                <div id="drawer-index-list" class="drawer-list">
+                    <!-- Diisi oleh JavaScript -->
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <button onclick="toggleDrawer()" class="hamburger-btn">
+                <span class="hamburger-icon">☰</span>
             </button>
+            <div class="nav-title">
+                <span id="current-section-title">TRY! N2</span>
+            </div>
+            <div class="nav-spacer"></div>
         </div>
     </nav>
 
     <div class="main-container">
 
-        <!-- DAFTAR ISI - Page 12 -->
+        <!-- DAFTAR ISI (Home) - Page 12 -->
         <section id="contents">
-            <h1 class="contents-title">もくじ <span class="contents-subtitle">CONTENTS</span></h1>
-            <div class="divider"></div>
-
-            <!-- Pengantar Items -->
-            <div class="space-y-2 text-sm" id="pengantar-container">
-                <div class="contents-item">
-                    <span>はじめに <span class="text-gray-500">Introduction</span></span>
-                    <span>3</span>
-                </div>
-                <div class="contents-item">
-                    <span>この本をお使いになる皆さんへ <span class="text-gray-500">To Learners Using this Book</span></span>
-                    <span>4</span>
-                </div>
-                <div class="contents-item">
-                    <span>この本をお使いになる先生方へ</span>
-                    <span>10</span>
-                </div>
+            <div class="home-header">
+                <h1 class="home-title">TRY! N2</h1>
+                <p class="home-subtitle">文法から伸ばす日本語</p>
+                <p class="home-desc">日本語能力試験対策</p>
             </div>
+            
+            <div class="quick-access">
+                <h2 class="quick-access-title">もくじ</h2>
+                
+                <!-- Pengantar Items -->
+                <div class="quick-list" id="pengantar-container">
+                    <div class="quick-item" onclick="showSection('contents')">
+                        <span class="quick-item-title">はじめに</span>
+                        <span class="quick-item-sub">Introduction</span>
+                        <span class="quick-item-page">p.3</span>
+                    </div>
+                    <div class="quick-item" onclick="showSection('contents')">
+                        <span class="quick-item-title">この本をお使いになる皆さんへ</span>
+                        <span class="quick-item-sub">To Learners Using this Book</span>
+                        <span class="quick-item-page">p.4</span>
+                    </div>
+                </div>
 
-            <!-- Bab Container - Data dari XML -->
-            <div id="bab-container"></div>
+                <!-- Bab Container - Data dari XML -->
+                <div id="bab-container"></div>
 
-            <!-- Bagian Akhir -->
-            <div class="mt-8 pt-4 border-t-2 border-gray-800" id="bagian-akhir-container">
-                <h3 class="text-lg font-bold mb-4">さくいん・付録 <span class="text-gray-500">Index & Supplement</span></h3>
-                <div class="space-y-2 text-sm" id="index-container"></div>
+                <!-- Bagian Akhir -->
+                <div class="quick-section-title">さくいん・付録</div>
+                <div class="quick-list" id="index-container"></div>
             </div>
         </section>
 
@@ -1035,17 +1069,42 @@
     </div>
 
     <script>
-        // Global variable untuk menyimpan data XML
+        // Global variables
         let xmlData = null;
+        let currentSection = 'contents';
+        let currentBab = null;
 
-        // Fungsi untuk load dan parse database.xml
+        // ===== DRAWER FUNCTIONS =====
+        function openDrawer() {
+            document.getElementById('sidebar-drawer').classList.add('active');
+            document.getElementById('drawer-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            document.getElementById('sidebar-drawer').classList.remove('active');
+            document.getElementById('drawer-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function toggleDrawer() {
+            const drawer = document.getElementById('sidebar-drawer');
+            if (drawer.classList.contains('active')) {
+                closeDrawer();
+            } else {
+                openDrawer();
+            }
+        }
+
+        // ===== LOAD DATABASE =====
         async function loadDatabase() {
             try {
                 const response = await fetch('database.xml');
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 xmlData = parser.parseFromString(xmlText, 'text/xml');
-                renderDaftarIsi();
+                renderHomePage();
+                renderDrawerMenu();
             } catch (error) {
                 console.error('Error loading database.xml:', error);
                 document.getElementById('bab-container').innerHTML = 
@@ -1053,17 +1112,16 @@
             }
         }
 
-        // Fungsi untuk merender daftar isi dari XML
-        function renderDaftarIsi() {
+        // ===== RENDER HOME PAGE =====
+        function renderHomePage() {
             if (!xmlData) return;
 
             const babContainer = document.getElementById('bab-container');
             const indexContainer = document.getElementById('index-container');
             
-            // Render Bab-bab
+            // Render Bab-bab untuk Home Page
             const babElements = xmlData.querySelectorAll('daftar_isi > bab');
             let babHTML = '';
-            let globalPointId = 1;
 
             babElements.forEach((bab) => {
                 const id = bab.getAttribute('id') || '';
@@ -1073,75 +1131,23 @@
                 const kategori = bab.querySelector('kategori')?.textContent || '';
                 const kategoriEn = bab.querySelector('kategori_en')?.textContent || '';
                 const halaman = bab.getAttribute('halaman') || '';
-                const matome = bab.querySelector('matome')?.getAttribute('halaman') || '';
                 
                 // Tentukan section target berdasarkan nomor bab
                 let sectionTarget = '';
                 if (nomor === '1') sectionTarget = 'bab1-header';
                 else if (nomor === '2') sectionTarget = 'bab2-header';
                 
-                // Render Bab Card dengan link
+                // Render Bab Card untuk Home Page
                 babHTML += `
-                    <div class="bab-card" style="margin-top: 1.5rem; cursor: pointer;" onclick="showSection('${sectionTarget}')">
-                        <div class="bab-header hover:bg-gray-100 transition-colors rounded p-2 -m-2">
-                            <div class="bab-number">${nomor}</div>
-                            <div class="bab-info">
-                                <div class="bab-category">${kategori} <span class="text-gray-500">${kategoriEn}</span></div>
-                                <h2 class="bab-title text-blue-700 hover:text-blue-900">${judul} <span class="text-gray-500 text-base font-normal">${judulEn}</span></h2>
-                            </div>
-                            <span class="bab-page">${halaman}</span>
+                    <div class="bab-card-home" onclick="showSection('${sectionTarget}', ${nomor})">
+                        <div class="bab-number-home">${nomor}</div>
+                        <div class="bab-info-home">
+                            <div class="bab-category-home">${kategori}</div>
+                            <div class="bab-title-home">${judul}</div>
                         </div>
+                        <span class="bab-page-home">p.${halaman}</span>
                     </div>
                 `;
-
-                // Render Grammar Points dengan link
-                const grammarPoints = bab.querySelectorAll('grammar_points > point');
-                if (grammarPoints.length > 0) {
-                    babHTML += '<div class="grammar-list">';
-                    grammarPoints.forEach((point, index) => {
-                        const pointText = point.textContent || '';
-                        const pointHalaman = point.getAttribute('halaman') || '';
-                        const pointId = point.getAttribute('id') || '';
-                        const plusMatch = pointText.match(/\(\+Plus\s+(.+)\)/);
-                        let displayText = pointText;
-                        let plusBadge = '';
-                        
-                        if (plusMatch) {
-                            displayText = pointText.replace(/\s*\(\+Plus\s+.+\)/, '');
-                            plusBadge = `<span class="text-rose-600 text-xs">＋Plus ${plusMatch[1]}</span>`;
-                        }
-                        
-                        // Tentukan grammar section target
-                        let grammarSection = '';
-                        if (nomor === '1') grammarSection = 'grammar-list';
-                        else if (nomor === '2') grammarSection = 'bab2-grammar';
-                        
-                        const grammarSubId = `grammar-${globalPointId}`;
-                        
-                        babHTML += `
-                            <div class="grammar-list-item cursor-pointer hover:bg-gray-100 rounded px-2 py-1 -mx-2" onclick="showSection('${grammarSection}', '${grammarSubId}')">
-                                <span class="text-blue-600 hover:text-blue-800 hover:underline">${globalPointId} ${displayText} ${plusBadge}</span>
-                                <span>${pointHalaman}</span>
-                            </div>
-                        `;
-                        globalPointId++;
-                    });
-
-                    // Render Matome jika ada
-                    if (matome) {
-                        let matomeSection = '';
-                        if (nomor === '1') matomeSection = 'matome';
-                        else if (nomor === '2') matomeSection = 'bab2-matome';
-                        
-                        babHTML += `
-                            <div class="matome-item cursor-pointer hover:bg-gray-200 transition-colors" onclick="showSection('${matomeSection}')">
-                                <span>まとめの問題</span>
-                                <span>${matome}</span>
-                            </div>
-                        `;
-                    }
-                    babHTML += '</div>';
-                }
             });
 
             babContainer.innerHTML = babHTML;
@@ -1158,9 +1164,10 @@
                     const halaman = item.getAttribute('halaman') || '';
                     
                     indexHTML += `
-                        <div class="contents-item">
-                            <span>${judul} <span class="text-gray-500">${judulEn}</span></span>
-                            <span>${halaman}</span>
+                        <div class="quick-item">
+                            <span class="quick-item-title">${judul}</span>
+                            <span class="quick-item-sub">${judulEn}</span>
+                            <span class="quick-item-page">p.${halaman}</span>
                         </div>
                     `;
                 });
@@ -1173,11 +1180,11 @@
                     const supItem = supplement.querySelector('item');
                     if (supItem) {
                         const supItemJudul = supItem.querySelector('judul_jp')?.textContent || '';
-                        const supItemJudulEn = supItem.querySelector('judul_en')?.textContent || '';
                         indexHTML += `
-                            <div class="contents-item">
-                                <span>${supJudul}：${supItemJudul} <span class="text-gray-500">${supJudulEn}: ${supItemJudulEn}</span></span>
-                                <span>-</span>
+                            <div class="quick-item">
+                                <span class="quick-item-title">${supJudul}</span>
+                                <span class="quick-item-sub">${supItemJudul}</span>
+                                <span class="quick-item-page">別冊</span>
                             </div>
                         `;
                     }
@@ -1187,7 +1194,89 @@
             }
         }
 
-        function showSection(sectionId, subSectionId = null) {
+        // ===== RENDER DRAWER MENU =====
+        function renderDrawerMenu() {
+            if (!xmlData) return;
+
+            const drawerBabList = document.getElementById('drawer-bab-list');
+            const drawerIndexList = document.getElementById('drawer-index-list');
+            
+            // Render Bab List untuk Drawer
+            const babElements = xmlData.querySelectorAll('daftar_isi > bab');
+            let babDrawerHTML = '';
+
+            babElements.forEach((bab) => {
+                const id = bab.getAttribute('id') || '';
+                const nomor = bab.querySelector('nomor')?.textContent || '';
+                const judul = bab.querySelector('judul_jp')?.textContent || '';
+                const kategori = bab.querySelector('kategori')?.textContent || '';
+                
+                // Tentukan section target
+                let sectionTarget = '';
+                if (nomor === '1') sectionTarget = 'bab1-header';
+                else if (nomor === '2') sectionTarget = 'bab2-header';
+                
+                babDrawerHTML += `
+                    <div class="drawer-item" data-bab="${nomor}" onclick="showSection('${sectionTarget}', ${nomor}); closeDrawer();">
+                        <div class="drawer-item-number">${nomor}</div>
+                        <div class="drawer-item-info">
+                            <span class="drawer-item-title">${judul}</span>
+                            <span class="drawer-item-sub">${kategori}</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            drawerBabList.innerHTML = babDrawerHTML;
+
+            // Render Index List untuk Drawer
+            const bagianAkhir = xmlData.querySelector('bagian_akhir');
+            if (bagianAkhir) {
+                const items = bagianAkhir.querySelectorAll('item');
+                let indexDrawerHTML = '';
+                
+                items.forEach((item) => {
+                    const judul = item.querySelector('judul_jp')?.textContent || '';
+                    const halaman = item.getAttribute('halaman') || '';
+                    
+                    indexDrawerHTML += `
+                        <div class="drawer-item" onclick="showSection('contents'); closeDrawer();">
+                            <div class="drawer-item-info" style="margin-left: 0;">
+                                <span class="drawer-item-title">${judul}</span>
+                                <span class="drawer-item-sub">p.${halaman}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                drawerIndexList.innerHTML = indexDrawerHTML;
+            }
+        }
+
+        // ===== UPDATE ACTIVE STATE IN DRAWER =====
+        function updateDrawerActiveState() {
+            // Reset all drawer items
+            document.querySelectorAll('.drawer-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Set active based on current bab
+            if (currentBab) {
+                const activeItem = document.querySelector(`.drawer-item[data-bab="${currentBab}"]`);
+                if (activeItem) {
+                    activeItem.classList.add('active');
+                }
+            }
+        }
+
+        // ===== SHOW SECTION =====
+        function showSection(sectionId, babNumber = null) {
+            // Update current state
+            currentSection = sectionId;
+            if (babNumber) {
+                currentBab = babNumber;
+            }
+            
             // Hide all sections
             document.querySelectorAll('section').forEach(sec => {
                 sec.classList.add('hidden');
@@ -1199,20 +1288,30 @@
                 targetSection.classList.remove('hidden');
             }
 
-            // Scroll to subsection if specified
-            if (subSectionId) {
-                const subElement = document.getElementById(subSectionId);
-                if (subElement) {
-                    setTimeout(() => {
-                        subElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 100);
-                }
-            } else {
-                window.scrollTo(0, 0);
+            // Update nav title
+            const navTitle = document.getElementById('current-section-title');
+            if (sectionId === 'contents') {
+                navTitle.textContent = 'TRY! N2';
+            } else if (sectionId === 'bab1-header') {
+                navTitle.textContent = 'Bab 1';
+            } else if (sectionId === 'bab2-header') {
+                navTitle.textContent = 'Bab 2';
+            } else if (sectionId === 'grammar-list') {
+                navTitle.textContent = 'Grammar';
+            } else if (sectionId === 'check') {
+                navTitle.textContent = 'Check';
+            } else if (sectionId === 'matome') {
+                navTitle.textContent = 'まとめ';
             }
+
+            // Update drawer active state
+            updateDrawerActiveState();
+
+            // Scroll to top
+            window.scrollTo(0, 0);
         }
 
-        // Load database dan render daftar isi saat halaman dimuat
+        // ===== INITIALIZE =====
         document.addEventListener('DOMContentLoaded', () => {
             loadDatabase();
         });
