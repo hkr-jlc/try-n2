@@ -3,6 +3,8 @@ let currentSection = 'contents';
 let showEnglish = false;
 let showIndonesian = false;
 let xmlData = null;
+let isSpeaking = false;
+let currentUtterance = null;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
@@ -13,7 +15,134 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedId = localStorage.getItem('showIndonesian');
     if (savedEn === 'true') toggleEnglish();
     if (savedId === 'true') toggleIndonesian();
+	
+    // Initialize speech synthesis
+    initSpeechSynthesis();
 });
+
+// Initialize Speech Synthesis
+function initSpeechSynthesis() {
+    if (!('speechSynthesis' in window)) {
+        console.warn('Web Speech API not supported');
+        return;
+    }
+    loadJapaneseVoice();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = loadJapaneseVoice;
+    }
+}
+
+let japaneseVoice = null;
+
+function loadJapaneseVoice() {
+    const voices = speechSynthesis.getVoices();
+    japaneseVoice = voices.find(voice => 
+        voice.lang.startsWith('ja') || 
+        voice.name.includes('Japanese') ||
+        voice.name.includes('日本')
+    );
+}
+
+// Text-to-Speech Function
+function speakJapanese(text, event) {
+    if (event) {
+        event.stopPropagation();
+        event.preventDefault();
+    }
+    
+    if (!('speechSynthesis' in window)) {
+        alert('Text-to-speech tidak didukung di browser ini');
+        return;
+    }
+    
+    if (speechSynthesis.speaking) {
+        speechSynthesis.cancel();
+        if (isSpeaking && currentUtterance && currentUtterance.text === text) {
+            isSpeaking = false;
+            currentUtterance = null;
+            updateSpeakingIndicator(null);
+            return;
+        }
+    }
+    
+    const cleanText = text.replace(/<[^>]*>/g, '');
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'ja-JP';
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    
+    if (japaneseVoice) utterance.voice = japaneseVoice;
+    
+    utterance.onstart = function() {
+        isSpeaking = true;
+        currentUtterance = utterance;
+        updateSpeakingIndicator(event ? event.target : null);
+    };
+    
+    utterance.onend = function() {
+        isSpeaking = false;
+        currentUtterance = null;
+        updateSpeakingIndicator(null);
+    };
+    
+    utterance.onerror = function(event) {
+        console.error('Speech error:', event.error);
+        isSpeaking = false;
+        currentUtterance = null;
+        updateSpeakingIndicator(null);
+    };
+    
+    speechSynthesis.speak(utterance);
+}
+
+function updateSpeakingIndicator(element) {
+    document.querySelectorAll('.speaking-indicator').forEach(el => {
+        el.classList.remove('speaking-indicator');
+    });
+    if (element) element.classList.add('speaking-indicator');
+}
+
+function wrapJapaneseText(element) {
+    if (!element) return;
+    if (element.closest('a, button, .no-tts')) return;
+    
+    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+    const textNodes = [];
+    let node;
+    
+    while (node = walker.nextNode()) {
+        if (node.parentElement.closest('a, button, .tts-text, .no-tts')) continue;
+        if (!node.textContent.trim()) continue;
+        if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(node.textContent)) {
+            textNodes.push(node);
+        }
+    }
+    
+    textNodes.forEach(textNode => {
+        const span = document.createElement('span');
+        span.className = 'tts-text';
+        span.textContent = textNode.textContent;
+        span.onclick = function(e) {
+            e.stopPropagation();
+            speakJapanese(this.textContent, e);
+        };
+        textNode.parentNode.replaceChild(span, textNode);
+    });
+}
+
+function applyTTSToContainer(container) {
+    if (!container) return;
+    const elements = container.querySelectorAll('p, span, div, h1, h2, h3, h4, h5, h6, li, td, th');
+    
+    elements.forEach(el => {
+        if (el.classList.contains('tts-processed')) return;
+        if (el.closest('a, button')) return;
+        if (el.classList.contains('translation-en') || el.classList.contains('translation-id')) return;
+        
+        el.classList.add('tts-processed');
+        wrapJapaneseText(el);
+    });
+}
 
 // Load XML Data
 async function loadXMLData() {
