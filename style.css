@@ -494,16 +494,19 @@ body {
     color: #059669 !important;
 }
 
-/* When visible */
+/* When visible - each on separate line */
 .translation-en.visible,
 .translation-id.visible {
     display: block;
 }
 
-/* Inline translations */
-span.translation-en.visible,
-span.translation-id.visible {
-    display: inline;
+/* For inline contexts, keep as inline but with line break before */
+.example-item .translation-en.visible,
+.example-item .translation-id.visible,
+.quiz-item .translation-en.visible,
+.quiz-item .translation-id.visible {
+    display: block;
+    margin-top: 0.375rem;
 }
 
 /* Translation Box Styles - Indonesian */
@@ -566,7 +569,6 @@ span.translation-id.visible {
 }
 
 .content-id,
-.translation-id,
 .question-id,
 .soal-id {
     font-size: 0.8125rem;
@@ -647,11 +649,10 @@ span.translation-id.visible {
     color: #6b7280;
 }
 
-/* Translation EN and ID base styles */
+/* Translation EN and ID base styles - controlled by JS */
 .translation-en,
 .translation-id {
     font-size: 0.8125rem;
-    display: block;
     margin-top: 0.25rem;
 }
 
@@ -811,11 +812,12 @@ span.translation-id.visible {
     color: #111827;
 }
 
+/* Translation styles - visibility controlled by JS via .visible class */
 .translation-en,
 .translation-id {
     font-size: 0.8125rem;
     margin-top: 0.25rem;
-    display: block;
+    display: none;
 }
 
 .quick-item-page {
