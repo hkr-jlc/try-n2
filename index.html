@@ -3,63 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRY! N2 Grammar</title>
-
+  <title>TRY! N2</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ===== TOP NAV ===== -->
-  <div class="top-nav">
-    <div class="nav-container">
+<!-- ===== TOP NAV ===== -->
+<div class="top-nav">
+  <div class="nav-container">
 
-      <!-- Hamburger -->
-      <button id="hamburger-btn" class="hamburger-btn">
-        <span class="hamburger-icon">☰</span>
+    <button id="hamburger-btn" class="hamburger-btn">☰</button>
+
+    <div id="current-section-title" class="nav-title">TRY! N2</div>
+
+    <div class="translate-buttons">
+      <button id="translate-en-btn" class="translate-btn">
+        <span class="translate-text">EN</span>
       </button>
-
-      <!-- Title -->
-      <div class="nav-title">TRY! N2</div>
-
-      <!-- Translate -->
-      <div class="translate-buttons">
-        <button id="translate-en-btn" class="translate-btn">
-          <span class="translate-text">EN</span>
-        </button>
-        <button id="translate-id-btn" class="translate-btn">
-          <span class="translate-text">ID</span>
-        </button>
-      </div>
-
+      <button id="translate-id-btn" class="translate-btn">
+        <span class="translate-text">ID</span>
+      </button>
     </div>
+
+  </div>
+</div>
+
+<!-- ===== DRAWER ===== -->
+<div id="drawer-overlay" class="drawer-overlay"></div>
+
+<aside id="sidebar-drawer" class="sidebar-drawer">
+
+  <div class="drawer-header">
+    <div class="drawer-brand">
+      <div class="drawer-logo">TRY! N2</div>
+      <div class="drawer-subtitle">Grammar</div>
+    </div>
+    <button onclick="closeDrawer()" class="drawer-close">✕</button>
   </div>
 
-  <!-- ===== DRAWER ===== -->
-  <div id="drawer-overlay" class="drawer-overlay"></div>
-
-  <aside id="sidebar-drawer" class="sidebar-drawer">
-    <div class="drawer-header">
-      <div class="drawer-brand">
-        <div class="drawer-logo">TRY! N2</div>
-        <div class="drawer-subtitle">Grammar App</div>
-      </div>
-      <button id="drawer-close" class="drawer-close">✕</button>
-    </div>
-
-    <div class="drawer-content" id="sidebar">
-      <!-- MENU DARI JS -->
-    </div>
-  </aside>
-
-  <!-- ===== MAIN CONTENT ===== -->
-  <div class="main-container">
-    <div id="content-container">
-      <!-- CONTENT DARI JS -->
-    </div>
+  <div class="drawer-content">
+    <!-- WAJIB -->
+    <div id="drawer-bab-list"></div>
   </div>
 
-  <!-- JS -->
-  <script src="app.js"></script>
+</aside>
+
+<!-- ===== MAIN ===== -->
+<div class="main-container">
+
+  <!-- HOME -->
+  <section id="contents">
+    <div id="bab-container"></div>
+    <div id="index-container"></div>
+  </section>
+
+  <!-- BAB 1 -->
+  <section id="bab1-header" class="hidden"></section>
+  <section id="grammar-list" class="hidden"></section>
+  <section id="check" class="hidden"></section>
+  <section id="matome" class="hidden"></section>
+
+  <!-- BAB 2 -->
+  <section id="bab2-header" class="hidden"></section>
+  <section id="bab2-grammar" class="hidden"></section>
+  <section id="bab2-check" class="hidden"></section>
+  <section id="bab2-matome" class="hidden"></section>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
 </html>
