@@ -1474,416 +1474,659 @@
         </check>
     </bab2_content>
 
-    <!-- KONTEN BAB 3 - Page 30-37 -->
-    <bab3_content>
-        <!-- PAGE 30 - Header & Dekiru Koto -->
-        <header halaman="30">
-            <kategori>スピーチをする</kategori>
-            <kategori_en>Giving a Speech</kategori_en>
-            <nomor>3</nomor>
-            <judul>転任のあいさつ（2）</judul>
-            <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
+    <!-- KONTEN BAB 3 - Page 38-49 -->
+	<bab3_content>
+		<!-- PAGE 38 - Header & Dekiru Koto -->
+		<header halaman="38">
+			<kategori>スピーチをする</kategori>
+			<kategori_en>Giving a Speech</kategori_en>
+			<nomor>2</nomor>
+			<judul>転任のあいさつ（２）</judul>
+			<judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
 
-            <dekiru_koto>
-                <judul>できること</judul>
-                <item>
-                    <jp>改まった形で思い出話などをして、お別れのスピーチができる。</jp>
-                    <en>Give a farewell speech with memorable stories and the like in a formal setting.</en>
-                </item>
-            </dekiru_koto>
+			<dekiru_koto>
+				<judul>できること</judul>
+				<item>
+					<jp>改まった形で今後の展望などを話し、お礼のあいさつができる。</jp>
+					<en>Talk about the future outlook and the like and state your appreciation in a formal setting.</en>
+				</item>
+			</dekiru_koto>
 
-            <speech>
-                <teks>皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。入社して以来、この営業部において、部長をはじめ先輩方のご指導のもとで、営業について一から学ぶことができ、たいへん幸運でした。仕事の進め方はもとより、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「人は失敗から学ぶものだ」という言葉は忘れられません。仕事をする上で大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、残念ながらこの職場を離れることになりました。</teks>
-            </speech>
-        </header>
+			<speech>
+				<teks>大阪支社では、アジア各国への輸出拡大を目的としたプロジェクトに参加することになりました。この転勤をきっかけに、また新たな挑戦ができることを期待しております。やるからには全力でがんばります。
 
-        <!-- SUB BAB 16: 入社して以来 - Page 30 -->
-        <sub_bab id="16" halaman="30">
-            <nomor>16</nomor>
-            <judul>入社して以来</judul>
-            <bintang>★★★</bintang>
+	入社以来慣れ親しんだこの職場を離れることになりましたが、皆様と一緒に仕事をする機会がなくなるというわけではありません。どうぞこれまでと変わることなく、ご指導よろしくお願いいたします。
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～以来」は、「～」のときから今までずっと同じ状態が続いているときに使う。</jp>
-                    <en>Use "～以来" when a condition has continued from "～" until now.</en>
-                </penjelasan>
-                <pola>Ｖ-て／Ｎ＋以来</pola>
+	最後に、本日は雨にもかかわらず、このように多くの方々が来てくださったこと、皆様の温かいお心遣いに心から感謝しております。本当にありがとうございました。</teks>
+			</speech>
+		</header>
 
-                <contoh>
-                    <item no="1">
-                        <jp>母が入院して以来、家事はすべて私がしています。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>３年前の夏休みに帰国して以来、長い間家族に会っていません。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>こちらに引っ越して以来、散歩を日課にしているんです。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>山野君とは卒業以来、まったく連絡が取れない。</jp>
-                    </item>
-                    <item no="5">
-                        <jp>彼は2000年4月以来、1日も休まず遺伝子の研究を続けている。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+		<!-- SUB BAB 16: 輸出拡大を目的としたプロジェクト - Page 38 -->
+		<sub_bab id="16" halaman="38">
+			<nomor>16</nomor>
+			<judul>輸出拡大を目的としたプロジェクト</judul>
+			<bintang>★★★</bintang>
 
-            <yatte_miyou>
-                <judul>やってみよう！</judul>
-                <jawaban_ref>別冊P. 1</jawaban_ref>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「AをBとする」は、「地域交流を目的として」「リーダーを中心に」のように、「AをBにする、AがBだ」と言うときに使う。「として」のかわりに「に」を使うこともある。</jp>
+					<en>Use "AをBとする" when you say "do A as B; A is B" as in "地域交流を目的として" and "リーダーを中心に". You can also use "に" in place of "として".</en>
+				</penjelasan>
+				<pola>N1 + を + N2 + [とした／とする／として／に]</pola>
+				<catatan>※「目的・中心・対象・手本・前提」などの言葉と一緒に使われる。</catatan>
 
-                <soal id="1">
-                    <teks>1990年に来日して以来、（　　）。</teks>
-                    <pilihan id="a">ずっと京都に住んでいます</pilihan>
-                    <pilihan id="b">2000年に帰国しました</pilihan>
-                </soal>
+				<contoh>
+					<item no="1">
+						<jp>「みどりの会」は環境保護活動を目的とする市民の組織です。</jp>
+					</item>
+					<item no="2">
+						<jp>今回のシンポジウムは日本の伝統芸能をテーマとして行われます。</jp>
+					</item>
+					<item no="3">
+						<jp>今回の話し合いの結果を私たちの総意として社長に伝えることにしましょう。</jp>
+					</item>
+					<item no="4">
+						<jp>「子は親の鏡」という言葉があるが、子どもは親を手本として成長していくのであろう。</jp>
+					</item>
+					<item no="5">
+						<jp>わが社ではエンジニアを中心に、安全な車づくりの研究が行われている。</jp>
+					</item>
+					<item no="6">
+						<jp>結婚を前提に彼女に交際を申し込んだ。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-                <soal id="2">
-                    <teks>彼は3年前にプロの選手になって以来、（　　）。</teks>
-                    <pilihan id="a">1億円の契約金をもらった</pilihan>
-                    <pilihan id="b">今まで以上に食事に気を遣うようになった</pilihan>
-                </soal>
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<jawaban_ref>別冊P. 2</jawaban_ref>
 
-                <soal id="3">
-                    <teks>この村に工場ができて以来、（　　）。</teks>
-                    <pilihan id="a">事故が起きた</pilihan>
-                    <pilihan id="b">人口が増え続けている</pilihan>
-                </soal>
+				<soal id="1">
+					<teks>企業は利益を上げることを目的（　　）、日々、経済活動を行っている。</teks>
+					<pilihan id="a">として</pilihan>
+					<pilihan id="b">とする</pilihan>
+				</soal>
 
-                <soal id="4">
-                    <teks>子どものとき川に落ちて以来、（　　）。</teks>
-                    <pilihan id="a">水が怖くて今も泳げない</pilihan>
-                    <pilihan id="b">大けがをした</pilihan>
-                </soal>
-            </yatte_miyou>
+				<soal id="2">
+					<teks>大学教授を中心（　　）グループによって、ロボットの研究開発が行われている。</teks>
+					<pilihan id="a">として</pilihan>
+					<pilihan id="b">とする</pilihan>
+				</soal>
 
-            <halaman_ref>p.224 ～以来</halaman_ref>
-        </sub_bab>
+				<soal id="3">
+					<teks>今のアルバイトは2週間の研修に毎日参加することを条件（　　）採用された。</teks>
+					<pilihan id="a">とする</pilihan>
+					<pilihan id="b">に</pilihan>
+				</soal>
 
-        <!-- SUB BAB 17: 部長をはじめ - Page 31 -->
-        <sub_bab id="17" halaman="31">
-            <nomor>17</nomor>
-            <judul>部長をはじめ</judul>
-            <bintang>★★★</bintang>
+				<soal id="4">
+					<teks>A：みんな、キャプテンを中心（　　）一丸となって試合で思い切り力を出せ！</teks>
+					<teks>B：がんばります。監督、見ていてください。</teks>
+					<pilihan id="a">とした</pilihan>
+					<pilihan id="b">に</pilihan>
+				</soal>
+			</yatte_miyou>
+		</sub_bab>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～をはじめ」は、代表的な例を出して、「～だけでなくほかにもたくさん」と言いたいときに使う。</jp>
-                    <en>Use "～をはじめ" when you want to say "not just ～, but many others" by giving a typical examples.</en>
-                </penjelasan>
-                <pola>Ｎ＋をはじめ／をはじめとして／をはじめとする＋Ｎ</pola>
+		<!-- SUB BAB 17: この転勤をきっかけに - Page 39 -->
+		<sub_bab id="17" halaman="39">
+			<nomor>17</nomor>
+			<judul>この転勤をきっかけに</judul>
+			<bintang>★</bintang>
 
-                <contoh>
-                    <item no="1">
-                        <jp>日本には富士山をはじめ、たくさんの美しい山がある。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>アジアには中国をはじめとして、約40の国々がある。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>首相をはじめ、多くの政治家が大統領の歓迎会に出席した。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>健康のためには食生活をはじめとする生活習慣の見直しが必要です。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「きっかけ」は、何かが始まったり、変わったりしたときに、その原因・理由になった出来事を表すときに使う。</jp>
+					<en>Use "きっかけ" to express the factor or reason for why something happened that led to a new beginning or change.</en>
+				</penjelasan>
+				<pola>Ｎ＋をきっかけに／をきっかけとして／がきっかけで／がきっかけになって／がきっかけだ</pola>
 
-            <yatte_miyou>
-                <judul>やってみよう！</judul>
-                <jawaban_ref>別冊P. 1</jawaban_ref>
+				<contoh>
+					<item no="1">
+						<jp>日本のドラマをきっかけとして、日本文化に関心を持つようになった。</jp>
+					</item>
+					<item no="2">
+						<jp>小学生の投書がきっかけで、駅前の公園をきれいにしようという活動が始まった。</jp>
+					</item>
+					<item no="3">
+						<jp>彼と友人になったのは、入学式で隣に座ったことがきっかけだった。</jp>
+					</item>
+					<item no="4">
+						<jp>私が昆虫学者を目指したきっかけは、子どものときに夢中で読んだ『ファーブル昆虫記』です。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-                <soal id="1">
-                    <teks>この映画専門学校は、校長をはじめ、（　　）。</teks>
-                    <pilihan id="a">この春の新作が入荷いたしましたので、ぜひご来店ください。</pilihan>
-                    <pilihan id="b">様々な電気製品が必要だ。</pilihan>
-                    <pilihan id="c">多くの著名人が講師をしている。</pilihan>
-                    <pilihan id="d">東南アジアなどで広く使われている。</pilihan>
-                </soal>
+			<plus>
+				<judul>Plus 契機</judul>
+				<penjelasan>
+					<jp>同じ意味・用法で社会的、歴史的に大きいことを言う場合は「契機」という言葉を使うこともある。プラスの意味の文に使うことが多い。</jp>
+					<en>You can also use the word "契機" the same way to mean the same thing about something important socially or historically. It is often used in sentences with a positive meaning.</en>
+				</penjelasan>
+				<contoh_plus>
+					<item no="1">
+						<jp>青木氏の社長就任を契機にして、わが社は大きく発展した。</jp>
+					</item>
+					<item no="2">
+						<jp>この大学は卒業生がノーベル賞を受賞したことを契機として受験生が増えたと言われている。</jp>
+					</item>
+					<item no="3">
+						<jp>今回の事件を契機に、地域ぐるみで子どもを犯罪から守ろうということになった。</jp>
+					</item>
+					<item no="4">
+						<jp>この港では、開港100周年を契機に今年1年さまざまな催し物が企画されている。</jp>
+					</item>
+				</contoh_plus>
+			</plus>
+		</sub_bab>
 
-                <soal id="2">
-                    <teks>このスパイスはタイをはじめ、（　　）。</teks>
-                </soal>
+		<!-- SUB BAB 18: やるからには - Page 40 -->
+		<sub_bab id="18" halaman="40">
+			<nomor>18</nomor>
+			<judul>やるからには</judul>
+			<bintang>★★</bintang>
 
-                <soal id="3">
-                    <teks>一人暮らしには電子レンジをはじめ、（　　）。</teks>
-                </soal>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「～からには…」は、「～は決めたこと・事実なのだから当然…するべきだ・するつもりだ・しろ」などの強い気持ちを言いたいときに使う。</jp>
+					<en>Use "～からには…" when you want to say, with strong emotion, something like "it's natural because ～ is decided / a fact; something should be done; you intend to do something; when you order someone to do something."</en>
+				</penjelasan>
+				<pola>Ｖ-る／Ｖ-た＋からには</pola>
+				<catatan>※「～というからには」「Ｎである＋からには」の形もある。</catatan>
 
-                <soal id="4">
-                    <teks>ジャケットをはじめ、（　　）。</teks>
-                </soal>
-            </yatte_miyou>
-        </sub_bab>
+				<contoh>
+					<item no="1">
+						<jp>日本での就職を希望するからには、しっかり企業研究をしておいたほうがいい。</jp>
+					</item>
+					<item no="2">
+						<jp>冬、山に登るからには、日頃からトレーニングを続ける必要がある。</jp>
+					</item>
+					<item no="3">
+						<jp>世界パティシエコンテストに出場するからには、優勝を目指してがんばります。</jp>
+					</item>
+					<item no="4">
+						<jp>入学おめでとう。この専門学校に入ったからには、しっかり技術を身につけて、いつか自分の店を持てるようになってください。</jp>
+					</item>
+					<item no="5">
+						<jp>三つ星レストランというからには、料理もサービスも期待できるはずだと考えるのが自然だ。</jp>
+					</item>
+					<item no="6">
+						<jp>キャプテンであるからにはチーム全体のことを考えるべきだ。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-        <!-- SUB BAB 18: 先輩方のご指導のもとで - Page 32 -->
-        <sub_bab id="18" halaman="32">
-            <nomor>18</nomor>
-            <judul>先輩方のご指導のもとで</judul>
-            <bintang>★★</bintang>
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<jawaban_ref>別冊P. 2</jawaban_ref>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「教授のもと」のように、「何か大きい影響力のあるものの下で」というときや「協力のもと」のように、「その条件や状況の中で」と言いたいときに使う。</jp>
-                    <en>Use this expression when you want to say that something is "under someone with some great influence" as in "教授のもと", or when you want to say that something is "under certain conditions or a situation" as in "協力のもと".</en>
-                </penjelasan>
-                <pola>Ｎ＋のもと（で／に）</pola>
+				<soal id="1">
+					<teks>この店で働く（　　）、扱う商品についてよく勉強しなければならない。</teks>
+					<pilihan id="a">からには</pilihan>
+					<pilihan id="b">からといって</pilihan>
+				</soal>
 
-                <contoh>
-                    <item no="1">
-                        <jp>最近は明るい太陽のもとで、元気に遊ぶ子どもが少なくなった。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>彼はすばらしい自然環境のもとでこの作品を作り上げた。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>子育ては夫婦の協力のもとで行われるべきだ。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>合理化の名のもとに多数の従業員が解雇された。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+				<soal id="2">
+					<teks>年齢が若い（　　）、能力が低いと思ってはいけない。</teks>
+					<pilihan id="a">からには</pilihan>
+					<pilihan id="b">からといって</pilihan>
+				</soal>
 
-            <yatte_miyou>
-                <judul>やってみよう！</judul>
-                <jawaban_ref>別冊P. 1</jawaban_ref>
+				<soal id="3">
+					<teks>インフルエンザはちゃんと（　　）、学校へ来てはいけない。</teks>
+					<pilihan id="a">治ったからには</pilihan>
+					<pilihan id="b">治ってからでなければ</pilihan>
+				</soal>
 
-                <soal id="1">
-                    <teks>彼は両親と離れ、＿＿＿＿＿＿のもとで、育てられた。</teks>
-                </soal>
+				<soal id="4">
+					<teks>写真家になると（　　）、苦しいことがあっても、認められるまでがんばれ。</teks>
+					<pilihan id="a">決めたからには</pilihan>
+					<pilihan id="b">決めてからでなければ</pilihan>
+				</soal>
 
-                <soal id="2">
-                    <teks>みきは16歳だが、＿＿＿＿＿＿のもとに結婚が認められた。</teks>
-                </soal>
+				<soal id="5">
+					<teks>わざわざ休みを取って旅行に来た（　　）、思いっきり楽しんで帰ろうよ。</teks>
+					<pilihan id="a">からには</pilihan>
+					<pilihan id="b">からといって</pilihan>
+				</soal>
+			</yatte_miyou>
 
-                <soal id="3">
-                    <teks>私はこの会社で、尊敬する＿＿＿＿＿＿のもとで40年間働いてきた。</teks>
-                </soal>
+			<plus>
+				<judul>Plus ～以上は</judul>
+				<penjelasan>
+					<jp>「Ｖ＋以上（は）」という言い方もある。</jp>
+					<en>There is also the expression "V + 以上 (は)".</en>
+				</penjelasan>
+				<contoh_plus>
+					<item no="1">
+						<jp>市長になった以上は、皆様が安心して暮らせる街づくりをすることをお約束します。</jp>
+					</item>
+					<item no="2">
+						<jp>期日までに間に合わせると約束した以上は、残業してでも終わらせなければならない。</jp>
+					</item>
+					<item no="3">
+						<jp>皆さん、本校の学生になった以上は、わが校の伝統を守り、誇りを持って行動してください。</jp>
+					</item>
+					<item no="4">
+						<jp>プロジェクトのリーダーを引き受けた以上、全力を尽くします。</jp>
+					</item>
+				</contoh_plus>
+			</plus>
 
-                <soal id="4">
-                    <teks>海岸の清掃活動は多くの市民の＿＿＿＿＿＿のもとに行われている。</teks>
-                </soal>
+			<halaman_ref>p.220 ～から</halaman_ref>
+		</sub_bab>
 
-                <pilihan_jawaban>
-                    <item>両親の同意</item>
-                    <item>祖父母</item>
-                    <item>協力</item>
-                    <item>社長</item>
-                </pilihan_jawaban>
-            </yatte_miyou>
-        </sub_bab>
+		<!-- SUB BAB 19: なくなるというわけではありません - Page 42 -->
+		<sub_bab id="19" halaman="42">
+			<nomor>19</nomor>
+			<judul>なくなるというわけではありません</judul>
+			<bintang>★★★</bintang>
 
-        <!-- SUB BAB 19: 仕事の進め方はもとより - Page 33 -->
-        <sub_bab id="19" halaman="33">
-            <nomor>19</nomor>
-            <judul>仕事の進め方はもとより</judul>
-            <bintang>★★</bintang>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「～わけではない」は、「～の状況や気持ち・理由ではない」と否定するときに使う。「病気が治ったわけではない」のように、相手の考えや一般的な判断を否定するときに使う。「嫌いなわけではない」のように、100％そうだと言いたくないときにも使う。</jp>
+					<en>Use "～わけではない" when you make a denial as in "that's not the situation; it doesn't feel like that; not for that reason." Use it when you refute another person's idea or a typical judgment as in "病気が治ったわけではない". You can also use it when you do not want to say that something is 100% for sure, as in "嫌いなわけではない".</en>
+				</penjelasan>
+				<pola>PI + [わけではない／わけじゃない]</pola>
+				<catatan>[なAだな Nだの]</catatan>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～はもとより」は、スピーチ・プレゼンテーションなどで「～はもちろん、～だけでなくそのほかにも」と説明したいときに使う。</jp>
-                    <en>Use "～はもとより" when you want to explain in a speech, presentation or the like that "～" is obvious, or that it is not only "～" but also something more.</en>
-                </penjelasan>
-                <pola>Ｎ＋はもとより</pola>
+				<contoh>
+					<item no="1">
+						<jp>退院しても、病気が完全に治ったわけではありませんから、無理をしないでください。</jp>
+					</item>
+					<item no="2">
+						<jp>通信販売は便利だが、実際に見て買うわけではないので、品物が届くまでちょっと心配だ。</jp>
+					</item>
+					<item no="3">
+						<jp>歌が下手なわけではないが、カラオケで歌うことはほとんどない。</jp>
+					</item>
+					<item no="4">
+						<jp>あのレストランはおいしいわけでもないのに、いつも混んでいる。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-                <contoh>
-                    <item no="1">
-                        <jp>この温泉は、日本人はもとより、外国人にもたいへん人気があります。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>子どもの成長のためには、食事はもとより、睡眠や運動にも気をつけてください。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>優秀な人材の確保は中小企業はもとより、大企業にとっても大きな問題です。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>犯罪防止はもとより、地域の交通安全も警察の大切な仕事です。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<jawaban_ref>別冊P. 2</jawaban_ref>
 
-            <yatte_miyou>
-                <judul>やってみよう！</judul>
-                <jawaban_ref>別冊P. 1</jawaban_ref>
+				<soal id="1">
+					<teks>ゲームが好きだが、毎日している（　　）。</teks>
+					<pilihan id="a">わけではない</pilihan>
+					<pilihan id="b">に違いない</pilihan>
+				</soal>
 
-                <soal id="1">
-                    <teks>すしは日本（　　）いろいろな国で人気がある食べ物です。</teks>
-                    <pilihan id="a">はもとより</pilihan>
-                    <pilihan id="b">においては</pilihan>
-                </soal>
+				<soal id="2">
+					<teks>こんなにいい天気だから、雨が降る（　　）でしょう。</teks>
+					<pilihan id="a">わけではない</pilihan>
+					<pilihan id="b">わけがない</pilihan>
+				</soal>
 
-                <soal id="2">
-                    <teks>事前に予約した場合（　　）無料で参加できます。</teks>
-                    <pilihan id="a">はもとより</pilihan>
-                    <pilihan id="b">に限り</pilihan>
-                </soal>
+				<soal id="3">
+					<teks>A：彼は優しいから、謝れば許してくれる（　　）？</teks>
+					<teks>B：謝ればいつでも許してもらえる（　　）と思うよ。</teks>
+					<pilihan_a id="a">わけじゃない</pilihan_a>
+					<pilihan_a id="b">んじゃない</pilihan_a>
+					<pilihan_b id="a">わけじゃない</pilihan_b>
+					<pilihan_b id="b">しかない</pilihan_b>
+				</soal>
+			</yatte_miyou>
 
-                <soal id="3">
-                    <teks>スペイン語はスペイン（　　）南米の国々でも使われています。</teks>
-                    <pilihan id="a">はもとより</pilihan>
-                    <pilihan id="b">にもかかわらず</pilihan>
-                </soal>
+			<halaman_ref>p.226 ～わけ</halaman_ref>
+		</sub_bab>
 
-                <soal id="4">
-                    <teks>子どもは家族（　　）生活しながら、社会習慣を身につけるべきだ。</teks>
-                    <pilihan id="a">はもとより</pilihan>
-                    <pilihan id="b">のもとで</pilihan>
-                </soal>
+		<!-- SUB BAB 20: これまでと変わることなく - Page 43 -->
+		<sub_bab id="20" halaman="43">
+			<nomor>20</nomor>
+			<judul>これまでと変わることなく</judul>
+			<bintang>★★</bintang>
 
-                <soal id="5">
-                    <teks>今後、両国間では経済（　　）文化の交流も活発になるだろう。</teks>
-                    <pilihan id="a">はもとより</pilihan>
-                    <pilihan id="b">のもとで</pilihan>
-                </soal>
-            </yatte_miyou>
-        </sub_bab>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「休むことなく働き続けている」のように、何かをしない状態で後ろの動作が続いたり、完了したりするときに使う。</jp>
+					<en>Use this when something happens or is completed even though some action has not been done, as in "休むことなく働き続けている".</en>
+				</penjelasan>
+				<pola>Ｖ-る＋ことなく</pola>
 
-        <!-- SUB BAB 20: 人は失敗から学ぶものだ - Page 34 -->
-        <sub_bab id="20" halaman="34">
-            <nomor>20</nomor>
-            <judul>人は失敗から学ぶものだ</judul>
-            <bintang>★</bintang>
+				<contoh>
+					<item no="1">
+						<jp>今回は優勝することができましたが、これで満足することなく、さらに努力を続けます。これからも、応援よろしくお願いします。</jp>
+					</item>
+					<item no="2">
+						<jp>彼は一言も文句を言うことなく、重い荷物を運んでいった。</jp>
+					</item>
+					<item no="3">
+						<jp>その後、彼女は一度もふるさとの地を訪れることなく、80年の生涯を終えた。</jp>
+					</item>
+					<item no="4">
+						<jp>私たちが乗った新幹線は遅れることなく京都についた。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>誰でもそう思う、絶対正しいと思っている話者の判断を表す。注意や命令になることもある。偉そうな感じがするので、目上の人には使わないほうがいい。親しい人との会話では、「もんだ」が使われる。</jp>
-                    <en>This expresses the speaker's judgment that anyone would think so or that the speaker thinks it is absolutely correct. You should not use this when speaking to a higher ranking person as it can sound bossy. "もんだ" is used in conversation with a familiar person.</en>
-                </penjelasan>
-                <pola>Ｖ-る／Ｖ-ない＋ものだ／もんだ</pola>
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<jawaban_ref>別冊P. 2</jawaban_ref>
 
-                <contoh>
-                    <item no="1">
-                        <jp>A：うちの息子は最近口答えばかりして、ちっとも言うことを聞かないんですよ。B：子どもは親に反抗するものですから、それも成長のひとつですよ。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>A：今まで自由に生きてきたけど、最近さびしさを感じるんだ。B：それはそうさ。人は一人では生きられないものだから。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>誰でもほめられればやる気になるものですから、新入社員を指導するときはぜひいいところを探してください。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>失恋したら、めいっぱいおしゃれをして出かけましょう。おしゃれをすると気分が明るくなるものです。</jp>
-                    </item>
-                    <item no="5">
-                        <jp>さっきのお前の態度は何だ。人が話しているときには、ちゃんと聞くもんだぞ。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+				<soal id="1">
+					<teks>雨はほとんどやむことなく、（　　）。</teks>
+					<pilihan id="a">5日間降り続いた</pilihan>
+					<pilihan id="b">川の水があふれた</pilihan>
+				</soal>
 
-            <halaman_ref>p.224 ～もの／もん</halaman_ref>
-        </sub_bab>
+				<soal id="2">
+					<teks>祖母は今年75歳ですが、病気をすることなく（　　）。</teks>
+					<pilihan id="a">大きなけがをした</pilihan>
+					<pilihan id="b">元気に暮らしている</pilihan>
+				</soal>
 
-        <!-- SUB BAB 21: 仕事をする上で - Page 34 -->
-        <sub_bab id="21" halaman="34">
-            <nomor>21</nomor>
-            <judul>仕事をする上で</judul>
-            <bintang>★★★</bintang>
+				<soal id="3">
+					<teks>世界中で生産される食料の約3分の1が食べられることなく、（　　）。</teks>
+					<pilihan id="a">捨てられているということだ</pilihan>
+					<pilihan id="b">おなかがすいているということだ</pilihan>
+				</soal>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～上で…」は、「～をするとき（…が重要だ・必要だ）」と言いたいときに使われる。</jp>
-                    <en>"～上で…" is used when you want to say that "(something is important or required) when doing something".</en>
-                </penjelasan>
-                <pola>Ｖ-る＋上で</pola>
+				<soal id="4">
+					<teks>中学時代に出会った親友との友情は、20年間変わることなく、（　　）。</teks>
+					<pilihan id="a">もう終わってしまった</pilihan>
+					<pilihan id="b">続いている</pilihan>
+				</soal>
+			</yatte_miyou>
 
-                <contoh>
-                    <item no="1">
-                        <jp>この本は就職活動をする上での重要なポイントが書かれています。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>国際関係を考える上で、宗教問題は避けられない。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>新店舗を開設する上で、周辺のマーケティング調査は欠かせない。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>会社を経営していく上でコストパフォーマンスは重要な課題だ。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+			<halaman_ref>p.221 ～こと</halaman_ref>
+		</sub_bab>
 
-            <yatte_miyou>
-                <judul>やってみよう！</judul>
-                <jawaban_ref>別冊P. 2</jawaban_ref>
+		<!-- SUB BAB 21: 雨にもかかわらず - Page 44 -->
+		<sub_bab id="21" halaman="44">
+			<nomor>21</nomor>
+			<judul>雨にもかかわらず</judul>
+			<bintang>★★★</bintang>
 
-                <soal id="1">
-                    <teks>留学生が生活する上で（　　）。</teks>
-                    <pilihan id="a">円高は大きな問題だ</pilihan>
-                    <pilihan id="b">高いものは買わない</pilihan>
-                </soal>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>「～にもかかわらず」は、「～なのに」という意味で、その状態から予想することと実際が違うという意味で使う。</jp>
+					<en>"～にもかかわらず" means "although / despite ～ ". Use it to mean that something is actually different from what one would expect from the situation.</en>
+				</penjelasan>
+				<pola>[Ｖ-ている／Ｖ-た／Ｎ]＋にもかかわらず</pola>
+				<catatan>※「なA／Nである＋にもかかわらず」「いA＋にもかかわらず」の形もある。</catatan>
 
-                <soal id="2">
-                    <teks>この講座はボランティア活動をする上で（　　）。</teks>
-                    <pilihan id="a">難しいです</pilihan>
-                    <pilihan id="b">必要な知識を学びます</pilihan>
-                </soal>
+				<contoh>
+					<item no="1">
+						<jp>彼の努力にもかかわらず、業績はよくならなかった。</jp>
+					</item>
+					<item no="2">
+						<jp>多くの家庭で収入が減少しているにもかかわらず、貯金額は増加している。</jp>
+					</item>
+					<item no="3">
+						<jp>授業中にもかかわらず、学生はおしゃべりしたり、携帯電話でメールしたりしている。</jp>
+					</item>
+					<item no="4">
+						<jp>妻は真実を語らなかった。それにもかかわらず、夫は自分の死が近いことを知っていた。</jp>
+					</item>
+					<item no="5">
+						<jp>このスケジュール管理のソフトはフリーソフトであるにもかかわらず、優れた機能を持っている。</jp>
+					</item>
+					<item no="6">
+						<jp>この化粧品は値段が高いにもかかわらず、3か月で45万本も売れたそうだ。</jp>
+					</item>
+				</contoh>
+			</dou_tsukau>
 
-                <soal id="3">
-                    <teks>進学先を選ぶ上で（　　）。</teks>
-                    <pilihan id="a">就職率は重要なポイントだ</pilihan>
-                    <pilihan id="b">この大学は簡単に入れました</pilihan>
-                </soal>
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<jawaban_ref>別冊P. 2</jawaban_ref>
 
-                <soal id="4">
-                    <teks>日本の農業を理解する上で（　　）。</teks>
-                    <pilihan id="a">農村に見学に行くつもりだ</pilihan>
-                    <pilihan id="b">気候や地形に対する理解も必要だ</pilihan>
-                </soal>
-            </yatte_miyou>
+				<soal id="1">
+					<teks>彼は高熱（　　）休まずに働き続けた。</teks>
+					<pilihan id="a">にもかかわらず</pilihan>
+					<pilihan id="b">において</pilihan>
+				</soal>
 
-            <halaman_ref>p.220 ～上／上</halaman_ref>
-        </sub_bab>
+				<soal id="2">
+					<teks>このテーマパークは天候（　　）お楽しみいただけます。</teks>
+					<pilihan id="a">にもかかわらず</pilihan>
+					<pilihan id="b">にかかわらず</pilihan>
+				</soal>
 
-        <!-- CHECK - Page 37 -->
-        <check halaman="37">
-            <judul>Check</judul>
-            <jawaban_ref>別冊P. 2</jawaban_ref>
+				<soal id="3">
+					<teks>悪天候（　　）マラソン大会は予定通り行われた。</teks>
+					<pilihan id="a">にもかかわらず</pilihan>
+					<pilihan id="b">に限り</pilihan>
+				</soal>
 
-            <bagian1>
-                <soal id="1">
-                    <teks>当社はチョコレート（　　）お菓子の総合メーカーです。</teks>
-                </soal>
-                <soal id="2">
-                    <teks>このアニメは、子ども（　　）、大人でも十分楽しめる作品になっている。</teks>
-                </soal>
-                <soal id="3">
-                    <teks>たまにはゆっくり映画を見たいと思い（　　）、なかなか時間がとれない。</teks>
-                </soal>
-                <soal id="4">
-                    <teks>がんの疑いがあるときは専門医（　　）早期に診断、治療されることをおすすめします。</teks>
-                </soal>
-                <pilihan_bagian1>
-                    <item>ながら</item>
-                    <item>のもとで</item>
-                    <item>はもとより</item>
-                    <item>をはじめとする</item>
-                </pilihan_bagian1>
-            </bagian1>
+				<soal id="4">
+					<teks>学校の規則で禁止されている（　　）、彼はバイクで通学している。</teks>
+					<pilihan id="a">にもかかわらず</pilihan>
+					<pilihan id="b">からといって</pilihan>
+				</soal>
 
-            <bagian2>
-                <soal id="5">
-                    <teks>仕事をする（　　）いちばん大切なのは報告・連絡・相談だと言われている。</teks>
-                </soal>
-                <soal id="6">
-                    <teks>ジョギングを始めて（　　）体の調子もいいし、夜もよく寝られるようになった。</teks>
-                </soal>
-                <soal id="7">
-                    <teks>誰でも後輩の前ではいいところを見せたい（　　）。</teks>
-                </soal>
-                <pilihan_bagian2>
-                    <item>ものだ</item>
-                    <item>上で</item>
-                    <item>以来</item>
-                </pilihan_bagian2>
-            </bagian2>
-        </check>
-    </bab2_content>
+				<soal id="5">
+					<teks>彼は子どものころからサッカー（　　）スポーツは何でも得意だった。</teks>
+					<pilihan id="a">にもかかわらず</pilihan>
+					<pilihan id="b">はもちろん</pilihan>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.223 ～にかかわらず</halaman_ref>
+		</sub_bab>
+
+		<!-- CHECK - Page 45 -->
+		<check halaman="45">
+			<judul>Check</judul>
+			<jawaban_ref>別冊P. 2</jawaban_ref>
+
+			<bagian1>
+				<soal id="1">
+					<teks>難しい仕事でも引き受けた（　　）、がんばってやるしかないだろう。</teks>
+				</soal>
+				<soal id="2">
+					<teks>現在、強風のため、首都圏を中心（　　）、JR各線にダイヤの乱れが出ています。</teks>
+				</soal>
+				<soal id="3">
+					<teks>最近では大学に足を運ぶ（　　）、オンライン講座で学士の資格を得ることも可能だ。</teks>
+				</soal>
+				<soal id="4">
+					<teks>忙しいと言っても、食事をする時間がない（　　）。</teks>
+				</soal>
+				<soal id="5">
+					<teks>彼女は、けがが完全に治っていない（　　）、試合に出場すると言った。</teks>
+				</soal>
+				<soal id="6">
+					<teks>今回の入院を（　　）に、これからは1年に1回必ず健康診断を受けようと思った。</teks>
+				</soal>
+				<pilihan_bagian1>
+					<item>からには</item>
+					<item>ことなく</item>
+					<item>にもかかわらず</item>
+					<item>わけではない</item>
+					<item>として</item>
+					<item>きっかけ</item>
+				</pilihan_bagian1>
+			</bagian1>
+		</check>
+
+		<!-- REVIEW QUESTIONS - Pages 46-49 -->
+		<matome halaman="46-49">
+			<judul>まとめの問題</judul>
+			<jawaban_ref>別冊P. 10</jawaban_ref>
+
+			<mondai1 type="文法形式の判断">
+				<judul>問題1 〈文法形式の判断〉</judul>
+				<instruksi>次の文の（　　）に入れるのに最もよいものを1・2・3・4から一つ選びなさい。</instruksi>
+
+				<soal id="1">
+					<teks>うちのチームは、何度もシュートを（　　）、得点することができなかった。</teks>
+					<pilihan id="1">試みながらも</pilihan>
+					<pilihan id="2">試みて以来</pilihan>
+					<pilihan id="3">試みたからといって</pilihan>
+					<pilihan id="4">試みることなく</pilihan>
+				</soal>
+
+				<soal id="2">
+					<teks>私は今の仕事が不満な（　　）けど、もっとおもしろい仕事がしたいと思う。</teks>
+					<pilihan id="1">つもりだ</pilihan>
+					<pilihan id="2">ようだ</pilihan>
+					<pilihan id="3">はずがない</pilihan>
+					<pilihan id="4">わけじゃない</pilihan>
+				</soal>
+
+				<soal id="3">
+					<teks>ABKハウジングは東京（　　）、関東地方6県の不動産を取り扱っております。</teks>
+					<pilihan id="1">くらい</pilihan>
+					<pilihan id="2">を目的に</pilihan>
+					<pilihan id="3">をはじめ</pilihan>
+					<pilihan id="4">のもとで</pilihan>
+				</soal>
+
+				<soal id="4">
+					<teks>「独立すると言って会社を辞める（　　）、どんなに大変でもがんばれ」と部長に言われた。</teks>
+					<pilihan id="1">ことなく</pilihan>
+					<pilihan id="2">からには</pilihan>
+					<pilihan id="3">ように</pilihan>
+					<pilihan id="4">おかげで</pilihan>
+				</soal>
+
+				<soal id="5">
+					<teks>高橋さんは子どもが生まれたの（　　）、たばこをやめる決心をしたんだそうです。</teks>
+					<pilihan id="1">はもとより</pilihan>
+					<pilihan id="2">をきっかけに</pilihan>
+					<pilihan id="3">をはじめとして</pilihan>
+					<pilihan id="4">を中心として</pilihan>
+				</soal>
+
+				<soal id="6">
+					<teks>この町は大学（　　）、若者向けの商店やアパートが集まっている。</teks>
+					<pilihan id="1">を問わず</pilihan>
+					<pilihan id="2">を通じて</pilihan>
+					<pilihan id="3">を中心として</pilihan>
+					<pilihan id="4">をもととして</pilihan>
+				</soal>
+
+				<soal id="7">
+					<teks>あきらめる（　　）、努力を続ければ、必ず成果は表れると信じている。</teks>
+					<pilihan id="1">ことなく</pilihan>
+					<pilihan id="2">からには</pilihan>
+					<pilihan id="3">ものだから</pilihan>
+					<pilihan id="4">とおり</pilihan>
+				</soal>
+
+				<soal id="8">
+					<teks>警備を強化した（　　）、3億円のダイヤが盗まれ、警備が適切だったか問題になっている。</teks>
+					<pilihan id="1">ほうが</pilihan>
+					<pilihan id="2">からには</pilihan>
+					<pilihan id="3">ことなく</pilihan>
+					<pilihan id="4">にもかかわらず</pilihan>
+				</soal>
+			</mondai1>
+
+			<mondai2 type="文の組み立て">
+				<judul>問題2 〈文の組み立て〉</judul>
+				<instruksi>次の文の★に入る最もよいものを1・2・3・4から一つ選びなさい。</instruksi>
+
+				<soal id="1">
+					<teks>インターンシップには、参加したほうが就職に有利だと言われるが、＿＿＿　＿＿＿　★　＿＿＿　わけではない。</teks>
+					<pilihan id="1">内定が</pilihan>
+					<pilihan id="2">もらえる</pilihan>
+					<pilihan id="3">という</pilihan>
+					<pilihan id="4">参加すれば</pilihan>
+				</soal>
+
+				<soal id="2">
+					<teks>数年前に命にかかわるような　＿＿＿　＿＿＿　★　＿＿＿　注意するようになった。</teks>
+					<pilihan id="1">以来</pilihan>
+					<pilihan id="2">大病を</pilihan>
+					<pilihan id="3">健康に</pilihan>
+					<pilihan id="4">して</pilihan>
+				</soal>
+
+				<soal id="3">
+					<teks>新製品の　＿＿＿　＿＿＿　★　＿＿＿　アンケート結果は重要な資料になるだろう。</teks>
+					<pilihan id="1">上で</pilihan>
+					<pilihan id="2">この</pilihan>
+					<pilihan id="3">考える</pilihan>
+					<pilihan id="4">宣伝方法を</pilihan>
+				</soal>
+
+				<soal id="4">
+					<teks>宇宙飛行士を　＿＿＿　＿＿＿　★　＿＿＿、判断力や問題解決能力もきたえておかなければならない。</teks>
+					<pilihan id="1">体力</pilihan>
+					<pilihan id="2">はもとより</pilihan>
+					<pilihan id="3">からには</pilihan>
+					<pilihan id="4">目指す</pilihan>
+				</soal>
+			</mondai2>
+
+			<mondai3 type="読解">
+				<judul>問題3 〈読解〉</judul>
+				<instruksi>次の文章を読んで問題に答えなさい。後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</instruksi>
+
+				<bacaan>
+					<teks>皆様、本日は私たちABK大学駅伝部のためにお集まりいただき、ありがとうございます。
+
+	わが駅伝部は箱根駅伝※出場を目指して、1日も休むことなく練習に励んできました。他大学の選手と比べて、努力が足りなかったわけではないと思いますが、残念ながらこれまでわが校が箱根駅伝の出場権を得ることはありませんでした。でも、今年、私にとっては大学生活最後の年に、ついに夢を実現することができました。今回の出場をきっかけとして、駅伝部は大きく成長できると期待しています。
+
+	コーチをはじめ、これまで応援してくださった方のためにも、選手一同、精一杯がんばるつもりです。皆様、応援どうぞよろしくお願いいたします。</teks>
+					<catatan>※箱根駅伝：東京箱根間往復大学駅伝競走</catatan>
+					<catatan_en>Tokyo-Hakone Round-Trip College Ekiden Race: Ten runners will take turns running a relay from Tokyo to Hakone and back again in a traditional intercollegiate competition held annually on January 2nd and 3rd.</catatan_en>
+				</bacaan>
+
+				<soal id="1">
+					<teks>ABK大学駅伝部について正しいものはどれですか。</teks>
+					<pilihan id="1">初めて箱根駅伝に出場し、精一杯がんばった。</pilihan>
+					<pilihan id="2">初めて箱根駅伝に出場できることになった。</pilihan>
+					<pilihan id="3">駅伝部は箱根駅伝に出場して、大きく成長した。</pilihan>
+					<pilihan id="4">箱根駅伝に出場するという夢を実現したいと思っている。</pilihan>
+				</soal>
+
+				<soal id="2">
+					<teks>この会で、誰が誰に話していますか。</teks>
+					<pilihan id="1">選手がコーチに話している。</pilihan>
+					<pilihan id="2">コーチが選手に話している。</pilihan>
+					<pilihan id="3">コーチが会の参加者に話している。</pilihan>
+					<pilihan id="4">選手が会の参加者に話している。</pilihan>
+				</soal>
+			</mondai3>
+
+			<mondai4 type="聴解">
+				<judul>問題4 〈聴解〉</judul>
+				
+				<bagian1>
+					<instruksi>この問題では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。</instruksi>
+					<soal id="1" cd="06">
+						<pilihan>1</pilihan>
+						<pilihan>2</pilihan>
+						<pilihan>3</pilihan>
+						<pilihan>4</pilihan>
+					</soal>
+					<soal id="2" cd="07">
+						<pilihan>1</pilihan>
+						<pilihan>2</pilihan>
+						<pilihan>3</pilihan>
+						<pilihan>4</pilihan>
+					</soal>
+				</bagian1>
+
+				<bagian2>
+					<instruksi>この問題では、問題用紙に何も印刷されていません。まず、文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。</instruksi>
+					<soal id="1" cd="08">
+						<pilihan>1</pilihan>
+						<pilihan>2</pilihan>
+						<pilihan>3</pilihan>
+					</soal>
+					<soal id="2" cd="09">
+						<pilihan>1</pilihan>
+						<pilihan>2</pilihan>
+						<pilihan>3</pilihan>
+					</soal>
+				</bagian2>
+			</mondai4>
+		</matome>
+	</bab3_content>
 
 </buku_try_n2>
