@@ -12,11 +12,9 @@
         html { font-size: 16px; }
         body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2f5; color: #111827; line-height: 1.6; overflow-x: hidden; }
         
-        /* Drawer Overlay */
         .drawer-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 998; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; cursor: pointer; }
         .drawer-overlay.active { opacity: 1; visibility: visible; }
         
-        /* Sidebar Drawer */
         .sidebar-drawer { position: fixed; top: 0; left: 0; width: 320px; max-width: 90vw; height: 100%; background: #ffffff; z-index: 999; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15); display: flex; flex-direction: column; overflow: hidden; }
         .sidebar-drawer.active { transform: translateX(0); }
         
@@ -49,7 +47,6 @@
         .drawer-submenu-text { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .drawer-submenu-page { font-size: 0.75rem; color: #9ca3af; margin-left: 0.5rem; flex-shrink: 0; }
         
-        /* Top Navigation */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 3.5rem; background: #ffffff; z-index: 100; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
         .nav-container { height: 100%; display: flex; align-items: center; padding: 0 0.75rem; max-width: 64rem; margin: 0 auto; position: relative; }
         
@@ -67,16 +64,13 @@
         
         .nav-title { flex: 1; text-align: center; font-weight: 600; font-size: 1.125rem; color: #111827; margin: 0 0.5rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         
-        /* Main Container */
         .main-container { padding-top: 4rem; max-width: 64rem; margin: 0 auto; padding-left: 1rem; padding-right: 1rem; padding-bottom: 2rem; }
         
-        /* Translations */
         .translation-en, .translation-id { font-size: 0.8125rem; margin-top: 0.25rem; display: none; }
         .translation-en { color: #2563eb !important; }
         .translation-id { color: #059669 !important; }
         .translation-en.visible, .translation-id.visible { display: block; }
         
-        /* Home */
         .home-header { text-align: center; padding: 2rem 1rem 1.5rem; }
         .home-title { font-size: 2.5rem; font-weight: 900; color: #be123c; margin-bottom: 0.25rem; }
         .home-subtitle { font-size: 1.25rem; font-weight: 500; color: #374151; margin-bottom: 0.5rem; }
@@ -99,7 +93,6 @@
         .quick-item-title { font-weight: 600; font-size: 1rem; color: #111827; }
         .quick-item-page { font-size: 0.75rem; color: #be123c; font-weight: 500; margin-top: 0.5rem; }
         
-        /* Section Headers */
         .section-header { background: linear-gradient(135deg, #374151 0%, #4b5563 100%); border-radius: 1rem; padding: 1.5rem; color: white; margin-bottom: 1.5rem; }
         .bab-header-category { font-size: 0.875rem; margin-bottom: 0.5rem; opacity: 0.9; }
         .bab-header-title { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
@@ -107,13 +100,11 @@
         .bab-header-text { font-size: 1.5rem; font-weight: 700; }
         .bab-header-en { font-size: 0.875rem; opacity: 0.7; width: 100%; }
         
-        /* Dekiru Box */
         .dekiru-box { background: #f3f4f6; padding: 1.25rem; border-radius: 1rem; margin-bottom: 1.5rem; }
         .dekiru-title { font-weight: 700; font-size: 1.125rem; margin-bottom: 1rem; background: #1f2937; color: white; display: inline-block; padding: 0.375rem 1rem; border-radius: 0.5rem; }
         .dekiru-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem; }
         .dekiru-bullet { color: #be123c; font-weight: 700; }
         
-        /* Job Ad */
         .job-ad { border: 3px solid #d1d5db; border-radius: 1rem; padding: 1.5rem; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
         .job-ad-title { border-bottom: 2px solid #1f2937; padding-bottom: 1rem; margin-bottom: 1rem; text-align: center; }
         .job-ad-title h2 { font-size: 1.5rem; font-weight: 700; }
@@ -126,7 +117,9 @@
         .job-note { font-size: 0.8125rem; color: #6b7280; margin-top: 0.5rem; }
         .job-contact { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #d1d5db; font-size: 0.9375rem; }
         
-        /* Grammar Article */
+        .speech-box { background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); margin-bottom: 1.5rem; line-height: 2; font-size: 1.0625rem; }
+        .speech-box .highlight-text { color: #be123c; font-weight: 600; }
+        
         .grammar-article { border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); margin-bottom: 1.5rem; background: white; border-left: 4px solid #be123c; }
         .grammar-header { background: #f3f4f6; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; }
         .grammar-title { font-size: 1.25rem; font-weight: 700; }
@@ -152,7 +145,6 @@
         
         .page-ref { font-size: 0.8125rem; color: #6b7280; text-align: right; margin-top: 0.75rem; }
         
-        /* Plus Section */
         .plus-badge { background: #dcfce7; color: #15803d; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: 700; }
         .plus-section { margin-top: 1rem; background: #f0fdf4; padding: 1rem; border-radius: 0.5rem; border: 2px solid #bbf7d0; }
         .plus-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
@@ -160,12 +152,10 @@
         .plus-pattern { font-size: 0.875rem; color: #15803d; margin-bottom: 0.25rem; }
         .plus-desc { font-size: 0.8125rem; color: #6b7280; }
         
-        /* Note Box */
         .note-box { margin-top: 1rem; background: #eff6ff; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #60a5fa; }
         .note-text { font-size: 0.8125rem; color: #1e40af; }
         .note-example { font-size: 0.9375rem; margin-top: 0.5rem; }
         
-        /* Check Section */
         .check-box { border: 3px solid #9ca3af; border-radius: 1rem; padding: 1.5rem; background: white; }
         .check-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; }
         .check-icon { font-size: 1.875rem; }
@@ -176,7 +166,6 @@
         .blank { display: inline-block; width: 5rem; border-bottom: 2px solid #9ca3af; margin: 0 0.25rem; }
         .check-options { background: #f3f4f6; padding: 0.75rem; border-radius: 0.5rem; text-align: center; font-size: 0.875rem; font-weight: 500; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
         
-        /* Matome */
         .matome-header { background: #f3f4f6; border-radius: 1rem 1rem 0 0; padding: 1.25rem; text-align: center; }
         .matome-title { font-size: 1.5rem; font-weight: 700; }
         .matome-subtitle { color: #4b5563; font-size: 1.125rem; font-weight: 400; }
@@ -193,13 +182,10 @@
         .pilihan-label input { accent-color: #be123c; width: 1.125rem; height: 1.125rem; }
         .bacaan-box { background: #fefce8; border: 2px solid #fde68a; padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1.25rem; font-size: 1rem; line-height: 1.8; }
         
-        /* Hidden */
         .hidden { display: none !important; }
         
-        /* Page Number */
         .page-number { font-family: 'Inter', sans-serif; color: #9ca3af; text-align: right; margin-top: 0.5rem; }
         
-        /* Mobile */
         @media (max-width: 768px) {
             html { font-size: 17px; }
             .main-container { padding-left: 0.75rem; padding-right: 0.75rem; }
@@ -207,15 +193,15 @@
             .pilihan-grid { grid-template-columns: 1fr; }
             .quiz-grid { grid-template-columns: 1fr; }
             .sidebar-drawer { width: 85vw; }
+            .speech-box { font-size: 1rem; padding: 1rem; }
         }
     </style>
+<base target="_blank">
 </head>
 <body>
 
-    <!-- Overlay -->
     <div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
 
-    <!-- Sidebar Drawer -->
     <aside id="sidebar-drawer" class="sidebar-drawer">
         <div class="drawer-header">
             <div class="drawer-brand">
@@ -224,15 +210,12 @@
             </div>
             <button class="drawer-close" onclick="closeDrawer()">✕</button>
         </div>
-        <div class="drawer-content" id="drawer-content">
-            <!-- Generated by JS -->
-        </div>
+        <div class="drawer-content" id="drawer-content"></div>
     </aside>
 
-    <!-- Navigation -->
     <nav class="top-nav">
         <div class="nav-container">
-            <button type="button" class="hamburger-btn" id="hamburger-btn" onclick="toggleDrawer()">
+            <button type="button" class="hamburger-btn" onclick="toggleDrawer()">
                 <span class="hamburger-icon">☰</span>
             </button>
             <div class="nav-title" id="current-section-title">TRY! N2</div>
@@ -249,52 +232,197 @@
         </div>
     </nav>
 
-    <div class="main-container" id="main-container">
-        <!-- Content will be generated by JS -->
-    </div>
+    <div class="main-container" id="main-container"></div>
 
 <script>
-// Data from XML
+// Complete Data from XML
 const bookData = {
-    metadata: {
-        title: "TRY! N2 文法から伸ばす日本語",
-        subtitle: "日本語能力試験対策",
-        edition: "改訂版"
-    },
     pengantar: [
         { id: "hajimeni", page: 3, title: "はじめに", titleEn: "Introduction", titleId: "Pendahuluan" },
         { id: "to_learners", page: 4, title: "この本をお使いになる皆さんへ", titleEn: "To Learners Using this Book", titleId: "Kepada Para Pembelajar" },
         { id: "to_teachers", page: 10, title: "この本をお使いになる先生方へ", titleEn: "To Teachers Using this Book", titleId: "Kepada Para Guru" }
     ],
     bab: [
-        { id: 1, page: 18, category: "お知らせを読む", categoryEn: "Reading an Announcement", categoryId: "Membaca Pengumuman", number: 1, title: "スタッフ募集のお知らせ", titleEn: "A Job Ad", titleId: "Pengumuman Perekrutan Staf", grammarCount: 8, matomePage: 27 },
-        { id: 2, page: 30, category: "スピーチをする", categoryEn: "Giving a Speech", categoryId: "Memberikan Pidato", number: 2, title: "転任のあいさつ（１）", titleEn: "Addressing Co-workers after Transfer (1)", titleId: "Sambutan Pindah Tugas (1)", grammarCount: 7, matomePage: null },
-        { id: 3, page: 38, category: "スピーチをする", categoryEn: "Giving a Speech", categoryId: "Memberikan Pidato", number: 2, title: "転任のあいさつ（２）", titleEn: "Addressing Co-workers after Transfer (2)", titleId: "Sambutan Pindah Tugas (2)", grammarCount: 6, matomePage: 46 },
-        { id: 4, page: 50, category: "説明を聞く", categoryEn: "Listening to an Explanation", categoryId: "Mendengarkan Penjelasan", number: 3, title: "ホテルの仕事", titleEn: "A Hotel Job", titleId: "Pekerjaan Hotel", grammarCount: 8, matomePage: 59 },
-        { id: 5, page: 62, category: "ニュースを聞く", categoryEn: "Listening to the News", categoryId: "Mendengarkan Berita", number: 4, title: "台風情報", titleEn: "Typhoon Information", titleId: "Informasi Topan", grammarCount: 7, matomePage: 69 },
-        { id: 6, page: 72, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 5, title: "就職活動（１）", titleEn: "Job Hunting (1)", titleId: "Mencari Pekerjaan (1)", grammarCount: 6, matomePage: null },
-        { id: 7, page: 78, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 5, title: "就職活動（２）", titleEn: "Job Hunting (2)", titleId: "Mencari Pekerjaan (2)", grammarCount: 5, matomePage: 83 },
-        { id: 8, page: 86, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 6, title: "苦労した5年間（１）", titleEn: "A Tough Five Years (1)", titleId: "5 Tahun yang Sulit (1)", grammarCount: 5, matomePage: null },
-        { id: 9, page: 92, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 6, title: "苦労した5年間（２）", titleEn: "A Tough Five Years (2)", titleId: "5 Tahun yang Sulit (2)", grammarCount: 7, matomePage: 100 },
-        { id: 10, page: 103, category: "論説文を読む", categoryEn: "Reading an Essay", categoryId: "Membaca Esai", number: 7, title: "オオカミと生態系（１）", titleEn: "Wolves and the Ecosystem (1)", titleId: "Serigala dan Ekosistem (1)", grammarCount: 6, matomePage: null },
-        { id: 11, page: 111, category: "論説文を読む", categoryEn: "Reading an Essay", categoryId: "Membaca Esai", number: 7, title: "オオカミと生態系（２）", titleEn: "Wolves and the Ecosystem (2)", titleId: "Serigala dan Ekosistem (2)", grammarCount: 7, matomePage: 118 },
-        { id: 12, page: 122, category: "ビジネス場面の会話", categoryEn: "Conversation in a Business Setting", categoryId: "Percakapan Bisnis", number: 8, title: "取引先で", titleEn: "At a Client", titleId: "Di Tempat Klien", grammarCount: 5, matomePage: 128 },
-        { id: 13, page: 131, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 9, title: "食べ放題（１）", titleEn: "All-You-Can-Eat (1)", titleId: "Makan Sepuasnya (1)", grammarCount: 7, matomePage: null },
-        { id: 14, page: 138, category: "友達同士の会話", categoryEn: "A Conversation with a Friend", categoryId: "Percakapan dengan Teman", number: 9, title: "食べ放題（２）", titleEn: "All-You-Can-Eat (2)", titleId: "Makan Sepuasnya (2)", grammarCount: 7, matomePage: 145 },
-        { id: 15, page: 148, category: "エッセーを読む", categoryEn: "Reading an Essay", categoryId: "Membaca Esai", number: 10, title: "満員電車（１）", titleEn: "A Full Train (1)", titleId: "Kereta yang Penuh (1)", grammarCount: 4, matomePage: null },
-        { id: 16, page: 153, category: "エッセーを読む", categoryEn: "Reading an Essay", categoryId: "Membaca Esai", number: 10, title: "満員電車（２）", titleEn: "A Full Train (2)", titleId: "Kereta yang Penuh (2)", grammarCount: 4, matomePage: 157 },
-        { id: 17, page: 160, category: "記事を読む", categoryEn: "Reading an Article", categoryId: "Membaca Artikel", number: 11, title: "ラーメンの紹介", titleEn: "Introduction to Ramen", titleId: "Pengenalan Ramen", grammarCount: 7, matomePage: 169 },
-        { id: 18, page: 172, category: "ビジネス場面の会話", categoryEn: "Conversation in a Business Setting", categoryId: "Percakapan Bisnis", number: 12, title: "ウォーキングシューズの開発（１）", titleEn: "Developing Walking Shoes (1)", titleId: "Pengembangan Sepatu Jalan (1)", grammarCount: 6, matomePage: null },
-        { id: 19, page: 179, category: "ビジネス場面の会話", categoryEn: "Conversation in a Business Setting", categoryId: "Percakapan Bisnis", number: 12, title: "ウォーキングシューズの開発（２）", titleEn: "Developing Walking Shoes (2)", titleId: "Pengembangan Sepatu Jalan (2)", grammarCount: 6, matomePage: 185 },
-        { id: 20, page: 188, category: "ストーリーを読む", categoryEn: "Reading a Story", categoryId: "Membaca Cerita", number: 13, title: "人生の転機（１）", titleEn: "A Turning Point in Life (1)", titleId: "Titik Balik Hidup (1)", grammarCount: 6, matomePage: null },
-        { id: 21, page: 195, category: "ストーリーを読む", categoryEn: "Reading a Story", categoryId: "Membaca Cerita", number: 13, title: "人生の転機（２）", titleEn: "A Turning Point in Life (2)", titleId: "Titik Balik Hidup (2)", grammarCount: 7, matomePage: 202 },
-        { id: 22, page: 205, category: "社説を読む", categoryEn: "Reading an Editorial", categoryId: "Membaca Editorial", number: 14, title: "オリンピックの開催について", titleEn: "Hosting the Olympics", titleId: "Penyelenggaraan Olimpiade", grammarCount: 8, matomePage: 213 }
-    ],
-    bagianAkhir: [
-        { id: "index", page: 216, title: "さくいん", titleEn: "Index", titleId: "Indeks" },
-        { id: "pattern_list", page: 220, title: "似ている文型リスト＜N2レベル＞", titleEn: "Similar Sentence Pattern List <Level N2>", titleId: "Daftar Pola Kalimat Serupa <Level N2>" },
-        { id: "can_do_list", page: 227, title: "N2「できること」リスト", titleEn: "N2 Can Do List", titleId: "Daftar 'Dapat Melakukan' N2" },
-        { id: "supplement", page: "別冊", title: "別冊（答え・スクリプト）", titleEn: "Supplement (Answers & Scripts)", titleId: "Lampiran (Jawaban & Naskah)" }
+        {
+            id: 1, page: 18, category: "お知らせを読む", categoryEn: "Reading an Announcement", categoryId: "Membaca Pengumuman",
+            number: 1, title: "スタッフ募集のお知らせ", titleEn: "A Job Ad", titleId: "Pengumuman Perekrutan Staf",
+            matomePage: 27,
+            dekiru: [
+                { jp: "お知らせなどの文章が読める。", en: "Read announcements and the like.", id: "Dapat membaca pengumuman dan semacamnya." },
+                { jp: "求人の条件が理解できる。", en: "Understand the conditions for a job opening.", id: "Dapat memahami syarat-syarat lowongan pekerjaan." }
+            ],
+            jobAd: {
+                title: "サニー 店内スタッフ募集",
+                subtitle: "さいわい駅前店オープンにつき、人材を求めています",
+                sections: [
+                    { label: "仕事", content: "開店業務、販売、清掃、商品管理、閉店業務", labelEn: "Work", labelId: "Pekerjaan" },
+                    { label: "資格", content: "年齢・経験・国籍を問わず、やる気のある方、大歓迎！", note: "※商品の案内や接客応対があるため、外国人の方は、日本語能力試験N2レベル以上の方に限り、応募可。", labelEn: "Requirements", labelId: "Kualifikasi" },
+                    { label: "給与", content: "7時～9時 1,000円～\n9時～22時 900円\n22時～24時30分 1,125円～", note: "※経験年数に応じ、時給は考慮します。", labelEn: "Salary", labelId: "Gaji" },
+                    { label: "交通費", content: "往復1,000円まで支給", labelEn: "Transportation", labelId: "Transportasi" }
+                ],
+                contact: { name: "サニーグループ東京本部", tel: "03-1111-2222", web: "http://www.sannie.biz", email: "boshu@sannie.co.jp" }
+            },
+            grammar: [
+                { id: 1, num: 1, page: 19, title: "オープンにつき", stars: 2, pattern: "Ｎ＋につき", patternId: "Kata Benda + につき", 
+                  desc: "お知らせなどで「雨天につき中止」のように理由を言うときに使われる。", descEn: "Used to state a reason in an announcement.", descId: "Digunakan ketika menyebutkan alasan dalam pengumuman.",
+                  examples: [
+                    { jp: "清掃中につき、お足元にご注意ください。", id: "Karena sedang pembersihan, harap hati-hati dengan langkah Anda." },
+                    { jp: "会場内は禁煙につき、おたばこはご遠慮ください。", id: "Karena area bebas rokok, mohon tidak merokok." },
+                    { jp: "4月15日（木）：佐藤医師、学会出席につき休診。", id: "15 April (Kamis): Dr. Satou, libur praktik karena menghadiri konferensi medis." }
+                  ]
+                },
+                { id: 2, num: 2, page: 19, title: "国籍を問わず", stars: 3, pattern: "Ｎ＋を問わず", patternId: "Kata Benda + を問わず",
+                  desc: "お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。", descEn: "Used to say 'anytime, anywhere, anyone'.", descId: "Digunakan untuk mengatakan 'kapan saja, di mana saja, siapa saja'.",
+                  examples: [
+                    { jp: "このスポーツセンターは、年齢を問わず、どなたでも利用できます。", id: "Pusat olahraga ini dapat digunakan oleh siapa saja tanpa memandang usia." },
+                    { jp: "このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。", id: "Supermarket ini buka tanpa memandang siang malam, sangat membantu bagi orang yang bekerja larut malam." }
+                  ]
+                },
+                { id: 3, num: 3, page: 20, title: "N2レベル以上の方に限り", stars: 2, pattern: "Ｎ＋に限り / に限る", patternId: "Kata Benda + に限り / に限る",
+                  desc: "「だけ」という意味で、お知らせなどによく使われる。", descEn: "Often used to mean 'only/just' in announcements.", descId: "Sering digunakan dengan arti 'hanya/cuma' dalam pengumuman.",
+                  examples: [
+                    { jp: "本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。", id: "Hanya untuk hari ini, kami menyediakan daging sapi dengan harga setengah dari harga normal 1.500 yen per 100 gram." },
+                    { jp: "このコーナーのバッグに限り、全品3,000円。", id: "Hanya untuk tas di sudut ini, semua barang 3.000 yen." }
+                  ]
+                },
+                { id: 4, num: 4, page: 21, title: "経験年数に応じ", stars: 3, pattern: "Ｎ＋に応じ / に応じて / に応じた＋Ｎ", patternId: "Kata Benda + に応じ / に応じて / に応じた + Kata Benda",
+                  desc: "「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。", descEn: "Used when saying something depends on conditions like desire, change, location, situation, age, ability, or experience.", descId: "Digunakan ketika mengatakan sesuatu tergantung pada kondisi seperti keinginan, perubahan, lokasi, situasi, usia, kemampuan, atau pengalaman.",
+                  examples: [
+                    { jp: "給料は能力や経験に応じ、決めさせていただきます。", id: "Gaji akan kami tentukan sesuai dengan kemampuan dan pengalaman." },
+                    { jp: "新年会はご予算に応じていろいろなコースがございます。", id: "Untuk pesta tahun baru, ada berbagai paket sesuai dengan anggaran Anda." }
+                  ]
+                },
+                { id: 5, num: 5, page: 22, title: "採否にかかわらず", stars: 2, pattern: "Ｖる＋Ｖない / Ｎ＋にかかわらず", patternId: "Kata Kerja + Kata Kerja negatif / Kata Benda + にかかわらず",
+                  desc: "「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。", descEn: "Used when saying 'regardless of conditions such as weather, preference, social position, etc.'", descId: "Digunakan ketika mengatakan 'terlepas dari kondisi seperti cuaca, preferensi, posisi sosial, dll.'",
+                  examples: [
+                    { jp: "区民センターの利用料金が変更になりました。和室は、人数にかかわらず、2時間1,000円になります。", id: "Biaya penggunaan pusat warga telah berubah. Ruang tatami, terlepas dari jumlah orang, menjadi 1.000 yen untuk 2 jam." },
+                    { jp: "今回の旅行は晴雨にかかわらず、実施します。", id: "Perjalanan kali ini akan dilaksanakan terlepas dari cuaca cerah atau hujan." }
+                  ]
+                },
+                { id: 6, num: 6, page: 23, title: "当店において", stars: 3, pattern: "Ｎ＋において / における＋Ｎ", patternId: "Kata Benda + において / における + Kata Benda",
+                  desc: "「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。", descEn: "Used when saying 'in a place, time, field' as in 'in Kyoto, in the Edo period, in biology'.", descId: "Digunakan ketika mengatakan 'di tempat, waktu, bidang' seperti 'di Kyoto, pada zaman Edo, dalam biologi'.",
+                  examples: [
+                    { jp: "入学式は、3階のホールにおいて行われます。", id: "Upacara masuk sekolah akan dilaksanakan di aula lantai 3." },
+                    { jp: "彼のようなすばらしい人に出会えたのは人生における最大の幸運だった。", id: "Bertemu dengan orang yang luar biasa seperti dia adalah keberuntungan terbesar dalam hidup." }
+                  ]
+                },
+                { id: 7, num: 7, page: 24, title: "面接の際に", stars: 2, pattern: "Ｖる/Ｖた / Ｎの＋際（に）", patternId: "Kata Kerja / Kata Kerja lampau / Kata Benda + の + 際（に）", plus: "～に際して",
+                  desc: "「～際」は、「～場合」という意味で、説明書や案内などで使われる。", descEn: "Used in manuals and guides to mean 'if/when'.", descId: "Digunakan dalam manual dan panduan dengan arti 'jika/ketika'.",
+                  examples: [
+                    { jp: "カードを紛失した際はサービスセンターにご連絡ください。", id: "Jika Anda kehilangan kartu, silakan hubungi pusat layanan." },
+                    { jp: "目上の人と話す際には、言葉だけでなく態度にも気をつけてください。", id: "Ketika berbicara dengan orang yang lebih tinggi, harap perhatikan tidak hanya kata-kata tetapi juga sikap." }
+                  ]
+                },
+                { id: 8, num: 8, page: 25, title: "履歴書持参のこと", stars: 2, pattern: "Ｖる/Ｖない / Ｎの＋こと", patternId: "Kata Kerja / Kata Kerja negatif / Kata Benda + の + こと",
+                  desc: "規則や注意事項を説明するときに使う。", descEn: "Often used to explain a rule or warning.", descId: "Sering digunakan untuk menjelaskan aturan atau peringatan.",
+                  examples: [
+                    { jp: "願書は1月28日必着のこと。窓口での受け付けは行っておりません。", id: "Surat lamaran harus sampai paling lambat 28 Januari. Kami tidak menerima di loket." },
+                    { jp: "試験中は携帯電話の電源を切ること。筆記用具以外は机の上に置かないこと。", id: "Selama ujian, matikan ponsel. Jangan letakkan apa pun di atas meja selain alat tulis." }
+                  ]
+                }
+            ],
+            check: {
+                page: 26,
+                questions: [
+                    { num: 1, text: "わが社では経験（　　）、広く人材を募集している。", en: "Our company is recruiting talent widely regardless of experience." },
+                    { num: 2, text: "カレーの辛さはお客様のご希望（　　）調整いたします。", en: "We will adjust the spiciness of the curry according to the customer's request." },
+                    { num: 3, text: "進学説明会は6月3日に東ホテル（　　）行われます。", en: "The further education briefing will be held at Higashi Hotel on June 3rd." },
+                    { num: 4, text: "毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。", en: "Every Sunday, only the first 10 people can experience ninja for free." }
+                ],
+                options: ["に限り", "を問わず", "において", "に応じて"],
+                questions2: [
+                    { num: 5, text: "お降りの（　　）はバスが止まってから席をお立ちください。", en: "When getting off, please stand up from your seat after the bus stops." },
+                    { num: 6, text: "入学後、引っ越しした場合は学生課に住所変更届を提出する（　　）。", en: "After enrollment, if you move, you must submit a change of address form." },
+                    { num: 7, text: "今回のコンサートは応募者多数（　　）抽選とさせていただきます。", en: "Due to the large number of applicants for this concert, we will conduct a lottery." },
+                    { num: 8, text: "ご出席、ご欠席（　　）、このはがきは必ずご返送ください。", en: "Regardless of attendance or absence, please be sure to return this postcard." }
+                ],
+                options2: ["際", "こと", "にかかわらず", "につき"]
+            },
+            matome: {
+                page: "27-28",
+                mondai1: [
+                    { num: 1, text: "この体操は体力（　　）、無理のないように行ってください。", options: ["に限って", "に応じて", "にかわり", "において"], answer: 1 },
+                    { num: 2, text: "水泳は子どもからお年寄りまで世代（　　）楽しめるスポーツだと言われている。", options: ["ばかりでなく", "に限って", "を問わず", "とおりに"], answer: 2 },
+                    { num: 3, text: "ただ今、こちらの商品（　　）、全国どこでも210円で配送を承ります。", options: ["を問わず", "の際は", "に限り", "に応じて"], answer: 2 }
+                ]
+            }
+        },
+        {
+            id: 2, page: 30, category: "スピーチをする", categoryEn: "Giving a Speech", categoryId: "Memberikan Pidato",
+            number: 2, title: "転任のあいさつ（１）", titleEn: "Addressing Co-workers after Transfer (1)", titleId: "Sambutan Pindah Tugas (1)",
+            matomePage: null,
+            dekiru: [
+                { jp: "改まった形で思い出話などをして、お別れのスピーチができる。", en: "Give a farewell speech with memorable stories in a formal setting.", id: "Dapat memberikan pidato perpisahan dengan cerita kenangan dalam suasana formal." }
+            ],
+            speech: "皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。入社して以来、この営業部において、部長をはじめ先輩方のご指導のもとで、営業について一から学ぶことができ、たいへん幸運でした。仕事の進め方はもとより、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「人は失敗から学ぶものだ」という言葉は忘れられません。仕事をする上で大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、残念ながらこの職場を離れることになりました。",
+            grammar: [
+                { id: 9, num: 9, page: 30, title: "入社して以来", stars: 3, pattern: "Ｖ-て／Ｎ＋以来", patternId: "Kata Kerja bentuk -te / Kata Benda + 以来",
+                  desc: "「～以来」は、「～」のときから今までずっと同じ状態が続いているときに使う。", descEn: "Used when a condition has continued from '~' until now.", descId: "Digunakan ketika kondisi telah berlanjut dari '~' hingga sekarang.",
+                  examples: [
+                    { jp: "母が入院して以来、家事はすべて私がしています。", id: "Sejak ibu saya dirawat di rumah sakit, saya yang mengerjakan semua pekerjaan rumah." },
+                    { jp: "３年前の夏休みに帰国して以来、長い間家族に会っていません。", id: "Sejak pulang ke kampung halaman pada liburan musim panas 3 tahun lalu, saya belum bertemu keluarga untuk waktu yang lama." }
+                  ]
+                },
+                { id: 10, num: 10, page: 31, title: "部長をはじめ", stars: 3, pattern: "Ｎ＋をはじめ／をはじめとして／をはじめとする＋Ｎ", patternId: "Kata Benda + をはじめ / をはじめとして / をはじめとする + Kata Benda",
+                  desc: "「～をはじめ」は、代表的な例を出して、「～だけでなくほかにもたくさん」と言いたいときに使う。", descEn: "Used when saying 'not just ~, but many others' by giving a typical example.", descId: "Digunakan ketika mengatakan 'bukan hanya ~, tetapi banyak yang lain' dengan memberikan contoh khas.",
+                  examples: [
+                    { jp: "日本には富士山をはじめ、たくさんの美しい山がある。", id: "Di Jepang, tidak hanya Gunung Fuji, ada banyak gunung indah lainnya." },
+                    { jp: "首相をはじめ、多くの政治家が大統領の歓迎会に出席した。", id: "Tidak hanya Perdana Menteri, banyak politisi lainnya juga menghadiri pesta penyambutan presiden." }
+                  ]
+                },
+                { id: 11, num: 11, page: 32, title: "先輩方のご指導のもとで", stars: 2, pattern: "Ｎ＋のもと（で／に）", patternId: "Kata Benda + のもと（で／に）",
+                  desc: "「教授のもと」のように、「何か大きい影響力のあるものの下で」というときや「協力のもと」のように、「その条件や状況の中で」と言いたいときに使う。", descEn: "Used when saying 'under someone with great influence' or 'under certain conditions'.", descId: "Digunakan ketika mengatakan 'di bawah seseorang dengan pengaruh besar' atau 'di bawah kondisi tertentu'.",
+                  examples: [
+                    { jp: "彼はすばらしい自然環境のもとでこの作品を作り上げた。", id: "Dia menciptakan karya ini di bawah lingkungan alam yang indah." },
+                    { jp: "子育ては夫婦の協力のもとで行われるべきだ。", id: "Pengasuhan anak seharusnya dilakukan di bawah kerja sama suami istri." }
+                  ]
+                },
+                { id: 12, num: 12, page: 33, title: "仕事の進め方はもとより", stars: 2, pattern: "Ｎ＋はもとより", patternId: "Kata Benda + はもとより",
+                  desc: "「～はもとより」は、スピーチ・プレゼンテーションなどで「～はもちろん、～だけでなくそのほかにも」と説明したいときに使う。", descEn: "Used in speeches to say '~ is obvious, or not only ~ but also more'.", descId: "Digunakan dalam pidato untuk mengatakan '~ sudah jelas, atau bukan hanya ~ tetapi juga lebih'.",
+                  examples: [
+                    { jp: "この温泉は、日本人はもとより、外国人にもたいへん人気があります。", id: "Pemandian air panas ini, tidak hanya orang Jepang, tetapi juga sangat populer di kalangan orang asing." },
+                    { jp: "子どもの成長のためには、食事はもとより、睡眠や運動にも気をつけてください。", id: "Untuk pertumbuhan anak, tidak hanya makanan, tetapi harap perhatikan juga tidur dan olahraga." }
+                  ]
+                },
+                { id: 13, num: 13, page: 34, title: "人は失敗から学ぶものだ", stars: 1, pattern: "Ｖ-る／Ｖ-ない＋ものだ／もんだ", patternId: "Kata Kerja / Kata Kerja negatif + ものだ / もんだ",
+                  desc: "誰でもそう思う、絶対正しいと思っている話者の判断を表す。", descEn: "Expresses the speaker's judgment that anyone would think so.", descId: "Menyatakan penilaian pembicara bahwa siapa pun akan berpikir demikian.",
+                  examples: [
+                    { jp: "子どもは親に反抗するものですから、それも成長のひとつですよ。", id: "Anak-anak memang melawan orang tua, jadi itu juga bagian dari pertumbuhan." },
+                    { jp: "誰でもほめられればやる気になるものですから、新入社員を指導するときはぜひいいところを探してください。", id: "Karena siapa pun akan termotivasi jika dipuji, saat membimbing karyawan baru, harap cari hal-hal baik mereka." }
+                  ]
+                },
+                { id: 14, num: 14, page: 34, title: "仕事をする上で", stars: 3, pattern: "Ｖ-る＋上で", patternId: "Kata Kerja bentuk kamus + 上で",
+                  desc: "「～上で…」は、「～をするとき（…が重要だ・必要だ）」と言いたいときに使われる。", descEn: "Used when saying '(something is important/required) when doing something'.", descId: "Digunakan ketika mengatakan '(sesuatu penting/diperlukan) saat melakukan sesuatu'.",
+                  examples: [
+                    { jp: "この本は就職活動をする上での重要なポイントが書かれています。", id: "Buku ini berisi poin-poin penting saat melakukan aktivitas mencari pekerjaan." },
+                    { jp: "新店舗を開設する上で、周辺のマーケティング調査は欠かせない。", id: "Saat membuka toko baru, survei pemasaran di sekitar sangat penting." }
+                  ]
+                },
+                { id: 15, num: 15, page: 35, title: "残念ながら", stars: 2, pattern: "Ｖ-ます／Ｖ-ない／いＡ／なＡ／Ｎ＋ながら（も）", patternId: "Kata Kerja -masu / Kata Kerja negatif / Kata Sifat i / Kata Sifat na / Kata Benda + ながら（も）",
+                  desc: "「～ながら」は、「～の状態だが、けれども」と言いたいときに使う。", descEn: "Used when saying 'this is the situation, but...'", descId: "Digunakan ketika mengatakan 'ini adalah situasinya, tetapi...'",
+                  examples: [
+                    { jp: "彼とは同じ寮に住んでいながら、ほとんど話をしたことがなかった。", id: "Meskipun tinggal di asrama yang sama dengannya, saya hampir tidak pernah berbicara dengannya." },
+                    { jp: "彼は若いながらも、立派なプロジェクトリーダーだ。", id: "Meskipun dia masih muda, dia adalah pemimpin proyek yang hebat." }
+                  ]
+                }
+            ],
+            check: {
+                page: 37,
+                questions: [
+                    { num: 1, text: "当社はチョコレート（　　）お菓子の総合メーカーです。", en: "Our company is a comprehensive confectionery manufacturer including chocolate." },
+                    { num: 2, text: "このアニメは、子ども（　　）、大人でも十分楽しめる作品になっている。", en: "This anime is a work that can be enjoyed by adults as well as children." },
+                    { num: 3, text: "たまにはゆっくり映画を見たいと思い（　　）、なかなか時間がとれない。", en: "I sometimes want to watch a movie slowly, but I can't find the time." },
+                    { num: 4, text: "がんの疑いがあるときは専門医（　　）早期に診断、治療されることをおすすめします。", en: "If there is suspicion of cancer, we recommend being diagnosed and treated early by a specialist." }
+                ],
+                options: ["ながら", "のもとで", "はもとより", "をはじめとする"],
+                questions2: [
+                    { num: 5, text: "仕事をする（　　）いちばん大切なのは報告・連絡・相談だと言われている。", en: "It is said that the most important thing when working is reporting, contacting, and consulting." },
+                    { num: 6, text: "ジョギングを始めて（　　）体の調子もいいし、夜もよく寝られるようになった。", en: "Since I started jogging, my physical condition is good, and I can sleep well at night." },
+                    { num: 7, text: "誰でも後輩の前ではいいところを見せたい（　　）。", en: "Everyone wants to show their good side in front of juniors." }
+                ],
+                options2: ["ものだ", "上で", "以来"]
+            }
+        }
     ]
 };
 
@@ -306,9 +434,8 @@ let showIndonesian = false;
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     renderDrawer();
-    renderContents();
+    renderAllContent();
     
-    // Load preferences
     const savedEn = localStorage.getItem('showEnglish');
     const savedId = localStorage.getItem('showIndonesian');
     if (savedEn === 'true') toggleEnglish();
@@ -410,9 +537,8 @@ function renderDrawer() {
     
     html += '</div></div><div class="drawer-section"><div class="drawer-section-title">Daftar Isi (Bab 1-22)</div><div class="drawer-list">';
     
-    // Group by category
     let currentCategory = '';
-    bookData.bab.forEach((bab, index) => {
+    bookData.bab.forEach((bab) => {
         if (bab.category !== currentCategory) {
             currentCategory = bab.category;
             html += `<div style="padding: 0.5rem 1rem; font-size: 0.75rem; color: #be123c; font-weight: 600; margin-top: 0.5rem;">${currentCategory}</div>`;
@@ -429,30 +555,17 @@ function renderDrawer() {
                     <span class="drawer-expand-icon" id="expand-icon-${bab.id}">▶</span>
                 </div>
                 <div class="drawer-submenu" id="submenu-${bab.id}">
-                    <div class="drawer-submenu-item" onclick="showBabHeader(${bab.id}); closeDrawer();">
+                    <div class="drawer-submenu-item" onclick="showSection('bab-${bab.id}-header'); closeDrawer();">
                         <span class="drawer-submenu-text">📖 Header Bab</span>
                     </div>
-                    <div class="drawer-submenu-item" onclick="showGrammar(${bab.id}); closeDrawer();">
-                        <span class="drawer-submenu-text">📝 Grammar Points (${bab.grammarCount})</span>
+                    <div class="drawer-submenu-item" onclick="showSection('bab-${bab.id}-grammar'); closeDrawer();">
+                        <span class="drawer-submenu-text">📝 Grammar Points (${bab.grammar.length})</span>
                     </div>
                     ${bab.matomePage ? `
-                    <div class="drawer-submenu-item" onclick="showMatome(${bab.id}); closeDrawer();">
+                    <div class="drawer-submenu-item" onclick="alert('Matome Bab ${bab.number} - Halaman ${bab.matomePage}'); closeDrawer();">
                         <span class="drawer-submenu-text">✅ Matome (p.${bab.matomePage})</span>
                     </div>
                     ` : ''}
-                </div>
-            </div>
-        `;
-    });
-    
-    html += '</div></div><div class="drawer-section"><div class="drawer-section-title">Bagian Akhir</div><div class="drawer-list">';
-    
-    bookData.bagianAkhir.forEach(item => {
-        html += `
-            <div class="drawer-item" onclick="showSection('contents'); closeDrawer();">
-                <div class="drawer-item-info" style="margin-left: 0;">
-                    <span class="drawer-item-title">${item.title}</span>
-                    <span class="drawer-item-sub">p.${item.page}</span>
                 </div>
             </div>
         `;
@@ -462,17 +575,27 @@ function renderDrawer() {
     container.innerHTML = html;
 }
 
-function renderContents() {
+function renderAllContent() {
     const container = document.getElementById('main-container');
+    let html = renderContentsSection();
     
+    bookData.bab.forEach(bab => {
+        html += renderBabHeader(bab);
+        html += renderBabGrammar(bab);
+    });
+    
+    container.innerHTML = html;
+}
+
+function renderContentsSection() {
     let html = `
         <section id="contents">
             <div class="home-header">
-                <h1 class="home-title">${bookData.metadata.title}</h1>
-                <p class="home-subtitle">${bookData.metadata.subtitle}</p>
+                <h1 class="home-title">TRY! N2</h1>
+                <p class="home-subtitle">文法から伸ばす日本語</p>
                 <p class="translation-en">Learning Japanese from Grammar</p>
                 <p class="translation-id">Belajar Bahasa Jepang dari Tata Bahasa</p>
-                <p class="home-desc">${bookData.metadata.edition} | JLPT Preparation</p>
+                <p class="home-desc">改訂版 | JLPT Preparation</p>
                 <p class="translation-id">Edisi Revisi | Persiapan Ujian JLPT</p>
             </div>
             
@@ -484,7 +607,6 @@ function renderContents() {
                 </h2>
     `;
     
-    // Pengantar
     html += '<div class="quick-section-title">Pengantar</div>';
     bookData.pengantar.forEach(item => {
         html += `
@@ -497,11 +619,10 @@ function renderContents() {
         `;
     });
     
-    // Bab list
     html += '<div class="quick-section-title">Bab 1-22</div>';
     bookData.bab.forEach(bab => {
         html += `
-            <div class="bab-card-home" onclick="showBabHeader(${bab.id})">
+            <div class="bab-card-home" onclick="showSection('bab-${bab.id}-header')">
                 <div class="bab-number-home">${bab.number}</div>
                 <div class="bab-info-home">
                     <div class="bab-category-home">
@@ -520,82 +641,246 @@ function renderContents() {
         `;
     });
     
-    // Bagian Akhir
-    html += '<div class="quick-section-title">Bagian Akhir</div>';
-    bookData.bagianAkhir.forEach(item => {
+    html += '</div></section>';
+    return html;
+}
+
+function renderBabHeader(bab) {
+    let html = `
+        <section id="bab-${bab.id}-header" class="hidden">
+            <div class="section-header">
+                <div class="bab-header-category">
+                    ${bab.category}
+                    <span class="translation-en">${bab.categoryEn}</span>
+                    <span class="translation-id">${bab.categoryId}</span>
+                </div>
+                <div class="bab-header-title">
+                    <span class="bab-header-number">${bab.number}</span>
+                    <h1 class="bab-header-text">${bab.title}</h1>
+                    <span class="bab-header-en">${bab.titleEn}</span>
+                    <span class="translation-id">${bab.titleId}</span>
+                </div>
+            </div>
+    `;
+    
+    // Dekiru box
+    if (bab.dekiru) {
         html += `
-            <div class="quick-item" onclick="showSection('contents')">
-                <span class="quick-item-title">${item.title}</span>
-                <span class="translation-en">${item.titleEn}</span>
-                <span class="translation-id">${item.titleId}</span>
-                <span class="quick-item-page">p.${item.page}</span>
+            <div class="dekiru-box">
+                <h3 class="dekiru-title">
+                    できること
+                    <span class="translation-en">Dekiru Koto</span>
+                    <span class="translation-id">Dapat Melakukan</span>
+                </h3>
+                <ul>
+        `;
+        bab.dekiru.forEach(item => {
+            html += `
+                <li class="dekiru-item">
+                    <span class="dekiru-bullet">●</span>
+                    <div>
+                        <p>${item.jp}</p>
+                        <span class="translation-en">${item.en}</span>
+                        <span class="translation-id">${item.id}</span>
+                    </div>
+                </li>
+            `;
+        });
+        html += '</ul></div>';
+    }
+    
+    // Job Ad (Bab 1) or Speech (Bab 2)
+    if (bab.jobAd) {
+        html += renderJobAd(bab.jobAd);
+    } else if (bab.speech) {
+        html += `
+            <div class="speech-box">
+                <p>${bab.speech.replace(/(入社して以来|において|部長をはじめ|先輩方のご指導のもとで|仕事の進め方はもとより|人は失敗から学ぶものだ|仕事をする上で|残念ながら)/g, '<span class="highlight-text">$1</span>')}</p>
+                <span class="translation-en">Everyone, thank you for holding this event for me today. Since joining the company, in this sales department, under the guidance of the department head and seniors, I was very fortunate to learn about sales from scratch. I am truly grateful for all the things taught, not only how to do the work but also how to interact with clients. Especially, the department head's words, "People learn from failure," I will never forget. There were still many important things about work I wanted to learn, but this time I was ordered to work at the Osaka branch, and unfortunately, I have to leave this workplace.</span>
+                <span class="translation-id">Semuanya, terima kasih telah mengadakan acara seperti ini untuk saya hari ini. Sejak bergabung dengan perusahaan, di departemen penjualan ini, di bawah bimbingan Kepala Departemen dan para senior, saya sangat beruntung bisa belajar tentang penjualan dari nol. Saya sangat berterima kasih atas berbagai hal yang diajarkan, tidak hanya cara mengerjakan pekerjaan, tetapi juga cara berinteraksi dengan klien. Terutama, kata-kata Kepala Departemen, "Manusia belajar dari kegagalan," tidak akan pernah saya lupakan. Ada banyak hal penting dalam bekerja yang masih ingin saya pelajari, tetapi kali ini saya diperintahkan untuk bekerja di kantor cabang Osaka, dan sayangnya saya harus meninggalkan tempat kerja ini.</span>
+            </div>
+        `;
+    }
+    
+    html += `<p class="page-number">p.${bab.page}</p></section>`;
+    return html;
+}
+
+function renderJobAd(jobAd) {
+    let html = `
+        <div class="job-ad">
+            <div class="job-ad-title">
+                <h2>${jobAd.title}</h2>
+                <span class="translation-en">Sunny - Store Staff Recruitment</span>
+                <span class="translation-id">Sunny - Perekrutan Staf Toko</span>
+            </div>
+            <p class="job-ad-subtitle">
+                <span class="highlight">さいわい駅前店オープンにつき、</span>人材を求めています
+                <span class="translation-en">Due to the opening of Saiwai Station Front Store, we are looking for staff</span>
+                <span class="translation-id">Karena pembukaan toko di depan stasiun Saiwai, kami mencari tenaga kerja</span>
+            </p>
+            <div style="margin-top: 1rem;">
+    `;
+    
+    jobAd.sections.forEach(section => {
+        html += `
+            <div class="job-section">
+                <span class="job-section-label">
+                    ${section.label}▶
+                    <span class="translation-en">${section.labelEn}▶</span>
+                    <span class="translation-id">${section.labelId}▶</span>
+                </span>
+                <div class="job-section-content">
+                    <p>${section.content.replace(/\n/g, '<br>')}</p>
+                    ${section.note ? `<p class="job-note">${section.note}</p>` : ''}
+                </div>
             </div>
         `;
     });
     
-    html += '</div></section>';
+    html += `
+            </div>
+            <div class="job-contact">
+                <p style="font-weight: 700;">${jobAd.contact.name}</p>
+                <p>☎ ${jobAd.contact.tel}</p>
+                <p>${jobAd.contact.web}</p>
+                <p>E-mail ${jobAd.contact.email}</p>
+            </div>
+        </div>
+    `;
+    return html;
+}
+
+function renderBabGrammar(bab) {
+    let html = `<section id="bab-${bab.id}-grammar" class="hidden space-y-6">`;
     
-    // Add placeholder sections for Bab 1-22
-    bookData.bab.forEach(bab => {
+    html += `
+        <div class="section-header">
+            <div class="bab-header-category">Grammar Points</div>
+            <div class="bab-header-title">
+                <span class="bab-header-number">${bab.number}</span>
+                <h1 class="bab-header-text">${bab.title}</h1>
+            </div>
+        </div>
+    `;
+    
+    bab.grammar.forEach(g => {
         html += `
-            <section id="bab-${bab.id}-header" class="hidden">
-                <div class="section-header">
-                    <div class="bab-header-category">
-                        ${bab.category}
-                        <span class="translation-en">${bab.categoryEn}</span>
-                        <span class="translation-id">${bab.categoryId}</span>
-                    </div>
-                    <div class="bab-header-title">
-                        <span class="bab-header-number">${bab.number}</span>
-                        <h1 class="bab-header-text">${bab.title}</h1>
-                        <span class="bab-header-en">${bab.titleEn}</span>
-                        <span class="translation-id">${bab.titleId}</span>
+            <article class="grammar-article" id="grammar-${g.id}">
+                <div class="grammar-header">
+                    <h2 class="grammar-title">${g.num} ${g.title}</h2>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        ${g.plus ? '<span class="plus-badge">+Plus</span>' : ''}
+                        <span class="star">${'★'.repeat(g.stars)}</span>
                     </div>
                 </div>
-                <div style="text-align: center; padding: 3rem 1rem; background: white; border-radius: 1rem;">
-                    <p style="font-size: 1.25rem; color: #6b7280; margin-bottom: 1rem;">🚧 Konten sedang dalam pengembangan</p>
-                    <p style="color: #9ca3af;">Bab ${bab.number}: ${bab.title}</p>
-                    <p style="color: #be123c; margin-top: 1rem; font-weight: 600;">Halaman ${bab.page}</p>
-                    <button onclick="showGrammar(${bab.id})" style="margin-top: 1.5rem; background: #be123c; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer; font-weight: 600;">
-                        Lihat Grammar Points →
-                    </button>
-                </div>
-                <p class="page-number">p.${bab.page}</p>
-            </section>
-            
-            <section id="bab-${bab.id}-grammar" class="hidden">
-                <div class="section-header">
-                    <div class="bab-header-category">Grammar Points</div>
-                    <div class="bab-header-title">
-                        <span class="bab-header-number">${bab.number}</span>
-                        <h1 class="bab-header-text">${bab.title}</h1>
+                <div class="grammar-content">
+                    <div class="dou-tsukau">
+                        <h3 class="dou-tsukau-title">
+                            どう使う？
+                            <span class="translation-en">How to use?</span>
+                            <span class="translation-id">Bagaimana Menggunakannya?</span>
+                        </h3>
+                        <p class="dou-tsukau-text">${g.desc}</p>
+                        <span class="translation-en">${g.descEn}</span>
+                        <span class="translation-id">${g.descId}</span>
                     </div>
+                    
+                    <div class="grammar-pattern">
+                        <p class="grammar-pattern-text">${g.pattern}</p>
+                        <span class="translation-id">${g.patternId}</span>
+                    </div>
+                    
+                    <div class="example-list">
+        `;
+        
+        g.examples.forEach((ex, idx) => {
+            html += `
+                <p class="example-item">
+                    <span style="font-weight: 700;">${String.fromCharCode(9312 + idx)}</span> ${ex.jp}
+                    <span class="translation-id">${ex.id}</span>
+                </p>
+            `;
+        });
+        
+        html += `
+                    </div>
+                    <p class="page-ref">p.${g.page}</p>
                 </div>
-                <div style="text-align: center; padding: 3rem 1rem; background: white; border-radius: 1rem;">
-                    <p style="font-size: 1.25rem; color: #6b7280; margin-bottom: 1rem;">📝 ${bab.grammarCount} Grammar Points</p>
-                    <p style="color: #9ca3af;">Konten detail grammar akan ditampilkan di sini</p>
-                </div>
-            </section>
+            </article>
         `;
     });
     
-    container.innerHTML = html;
+    // Check section
+    if (bab.check) {
+        html += renderCheck(bab.check);
+    }
+    
+    html += '</section>';
+    return html;
 }
 
-// Navigation Functions
+function renderCheck(check) {
+    let html = `
+        <div class="check-box" style="margin-top: 2rem;">
+            <div class="check-header">
+                <span class="check-icon">📖</span>
+                <h2 class="check-title">Check</h2>
+                <span class="check-ref">▶答え 別冊P. ${check.page === 37 ? '2' : '1'}</span>
+            </div>
+            <div class="check-grid">
+                <div>
+    `;
+    
+    check.questions.forEach(q => {
+        html += `
+            <p class="check-question">
+                ${q.num}）${q.text}
+                <span class="translation-en">${q.en}</span>
+            </p>
+        `;
+    });
+    
+    html += `
+                    <div class="check-options">
+                        ${check.options.map(o => `<span>${o}</span>`).join('')}
+                    </div>
+                </div>
+                <div>
+    `;
+    
+    check.questions2.forEach(q => {
+        html += `
+            <p class="check-question">
+                ${q.num}）${q.text}
+                <span class="translation-en">${q.en}</span>
+            </p>
+        `;
+    });
+    
+    html += `
+                    <div class="check-options">
+                        ${check.options2.map(o => `<span>${o}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+            <p class="page-number">p.${check.page}</p>
+        </div>
+    `;
+    
+    return html;
+}
+
 function showSection(sectionId) {
-    // Hide all sections
     document.querySelectorAll('section').forEach(sec => {
         sec.classList.add('hidden');
     });
     
-    // Show target
     const target = document.getElementById(sectionId);
     if (target) {
         target.classList.remove('hidden');
         currentSection = sectionId;
         
-        // Update nav title
         const navTitle = document.getElementById('current-section-title');
         if (sectionId === 'contents') {
             navTitle.textContent = 'TRY! N2';
@@ -605,27 +890,10 @@ function showSection(sectionId) {
                 const babId = parseInt(match[1]);
                 const bab = bookData.bab.find(b => b.id === babId);
                 if (bab) navTitle.textContent = `Bab ${bab.number}`;
-            } else {
-                navTitle.textContent = 'TRY! N2';
             }
         }
         
         window.scrollTo(0, 0);
-    }
-}
-
-function showBabHeader(babId) {
-    showSection(`bab-${babId}-header`);
-}
-
-function showGrammar(babId) {
-    showSection(`bab-${babId}-grammar`);
-}
-
-function showMatome(babId) {
-    const bab = bookData.bab.find(b => b.id === babId);
-    if (bab && bab.matomePage) {
-        alert(`Matome untuk Bab ${bab.number} ada di halaman ${bab.matomePage}\n(Fitur ini akan ditambahkan)`);
     }
 }
 </script>
