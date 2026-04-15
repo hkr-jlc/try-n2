@@ -6752,5 +6752,1112 @@
 			</bagian1>
 		</check>
 	</bab10_content>
+
+	<!-- KONTEN BAB 11 - Page 111-120 -->
+	<bab11_content>
+		<!-- PAGE 111 - Header & Dekiru Koto -->
+		<header halaman="111">
+			<kategori>論説文を読む</kategori>
+			<kategori_en>Reading an Essay</kategori_en>
+			<kategori_id>Membaca Esai</kategori_id>
+			<nomor>7</nomor>
+			<judul>オオカミと生態系（2）</judul>
+			<judul_en>Wolves and the Ecosystem (2)</judul_en>
+			<judul_id>Serigala dan Ekosistem (2)</judul_id>
+
+			<dekiru_koto>
+				<judul>できること</judul>
+				<judul_id>Yang Bisa Dilakukan</judul_id>
+				<item>
+					<jp>レポートや論説文の説明が理解できる。</jp>
+					<en>Understand an explanation in a report or essay.</en>
+					<id>Dapat memahami penjelasan dalam laporan atau esai.</id>
+				</item>
+			</dekiru_koto>
+
+			<speech cd="33">
+				<karakter nama="ナレーター">
+					<jp>そこで、国立公園にオオカミを戻そうという取り組みが始まった。オオカミの復活により生態系を回復させ得ると考えたのだ。しかし生物学者の期待に反して、この計画はすぐには実行されなかった。野生のオオカミを連れてくることに関しては、成果が期待される反面、家畜の被害のおそれもあるため、理論上は有効だとわかっていても、受け入れにくいことだったからだ。</jp>
+					<id>Oleh karena itu, upaya untuk mengembalikan serigala ke taman nasional dimulai. Mereka berpikir bahwa dengan kebangkitan serigala, ekosistem dapat dipulihkan. Namun, bertentangan dengan harapan para ahli biologi, rencana ini tidak segera dilaksanakan. Mengenai membawa serigala liar, meskipun secara teori efektif karena ada harapan akan hasil, namun sulit diterima karena ada kekhawatiran kerusakan pada ternak.</id>
+				</karakter>
+				<karakter nama="ナレーター">
+					<jp>20年以上の時間をかけて話し合いを続けた結果、1995年、ついにオオカミが放された。その後、オオカミがシカを食料として順調に数を増やした結果、一時は激減したその他の動植物も、徐々に増加しつつあることが報告されている。</jp>
+					<id>Hasil dari diskusi yang berlangsung lebih dari 20 tahun, akhirnya pada tahun 1995 serigala dilepaskan. Setelah itu, karena serigala berkembang biak dengan baik dengan memakan rusa sebagai makanan, dilaporkan bahwa flora dan fauna lain yang sempat berkurang drastis juga sedang bertambah sedikit demi sedikit.</id>
+				</karakter>
+				<karakter nama="ナレーター">
+					<jp>同じような取り組みはアメリカに限らず、ヨーロッパでも検討されている。慎重に意見交換を続けながら、自然のバランスをとっていくことになるだろう。こうした意識の変化にともない、オオカミに対する悪いイメージも過去のものになっていくかもしれない。</jp>
+					<id>Upaya serupa tidak hanya di Amerika, tetapi juga sedang dipertimbangkan di Eropa. Sambil terus bertukar pendapat dengan hati-hati, keseimbangan alam akan dijaga. Seiring dengan perubahan kesadaran ini, citra buruk tentang serigala mungkin akan menjadi masa lalu.</id>
+				</karakter>
+			</speech>
+		</header>
+
+		<!-- SUB BAB 66: 回復させ得る - Page 112 -->
+		<sub_bab id="66" halaman="112">
+			<nomor>66</nomor>
+			<judul>回復させ得る</judul>
+			<judul_id>Dapat Memulihkan</judul_id>
+			<bintang>★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～得る／～得る」は、「～ができる・可能性がある」と言うときに使い、「～得ない」は「～できない・可能性がない」と言うときに使う。論文などでよく使う。</jp>
+					<en>Use "～eru/～uru" when you say "there is a possibility that I can ~", and use "～enai" when you say "I can't ~; there is no possibility." This is often used in essays and the like.</en>
+					<id>Gunakan "~eru/~uru" ketika mengatakan "ada kemungkinan bahwa saya bisa ~", dan gunakan "~enai" ketika mengatakan "saya tidak bisa ~; tidak ada kemungkinan." Sering digunakan dalam esai dan sejenisnya.</id>
+				</penjelasan>
+				<pola>V-ます + 得る／得る／得ない</pola>
+				<pola_id>V-masu + eru/uru/enai</pola_id>
+				<catatan>※「考える・想像する・ある・知る・予測する・解決する・理解する」などと一緒に使われる。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>凶器がどこにあるか、考え得る場所はすべて捜したが、まったく手がかりがつかめなかった。</jp>
+						<id>Senjata pembunuhan, semua tempat yang bisa dipikirkan sudah dicari, tetapi sama sekali tidak ada petunjuk yang ditemukan.</id>
+					</item>
+					<item no="2">
+						<jp>普通の人が宇宙へ行ける日が来るなんて、100年前には想像し得なかったことだ。</jp>
+						<id>Hari ketika orang biasa bisa pergi ke luar angkasa, adalah hal yang tidak bisa dibayangkan 100 tahun yang lalu.</id>
+					</item>
+					<item no="3">
+						<jp>マーケティング調査の結果によっては、発売時期の変更もあり得る。</jp>
+						<id>Tergantung pada hasil survei pemasaran, perubahan waktu rilis juga mungkin terjadi.</id>
+					</item>
+					<item no="4">
+						<jp>犯人しか知り得ない情報を、彼は知っていた。</jp>
+						<id>Informasi yang hanya bisa diketahui oleh pelaku, dia mengetahuinya.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<plus>
+				<judul>ありえない</judul>
+				<penjelasan>
+					<jp>「ありえない」は信じられないという気持ちで、会話でよく使われる。</jp>
+					<en>"Arienai" is often used in conversation to say that something is unbelievable.</en>
+					<id>"Arienai" sering digunakan dalam percakapan untuk mengatakan bahwa sesuatu tidak bisa dipercaya.</id>
+				</penjelasan>
+				<contoh>
+					<item no="1">
+						<jp>A：おれ、内定取り消しだって。ありえないよな。</jp>
+						<id>A: Katanya tawaran kerja saya dibatalkan. Tidak mungkin, ya.</id>
+					</item>
+					<item no="2">
+						<jp>B：えー！うそでしょ？</jp>
+						<id>B: Hah! Bohong, kan?</id>
+					</item>
+				</contoh>
+			</plus>
+
+			<halaman_ref>p.220 ～得る／得る</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 67: 期待に反して - Page 112-113 -->
+		<sub_bab id="67" halaman="112-113">
+			<nomor>67</nomor>
+			<judul>期待に反して</judul>
+			<judul_id>Bertentangan dengan Harapan</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「予想したことや期待したことと反対の結果や状態になった」と言いたいときに使う。</jp>
+					<en>Use this when you want to say "the result or situation has become opposite of what was predicted or expected."</en>
+					<id>Gunakan ini ketika ingin mengatakan "hasil atau situasi menjadi berlawanan dengan yang diprediksi atau diharapkan."</id>
+				</penjelasan>
+				<pola>N + に反して／に反し／に反する／に反した + N</pola>
+				<pola_id>N + ni hanshite / ni hanshi / ni hansuru / ni hanshita + N</pola_id>
+				<catatan>※「予想・期待・意向」などと一緒に使われる。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>今回の経済政策は国民の期待に反して、まったく効果がなかった。</jp>
+						<id>Kebijakan ekonomi kali ini, bertentangan dengan harapan rakyat, sama sekali tidak efektif.</id>
+					</item>
+					<item no="2">
+						<jp>彼は、親の意向に反して、戦場カメラマンになった。</jp>
+						<id>Dia, bertentangan dengan keinginan orang tuanya, menjadi kameramen medan perang.</id>
+					</item>
+					<item no="3">
+						<jp>実験結果は予想に反するものだったので、関係者はがっかりした様子だった。</jp>
+						<id>Karena hasil eksperimen bertentangan dengan prediksi, pihak terkait tampak kecewa.</id>
+					</item>
+					<item no="4">
+						<jp>手作りにこだわってきた店主の意に反することだが、人件費削減のため、機械化せざるを得ない状況になってきた。</jp>
+						<id>Meskipun bertentangan dengan keinginan pemilik toko yang selalu mempertahankan pembuatan tangan, untuk mengurangi biaya tenaga kerja, situasinya menjadi harus beralih ke mekanisasi.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 5</jawaban_ref>
+
+				<soal id="1">
+					<teks>Aチームは予想（a. に反して b. に反した）決勝戦まで進んだ。</teks>
+					<jawaban>b</jawaban>
+					<id>Tim A, bertentangan dengan prediksi, maju sampai final.</id>
+				</soal>
+				<soal id="2">
+					<teks>今回の統一地方選挙は開票前の予測（a. に反して b. に反する）結果に終わった。</teks>
+					<jawaban>b</jawaban>
+					<id>Pemilihan umum daerah serentak kali ini berakhir dengan hasil yang bertentangan dengan prediksi sebelum penghitungan suara.</id>
+				</soal>
+				<soal id="3">
+					<teks>労働者の意思（a. に反して b. に反する）雇用者が労働を強制することはできない。</teks>
+					<jawaban>b</jawaban>
+					<id>Pemberi kerja tidak bisa memaksakan pekerjaan yang bertentangan dengan keinginan pekerja.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.220 ～に反して</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 68: 連れてくることに関して - Page 113 -->
+		<sub_bab id="68" halaman="113">
+			<nomor>68</nomor>
+			<judul>連れてくることに関して</judul>
+			<judul_id>Mengenai Membawa (Serigala)</judul_id>
+			<bintang>★★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～について」と同じように、話題にしたり、調べたりする内容を言うときに使う。調査や研究、通知などでよく使う。</jp>
+					<en>Just like "～ni tsuite", use this when you introduce a topic or say what someone is investigating. This is often used in surveys, research, notifications and the like.</en>
+					<id>Sama seperti "~ni tsuite", gunakan ini ketika memperkenalkan topik atau menyatakan apa yang sedang diselidiki seseorang. Sering digunakan dalam survei, penelitian, pemberitahuan, dan sejenisnya.</id>
+				</penjelasan>
+				<pola>N + に関して／に関する + N</pola>
+				<pola_id>N + ni kanshite / ni kansuru + N</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>修理に関するお問い合わせはサービスセンターまでお電話かメールでご連絡ください。</jp>
+						<id>Untuk pertanyaan mengenai perbaikan, silakan hubungi service center melalui telepon atau email.</id>
+					</item>
+					<item no="2">
+						<jp>危険物の取り扱いに関しては細心の注意を払う必要がある。</jp>
+						<id>Mengenai penanganan barang berbahaya, perlu memperhatikan dengan sangat hati-hati.</id>
+					</item>
+					<item no="3">
+						<jp>今回は子どもたちの学力だけでなく体力に関しても調査が行われることになった。</jp>
+						<id>Kali ini, tidak hanya kemampuan akademik anak-anak, tetapi juga mengenai kekuatan fisik akan dilakukan survei.</id>
+					</item>
+					<item no="4">
+						<jp>友人は地震の予知に関して研究論文を書いたそうだ。</jp>
+						<id>Katanya teman menulis makalah penelitian mengenai prediksi gempa bumi.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 5</jawaban_ref>
+
+				<soal id="1">
+					<teks>日程など試合（a. に関して b. に関する）情報は、ホームページをご覧ください。</teks>
+					<jawaban>b</jawaban>
+					<id>Informasi mengenai jadwal dan pertandingan, silakan lihat di homepage.</id>
+				</soal>
+				<soal id="2">
+					<teks>若者のインターネットの利用（a. に関して b. に関する）大学でアンケートを行った。</teks>
+					<jawaban>b</jawaban>
+					<id>Mengenai penggunaan internet oleh pemuda, dilakukan kuesioner di universitas.</id>
+				</soal>
+				<soal id="3">
+					<teks>その件（a. に関しては b. に関する）後日メールでご案内いたします。</teks>
+					<jawaban>b</jawaban>
+					<id>Mengenai hal tersebut, akan kami informasikan melalui email di lain hari.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.220 ～に関して</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 69: 成果が期待される反面 - Page 114 -->
+		<sub_bab id="69" halaman="114">
+			<nomor>69</nomor>
+			<judul>成果が期待される反面</judul>
+			<judul_id>Di Sisi Lain Hasil Diharapkan</judul_id>
+			<bintang>★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>あることに関して、2つの反対の面や視点があることを説明するときに使う。</jp>
+					<en>Use this when you explain that there are two aspects or perspectives pertaining to something.</en>
+					<id>Gunakan ini ketika menjelaskan bahwa ada dua aspek atau sudut pandang mengenai sesuatu.</id>
+				</penjelasan>
+				<pola>PI + 反面／半面</pola>
+				<pola_id>PI + hanmen / hanmen</pola_id>
+				<pola2>[なAだな Nだ]</pola2>
+				<pola2_id>[naA da na N da]</pola2_id>
+				<catatan>※「なA／Nである＋反面」の形もある。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>来日前は留学に期待する反面、不安も大きかった。</jp>
+						<id>Sebelum datang ke Jepang, di sisi lain menantikan studi, kekhawatiran juga besar.</id>
+					</item>
+					<item no="2">
+						<jp>IT機器は多機能化が進んで、便利な反面、操作が複雑すぎて使いこなせない人が増えている。</jp>
+						<id>Peralatan IT semakin multifungsi, di sisi lain praktis, semakin banyak orang yang tidak bisa menggunakannya karena operasinya terlalu rumit.</id>
+					</item>
+					<item no="3">
+						<jp>高層マンションは設備がよくて快適に生活できる反面、一度停電すると設備がまったく使えなくなるという問題もある。</jp>
+						<id>Apartemen tinggi, di sisi lain bisa hidup nyaman dengan fasilitas bagus, ada masalah bahwa kalau mati listrik sekali, fasilitas sama sekali tidak bisa digunakan.</id>
+					</item>
+					<item no="4">
+						<jp>木製や紙製の植木鉢は通気性に優れている反面、乾燥しやすいという欠点もある。</jp>
+						<id>Pot tanaman dari kayu atau kertas, di sisi lain unggul dalam sirkulasi udara, juga memiliki kelemahan mudah kering.</id>
+					</item>
+					<item no="5">
+						<jp>国民の長寿は喜ばしい反面、国の財政負担が増えるという問題もある。</jp>
+						<id>Umur panjang rakyat, di sisi lain membahagiakan, juga ada masalah beban fiskal negara yang meningkat.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<halaman_ref>p.220 ～反面</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 70: 理論上は - Page 114 -->
+		<sub_bab id="70" halaman="114">
+			<nomor>70</nomor>
+			<judul>理論上は</judul>
+			<judul_id>Secara Teori</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～上」は、「～の点から考えて」という意味で、視点を示す言葉と一緒に使う。</jp>
+					<en>Use "～jou" together with words that show a perspective to mean "in view of ~".</en>
+					<id>Gunakan "~jou" bersama dengan kata-kata yang menunjukkan sudut pandang untuk berarti "dilihat dari ~".</id>
+				</penjelasan>
+				<pola>N + 上</pola>
+				<pola_id>N + jou</pola_id>
+				<catatan>※「理論・職業・教育・法律・歴史・表面」などの言葉と一緒に使われる。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>お札にはその国の歴史上の人物の顔が描かれていることが多い。</jp>
+						<id>Pada uang kertas, sering digambar wajah tokoh sejarah negara tersebut.</id>
+					</item>
+					<item no="2">
+						<jp>スポーツは、子どもにとって健康上はもちろん、教育上もいい点がたくさんある。</jp>
+						<id>Olahraga, bagi anak-anak secara kesehatan tentu saja, secara pendidikan juga memiliki banyak kelebihan.</id>
+					</item>
+					<item no="3">
+						<jp>あの2人は表面上は親しそうに見えるけど、本当はあまり仲がよくないんだ。</jp>
+						<id>Kedua orang itu secara tampak terlihat akrab, tetapi sebenarnya tidak terlalu dekat.</id>
+					</item>
+					<item no="4">
+						<jp>「ペーパーカンパニー」とは、書類上は存在するが経営実態のない会社のことである。</jp>
+						<id>"Paper company" adalah perusahaan yang secara dokumen ada tetapi tidak memiliki aktivitas operasional.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 5</jawaban_ref>
+
+				<soal id="1">
+					<teks>新エネルギーの開発は＿＿＿は可能だが、その実用化には課題も多い。</teks>
+					<jawaban>理論上</jawaban>
+					<id>Pengembangan energi baru secara teori mungkin, tetapi untuk praktisnya banyak tantangan.</id>
+				</soal>
+				<soal id="2">
+					<teks>弁護士や医師は＿＿＿人の秘密を知っても、それを他人に話してはならない。</teks>
+					<jawaban>職業上</jawaban>
+					<id>Pengacara dan dokter, secara profesional meski tahu rahasia orang, tidak boleh memberitahukannya ke orang lain.</id>
+				</soal>
+				<soal id="3">
+					<teks>高校進学率が90％を超え、＿＿＿義務教育のような位置づけになっている。</teks>
+					<jawaban>事実上</jawaban>
+					<id>Tingkat masuk SMA melebihi 90%, secara de facto menjadi seperti pendidikan wajib.</id>
+				</soal>
+				<soal id="4">
+					<teks>インターネットには、子どもの＿＿＿よくないと思われるサイトが数多くある。</teks>
+					<jawaban>教育上</jawaban>
+					<id>Di internet, banyak situs yang dianggap tidak baik secara pendidikan untuk anak-anak.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.220 ～上／上</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 71: 増加しつつある - Page 115 -->
+		<sub_bab id="71" halaman="115">
+			<nomor>71</nomor>
+			<judul>増加しつつある</judul>
+			<judul_id>Sedang Bertambah</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「日本の人口は減りつつある」のように少しずつ変化していると説明するときに使う。</jp>
+					<en>Use this to explain that something is changing little by little as in "Japan's population is decreasing".</en>
+					<id>Gunakan ini untuk menjelaskan bahwa sesuatu sedang berubah sedikit demi sedikit seperti dalam "populasi Jepang sedang berkurang".</id>
+				</penjelasan>
+				<pola>V-ます + つつある</pola>
+				<pola_id>V-masu + tsutsu aru</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>異常気象の影響が世界各地に広がりつつある。</jp>
+						<id>Pengaruh cuaca ekstrem sedang meluas ke seluruh dunia.</id>
+					</item>
+					<item no="2">
+						<jp>社会の高齢化にともない、犯罪者の高齢化も進みつつある。</jp>
+						<id>Seiring dengan penuaan masyarakat, penuaan pelaku kejahatan juga sedang berlangsung.</id>
+					</item>
+					<item no="3">
+						<jp>世界規模での人口移動が進みつつある現在、共生の意識がますます必要になっている。</jp>
+						<id>Saat ini perpindahan populasi skala global sedang berlangsung, kesadaran hidup berdampingan semakin diperlukan.</id>
+					</item>
+					<item no="4">
+						<jp>日本銀行は、国内の景気について、緩やかに回復しつつあると発表した。</jp>
+						<id>Bank of Japan mengumumkan mengenai kondisi ekonomi domestik, sedang pulih dengan perlahan.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 5</jawaban_ref>
+
+				<soal id="1">
+					<teks>ランナーは夕日の中をゴールに向かって（a. 走っている b. 走りつつある）。</teks>
+					<jawaban>b</jawaban>
+					<id>Pelari sedang berlari menuju garis finish di tengah matahari terbenam.</id>
+				</soal>
+				<soal id="2">
+					<teks>私が弁当を（a. 食べている b. 食べつつある）ところへ上司が来て、緊急の仕事を頼まれた。</teks>
+					<jawaban>a</jawaban>
+					<id>Ketika saya sedang makan bento, atasan datang dan meminta pekerjaan darurat.</id>
+				</soal>
+				<soal id="3">
+					<teks>私たちには、（a. 失われている b. 失われつつある）自然を守る義務がある。</teks>
+					<jawaban>b</jawaban>
+					<id>Kita memiliki kewajiban untuk melindungi alam yang sedang hilang.</id>
+				</soal>
+				<soal id="4">
+					<teks>国王の病気は（a. 回復している b. 回復しつつある）が、まだ入院治療が必要だそうだ。</teks>
+					<jawaban>b</jawaban>
+					<id>Penyakit raja sedang pulih, tetapi katanya masih perlu perawatan di rumah sakit.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.223 ～つつ</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 72: アメリカに限らず - Page 116 -->
+		<sub_bab id="72" halaman="116">
+			<nomor>72</nomor>
+			<judul>アメリカに限らず</judul>
+			<judul_id>Tidak Hanya di Amerika</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～に限らず」は、「～だけでなく、ほかにも」と言いたいときに使う。</jp>
+					<en>Use "～ni kagirazu" when you want to say "not just ~, but also something else."</en>
+					<id>Gunakan "~ni kagirazu" ketika ingin mengatakan "tidak hanya ~, tetapi juga yang lain."</id>
+				</penjelasan>
+				<pola>N + に限らず</pola>
+				<pola_id>N + ni kagirazu</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>環境対策のためにも、夏に限らず、年間を通して節電を心がけるべきだ。</jp>
+						<id>Untuk tindakan lingkungan, tidak hanya di musim panas, sepanjang tahun harus berhemat listrik.</id>
+					</item>
+					<item no="2">
+						<jp>水の問題は特定の地域に限らず、世界的な問題になるだろう。</jp>
+						<id>Masalah air tidak hanya di daerah tertentu, akan menjadi masalah global.</id>
+					</item>
+					<item no="3">
+						<jp>車に限らず、自転車でもぶつかったら大けがをしますから注意してください。</jp>
+						<id>Tidak hanya mobil, kalau terbentur dengan sepeda juga bisa cedera parah, jadi hati-hati.</id>
+					</item>
+					<item no="4">
+						<jp>電化製品に限らず、あらゆる分野で新製品の開発競争が行われています。</jp>
+						<id>Tidak hanya produk elektronik, di semua bidang persaingan pengembangan produk baru sedang berlangsung.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 5</jawaban_ref>
+
+				<soal id="1">
+					<teks>生活習慣病は、人間（a. に限らず b. を問わず）犬や猫などのペットにも見られる。</teks>
+					<jawaban>a</jawaban>
+					<id>Penyakit gaya hidup, tidak hanya pada manusia, tetapi juga terlihat pada hewan peliharaan seperti anjing dan kucing.</id>
+				</soal>
+				<soal id="2">
+					<teks>車で出かけたが、渋滞して、すぐ近く（a. に限らず b. にもかかわらず）1時間もかかってしまった。</teks>
+					<jawaban>b</jawaban>
+					<id>Pergi dengan mobil, tetapi macet, meski dekat saja butuh waktu 1 jam.</id>
+				</soal>
+				<soal id="3">
+					<teks>経済学の加藤先生は、経済（a. に限らず b. において）歴史や文化にも詳しい。</teks>
+					<jawaban>a</jawaban>
+					<id>Profesor Kato ahli ekonomi, tidak hanya ekonomi, tetapi juga mahir dalam sejarah dan budaya.</id>
+				</soal>
+				<soal id="4">
+					<teks>スポーツ（a. に限らず b. にしたがって）どのような集団でも、それぞれの力を生かすことが重要だ。</teks>
+					<jawaban>a</jawaban>
+					<id>Tidak hanya olahraga, kelompok apa pun, penting untuk memanfaatkan kekuatan masing-masing.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.223 ～に限る／限り</halaman_ref>
+		</sub_bab>
+
+		<!-- CHECK - Page 117 -->
+		<check halaman="117">
+			<judul>Check</judul>
+			<judul_id>Cek</judul_id>
+			<jawaban_ref>別冊P. 5</jawaban_ref>
+
+			<bagian1>
+				<instruksi>適当な形に変えて、（　　）に入れなさい。</instruksi>
+				<instruksi_id>Ubah ke bentuk yang tepat dan isi (　　).</instruksi_id>
+				
+				<soal id="1">
+					<teks>「今年こそ優勝を」という関係者の期待（　　　　　　）、チームは1回戦で負けてしまった。</teks>
+					<jawaban>に反して</jawaban>
+					<id>Bertentangan dengan harapan pihak terkait yang mengatakan "kali ini pasti juara", tim kalah di putaran pertama.</id>
+				</soal>
+
+				<soal id="2">
+					<teks>契約（　　　　　　）、引っ越す場合は1か月前までに伝えることになっている。</teks>
+					<jawaban>に関して</jawaban>
+					<id>Mengenai kontrak, kalau pindah harus memberitahu sampai 1 bulan sebelumnya.</id>
+				</soal>
+
+				<soal id="3">
+					<teks>野外イベントは天候によっては中止もあり（　　　　　　）。</teks>
+					<jawaban>得る</jawaban>
+					<id>Acara outdoor tergantung cuaca, mungkin juga dibatalkan.</id>
+				</soal>
+
+				<soal id="4">
+					<teks>警察は連続放火事件（　　　　　　）有力な情報をつかんだ。</teks>
+					<jawaban>に関して</jawaban>
+					<id>Polisi mendapat informasi kuat mengenai kasus pembakaran beruntun.</id>
+				</soal>
+
+				<soal id="5">
+					<teks>わが国の産業は現在発展し（　　　　　　）。10年後が楽しみだ。</teks>
+					<jawaban>つつある</jawaban>
+					<id>Industri negara kita saat ini sedang berkembang. Menunggu 10 tahun lagi.</id>
+				</soal>
+
+				<soal id="6">
+					<teks>アクリルはガラスと比べて軽く衝撃に強い（　　　　　　）、表面に傷がついて透明度が下がりやすい。</teks>
+					<jawaban>反面</jawaban>
+					<id>Akrilik dibandingkan dengan kaca ringan dan tahan benturan, di sisi lain mudah tergores sehingga transparansinya mudah turun.</id>
+				</soal>
+
+				<soal id="7">
+					<teks>がん（　　　　　　）、病気の治療には早期発見が大事だ。</teks>
+					<jawaban>に限らず</jawaban>
+					<id>Tidak hanya kanker, untuk pengobatan penyakit penemuan dini penting.</id>
+				</soal>
+
+				<pilihan_jawaban>
+					<item>つつある</item>
+					<item>得る</item>
+					<item>に限らず</item>
+					<item>に関する</item>
+					<item>上</item>
+					<item>反面</item>
+					<item>に反して</item>
+				</pilihan_jawaban>
+			</bagian1>
+		</check>
+	</bab11_content>
+
+	<!-- KONTEN BAB 12 - Page 131-140 -->
+	<bab12_content>
+		<!-- PAGE 131 - Header & Dekiru Koto -->
+		<header halaman="131">
+			<kategori>ビジネス場面の会話</kategori>
+			<kategori_en>Conversation in a Business Setting</kategori_en>
+			<kategori_id>Percakapan di Situasi Bisnis</kategori_id>
+			<nomor>8</nomor>
+			<judul>取引先で</judul>
+			<judul_en>At a Client</judul_en>
+			<judul_id>Di Tempat Klien</judul_id>
+
+			<dekiru_koto>
+				<judul>できること</judul>
+				<judul_id>Yang Bisa Dilakukan</judul_id>
+				<item>
+					<jp>ビジネス場面で社外の人との簡単な受け答えができる。</jp>
+					<en>Give simple responses in a business setting to people not from your company.</en>
+					<id>Dapat memberikan respons sederhana di situasi bisnis dengan orang luar perusahaan.</id>
+				</item>
+			</dekiru_koto>
+
+			<speech cd="38">
+				<karakter nama="加藤">
+					<jp>田中さん、安田製作所の佐々木様がお見えになりました。</jp>
+					<id>Tanaka-san, Sasaki-sama dari Yasuda Seisakusho telah datang.</id>
+				</karakter>
+				<karakter nama="佐々木">
+					<jp>本日はご依頼のサンプルを持ってまいりました。</jp>
+					<id>Hari ini saya membawa sampel yang diminta.</id>
+				</karakter>
+				<karakter nama="田中">
+					<jp>あ、わざわざありがとうございます。</jp>
+					<id>Ah, terima kasih banyak telah datang khusus untuk ini.</id>
+				</karakter>
+				<karakter nama="佐々木">
+					<jp>前回、ご希望を承りましたので、それに合わせて作り直しをさせていただきました。ご確認願えますでしょうか。</jp>
+					<id>Karena saya telah menerima permintaan Anda sebelumnya, saya telah meminta untuk membuat ulang sesuai dengan itu. Bisakah Anda memeriksanya?</id>
+				</karakter>
+				<karakter nama="田中">
+					<jp>はい、わかりました。</jp>
+					<id>Ya, saya mengerti.</id>
+				</karakter>
+				<karakter nama="佐々木">
+					<jp>よろしくお願いいたします。それから、これは前回拝借した資料と、サンプルに関する資料でございます。</jp>
+					<id>Mohon kerja samanya. Selain itu, ini adalah dokumen yang saya pinjam sebelumnya dan dokumen terkait sampel.</id>
+				</karakter>
+				<karakter nama="田中">
+					<jp>ああ、どうも。お手数をおかけしました。</jp>
+					<id>Ah, terima kasih. Maaf telah merepotkan Anda.</id>
+				</karakter>
+				<karakter nama="佐々木">
+					<jp>今度お時間がありましたら、ぜひ当社の工場へお越しになってください。新しい機械もご覧いただきながら、ご説明申し上げたいと思いますので…。</jp>
+					<id>Jika ada waktu nanti, silakan datang ke pabrik kami. Saya ingin menjelaskan sambil menunjukkan mesin baru…</id>
+				</karakter>
+				<karakter nama="田中">
+					<jp>ええ、私も一度伺いたいと思っておりました。</jp>
+					<id>Ya, saya juga ingin mengunjunginya sekali.</id>
+				</karakter>
+				<karakter nama="佐々木">
+					<jp>お待ちしております。おいでくださるときは、ご連絡いただければと思います。私がご案内させていただきますので…。</jp>
+					<id>Kami menunggu. Ketika Anda datang, saya berpikir jika Anda bisa menghubungi kami. Saya akan menemani Anda…</id>
+				</karakter>
+				<karakter nama="田中">
+					<jp>ありがとうございます。じゃ、日程につきましては、後ほど…。</jp>
+					<id>Terima kasih. Kalau begitu, mengenai jadwal, nanti…</id>
+				</karakter>
+			</speech>
+		</header>
+
+		<!-- SUB BAB 73: 佐々木様がお見えになりました - Page 132-123 -->
+		<sub_bab id="73" halaman="123">
+			<nomor>73</nomor>
+			<judul>佐々木様がお見えになりました</judul>
+			<judul_id>Sasaki-sama Telah Datang</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>ビジネスなどの場面では、下の表のような特別な敬語の言葉も使われる。</jp>
+					<en>The following kinds of special honorific words in the tables below are also used in business and other settings.</en>
+					<id>Berbagai kata kehormatan khusus seperti dalam tabel di bawah ini juga digunakan dalam bisnis dan situasi lainnya.</id>
+				</penjelasan>
+
+				<tabel_sonkeigo>
+					<judul>尊敬語</judul>
+					<judul_en>Honorific Language</judul_en>
+					<judul_id>Bahasa Hormat</judul_id>
+					<item>
+						<arti>来る</arti>
+						<jp>お見えになる ※1</jp>
+						<id>Datang</id>
+					</item>
+					<item>
+						<arti>行く・来る・いる</arti>
+						<jp>お越しになる ※2</jp>
+						<id>Pergi/Datang/Ada</id>
+					</item>
+					<item>
+						<arti>Vている</arti>
+						<jp>Vていらっしゃる</jp>
+						<id>Sedang melakukan V</id>
+					</item>
+				</tabel_sonkeigo>
+
+				<tabel_kenjougo>
+					<judul>謙譲語</judul>
+					<judul_en>Humble Language</judul_en>
+					<judul_id>Bahasa Rendah Hati</judul_id>
+					<item>
+						<arti>見せる</arti>
+						<jp>ご覧に入れる</jp>
+						<id>Menunjukkan</id>
+					</item>
+					<item>
+						<arti>聞く・引き受ける</arti>
+						<jp>承る</jp>
+						<id>Mendengar/Menerima</id>
+					</item>
+					<item>
+						<arti>借りる</arti>
+						<jp>拝借する</jp>
+						<id>Meminjam</id>
+					</item>
+					<item>
+						<arti>思う（知っている）</arti>
+						<jp>存じる</jp>
+						<id>Berpikir (Tahu)</id>
+					</item>
+					<item>
+						<arti>伝言する</arti>
+						<jp>申し伝える</jp>
+						<id>Menyampaikan pesan</id>
+					</item>
+					<item>
+						<arti>Vていく・Vてくる</arti>
+						<jp>Vてまいる</jp>
+						<id>melakukan V (pergi/datang)</id>
+					</item>
+				</tabel_kenjougo>
+
+				<catatan>※1「お見えです」も使われる。</catatan>
+				<catatan>※2「お越しの方」「お越しです」「お越しいただく／くださる」「お越しください」などの使い方もある。</catatan>
+				<catatan>※3「おいでになる」「おいでです」「おいでいただく／くださる」「おいでください」などの使い方もある。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>横浜からお越しの大山様、佐藤様がお待ちですので、1階の受付までお越しください。</jp>
+						<id>Ōyama-sama dan Satō-sama yang datang dari Yokohama sedang menunggu, silakan datang ke resepsi lantai 1.</id>
+					</item>
+					<item no="2">
+						<jp>本日のご予約は山本が承りました。ありがとうございました。</jp>
+						<id>Reservasi hari ini diterima oleh Yamamoto. Terima kasih banyak.</id>
+					</item>
+					<item no="3">
+						<jp>この資料、長い間拝借したままお返しもせず、たいへん申し訳ありませんでした。</jp>
+						<id>Dokumen ini, saya pinjam lama dan belum mengembalikannya, sangat mohon maaf.</id>
+					</item>
+					<item no="4">
+						<jp>A：こちらまで、お車でおいでになりましたか。</jp>
+						<id>A: Apakah Anda datang ke sini dengan mobil?</id>
+					</item>
+					<item no="5">
+						<jp>B：いいえ、電車でまいりました。</jp>
+						<id>B: Tidak, saya datang dengan kereta.</id>
+					</item>
+					<item no="6">
+						<jp>田中はただ今、席を外しておりますので、後ほどこちらからご連絡するように申し伝えます。</jp>
+						<id>Tanaka sedang tidak di tempat sekarang, jadi saya akan menyampaikan untuk menghubungi dari sini nanti.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 6</jawaban_ref>
+
+				<soal id="1">
+					<teks>ただ今から皆様に（a. ご覧に入れます b. お目にかかります）のは、イルカのショーでございます。</teks>
+					<jawaban>a</jawaban>
+					<id>Yang akan kami tunjukkan kepada semua orang dari sekarang adalah pertunjukan lumba-lumba.</id>
+				</soal>
+				<soal id="2">
+					<teks>プレゼント用のラッピングは、あちらのカウンターで（a. 申して b. 承って）おります。</teks>
+					<jawaban>b</jawaban>
+					<id>Pembungkus kado tersedia di konter sana.</id>
+				</soal>
+				<soal id="3">
+					<teks>この資料をコピーして（a. まいります b. おいでになります）ので、少々お待ちください。</teks>
+					<jawaban>a</jawaban>
+					<id>Saya akan pergi mengcopy dokumen ini, mohon tunggu sebentar.</id>
+				</soal>
+				<soal id="4">
+					<teks>こちらの商品はきっとご満足いただけると（a. 存じます b. ご存じです）。</teks>
+					<jawaban>a</jawaban>
+					<id>Saya berpikir produk ini pasti akan memuaskan Anda.</id>
+				</soal>
+			</yatte_miyou>
+
+			<halaman_ref>p.221 お見えになる／お越しになる</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 74: ご確認願えますでしょうか - Page 124 -->
+		<sub_bab id="74" halaman="124">
+			<nomor>74</nomor>
+			<judul>ご確認願えますでしょうか</judul>
+			<judul_id>Bisakah Anda Memeriksanya?</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「お／ご～願います」は、「お／ご～いただく／ください」と同じ意味で、ビジネス場面などで相手に丁寧に頼むときに使われる。</jp>
+					<en>"お／ご～願います" is used when making a polite request to someone in a business or other similar setting and has the same meaning as "お／ご～いただく／ください".</en>
+					<id>"O/Go ~ negaimasu" digunakan ketika membuat permintaan sopan kepada seseorang dalam situasi bisnis atau situasi serupa lainnya dan memiliki arti yang sama dengan "O/Go ~ itadaku/kudasai".</id>
+				</penjelasan>
+				<pola>お V-ます／ご N + 願う</pola>
+				<pola_id>O V-masu / Go N + negau</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>事故の状況をもう一度詳しくお話し願えますか。</jp>
+						<id>Bisakah Anda menceritakan situasi kecelakaan secara detail sekali lagi?</id>
+					</item>
+					<item no="2">
+						<jp>こちらで少々お待ち願えますか。</jp>
+						<id>Bisakah Anda menunggu sebentar di sini?</id>
+					</item>
+					<item no="3">
+						<jp>緊急の際はこちらにご連絡願います。</jp>
+						<id>Silakan hubungi kami di sini dalam keadaan darurat.</id>
+					</item>
+					<item no="4">
+						<jp>見学ご希望の方は、この書類にご記入願います。</jp>
+						<id>Bagi yang ingin mengikuti tur, silakan isi dokumen ini.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 6</jawaban_ref>
+
+				<soal_matching>
+					<item id="1">
+						<teks>レストラン、ホールなどでの</teks>
+						<match>c</match>
+						<teks_match>お食事はついておりませんので、各自でご用意願います。</teks_match>
+						<id>Di restoran, aula, dll: Karena tidak termasuk makanan, silakan siapkan sendiri.</id>
+					</item>
+					<item id="2">
+						<teks>会議の日時を</teks>
+						<match>d</match>
+						<teks_match>ご連絡願いたいのですが…。</teks_match>
+						<id>Tanggal dan waktu rapat: Saya ingin Anda menghubungi kami mengenai...</id>
+					</item>
+					<item id="3">
+						<teks>安全にご使用いただくために、</teks>
+						<match>c</match>
+						<teks_match>下記の点にご注意願います。</teks_match>
+						<id>Untuk penggunaan yang aman, silakan perhatikan poin-poin di bawah ini.</id>
+					</item>
+					<item id="4">
+						<teks>会場は無料でご利用可能ですが、</teks>
+						<match>b</match>
+						<teks_match>スリッパのご使用はご遠慮願います。</teks_match>
+						<id>Tempat dapat digunakan gratis, tetapi mohon tidak menggunakan sandal.</id>
+					</item>
+				</soal_matching>
+			</yatte_miyou>
+
+			<halaman_ref>p.221 お／ご～願います</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 75: ご説明申し上げたい - Page 125 -->
+		<sub_bab id="75" halaman="125">
+			<nomor>75</nomor>
+			<judul>ご説明申し上げたい</judul>
+			<judul_id>Ingin Menjelaskan</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「お／ご～申し上げる」は、「言う」ではなく、「する」の意味で、自分が相手のために何かをするときに使う。「お／ご～する」のもっと丁寧な言い方。</jp>
+					<en>"お／ご～申し上げる" means "do," not "say." Use it when you do something for someone. It is more polite speech than "お／ご～する".</en>
+					<id>"O/Go ~ mōshiagemasu" berarti "melakukan," bukan "mengatakan." Gunakan ketika Anda melakukan sesuatu untuk seseorang. Lebih sopan daripada "O/Go ~ suru".</id>
+				</penjelasan>
+				<pola>お V-ます／ご N + 申し上げる</pola>
+				<pola_id>O V-masu / Go N + mōshiagemasu</pola_id>
+				<catatan>※「喜ぶ・祈る・答える・案内・相談・紹介」などの言葉と一緒に使われる。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>新校舎建設のため、ご寄付をお願い申し上げます。</jp>
+						<id>Untuk pembangunan gedung sekolah baru, kami memohon sumbangan.</id>
+					</item>
+					<item no="2">
+						<jp>ただ今より今回のプロジェクトについて、私のほうからお話し申し上げます。</jp>
+						<id>Mulai sekarang, saya akan berbicara tentang proyek ini dari pihak saya.</id>
+					</item>
+					<item no="3">
+						<jp>被害に遭われた方に心からお見舞い申し上げます。</jp>
+						<id>Kami menyampaikan belasungkawa yang tulus kepada mereka yang menjadi korban.</id>
+					</item>
+					<item no="4">
+						<jp>ただ今ご報告申し上げた件について、ご質問のある方はいらっしゃいますでしょうか。</jp>
+						<id>Untuk hal yang baru saja saya laporkan, apakah ada yang punya pertanyaan?</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 6</jawaban_ref>
+
+				<soal_matching>
+					<item id="1">
+						<teks>ご迷惑をおかけいたしましたことを</teks>
+						<match>b</match>
+						<teks_match>深くおわび申し上げます。</teks_match>
+						<id>Kami sangat memohon maaf atas ketidaknyamanan yang kami timbulkan.</id>
+					</item>
+					<item id="2">
+						<teks>お問い合わせの件については、</teks>
+						<match>c</match>
+						<teks_match>今日中にご連絡申し上げます。</teks_match>
+						<id>Mengenai pertanyaan Anda, kami akan menghubungi Anda hari ini.</id>
+					</item>
+					<item id="3">
+						<teks>皆様のご健康とご活躍を</teks>
+						<match>d</match>
+						<teks_match>お祈り申し上げます。</teks_match>
+						<id>Kami mendoakan kesehatan dan kesuksesan Anda semua.</id>
+					</item>
+					<item id="4">
+						<teks>またのご来店を心より</teks>
+						<match>a</match>
+						<teks_match>お待ち申し上げております。</teks_match>
+						<id>Kami dengan tulus menunggu kunjungan Anda berikutnya.</id>
+					</item>
+				</soal_matching>
+			</yatte_miyou>
+
+			<halaman_ref>p.221 お／ご～申し上げる</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 76: ご連絡いただければと思います - Page 125-126 -->
+		<sub_bab id="76" halaman="125-126">
+			<nomor>76</nomor>
+			<judul>ご連絡いただければと思います</judul>
+			<judul_id>Saya Berpikir Jika Anda Bisa Menghubungi Kami</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～ばと思います」は、「至急ご連絡いただければと思います」のように、相手に「できれば～してほしい」とちょっと遠慮しながら言うときに使われる。「もう少し価格が安ければと思います」のように、自分の希望を言うときにも使われる。</jp>
+					<en>"～ばと思います" is used when you say modestly to someone "if you can, I'd like you to ~" as in "至急ご連絡いただければと思います". It is also used when you express a desire of yours as in "もう少し価格が安ければと思います".</en>
+					<id>"~ba to omoimasu" digunakan ketika mengatakan dengan rendah hati kepada seseorang "jika bisa, saya ingin Anda ~" seperti dalam "shikyū go-renraku itadakereba to omoimasu". Juga digunakan ketika mengungkapkan keinginan Anda seperti dalam "mō sukoshi kakaku ga yasukereba to omoimasu".</id>
+				</penjelasan>
+				<pola>V-ば + と思う</pola>
+				<pola_id>V-ba + to omou</pola_id>
+				<catatan>※「いAければ／なAであれば + と思う」の形もある。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>こちらの事情をご理解いただければと思います。</jp>
+						<id>Saya berharap Anda bisa memahami keadaan kami.</id>
+					</item>
+					<item no="2">
+						<jp>この仕事を山田さんにお願いできればと思っているんですが…。</jp>
+						<id>Saya berpikir jika bisa meminta pekerjaan ini kepada Yamada-san…</id>
+					</item>
+					<item no="3">
+						<jp>皆さんのご意見をお聞かせくださればと思います。</jp>
+						<id>Saya berharap Anda semua bisa memberitahu pendapat Anda.</id>
+					</item>
+					<item no="4">
+						<jp>スピーチコンテストで入賞できればと思って、がんばっています。</jp>
+						<id>Saya berusaha dengan berpikir jika bisa memenangkan kontes pidato.</id>
+					</item>
+					<item no="5">
+						<jp>A：こちらのお部屋はいかがでしょうか。</jp>
+						<id>A: Bagaimana dengan ruangan ini?</id>
+					</item>
+					<item no="6">
+						<jp>B：そうですね。もう少し広ければと思うんですが…。</jp>
+						<id>B: Ya. Saya berpikir jika lebih luas sedikit…</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<yatte_miyou>
+				<judul>やってみよう！</judul>
+				<judul_id>Ayo Coba!</judul_id>
+				<jawaban_ref>別冊P. 6</jawaban_ref>
+
+				<soal_matching>
+					<item id="1">
+						<teks>この作品を通して、</teks>
+						<match>b</match>
+						<teks_match>平和へのメッセージを伝えられればと思います。</teks_match>
+						<id>Melalui karya ini, saya berharap bisa menyampaikan pesan perdamaian.</id>
+					</item>
+					<item id="2">
+						<teks>当社の新製品について</teks>
+						<match>c</match>
+						<teks_match>お時間のあるときにご説明させていただければと思います。</teks_match>
+						<id>Tentang produk baru kami, saya berharap bisa diizinkan menjelaskan ketika Anda punya waktu.</id>
+					</item>
+					<item id="3">
+						<teks>私の新曲を</teks>
+						<match>d</match>
+						<teks_match>たくさんの方にお聞きいただければと思います。</teks_match>
+						<id>Lagu baru saya, saya berharap banyak orang bisa mendengarkannya.</id>
+					</item>
+					<item id="4">
+						<teks>近いうちにこちらへ</teks>
+						<match>a</match>
+						<teks_match>お越しいただければと思います。</teks_match>
+						<id>Saya berharap Anda bisa datang ke sini dalam waktu dekat.</id>
+					</item>
+				</soal_matching>
+			</yatte_miyou>
+
+			<halaman_ref>p.222 ～ばと思う</halaman_ref>
+		</sub_bab>
+
+		<!-- SUB BAB 77: 日程につきましては - Page 126 -->
+		<sub_bab id="77" halaman="126">
+			<nomor>77</nomor>
+			<judul>日程につきましては</judul>
+			<judul_id>Mengenai Jadwal</judul_id>
+			<bintang>★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～について・～にとって・～において・～として・～に関して」は、丁寧に話したいときは「～まして」の形を使う。</jp>
+					<en>Use the "～まして" form when you want to speak politely using "～について・～にとって・～において・～として・～に関して".</en>
+					<id>Gunakan bentuk "~mashite" ketika ingin berbicara dengan sopan menggunakan "~ni tsuite / ~ni totte / ~ni oite / ~to shite / ~ni kanshite".</id>
+				</penjelasan>
+				<pola>N + に/と/として + つきまして</pola>
+				<pola_id>N + ni/to/toshite + tsukimashite</pola_id>
+				<catatan>※「～として」は、「～としまして」のほか「～といたしまして」も使われる。</catatan>
+
+				<contoh>
+					<item no="1">
+						<jp>発売の時期につきましては、現在検討中でございます。</jp>
+						<id>Mengenai waktu rilis, saat ini sedang dalam pertimbangan.</id>
+					</item>
+					<item no="2">
+						<jp>今回のプロジェクトは私にとりましても、貴重な経験になると思います。</jp>
+						<id>Proyek kali ini, bagi saya juga, akan menjadi pengalaman berharga.</id>
+					</item>
+					<item no="3">
+						<jp>本日1時より中央広場におきまして、抽選会を行います。</jp>
+						<id>Hari ini mulai jam 1 di alun-alun tengah, akan diadakan undian.</id>
+					</item>
+					<item no="4">
+						<jp>わが社といたしましては、今回の契約はぜひ進めたいと考えております。</jp>
+						<id>Bagi perusahaan kami, kami ingin sekali memajukan kontrak kali ini.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+
+			<plus>
+				<judul>丁寧な言い方</judul>
+				<judul_id>Cara Berbicara Sopan</judul_id>
+				<contoh>
+					<item no="1">
+						<jp>こちらはアンケート結果をまとめました資料でございます。</jp>
+						<id>Ini adalah dokumen yang merangkum hasil kuesioner.</id>
+					</item>
+					<item no="2">
+						<jp>ご質問などがありましたら、いつでもお問い合わせください。</jp>
+						<id>Jika ada pertanyaan, silakan hubungi kami kapan saja.</id>
+					</item>
+					<item no="3">
+						<jp>1日も早くお元気になられますよう、お祈りしております。</jp>
+						<id>Kami mendoakan agar Anda cepat sembuh.</id>
+					</item>
+					<item no="4">
+						<jp>こちらの商品は品質は最高で、お値段も手ごろですし、きっとご満足いただけると思います。</jp>
+						<id>Produk ini kualitasnya terbaik, harganya terjangkau, dan saya pikir pasti akan memuaskan Anda.</id>
+					</item>
+				</contoh>
+			</plus>
+
+			<halaman_ref>p.222 ～につきまして</halaman_ref>
+		</sub_bab>
+
+		<!-- CHECK - Page 127 -->
+		<check halaman="127">
+			<judul>Check</judul>
+			<judul_id>Cek</judul_id>
+			<jawaban_ref>別冊P. 6</jawaban_ref>
+
+			<bagian1>
+				<instruksi>適当な形に変えて、（　　）に入れなさい。</instruksi>
+				<instruksi_id>Ubah ke bentuk yang tepat dan isi (　　).</instruksi_id>
+				
+				<soal id="1">
+					<teks>新入社員の佐藤と（a. 申し伝え b. 申し）ます。</teks>
+					<jawaban>b</jawaban>
+					<id>Saya memperkenalkan karyawan baru Satō.</id>
+				</soal>
+
+				<soal id="2">
+					<teks>このたび、第2営業部に配属されることに（a. いたしました b. なりました）。</teks>
+					<jawaban>a</jawaban>
+					<id>Kali ini, saya telah ditugaskan di Divisi Penjualan 2.</id>
+				</soal>
+
+				<soal id="3">
+					<teks>この場をお借りして、一言、ごあいさつ（a. 申し上げます b. 願います）。</teks>
+					<jawaban>a</jawaban>
+					<id>Meminjam kesempatan ini, saya menyampaikan sepatah dua patah kata sambutan.</id>
+				</soal>
+
+				<soal id="4">
+					<teks>私（a. につきまして b. にとりまして）はなにぶん初めてのことばかりで、</teks>
+					<jawaban>b</jawaban>
+					<id>Bagi saya, ini semua pertama kali,</id>
+				</soal>
+
+				<soal id="5">
+					<teks>ご迷惑をおかけすることもあるかと（a. 存じます b. 存じ上げます）が、</teks>
+					<jawaban>a</jawaban>
+					<id>saya berpikir mungkin akan menimbulkan ketidaknyamanan,</id>
+				</soal>
+
+				<soal id="6">
+					<teks>皆様にご指導（a. いただいて b. うけたまわって）、</teks>
+					<jawaban>b</jawaban>
+					<id>menerima bimbingan dari semua orang,</id>
+				</soal>
+
+				<soal id="7">
+					<teks>1日も早く皆様のお役に立てるよう、努力して（a. まいります b. おります）。</teks>
+					<jawaban>a</jawaban>
+					<id>saya akan berusaha untuk bisa bermanfaat bagi semua orang secepatnya.</id>
+				</soal>
+
+				<soal id="8">
+					<teks>どうぞよろしくお願い（a. 申し上げ b. 申し伝え）ます。</teks>
+					<jawaban>a</jawaban>
+					<id>Mohon kerja samanya.</id>
+				</soal>
+			</bagian1>
+		</check>
+	</bab12_content>
 	
 </buku_try_n2>
