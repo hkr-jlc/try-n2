@@ -5,10 +5,13 @@ Website pembelajaran bahasa Jepang level N2 berbasis materi buku "Try! N2" denga
 ## 📁 Struktur File
 
 ```
-project/
-├── database.xml          # Database konten grammar & latihan
-├── index.html           # Website utama (Single Page Application)
-└── README.md           # Dokumentasi
+/project-folder
+│
+├── index.html      (File utama)
+├── style.css       (Styling)
+├── app.js          (JavaScript logic)
+├── database.xml    (Data XML)
+└── README.md       (Dokumentasi)
 ```
 
 ## 🎨 Fitur Utama
