@@ -1606,6 +1606,9 @@
                     toggleIndonesian();
                 });
             }
+            
+            // Initialize Text-to-Speech
+            initTTS();
         });
         
         // ===== UPDATE TRANSLATION BUTTONS STATE =====
@@ -1691,6 +1694,226 @@
             
             const idText = element.querySelector(`${type}_id`)?.textContent || '';
             return idText ? `<div class="translation-id">${idText}</div>` : '';
+        }
+        
+        // ===== TEXT TO SPEECH (TTS) =====
+        let currentSpeech = null;
+        let isSpeaking = false;
+        
+        function initTTS() {
+            // Check if browser supports speech synthesis
+            if (!('speechSynthesis' in window)) {
+                console.log('Text-to-speech not supported in this browser');
+                return;
+            }
+            
+            // Add TTS to Japanese text elements
+            addTTSToJapaneseText();
+            
+            // Re-apply TTS when section changes
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        const target = mutation.target;
+                        if (target.tagName === 'SECTION' && !target.classList.contains('hidden')) {
+                            setTimeout(addTTSToJapaneseText, 100);
+                        }
+                    }
+                });
+            });
+            
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section, { attributes: true });
+            });
+        }
+        
+        function addTTSToJapaneseText() {
+            // Elements to exclude from TTS
+            const excludeSelectors = [
+                '.sidebar-drawer',
+                '.drawer-submenu-item',
+                '.drawer-item',
+                '.drawer-item-expandable',
+                '.quick-item',
+                '.quick-list',
+                'a',
+                'button',
+                '.translation-en',
+                '.translation-id',
+                '.dekiru-en',
+                '.dekiru-id',
+                '.grammar-pattern-id',
+                '.example-id',
+                '.quiz-id',
+                '.page-ref-id',
+                '.label-id',
+                '.content-id',
+                '.contact-id',
+                '.question-id',
+                '.option-id',
+                '.ref-id',
+                '.instruksi-id',
+                '.soal-id',
+                '.pilihan-id',
+                '.matome-subtitle-id',
+                '.bab-header-id',
+                '.category-id',
+                '.note-id',
+                '.job-note-id',
+                '.job-ad-title-id',
+                '.job-ad-subtitle-id',
+                '.grammar-note-id',
+                '.plus-desc-id',
+                '.plus-pattern-id',
+                '.yatte-miyou-ref',
+                '.check-ref',
+                '.page-number'
+            ];
+            
+            // Find all visible sections
+            const visibleSections = document.querySelectorAll('section:not(.hidden)');
+            
+            visibleSections.forEach(section => {
+                // Skip sidebar
+                if (section.closest('.sidebar-drawer')) return;
+                
+                // Get all text nodes in the section
+                const walker = document.createTreeWalker(
+                    section,
+                    NodeFilter.SHOW_TEXT,
+                    null,
+                    false
+                );
+                
+                const textNodes = [];
+                let node;
+                while (node = walker.nextNode()) {
+                    // Check if parent is excluded
+                    let parent = node.parentElement;
+                    let shouldExclude = false;
+                    
+                    while (parent) {
+                        // Check if parent matches any exclude selector
+                        for (const selector of excludeSelectors) {
+                            if (parent.matches && parent.matches(selector)) {
+                                shouldExclude = true;
+                                break;
+                            }
+                        }
+                        
+                        // Check if parent already has TTS
+                        if (parent.classList && parent.classList.contains('tts-enabled')) {
+                            shouldExclude = true;
+                            break;
+                        }
+                        
+                        // Check if parent is inside sidebar
+                        if (parent.closest && parent.closest('.sidebar-drawer')) {
+                            shouldExclude = true;
+                            break;
+                        }
+                        
+                        parent = parent.parentElement;
+                    }
+                    
+                    if (!shouldExclude && node.textContent.trim().length > 0) {
+                        // Check if text contains Japanese characters
+                        if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(node.textContent)) {
+                            textNodes.push(node);
+                        }
+                    }
+                }
+                
+                // Wrap Japanese text elements with TTS-enabled span
+                textNodes.forEach(textNode => {
+                    const parent = textNode.parentElement;
+                    if (!parent) return;
+                    
+                    // Skip if parent is already processed
+                    if (parent.classList && parent.classList.contains('tts-enabled')) return;
+                    
+                    // Create wrapper span
+                    const wrapper = document.createElement('span');
+                    wrapper.classList.add('tts-enabled');
+                    wrapper.textContent = textNode.textContent;
+                    wrapper.setAttribute('data-tts-text', textNode.textContent.trim());
+                    
+                    // Add click event for TTS
+                    wrapper.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        speakJapanese(this.getAttribute('data-tts-text'), this);
+                    });
+                    
+                    // Replace text node with wrapper
+                    if (parent.childNodes.length === 1 && parent.childNodes[0] === textNode) {
+                        parent.textContent = '';
+                        parent.appendChild(wrapper);
+                    } else {
+                        textNode.parentNode.replaceChild(wrapper, textNode);
+                    }
+                });
+            });
+        }
+        
+        function speakJapanese(text, element) {
+            // Cancel any ongoing speech
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                
+                // Remove speaking class from all elements
+                document.querySelectorAll('.tts-speaking').forEach(el => {
+                    el.classList.remove('tts-speaking');
+                });
+                
+                // If clicking the same element, just stop
+                if (currentSpeech === element) {
+                    currentSpeech = null;
+                    isSpeaking = false;
+                    return;
+                }
+            }
+            
+            // Create utterance
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.9;
+            utterance.pitch = 1;
+            
+            // Find Japanese voice
+            const voices = window.speechSynthesis.getVoices();
+            const japaneseVoice = voices.find(voice => voice.lang.startsWith('ja'));
+            if (japaneseVoice) {
+                utterance.voice = japaneseVoice;
+            }
+            
+            // Add speaking class
+            element.classList.add('tts-speaking');
+            currentSpeech = element;
+            isSpeaking = true;
+            
+            // Handle speech end
+            utterance.onend = function() {
+                element.classList.remove('tts-speaking');
+                currentSpeech = null;
+                isSpeaking = false;
+            };
+            
+            utterance.onerror = function(event) {
+                console.error('TTS Error:', event.error);
+                element.classList.remove('tts-speaking');
+                currentSpeech = null;
+                isSpeaking = false;
+            };
+            
+            // Speak
+            window.speechSynthesis.speak(utterance);
+        }
+        
+        // Load voices when available
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = function() {
+                // Voices loaded
+            };
         }
     </script>
 </body>
