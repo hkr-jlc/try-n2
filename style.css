@@ -4,6 +4,54 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* ===== TEXT TO SPEECH ===== */
+.tts-enabled {
+    cursor: pointer;
+    position: relative;
+}
+
+.tts-enabled:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 0.25rem;
+}
+
+.tts-enabled::after {
+    content: '🔊';
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.tts-enabled:hover::after {
+    opacity: 1;
+}
+
+.tts-speaking {
+    background: rgba(59, 130, 246, 0.2) !important;
+    border-radius: 0.25rem;
+}
+
+/* Disable TTS for sidebar, menu, and links */
+.sidebar-drawer .tts-enabled,
+.drawer-submenu-item .tts-enabled,
+.drawer-item .tts-enabled,
+a .tts-enabled,
+.quick-item .tts-enabled {
+    cursor: default;
+}
+
+.sidebar-drawer .tts-enabled::after,
+.drawer-submenu-item .tts-enabled::after,
+.drawer-item .tts-enabled::after,
+a .tts-enabled::after,
+.quick-item .tts-enabled::after {
+    display: none;
+}
+
 /* Base Styles */
 * {
     margin: 0;
