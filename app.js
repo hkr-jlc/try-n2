@@ -1,19 +1,19 @@
 // ==========================
-// LOAD XML
+// LOAD XML (AMAN UNTUK GITHUB)
 // ==========================
-fetch('database.xml')
-  .then(response => response.text())
+fetch('./database.xml')
+  .then(res => {
+    if (!res.ok) throw new Error("XML tidak ditemukan!");
+    return res.text();
+  })
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(xml => {
 
-    console.log("XML Loaded");
+    console.log("XML Loaded ✅");
 
     const sidebar = document.getElementById("sidebar");
     const content = document.getElementById("content");
 
-    // ==========================
-    // AMBIL DATA BAB (DAFTAR ISI)
-    // ==========================
     const babList = xml.getElementsByTagName("bab");
 
     let menuHTML = "";
@@ -24,117 +24,152 @@ fetch('database.xml')
     // ==========================
     for (let i = 0; i < babList.length; i++) {
 
-        const bab = babList[i];
-        const id = bab.getAttribute("id");
+      const bab = babList[i];
+      const id = bab.getAttribute("id");
 
-        const judulJP = getText(bab, "judul_jp");
-        const judulEN = getText(bab, "judul_en");
-        const judulID = getText(bab, "judul_id");
-        const kategori = getText(bab, "kategori");
+      const judulJP = getText(bab, "judul_jp");
+      const judulEN = getText(bab, "judul_en");
+      const judulID = getText(bab, "judul_id");
 
-        // ==========================
-        // SIDEBAR
-        // ==========================
-        menuHTML += `
-            <li class="menu-item" onclick="showBab('${id}')">
-                <strong>BAB ${id}</strong><br>
-                ${judulJP}<br>
-                <small>${judulID || ""}</small>
-            </li>
-        `;
+      // ==========================
+      // SIDEBAR MENU
+      // ==========================
+      menuHTML += `
+        <div class="drawer-item" onclick="showBab('${id}')">
+          <div class="drawer-item-number">${id}</div>
+          <div class="drawer-item-info">
+            <span class="drawer-item-title">${judulJP}</span>
+            <span class="drawer-item-sub">${judulID || ""}</span>
+          </div>
+        </div>
+      `;
 
-        // ==========================
-        // CONTENT HEADER
-        // ==========================
+      // ==========================
+      // CONTENT HEADER
+      // ==========================
+      contentHTML += `
+        <div class="bab-content" id="bab-${id}" style="display:none;">
+          <div class="section-header">
+            <div class="bab-header-title">
+              <span class="bab-header-number">${id}</span>
+              <span class="bab-header-text">${judulJP}</span>
+            </div>
+            <div class="bab-header-en">${judulEN || ""}</div>
+          </div>
+      `;
+
+      // ==========================
+      // AUTO DETECT CONTENT (DINAMIS 🔥)
+      // ==========================
+      let subBabList = [];
+
+      const contentTag = `bab${id}_content`;
+      const contentNode = xml.getElementsByTagName(contentTag)[0];
+
+      if (contentNode) {
+        subBabList = contentNode.getElementsByTagName("sub_bab");
+      } else {
+        console.warn(`❌ BAB ${id} tidak punya content (${contentTag})`);
+      }
+
+      // ==========================
+      // LOOP SUB BAB
+      // ==========================
+      for (let j = 0; j < subBabList.length; j++) {
+
+        const sub = subBabList[j];
+
+        const nomor = getText(sub, "nomor");
+        const judul = getText(sub, "judul");
+
         contentHTML += `
-            <div class="bab-content" id="bab-${id}" style="display:none;">
-                <h1>BAB ${id}</h1>
-                <h2>${judulJP}</h2>
-                <p>${judulEN || ""}</p>
-                <p>${judulID || ""}</p>
-                <hr>
+          <div class="grammar-article">
+            <div class="grammar-header">
+              <div class="grammar-title">${nomor}. ${judul}</div>
+            </div>
+
+            <div class="grammar-content">
         `;
 
         // ==========================
-        // AMBIL SUB BAB SESUAI KONTEN
+        // PENJELASAN
         // ==========================
-        let subBabList = [];
+        const dou = sub.getElementsByTagName("dou_tsukau")[0];
 
-        if (id === "1") {
-            subBabList = xml.getElementsByTagName("bab1_content")[0]?.getElementsByTagName("sub_bab") || [];
-        } 
-        else if (id === "2") {
-            subBabList = xml.getElementsByTagName("bab2_content")[0]?.getElementsByTagName("sub_bab") || [];
-        } 
-        else {
-            subBabList = []; // nanti bisa dikembangkan bab3+
+        if (dou) {
+          const penjelasan = getText(dou, "jp");
+          const pola = getText(dou, "pola");
+
+          contentHTML += `
+            <div class="dou-tsukau">
+              <div class="dou-tsukau-title">どう使う？</div>
+              <div class="dou-tsukau-text">${penjelasan}</div>
+            </div>
+
+            <div class="grammar-pattern">
+              <div class="grammar-pattern-text">${pola}</div>
+            </div>
+          `;
         }
 
         // ==========================
-        // LOOP SUB BAB
+        // CONTOH
         // ==========================
-        for (let j = 0; j < subBabList.length; j++) {
+        const contohList = sub.getElementsByTagName("contoh");
 
-            const sub = subBabList[j];
+        if (contohList.length > 0) {
+          const items = contohList[0].getElementsByTagName("item");
 
-            const nomor = getText(sub, "nomor");
-            const judul = getText(sub, "judul");
+          contentHTML += `<div class="example-list">`;
+
+          for (let k = 0; k < items.length; k++) {
+            const jp = getText(items[k], "jp");
+            const idt = getText(items[k], "id");
 
             contentHTML += `
-                <div class="subbab">
-                    <h3>${nomor}. ${judul}</h3>
+              <div class="example-item">
+                ${jp}
+                <div class="translation-id">${idt || ""}</div>
+              </div>
             `;
+          }
 
-            // ==========================
-            // PENJELASAN
-            // ==========================
-            const dou = sub.getElementsByTagName("dou_tsukau")[0];
-
-            if (dou) {
-                const penjelasan = getText(dou, "jp");
-                const pola = getText(dou, "pola");
-
-                contentHTML += `
-                    <p><b>Penjelasan:</b> ${penjelasan}</p>
-                    <p><b>Pola:</b> ${pola}</p>
-                `;
-            }
-
-            // ==========================
-            // CONTOH
-            // ==========================
-            const contohList = sub.getElementsByTagName("contoh");
-
-            if (contohList.length > 0) {
-                const items = contohList[0].getElementsByTagName("item");
-
-                contentHTML += `<ul>`;
-
-                for (let k = 0; k < items.length; k++) {
-                    const jp = getText(items[k], "jp");
-                    const idt = getText(items[k], "id");
-
-                    contentHTML += `<li>${jp}<br><small>${idt || ""}</small></li>`;
-                }
-
-                contentHTML += `</ul>`;
-            }
-
-            contentHTML += `</div>`;
+          contentHTML += `</div>`;
         }
 
-        contentHTML += `</div>`;
+        contentHTML += `
+            </div>
+          </div>
+        `;
+      }
+
+      contentHTML += `</div>`;
     }
 
     // ==========================
-    // RENDER KE HTML
+    // RENDER
     // ==========================
-    sidebar.innerHTML = `<ul>${menuHTML}</ul>`;
+    sidebar.innerHTML = `
+      <div class="drawer-section">
+        <div class="drawer-section-title">DAFTAR BAB</div>
+        <div class="drawer-list">
+          ${menuHTML}
+        </div>
+      </div>
+    `;
+
     content.innerHTML = contentHTML;
+
+    // tampilkan bab pertama otomatis
+    if (babList.length > 0) {
+      showBab(babList[0].getAttribute("id"));
+    }
 
   })
   .catch(err => {
-    console.error("ERROR LOAD XML:", err);
+    console.error("❌ ERROR:", err);
+    document.getElementById("content").innerHTML =
+      "<h2 style='color:red'>Gagal load XML ❌</h2>";
   });
 
 
@@ -142,19 +177,19 @@ fetch('database.xml')
 // FUNCTION SHOW BAB
 // ==========================
 function showBab(id) {
-    document.querySelectorAll('.bab-content').forEach(el => {
-        el.style.display = 'none';
-    });
+  document.querySelectorAll('.bab-content').forEach(el => {
+    el.style.display = 'none';
+  });
 
-    const target = document.getElementById(`bab-${id}`);
-    if (target) target.style.display = 'block';
+  const target = document.getElementById(`bab-${id}`);
+  if (target) target.style.display = 'block';
 }
 
 
 // ==========================
-// HELPER FUNCTION
+// HELPER
 // ==========================
 function getText(parent, tag) {
-    const el = parent.getElementsByTagName(tag)[0];
-    return el ? el.textContent : "";
+  const el = parent.getElementsByTagName(tag)[0];
+  return el ? el.textContent.trim() : "";
 }
