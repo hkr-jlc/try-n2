@@ -76,11 +76,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 2 (Part 2) - Page 12 -->
+        <!-- BAB 3 - Page 12 -->
         <bab id="3" halaman="38">
             <kategori>スピーチをする</kategori>
             <kategori_en>Giving a Speech</kategori_en>
-            <nomor>2</nomor>
+            <nomor>3</nomor>
             <judul_jp>転任のあいさつ（２）</judul_jp>
             <judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
 
@@ -95,11 +95,11 @@
             <matome halaman="46"/>
         </bab>
 
-        <!-- BAB 3 - Page 13 -->
+        <!-- BAB 4 - Page 13 -->
         <bab id="4" halaman="50">
             <kategori>説明を聞く</kategori>
             <kategori_en>Listening to an Explanation</kategori_en>
-            <nomor>3</nomor>
+            <nomor>4</nomor>
             <judul_jp>ホテルの仕事</judul_jp>
             <judul_en>A Hotel Job</judul_en>
 
@@ -116,11 +116,11 @@
             <matome halaman="59"/>
         </bab>
 
-        <!-- BAB 4 - Page 13 -->
+        <!-- BAB 5 - Page 13 -->
         <bab id="5" halaman="62">
             <kategori>ニュースを聞く</kategori>
             <kategori_en>Listening to the News</kategori_en>
-            <nomor>4</nomor>
+            <nomor>5</nomor>
             <judul_jp>台風情報</judul_jp>
             <judul_en>Typhoon Information</judul_en>
 
@@ -136,11 +136,11 @@
             <matome halaman="69"/>
         </bab>
 
-        <!-- BAB 5 - Page 13 -->
+        <!-- BAB 6 - Page 13 -->
         <bab id="6" halaman="72">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>5</nomor>
+            <nomor>6</nomor>
             <judul_jp>就職活動（１）</judul_jp>
             <judul_en>Job Hunting (1)</judul_en>
 
@@ -155,11 +155,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 5 (Part 2) - Page 13 -->
+        <!-- BAB 7 - Page 13 -->
         <bab id="7" halaman="78">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>5</nomor>
+            <nomor>7</nomor>
             <judul_jp>就職活動（２）</judul_jp>
             <judul_en>Job Hunting (2)</judul_en>
 
@@ -173,11 +173,11 @@
             <matome halaman="83"/>
         </bab>
 
-        <!-- BAB 6 - Page 14 -->
+        <!-- BAB 8 - Page 14 -->
         <bab id="8" halaman="86">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>6</nomor>
+            <nomor>8</nomor>
             <judul_jp>苦労した5年間（１）</judul_jp>
             <judul_en>A Tough Five Years (1)</judul_en>
 
@@ -191,11 +191,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 6 (Part 2) - Page 14 -->
+        <!-- BAB 9 - Page 14 -->
         <bab id="9" halaman="92">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>6</nomor>
+            <nomor>9</nomor>
             <judul_jp>苦労した5年間（２）</judul_jp>
             <judul_en>A Tough Five Years (2)</judul_en>
 
@@ -211,11 +211,11 @@
             <matome halaman="100"/>
         </bab>
 
-        <!-- BAB 7 - Page 14 -->
+        <!-- BAB 10 - Page 14 -->
         <bab id="10" halaman="103">
             <kategori>論説文を読む</kategori>
             <kategori_en>Reading an Essay</kategori_en>
-            <nomor>7</nomor>
+            <nomor>10</nomor>
             <judul_jp>オオカミと生態系（１）</judul_jp>
             <judul_en>Wolves and the Ecosystem (1)</judul_en>
 
@@ -230,11 +230,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 7 (Part 2) - Page 14 -->
+        <!-- BAB 11 (Part 2) - Page 14 -->
         <bab id="11" halaman="111">
             <kategori>論説文を読む</kategori>
             <kategori_en>Reading an Essay</kategori_en>
-            <nomor>7</nomor>
+            <nomor>11</nomor>
             <judul_jp>オオカミと生態系（２）</judul_jp>
             <judul_en>Wolves and the Ecosystem (2)</judul_en>
 
@@ -250,11 +250,11 @@
             <matome halaman="118"/>
         </bab>
 
-        <!-- BAB 8 - Page 15 -->
+        <!-- BAB 12 - Page 15 -->
         <bab id="12" halaman="122">
             <kategori>ビジネス場面の会話</kategori>
             <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>8</nomor>
+            <nomor>12</nomor>
             <judul_jp>取引先で</judul_jp>
             <judul_en>At a Client</judul_en>
 
@@ -268,11 +268,11 @@
             <matome halaman="128"/>
         </bab>
 
-        <!-- BAB 9 - Page 15 -->
+        <!-- BAB 13 - Page 15 -->
         <bab id="13" halaman="131">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>9</nomor>
+            <nomor>13</nomor>
             <judul_jp>食べ放題（１）</judul_jp>
             <judul_en>All-You-Can-Eat (1)</judul_en>
 
@@ -288,11 +288,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 9 (Part 2) - Page 15 -->
+        <!-- BAB 14 (Part 2) - Page 15 -->
         <bab id="14" halaman="138">
             <kategori>友達同士の会話</kategori>
             <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>9</nomor>
+            <nomor>14</nomor>
             <judul_jp>食べ放題（２）</judul_jp>
             <judul_en>All-You-Can-Eat (2)</judul_en>
 
@@ -308,11 +308,11 @@
             <matome halaman="145"/>
         </bab>
 
-        <!-- BAB 10 - Page 15-16 -->
+        <!-- BAB 15 - Page 15-16 -->
         <bab id="15" halaman="148">
             <kategori>エッセーを読む</kategori>
             <kategori_en>Reading an Essay</kategori_en>
-            <nomor>10</nomor>
+            <nomor>15</nomor>
             <judul_jp>満員電車（１）</judul_jp>
             <judul_en>A Full Train (1)</judul_en>
 
@@ -325,11 +325,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 10 (Part 2) - Page 16 -->
+        <!-- BAB 16 - Page 16 -->
         <bab id="16" halaman="153">
             <kategori>エッセーを読む</kategori>
             <kategori_en>Reading an Essay</kategori_en>
-            <nomor>10</nomor>
+            <nomor>16</nomor>
             <judul_jp>満員電車（２）</judul_jp>
             <judul_en>A Full Train (2)</judul_en>
 
@@ -342,11 +342,11 @@
             <matome halaman="157"/>
         </bab>
 
-        <!-- BAB 11 - Page 16 -->
+        <!-- BAB 17 - Page 16 -->
         <bab id="17" halaman="160">
             <kategori>記事を読む</kategori>
             <kategori_en>Reading an Article</kategori_en>
-            <nomor>11</nomor>
+            <nomor>17</nomor>
             <judul_jp>ラーメンの紹介</judul_jp>
             <judul_en>Introduction to Ramen</judul_en>
 
@@ -362,11 +362,11 @@
             <matome halaman="169"/>
         </bab>
 
-        <!-- BAB 12 - Page 16 -->
+        <!-- BAB 18 - Page 16 -->
         <bab id="18" halaman="172">
             <kategori>ビジネス場面の会話</kategori>
             <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>12</nomor>
+            <nomor>18</nomor>
             <judul_jp>ウォーキングシューズの開発（１）</judul_jp>
             <judul_en>Developing Walking Shoes (1)</judul_en>
 
@@ -381,11 +381,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 12 (Part 2) - Page 16 -->
+        <!-- BAB 19 (Part 2) - Page 16 -->
         <bab id="19" halaman="179">
             <kategori>ビジネス場面の会話</kategori>
             <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>12</nomor>
+            <nomor>19</nomor>
             <judul_jp>ウォーキングシューズの開発（２）</judul_jp>
             <judul_en>Developing Walking Shoes (2)</judul_en>
 
@@ -400,11 +400,11 @@
             <matome halaman="185"/>
         </bab>
 
-        <!-- BAB 13 - Page 17 -->
+        <!-- BAB 20 - Page 17 -->
         <bab id="20" halaman="188">
             <kategori>ストーリーを読む</kategori>
             <kategori_en>Reading a Story</kategori_en>
-            <nomor>13</nomor>
+            <nomor>20</nomor>
             <judul_jp>人生の転機（１）</judul_jp>
             <judul_en>A Turning Point in One's Life (1)</judul_en>
 
@@ -419,11 +419,11 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 13 (Part 2) - Page 17 -->
+        <!-- BAB 21 - Page 17 -->
         <bab id="21" halaman="195">
             <kategori>ストーリーを読む</kategori>
             <kategori_en>Reading a Story</kategori_en>
-            <nomor>13</nomor>
+            <nomor>21</nomor>
             <judul_jp>人生の転機（２）</judul_jp>
             <judul_en>A Turning Point in One's Life (2)</judul_en>
 
@@ -439,11 +439,11 @@
             <matome halaman="202"/>
         </bab>
 
-        <!-- BAB 14 - Page 17 -->
+        <!-- BAB 22 - Page 17 -->
         <bab id="22" halaman="205">
             <kategori>社説を読む</kategori>
             <kategori_en>Reading an Editorial</kategori_en>
-            <nomor>14</nomor>
+            <nomor>22</nomor>
             <judul_jp>オリンピックの開催について</judul_jp>
             <judul_en>Hosting the Olympics</judul_en>
 
@@ -1474,13 +1474,13 @@
         </check>
     </bab2_content>
 
-    <!-- KONTEN BAB 2b - Page 30-37 -->
+    <!-- KONTEN BAB 3 - Page 30-37 -->
     <bab3_content>
         <!-- PAGE 30 - Header & Dekiru Koto -->
         <header halaman="30">
             <kategori>スピーチをする</kategori>
             <kategori_en>Giving a Speech</kategori_en>
-            <nomor>2</nomor>
+            <nomor>3</nomor>
             <judul>転任のあいさつ（2）</judul>
             <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
 
