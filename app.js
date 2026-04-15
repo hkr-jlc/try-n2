@@ -1,4 +1,4 @@
-fetch('data.xml')
+fetch('database.xml')
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(xml => {
