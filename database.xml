@@ -76,13 +76,15 @@
             <matome halaman=""/>
         </bab>
 
-        <!-- BAB 2 (Part 2) - Page 12 -->
+        <!-- BAB 2 (Part 2) - Page 38 -->
         <bab id="2b" halaman="38">
             <kategori>スピーチをする</kategori>
             <kategori_en>Giving a Speech</kategori_en>
+            <kategori_id>Memberikan Pidato</kategori_id>
             <nomor>2</nomor>
             <judul_jp>転任のあいさつ（２）</judul_jp>
             <judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
+            <judul_id>Sambutan Pindah Tugas (2)</judul_id>
 
             <grammar_points>
                 <point id="16" halaman="38">輸出拡大を目的としたプロジェクト</point>
@@ -1473,4 +1475,231 @@
             </bagian2>
         </check>
     </bab2_content>
+
+	<!-- KONTEN BAB 3 - Page 38-49 -->
+	<bab3_content>
+
+		<!-- PAGE 38 - Header & Dekiru Koto -->
+		<header halaman="38">
+			<kategori>スピーチをする</kategori>
+			<kategori_en>Giving a Speech</kategori_en>
+			<nomor>2</nomor>
+			<judul>転任のあいさつ（2）</judul>
+			<judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
+
+			<dekiru_koto>
+				<judul>できること</judul>
+				<item>
+					<jp>改まった形で今後の展望などを話し、お礼のあいさつが言える。</jp>
+					<en>Talk about the future outlook and express appreciation in a formal setting.</en>
+					<id>Menyampaikan rencana ke depan dan ucapan terima kasih secara formal.</id>
+				</item>
+			</dekiru_koto>
+		</header>
+
+		<!-- SUB BAB 16: 輸出拡大を目的としたプロジェクト - Page 38 -->
+		<sub_bab id="16" halaman="38">
+			<nomor>16</nomor>
+			<judul>輸出拡大を目的としたプロジェクト</judul>
+			<judul_id>Proyek dengan Tujuan Memperluas Ekspor</judul_id>
+			<bintang>★★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>「AをBとする」は、「AをBにする」「AがBだ」と言うときに使う。</jp>
+					<en>Used to express “make A into B” or “A is considered B”.</en>
+					<id>Digunakan untuk menyatakan “menjadikan A sebagai B”.</id>
+				</penjelasan>
+
+				<pola>N1 + を + N2 + とした / とする / として</pola>
+				<pola_id>Kata benda + sebagai</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>みどりの会は環境保護活動を目的とする市民の組織です。</jp>
+						<id>Organisasi Midori adalah organisasi masyarakat dengan tujuan perlindungan lingkungan.</id>
+					</item>
+					<item no="2">
+						<jp>今回のシンポジウムは日本の伝統芸能をテーマとして行われます。</jp>
+						<id>Simposium ini diadakan dengan tema seni tradisional Jepang.</id>
+					</item>
+					<item no="3">
+						<jp>話し合いの結果を総意として社長に伝えましょう。</jp>
+						<id>Mari kita sampaikan hasil diskusi sebagai keputusan bersama.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+		<!-- SUB BAB 17: この転勤をきっかけに - Page 39 -->
+		<sub_bab id="17" halaman="39">
+			<nomor>17</nomor>
+			<judul>この転勤をきっかけに</judul>
+			<judul_id>Dengan Ini sebagai Pemicu</judul_id>
+			<bintang>★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>変化の原因やきっかけを表す。</jp>
+					<en>Used to express the trigger for change.</en>
+					<id>Menyatakan penyebab atau pemicu perubahan.</id>
+				</penjelasan>
+
+				<pola>N + をきっかけに</pola>
+				<pola_id>Kata benda + sebagai pemicu</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>日本のドラマをきっかけに、日本文化に興味を持った。</jp>
+						<id>Saya mulai tertarik budaya Jepang karena drama Jepang.</id>
+					</item>
+					<item no="2">
+						<jp>その経験をきっかけに、新しい挑戦を始めた。</jp>
+						<id>Saya mulai tantangan baru karena pengalaman itu.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+		<!-- SUB BAB 18: やるからには - Page 40 -->
+		<sub_bab id="18" halaman="40">
+			<nomor>18</nomor>
+			<judul>やるからには</judul>
+			<judul_id>Kalau Sudah Melakukan</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>強い決意や当然の結果を表す。</jp>
+					<en>Express strong determination.</en>
+					<id>Menyatakan tekad kuat.</id>
+				</penjelasan>
+
+				<pola>Vる / Vた + からには</pola>
+				<pola_id>Kata kerja + karena sudah</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>やるからには最後までやり抜く。</jp>
+						<id>Kalau sudah dilakukan, harus diselesaikan.</id>
+					</item>
+					<item no="2">
+						<jp>働くからには努力するべきだ。</jp>
+						<id>Kalau bekerja, harus berusaha.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+		<!-- SUB BAB 19: なくなるというわけではありません - Page 42 -->
+		<sub_bab id="19" halaman="42">
+			<nomor>19</nomor>
+			<judul>なくなるというわけではありません</judul>
+			<judul_id>Bukan Berarti Hilang</judul_id>
+			<bintang>★★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>一般的な考えを否定するときに使う。</jp>
+					<en>Used to deny a general assumption.</en>
+					<id>Digunakan untuk menyangkal asumsi umum.</id>
+				</penjelasan>
+
+				<pola>普通形 + わけではない</pola>
+				<pola_id>Bentuk biasa + bukan berarti</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>完全に治ったわけではない。</jp>
+						<id>Bukan berarti sudah sembuh total.</id>
+					</item>
+					<item no="2">
+						<jp>嫌いなわけではない。</jp>
+						<id>Bukan berarti tidak suka.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+		<!-- SUB BAB 20: これまでと変わることなく - Page 43 -->
+		<sub_bab id="20" halaman="43">
+			<nomor>20</nomor>
+			<judul>これまでと変わることなく</judul>
+			<judul_id>Tanpa Perubahan</judul_id>
+			<bintang>★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>何もせずに状態が続くことを表す。</jp>
+					<en>Express continuation without change.</en>
+					<id>Menyatakan kondisi tetap tanpa perubahan.</id>
+				</penjelasan>
+
+				<pola>Vる + ことなく</pola>
+				<pola_id>Kata kerja + tanpa melakukan</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>文句を言うことなく働いた。</jp>
+						<id>Bekerja tanpa mengeluh.</id>
+					</item>
+					<item no="2">
+						<jp>遅れることなく到着した。</jp>
+						<id>Tiba tanpa terlambat.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+		<!-- SUB BAB 21: 雨にもかかわらず - Page 44 -->
+		<sub_bab id="21" halaman="44">
+			<nomor>21</nomor>
+			<judul>雨にもかかわらず</judul>
+			<judul_id>Meskipun Hujan</judul_id>
+			<bintang>★★★</bintang>
+
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+
+				<penjelasan>
+					<jp>予想と違う結果を表す。</jp>
+					<en>Express unexpected result.</en>
+					<id>Menyatakan hasil yang tidak sesuai dugaan.</id>
+				</penjelasan>
+
+				<pola>普通形 + にもかかわらず</pola>
+				<pola_id>Bentuk biasa + meskipun</pola_id>
+
+				<contoh>
+					<item no="1">
+						<jp>雨にもかかわらず、多くの人が来た。</jp>
+						<id>Meskipun hujan, banyak orang datang.</id>
+					</item>
+					<item no="2">
+						<jp>努力にもかかわらず成功しなかった。</jp>
+						<id>Meskipun berusaha, tidak berhasil.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
+		</sub_bab>
+
+	</bab3_content>
+	
+	
 </buku_try_n2>
