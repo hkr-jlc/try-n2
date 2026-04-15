@@ -1,5 +1,5 @@
 // ==========================
-// LOAD XML (AMAN UNTUK GITHUB)
+// LOAD XML
 // ==========================
 fetch('./database.xml')
   .then(res => {
@@ -32,14 +32,14 @@ fetch('./database.xml')
       const judulID = getText(bab, "judul_id");
 
       // ==========================
-      // SIDEBAR MENU
+      // SIDEBAR (MATCH CSS)
       // ==========================
       menuHTML += `
         <div class="drawer-item" onclick="showBab('${id}')">
           <div class="drawer-item-number">${id}</div>
           <div class="drawer-item-info">
-            <span class="drawer-item-title">${judulJP}</span>
-            <span class="drawer-item-sub">${judulID || ""}</span>
+            <div class="drawer-item-title">${judulJP}</div>
+            <div class="drawer-item-sub">${judulID || ""}</div>
           </div>
         </div>
       `;
@@ -49,6 +49,7 @@ fetch('./database.xml')
       // ==========================
       contentHTML += `
         <div class="bab-content" id="bab-${id}" style="display:none;">
+          
           <div class="section-header">
             <div class="bab-header-title">
               <span class="bab-header-number">${id}</span>
@@ -59,7 +60,7 @@ fetch('./database.xml')
       `;
 
       // ==========================
-      // AUTO DETECT CONTENT (DINAMIS 🔥)
+      // AUTO DETECT CONTENT
       // ==========================
       let subBabList = [];
 
@@ -69,7 +70,7 @@ fetch('./database.xml')
       if (contentNode) {
         subBabList = contentNode.getElementsByTagName("sub_bab");
       } else {
-        console.warn(`❌ BAB ${id} tidak punya content (${contentTag})`);
+        console.warn(`❌ BAB ${id} tidak punya ${contentTag}`);
       }
 
       // ==========================
@@ -84,15 +85,19 @@ fetch('./database.xml')
 
         contentHTML += `
           <div class="grammar-article">
+
             <div class="grammar-header">
-              <div class="grammar-title">${nomor}. ${judul}</div>
+              <div class="grammar-title">
+                <span class="grammar-number">${nomor}</span>
+                <span class="grammar-text">${judul}</span>
+              </div>
             </div>
 
             <div class="grammar-content">
         `;
 
         // ==========================
-        // PENJELASAN
+        // DOU TSUKAU
         // ==========================
         const dou = sub.getElementsByTagName("dou_tsukau")[0];
 
@@ -128,8 +133,8 @@ fetch('./database.xml')
 
             contentHTML += `
               <div class="example-item">
-                ${jp}
-                <div class="translation-id">${idt || ""}</div>
+                <div class="example-jp">${jp}</div>
+                <div class="example-id">${idt || ""}</div>
               </div>
             `;
           }
@@ -147,7 +152,7 @@ fetch('./database.xml')
     }
 
     // ==========================
-    // RENDER
+    // RENDER KE HTML
     // ==========================
     sidebar.innerHTML = `
       <div class="drawer-section">
@@ -187,7 +192,7 @@ function showBab(id) {
 
 
 // ==========================
-// HELPER
+// HELPER FUNCTION
 // ==========================
 function getText(parent, tag) {
   const el = parent.getElementsByTagName(tag)[0];
