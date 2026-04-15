@@ -188,16 +188,33 @@ body {
 .drawer-item-sub {
     font-size: 0.75rem;
     color: #6b7280;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
     margin-top: 0.125rem;
 }
 
+.drawer-item-sub .translation-en {
+    color: #2563eb;
+}
+
+.drawer-item-sub .translation-id {
+    color: #059669;
+}
+
 .drawer-item.active .drawer-item-sub {
     color: #be123c;
     opacity: 0.7;
+}
+
+.drawer-item-title .translation-en {
+    color: #2563eb;
+    font-size: 0.8125rem;
+}
+
+.drawer-item-title .translation-id {
+    color: #059669;
+    font-size: 0.8125rem;
 }
 
 /* Drawer Submenu (Expandable) */
@@ -367,12 +384,19 @@ body {
     pointer-events: none;
 }
 
+/* Translate Buttons Container */
+.translate-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
 /* Translate Button */
 .translate-btn {
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     border: none;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -398,17 +422,28 @@ body {
     transform: translateY(0);
 }
 
-.translate-btn.active {
+/* EN Button Active State - Blue */
+.translate-btn.en-active {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+.translate-btn.en-active:hover {
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+}
+
+/* ID Button Active State - Green */
+.translate-btn.id-active {
     background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
     box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
 }
 
-.translate-btn.active:hover {
+.translate-btn.id-active:hover {
     box-shadow: 0 4px 10px rgba(22, 163, 74, 0.4);
 }
 
 .translate-icon {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1;
 }
 
@@ -441,46 +476,38 @@ body {
     padding-bottom: 2rem;
 }
 
-/* ===== TRANSLATION TEXT - ALL GREEN ===== */
-.translation-text,
-.translation-id,
-.title-sub,
-.dekiru-id,
-.grammar-pattern-id,
-.dou-tsukau-id,
-.example-id,
-.quiz-id,
-.page-ref-id,
-.label-id,
-.content-id,
-.contact-id,
-.quick-item-sub-id,
-.home-subtitle-id,
-.home-desc-id,
-.question-id,
-.option-id,
-.ref-id,
-.instruksi-id,
-.soal-id,
-.pilihan-id,
-.matome-subtitle-id,
-.bab-header-id,
-.category-id,
-.note-id,
-.job-note-id,
-.job-ad-title-id,
-.job-ad-subtitle-id,
-.grammar-note-id,
-.plus-desc-id,
-.plus-pattern-id {
+/* ===== TRANSLATION TEXT - BASE STYLES ===== */
+.translation-en,
+.translation-id {
+    font-size: 0.8125rem;
+    margin-top: 0.25rem;
+    display: none; /* Hidden by default */
+}
+
+/* English translation - Blue */
+.translation-en {
+    color: #2563eb !important;
+}
+
+/* Indonesian translation - Green */
+.translation-id {
     color: #059669 !important;
 }
 
-/* Translation Box Styles */
-.translation-text,
-.dekiru-id,
-.dou-tsukau-id,
-.example-id {
+/* When visible */
+.translation-en.visible,
+.translation-id.visible {
+    display: block;
+}
+
+/* Inline translations */
+span.translation-en.visible,
+span.translation-id.visible {
+    display: inline;
+}
+
+/* Translation Box Styles - Indonesian */
+.translation-text.translation-id.visible {
     font-size: 0.9375rem;
     margin-top: 0.5rem;
     padding: 0.75rem;
@@ -490,34 +517,15 @@ body {
     line-height: 1.6;
 }
 
-.translation-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #059669;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.translation-label::before {
-    content: '🇮🇩';
-}
-
-/* Translation Hidden/Visible - CONTROLS ALL */
-.translation-hidden {
-    display: none !important;
-}
-
-.translation-visible {
-    display: block !important;
-}
-
-/* Inline translations */
-span.translation-hidden,
-span.translation-visible {
-    display: inline !important;
+/* Translation Box Styles - English */
+.translation-text.translation-en.visible {
+    font-size: 0.9375rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background: #eff6ff;
+    border-radius: 0.5rem;
+    border-left: 3px solid #3b82f6;
+    line-height: 1.6;
 }
 
 /* Title Sub (Indonesian) */
@@ -558,7 +566,7 @@ span.translation-visible {
 }
 
 .content-id,
-.quick-item-sub-id,
+.translation-id,
 .question-id,
 .soal-id {
     font-size: 0.8125rem;
@@ -639,10 +647,12 @@ span.translation-visible {
     color: #6b7280;
 }
 
-/* Quick Item Sub ID */
-.quick-item-sub-id {
+/* Translation EN and ID base styles */
+.translation-en,
+.translation-id {
     font-size: 0.8125rem;
-    color: #059669;
+    display: block;
+    margin-top: 0.25rem;
 }
 
 /* Home Subtitle ID */
@@ -801,10 +811,11 @@ span.translation-visible {
     color: #111827;
 }
 
-.quick-item-sub {
+.translation-en,
+.translation-id {
     font-size: 0.8125rem;
-    color: #6b7280;
     margin-top: 0.25rem;
+    display: block;
 }
 
 .quick-item-page {
@@ -863,6 +874,18 @@ span.translation-visible {
     margin-bottom: 0.25rem;
 }
 
+.bab-category-home .translation-en {
+    color: #6b7280;
+}
+
+.bab-category-home .translation-en {
+    color: #2563eb;
+}
+
+.bab-category-home .translation-id {
+    color: #059669;
+}
+
 .bab-title-home {
     font-weight: 600;
     font-size: 1rem;
@@ -870,6 +893,14 @@ span.translation-visible {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.bab-title-home .translation-en {
+    color: #2563eb;
+}
+
+.bab-title-home .translation-id {
+    color: #059669;
 }
 
 .bab-page-home {
@@ -1483,7 +1514,8 @@ span.translation-visible {
         font-size: 1.0625rem;
     }
     
-    .quick-item-sub {
+    .translation-en,
+    .translation-id {
         font-size: 0.875rem;
     }
     
