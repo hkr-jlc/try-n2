@@ -325,13 +325,13 @@ function renderBabHeader(bab) {
         <section id="bab-${bab.id}-header" class="hidden">
             <div class="section-header">
                 <div class="bab-header-category">
-                    <span class="sentence-jp">${bab.category}</span>
+                    ${bab.category}
                     <span class="translation-en">${bab.categoryEn}</span>
                     <span class="translation-id">${bab.categoryId}</span>
                 </div>
                 <div class="bab-header-title">
                     <span class="bab-header-number">${bab.number}</span>
-                    <h1 class="bab-header-text"><span class="sentence-jp">${bab.title}</span></h1>
+                    <h1 class="bab-header-text">${bab.title}</h1>
                     <span class="bab-header-en">${bab.titleEn}</span>
                     <span class="translation-id">${bab.titleId}</span>
                 </div>
@@ -343,7 +343,7 @@ function renderBabHeader(bab) {
         html += `
             <div class="dekiru-box">
                 <h3 class="dekiru-title">
-                    <span class="sentence-jp">できること</span>
+                    できること
                     <span class="translation-en">Dekiru Koto</span>
                     <span class="translation-id">Dapat Melakukan</span>
                 </h3>
@@ -354,7 +354,7 @@ function renderBabHeader(bab) {
                 <li class="dekiru-item">
                     <span class="dekiru-bullet">●</span>
                     <div>
-                        <p><span class="sentence-jp">${item.jp}</span></p>
+                        <p>${item.jp}</p>
                         <span class="translation-en">${item.en}</span>
                         <span class="translation-id">${item.id}</span>
                     </div>
@@ -390,6 +390,7 @@ function renderBabGrammar(bab) {
     
     let html = `<section id="bab-${bab.id}-grammar" class="hidden space-y-6">`;
     
+    // Header Grammar
     html += `
         <div class="section-header">
             <div class="bab-header-category">Grammar Points</div>
@@ -400,6 +401,7 @@ function renderBabGrammar(bab) {
         </div>
     `;
     
+    // Render each grammar point
     if (contentData.grammar) {
         contentData.grammar.forEach((g, idx) => {
             html += `
@@ -412,50 +414,112 @@ function renderBabGrammar(bab) {
                         </div>
                     </div>
                     <div class="grammar-content">
+                        
+                        <!-- Dou Tsukau Section -->
                         <div class="dou-tsukau">
                             <h3 class="dou-tsukau-title">
-                                <span class="sentence-jp">どう使う？</span>
+                                どう使う？
                                 <span class="translation-en">How to use?</span>
                                 <span class="translation-id">Bagaimana Menggunakannya?</span>
                             </h3>
-                            <p class="dou-tsukau-text"><span class="sentence-jp">${g.desc}</span></p>
+                            <p class="dou-tsukau-text">
+                                <span class="sentence-jp">${g.desc}</span>
+                            </p>
                             <span class="translation-en">${g.descEn}</span>
                             <span class="translation-id">${g.descId}</span>
                         </div>
                         
+                        <!-- Pattern Section -->
                         <div class="grammar-pattern">
-                            <p class="grammar-pattern-text"><span class="sentence-jp">${g.pattern}</span></p>
+                            <p class="grammar-pattern-text">
+                                <span class="sentence-jp">${g.pattern}</span>
+                            </p>
                             <span class="translation-id">${g.patternId}</span>
                         </div>
                         
+                        <!-- Example List - STRUKTUR BARU -->
                         <div class="example-list">
             `;
             
+            // Examples dengan sentence-jp wrapper
             g.examples.forEach((ex, exIdx) => {
                 html += `
-					<div class="example-item">
-						<p>
-							<span class="example-num">${String.fromCharCode(9312 + exIdx)}</span> 
-							<span class="sentence-jp">${ex.jp}</span>
-						</p>
-						${ex.id ? `<span class="translation-id">${ex.id}</span>` : ''}
-					</div>
-				`;
-			});
-			html += `</div>`;
-                        <p class="page-ref">${g.page}</p>
+                            <div class="example-item">
+                                <p>
+                                    <span class="example-num">${String.fromCharCode(9312 + exIdx)}</span> 
+                                    <span class="sentence-jp">${ex.jp}</span>
+                                </p>
+                                ${ex.id ? `<span class="translation-id">${ex.id}</span>` : ''}
+                            </div>
+                `;
+            });
+            
+            html += `
+                        </div>
+            `;
+            
+            // Yatte Miyou section if exists
+            if (g.yatteMiyou) {
+                html += renderYatteMiyou(g.yatteMiyou);
+            }
+            
+            // Plus section if exists
+            if (g.plus) {
+                html += `
+                    <div class="plus-section">
+                        <div class="plus-header">
+                            <span class="plus-badge">+Plus</span>
+                            <span class="plus-title">${g.plus}</span>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Page reference
+            html += `
+                        <p class="page-ref">p.${g.page}</p>
                     </div>
                 </article>
             `;
         });
     }
     
-    // Check section
+    // Check section if exists
     if (contentData.check) {
         html += renderCheck(contentData.check);
     }
     
     html += '</section>';
+    return html;
+}
+
+// Helper function for Yatte Miyou section
+function renderYatteMiyou(yatteMiyou) {
+    let html = `
+        <div class="yatte-miyou">
+            <h3 class="yatte-miyou-title">
+                やってみよう！
+                <span class="yatte-miyou-ref">${yatteMiyou.ref}</span>
+            </h3>
+            <div class="quiz-grid">
+    `;
+    
+    if (yatteMiyou.soal) {
+        yatteMiyou.soal.forEach(soal => {
+            html += `
+                <div class="quiz-item">
+                    <p>
+                        <span class="sentence-jp">${soal.teks}</span>
+                    </p>
+                </div>
+            `;
+        });
+    }
+    
+    html += `
+            </div>
+        </div>
+    `;
     return html;
 }
 
@@ -465,12 +529,12 @@ function renderJobAd(jobAd) {
     let html = `
         <div class="job-ad">
             <div class="job-ad-title">
-                <h2><span class="sentence-jp">${jobAd.title}</span></h2>
+                <h2>${jobAd.title}</h2>
                 <span class="translation-en">${jobAd.titleEn}</span>
                 <span class="translation-id">${jobAd.titleId}</span>
             </div>
             <p class="job-ad-subtitle">
-                <span class="highlight">${jobAd.highlight}</span><span class="sentence-jp">${jobAd.subtitle}</span>
+                <span class="highlight">${jobAd.highlight}</span>${jobAd.subtitle}
                 <span class="translation-en">${jobAd.subtitleEn}</span>
                 <span class="translation-id">${jobAd.subtitleId}</span>
             </p>
@@ -481,7 +545,7 @@ function renderJobAd(jobAd) {
         html += `
             <div class="job-section">
                 <span class="job-section-label">
-                    <span class="sentence-jp">${section.label}▶</span>
+                    ${section.label}▶
                     <span class="translation-en">${section.labelEn}▶</span>
                     <span class="translation-id">${section.labelId}▶</span>
                 </span>
@@ -521,7 +585,7 @@ function renderSpeech(speechData) {
             html += `
                 <div class="speech-character">
                     <span class="character-name">${char.nama}</span>
-                    <p class="character-jp"><span class="sentence-jp">${char.jp}</span></p>
+                    <p class="character-jp">${char.jp}</p>
                     ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
                 </div>
             `;
@@ -571,7 +635,7 @@ function renderConversation(convData) {
         html += `
             <div class="dialog-item">
                 <span class="dialog-speaker">${dialog.speaker}</span>
-                <p class="dialog-jp"><span class="sentence-jp">${dialog.jp}</span></p>
+                <p class="dialog-jp">${dialog.jp}</p>
                 ${dialog.id ? `<span class="translation-id">${dialog.id}</span>` : ''}
             </div>
         `;
