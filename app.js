@@ -1114,12 +1114,27 @@ function showSection(sectionId) {
 // Simple TTS Function
 function speakJapanese(text) {
     if (!('speechSynthesis' in window)) return;
+    
+    // Hentikan suara yang sedang berjalan sebelum memulai yang baru
+    window.speechSynthesis.cancel();
+
+    // Hapus highlight dari semua kalimat
+    document.querySelectorAll('.sentence-jp').forEach(el => el.classList.remove('speaking'));
+    
     const utterance = new SpeechSynthesisUtterance(text.replace(/<[^>]*>/g, '').trim());
     utterance.lang = 'ja-JP';
     utterance.rate = 0.8;
+	
+    // Tambahkan highlight saat mulai berbicara
+    if (element) {
+        utterance.onstart = () => element.classList.add('speaking');
+        utterance.onend = () => element.classList.remove('speaking');
+    }
+	
     window.speechSynthesis.speak(utterance);
 }
 
+// Update attachTTS
 function attachTTS() {
     document.querySelectorAll('.sentence-jp').forEach(el => {
         if (el.dataset.ttsAttached) return;
@@ -1127,7 +1142,7 @@ function attachTTS() {
         el.style.cursor = 'pointer';
         el.addEventListener('click', function(e) {
             if (e.target.closest('a')) return;
-            speakJapanese(this.textContent);
+            speakJapanese(this.textContent, this); // Pass element untuk highlight
         });
     });
 }
