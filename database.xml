@@ -54,16 +54,10 @@
         <bab id="2" halaman="30">
             <kategori>スピーチをする</kategori>
             <kategori_en>Giving a Speech</kategori_en>
-            <kategori_id>Memberikan Pidato</kategori_id>
-            <nomor>2</nomor>
+            <kategori_id>Memberikan Pidato</kategori_id>	<nomor>2</nomor>
             <judul_jp>転任のあいさつ（１）</judul_jp>
             <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
             <judul_id>Sambutan Pindah Tugas (1)</judul_id>
-            <kategori_en>Giving a Speech</kategori_en>
-            <nomor>2</nomor>
-            <judul_jp>転任のあいさつ（１）</judul_jp>
-            <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
-
             <grammar_points>
                 <point id="9" halaman="30">入社して以来</point>
                 <point id="10" halaman="31">部長をはじめ</point>
@@ -78,11 +72,13 @@
 
         <!-- BAB 3 - Page 12 -->
         <bab id="3" halaman="38">
-            <kategori>スピーチをする</kategori>
-            <kategori_en>Giving a Speech</kategori_en>
-            <nomor>3</nomor>
-            <judul_jp>転任のあいさつ（２）</judul_jp>
-            <judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
+			<kategori>スピーチをする</kategori>
+			<kategori_en>Giving a Speech</kategori_en>
+			<kategori_id>Memberikan Pidato</kategori_id>
+			<nomor>3</nomor>
+			<judul_jp>転任のあいさつ（２）</judul_jp>
+			<judul_en>Addressing Co-workers after Receiving a Transfer Order (2)</judul_en>
+			<judul_id>Menyampaikan Salam kepada Rekan Kerja setelah Mutasi (2)</judul_id>
 
             <grammar_points>
                 <point id="16" halaman="38">輸出拡大を目的としたプロジェクト</point>
@@ -97,11 +93,13 @@
 
         <!-- BAB 4 - Page 13 -->
         <bab id="4" halaman="50">
-            <kategori>説明を聞く</kategori>
-            <kategori_en>Listening to an Explanation</kategori_en>
-            <nomor>4</nomor>
-            <judul_jp>ホテルの仕事</judul_jp>
-            <judul_en>A Hotel Job</judul_en>
+			<kategori>説明を聞く</kategori>
+			<kategori_en>Listening to an Explanation</kategori_en>
+			<kategori_id>Mendengarkan Penjelasan</kategori_id>
+			<nomor>4</nomor>
+			<judul_jp>ホテルの仕事</judul_jp>
+			<judul_en>A Hotel Job</judul_en>
+			<judul_id>Pekerjaan di Hotel</judul_id>
 
             <grammar_points>
                 <point id="22" halaman="51">スタッフとしての心構え</point>
@@ -118,11 +116,13 @@
 
         <!-- BAB 5 - Page 13 -->
         <bab id="5" halaman="62">
-            <kategori>ニュースを聞く</kategori>
-            <kategori_en>Listening to the News</kategori_en>
-            <nomor>5</nomor>
-            <judul_jp>台風情報</judul_jp>
-            <judul_en>Typhoon Information</judul_en>
+			<kategori>ニュースを聞く</kategori>
+			<kategori_en>Listening to the News</kategori_en>
+			<kategori_id>Mendengarkan Berita</kategori_id>
+			<nomor>5</nomor>
+			<judul_jp>台風情報</judul_jp>
+			<judul_en>Typhoon Information</judul_en>
+			<judul_id>Informasi Topan</judul_id>
 
             <grammar_points>
                 <point id="30" halaman="63">速度を速めつつ</point>
@@ -138,11 +138,13 @@
 
         <!-- BAB 6 - Page 13 -->
         <bab id="6" halaman="72">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>6</nomor>
-            <judul_jp>就職活動（１）</judul_jp>
-            <judul_en>Job Hunting (1)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>6</nomor>
+			<judul_jp>就職活動（１）</judul_jp>
+			<judul_en>Job Hunting (1)</judul_en>
+			<judul_id>Mencari Pekerjaan (1)</judul_id>
 
             <grammar_points>
                 <point id="37" halaman="72">京都に行ったきり</point>
@@ -157,11 +159,13 @@
 
         <!-- BAB 7 - Page 13 -->
         <bab id="7" halaman="78">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>7</nomor>
-            <judul_jp>就職活動（２）</judul_jp>
-            <judul_en>Job Hunting (2)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>7</nomor>
+			<judul_jp>就職活動（２）</judul_jp>
+			<judul_en>Job Hunting (2)</judul_en>
+			<judul_id>Mencari Pekerjaan (2)</judul_id>
 
             <grammar_points>
                 <point id="43" halaman="78">やる気さえあれば</point>
@@ -175,11 +179,13 @@
 
         <!-- BAB 8 - Page 14 -->
         <bab id="8" halaman="86">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>8</nomor>
-            <judul_jp>苦労した5年間（１）</judul_jp>
-            <judul_en>A Tough Five Years (1)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>8</nomor>
+			<judul_jp>苦労した5年間（１）</judul_jp>
+			<judul_en>A Tough Five Years (1)</judul_en>
+			<judul_id>Lima Tahun yang Sulit (1)</judul_id>
 
             <grammar_points>
                 <point id="48" halaman="86">経験がなかったばかりに</point>
@@ -193,11 +199,13 @@
 
         <!-- BAB 9 - Page 14 -->
         <bab id="9" halaman="92">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>9</nomor>
-            <judul_jp>苦労した5年間（２）</judul_jp>
-            <judul_en>A Tough Five Years (2)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>9</nomor>
+			<judul_jp>苦労した5年間（２）</judul_jp>
+			<judul_en>A Tough Five Years (2)</judul_en>
+			<judul_id>Lima Tahun yang Sulit (2)</judul_id>
 
             <grammar_points>
                 <point id="53" halaman="92">ぼくのことを思えばこそ</point>
@@ -213,11 +221,13 @@
 
         <!-- BAB 10 - Page 14 -->
         <bab id="10" halaman="103">
-            <kategori>論説文を読む</kategori>
-            <kategori_en>Reading an Essay</kategori_en>
-            <nomor>10</nomor>
-            <judul_jp>オオカミと生態系（１）</judul_jp>
-            <judul_en>Wolves and the Ecosystem (1)</judul_en>
+			<kategori>論説文を読む</kategori>
+			<kategori_en>Reading an Essay</kategori_en>
+			<kategori_id>Membaca Esai</kategori_id>
+			<nomor>10</nomor>
+			<judul_jp>オオカミと生態系（１）</judul_jp>
+			<judul_en>Wolves and the Ecosystem (1)</judul_en>
+			<judul_id>Serigala dan Ekosistem (1)</judul_id>
 
             <grammar_points>
                 <point id="60" halaman="103">人間の立場から見ると (+Plus ～からいうと／～からいえば／～からいって)</point>
@@ -232,11 +242,13 @@
 
         <!-- BAB 11 (Part 2) - Page 14 -->
         <bab id="11" halaman="111">
-            <kategori>論説文を読む</kategori>
-            <kategori_en>Reading an Essay</kategori_en>
-            <nomor>11</nomor>
-            <judul_jp>オオカミと生態系（２）</judul_jp>
-            <judul_en>Wolves and the Ecosystem (2)</judul_en>
+			<kategori>論説文を読む</kategori>
+			<kategori_en>Reading an Essay</kategori_en>
+			<kategori_id>Membaca Esai</kategori_id>
+			<nomor>11</nomor>
+			<judul_jp>オオカミと生態系（２）</judul_jp>
+			<judul_en>Wolves and the Ecosystem (2)</judul_en>
+			<judul_id>Serigala dan Ekosistem (2)</judul_id>
 
             <grammar_points>
                 <point id="66" halaman="112">回復させ得る</point>
@@ -252,11 +264,13 @@
 
         <!-- BAB 12 - Page 15 -->
         <bab id="12" halaman="122">
-            <kategori>ビジネス場面の会話</kategori>
-            <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>12</nomor>
-            <judul_jp>取引先で</judul_jp>
-            <judul_en>At a Client</judul_en>
+			<kategori>ビジネス場面の会話</kategori>
+			<kategori_en>Conversation in a Business Setting</kategori_en>
+			<kategori_id>Percakapan dalam Situasi Bisnis</kategori_id>
+			<nomor>12</nomor>
+			<judul_jp>取引先で</judul_jp>
+			<judul_en>At a Client</judul_en>
+			<judul_id>Di Tempat Klien</judul_id>
 
             <grammar_points>
                 <point id="73" halaman="123">佐々木様がお見えになりました</point>
@@ -270,11 +284,13 @@
 
         <!-- BAB 13 - Page 15 -->
         <bab id="13" halaman="131">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>13</nomor>
-            <judul_jp>食べ放題（１）</judul_jp>
-            <judul_en>All-You-Can-Eat (1)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>13</nomor>
+			<judul_jp>食べ放題（１）</judul_jp>
+			<judul_en>All-You-Can-Eat (1)</judul_en>
+			<judul_id>Makan Sepuasnya (1)</judul_id>
 
             <grammar_points>
                 <point id="78" halaman="131">メニューが多いのなんのって</point>
@@ -290,11 +306,13 @@
 
         <!-- BAB 14 (Part 2) - Page 15 -->
         <bab id="14" halaman="138">
-            <kategori>友達同士の会話</kategori>
-            <kategori_en>A Conversation with a Friend</kategori_en>
-            <nomor>14</nomor>
-            <judul_jp>食べ放題（２）</judul_jp>
-            <judul_en>All-You-Can-Eat (2)</judul_en>
+			<kategori>友達同士の会話</kategori>
+			<kategori_en>A Conversation with a Friend</kategori_en>
+			<kategori_id>Percakapan dengan Teman</kategori_id>
+			<nomor>14</nomor>
+			<judul_jp>食べ放題（２）</judul_jp>
+			<judul_en>All-You-Can-Eat (2)</judul_en>
+			<judul_id>Makan Sepuasnya (2)</judul_id>
 
             <grammar_points>
                 <point id="85" halaman="139">上品ぶってもしょうがない</point>
@@ -310,11 +328,13 @@
 
         <!-- BAB 15 - Page 15-16 -->
         <bab id="15" halaman="148">
-            <kategori>エッセーを読む</kategori>
-            <kategori_en>Reading an Essay</kategori_en>
-            <nomor>15</nomor>
-            <judul_jp>満員電車（１）</judul_jp>
-            <judul_en>A Full Train (1)</judul_en>
+			<kategori>エッセーを読む</kategori>
+			<kategori_en>Reading an Essay</kategori_en>
+			<kategori_id>Membaca Esai</kategori_id>
+			<nomor>15</nomor>
+			<judul_jp>満員電車（１）</judul_jp>
+			<judul_en>A Full Train (1)</judul_en>
+			<judul_id>Kereta Penuh (1)</judul_id>
 
             <grammar_points>
                 <point id="92" halaman="148">つらいものがある</point>
@@ -327,11 +347,13 @@
 
         <!-- BAB 16 - Page 16 -->
         <bab id="16" halaman="153">
-            <kategori>エッセーを読む</kategori>
-            <kategori_en>Reading an Essay</kategori_en>
-            <nomor>16</nomor>
-            <judul_jp>満員電車（２）</judul_jp>
-            <judul_en>A Full Train (2)</judul_en>
+			<kategori>エッセーを読む</kategori>
+			<kategori_en>Reading an Essay</kategori_en>
+			<kategori_id>Membaca Esai</kategori_id>
+			<nomor>16</nomor>
+			<judul_jp>満員電車（２）</judul_jp>
+			<judul_en>A Full Train (2)</judul_en>
+			<judul_id>Kereta Penuh (2)</judul_id>
 
             <grammar_points>
                 <point id="96" halaman="153">立つか立たないかのうちに</point>
@@ -344,11 +366,13 @@
 
         <!-- BAB 17 - Page 16 -->
         <bab id="17" halaman="160">
-            <kategori>記事を読む</kategori>
-            <kategori_en>Reading an Article</kategori_en>
-            <nomor>17</nomor>
-            <judul_jp>ラーメンの紹介</judul_jp>
-            <judul_en>Introduction to Ramen</judul_en>
+			<kategori>記事を読む</kategori>
+			<kategori_en>Reading an Article</kategori_en>
+			<kategori_id>Membaca Artikel</kategori_id>
+			<nomor>17</nomor>
+			<judul_jp>ラーメンの紹介</judul_jp>
+			<judul_en>Introduction to Ramen</judul_en>
+			<judul_id>Pengenalan Ramen</judul_id>
 
             <grammar_points>
                 <point id="100" halaman="161">日本料理にほかならない</point>
@@ -364,11 +388,13 @@
 
         <!-- BAB 18 - Page 16 -->
         <bab id="18" halaman="172">
-            <kategori>ビジネス場面の会話</kategori>
-            <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>18</nomor>
-            <judul_jp>ウォーキングシューズの開発（１）</judul_jp>
-            <judul_en>Developing Walking Shoes (1)</judul_en>
+			<kategori>ビジネス場面の会話</kategori>
+			<kategori_en>Conversation in a Business Setting</kategori_en>
+			<kategori_id>Percakapan dalam Situasi Bisnis</kategori_id>
+			<nomor>18</nomor>
+			<judul_jp>ウォーキングシューズの開発（１）</judul_jp>
+			<judul_en>Developing Walking Shoes (1)</judul_en>
+			<judul_id>Pengembangan Sepatu Jalan (1)</judul_id>
 
             <grammar_points>
                 <point id="107" halaman="172">発売されるとか</point>
@@ -383,11 +409,13 @@
 
         <!-- BAB 19 (Part 2) - Page 16 -->
         <bab id="19" halaman="179">
-            <kategori>ビジネス場面の会話</kategori>
-            <kategori_en>Conversation in a Business Setting</kategori_en>
-            <nomor>19</nomor>
-            <judul_jp>ウォーキングシューズの開発（２）</judul_jp>
-            <judul_en>Developing Walking Shoes (2)</judul_en>
+			<kategori>ビジネス場面の会話</kategori>
+			<kategori_en>Conversation in a Business Setting</kategori_en>
+			<kategori_id>Percakapan dalam Situasi Bisnis</kategori_id>
+			<nomor>19</nomor>
+			<judul_jp>ウォーキングシューズの開発（２）</judul_jp>
+			<judul_en>Developing Walking Shoes (2)</judul_en>
+			<judul_id>Pengembangan Sepatu Jalan (2)</judul_id>
 
             <grammar_points>
                 <point id="113" halaman="179">新商品を作るとしたら</point>
@@ -402,11 +430,13 @@
 
         <!-- BAB 20 - Page 17 -->
         <bab id="20" halaman="188">
-            <kategori>ストーリーを読む</kategori>
-            <kategori_en>Reading a Story</kategori_en>
-            <nomor>20</nomor>
-            <judul_jp>人生の転機（１）</judul_jp>
-            <judul_en>A Turning Point in One's Life (1)</judul_en>
+			<kategori>ストーリーを読む</kategori>
+			<kategori_en>Reading a Story</kategori_en>
+			<kategori_id>Membaca Cerita</kategori_id>
+			<nomor>20</nomor>
+			<judul_jp>人生の転機（１）</judul_jp>
+			<judul_en>A Turning Point in One's Life (1)</judul_en>
+			<judul_id>Titik Balik Kehidupan (1)</judul_id>
 
             <grammar_points>
                 <point id="119" halaman="189">昇進の話はなかったことにする</point>
@@ -421,11 +451,13 @@
 
         <!-- BAB 21 - Page 17 -->
         <bab id="21" halaman="195">
-            <kategori>ストーリーを読む</kategori>
-            <kategori_en>Reading a Story</kategori_en>
-            <nomor>21</nomor>
-            <judul_jp>人生の転機（２）</judul_jp>
-            <judul_en>A Turning Point in One's Life (2)</judul_en>
+			<kategori>ストーリーを読む</kategori>
+			<kategori_en>Reading a Story</kategori_en>
+			<kategori_id>Membaca Cerita</kategori_id>
+			<nomor>21</nomor>
+			<judul_jp>人生の転機（２）</judul_jp>
+			<judul_en>A Turning Point in One's Life (2)</judul_en>
+			<judul_id>Titik Balik Kehidupan (2)</judul_id>
 
             <grammar_points>
                 <point id="125" halaman="196">たとえどんな事情があっても</point>
@@ -441,11 +473,13 @@
 
         <!-- BAB 22 - Page 17 -->
         <bab id="22" halaman="205">
-            <kategori>社説を読む</kategori>
-            <kategori_en>Reading an Editorial</kategori_en>
-            <nomor>22</nomor>
-            <judul_jp>オリンピックの開催について</judul_jp>
-            <judul_en>Hosting the Olympics</judul_en>
+			<kategori>社説を読む</kategori>
+			<kategori_en>Reading an Editorial</kategori_en>
+			<kategori_id>Membaca Editorial</kategori_id>
+			<nomor>22</nomor>
+			<judul_jp>オリンピックの開催について</judul_jp>
+			<judul_en>Hosting the Olympics</judul_en>
+			<judul_id>Penyelenggaraan Olimpiade</judul_id>
 
             <grammar_points>
                 <point id="132" halaman="206">国を挙げて喜んだものだ</point>
@@ -461,29 +495,38 @@
         </bab>
 
         <!-- INDEX & SUPPLEMENT - Page 17 -->
-        <bagian_akhir>
-            <item id="index" halaman="216">
-                <judul_jp>さくいん</judul_jp>
-                <judul_en>Index</judul_en>
-            </item>
-            <item id="pattern_list" halaman="220">
-                <judul_jp>似ている文型リスト＜N2レベル＞</judul_jp>
-                <judul_en>Similar Sentence Pattern List &lt;Level N2&gt;</judul_en>
-            </item>
-            <item id="can_do_list" halaman="227">
-                <judul_jp>N2「できること」リスト</judul_jp>
-                <judul_en>N2 Can Do List</judul_en>
-            </item>
-            <supplement>
-                <judul_jp>別冊</judul_jp>
-                <judul_en>Supplement</judul_en>
-                <item>
-                    <judul_jp>答え・スクリプト</judul_jp>
-                    <judul_en>Answers &amp; Scripts</judul_en>
-                </item>
-            </supplement>
-        </bagian_akhir>
-    </daftar_isi>
+		<bagian_akhir>
+			<item id="index" halaman="216">
+				<judul_jp>さくいん</judul_jp>
+				<judul_en>Index</judul_en>
+				<judul_id>Indeks</judul_id>
+			</item>
+
+			<item id="pattern_list" halaman="220">
+				<judul_jp>似ている文型リスト＜N2レベル＞</judul_jp>
+				<judul_en>Similar Sentence Pattern List &lt;Level N2&gt;</judul_en>
+				<judul_id>Daftar Pola Kalimat Serupa &lt;Level N2&gt;</judul_id>
+			</item>
+
+			<item id="can_do_list" halaman="227">
+				<judul_jp>N2「できること」リスト</judul_jp>
+				<judul_en>N2 Can Do List</judul_en>
+				<judul_id>Daftar Kemampuan N2</judul_id>
+			</item>
+
+			<supplement>
+				<judul_jp>別冊</judul_jp>
+				<judul_en>Supplement</judul_en>
+				<judul_id>Lampiran</judul_id>
+
+				<item>
+					<judul_jp>答え・スクリプト</judul_jp>
+					<judul_en>Answers &amp; Scripts</judul_en>
+					<judul_id>Jawaban &amp; Skrip</judul_id>
+				</item>
+			</supplement>
+		</bagian_akhir>
+	</daftar_isi>
 
     <!-- KONTEN BAB 1 - Page 18-25 -->
     <bab1_content>
@@ -507,7 +550,7 @@
                 </item>
             </dekiru_koto>
 
-            <job_ad>
+            <content type="job_ad">
                 <judul>サニー 店内スタッフ募集</judul>
                 <subjudul>さいわい駅前店オープンにつき、人材を求めています</subjudul>
 
@@ -545,7 +588,7 @@
                     <web>http://www.sannie.biz</web>
                     <email>boshu@sannie.co.jp</email>
                 </kontak>
-            </job_ad>
+            </content>
         </header>
 
         <!-- SUB BAB 1: オープンにつき - Page 19 -->
@@ -1016,9 +1059,9 @@
                 </item>
             </dekiru_koto>
 
-            <speech>
+            <content type="speech">
                 <teks>皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。入社して以来、この営業部において、部長をはじめ先輩方のご指導のもとで、営業について一から学ぶことができ、たいへん幸運でした。仕事の進め方はもとより、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「人は失敗から学ぶものだ」という言葉は忘れられません。仕事をする上で大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、残念ながらこの職場を離れることになりました。</teks>
-            </speech>
+            </content>
         </header>
 
         <!-- SUB BAB 9: 入社して以来 - Page 30 -->
@@ -1492,13 +1535,13 @@
 				</item>
 			</dekiru_koto>
 
-			<speech>
+			<content type="speech">
 				<teks>大阪支社では、アジア各国への輸出拡大を目的としたプロジェクトに参加することになりました。この転勤をきっかけに、また新たな挑戦ができることを期待しております。やるからには全力でがんばります。
 
 	入社以来慣れ親しんだこの職場を離れることになりましたが、皆様と一緒に仕事をする機会がなくなるというわけではありません。どうぞこれまでと変わることなく、ご指導よろしくお願いいたします。
 
 	最後に、本日は雨にもかかわらず、このように多くの方々が来てくださったこと、皆様の温かいお心遣いに心から感謝しております。本当にありがとうございました。</teks>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 16: 輸出拡大を目的としたプロジェクト - Page 38 -->
@@ -2156,14 +2199,10 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="10">
-				<teks>今からこのホテルの一員となる皆さんに、ホテルスタッフとしての心構えをお話しします。いちばん難しいのは、苦情処理です。皆さん、やりたくないと思うでしょうが、ホテルで仕事を続ける限り、お客様からのクレームに対応せざるを得ない場面に必ず出合います。お客様が苦情をおっしゃったときは、ただ謝ればいいというものではありません。そのクレームが正当なものかどうかはともかくとして、お客様は不快な気持ちになっていらっしゃるので、対応を間違えるとホテルへの信頼を失いかねません。では、どうすればいいのでしょうか。そのときはお客様のお話を聞くことがいちばん大切です。数日間滞在するだけのお客様というより、自分の家族だと思って、最後まできちんと聞いてください。
-
-	わがABKホテルは多くのお客様にサービスの質の高さを評価され、愛されてきました。しかし、今後ホテル業界はますます競争が厳しくなりますから、安心してはいられません。これからの時代は、今まで以上によいサービスを追求する必要があります。ホテルのために、お客様のために、力を合わせて、がんばりましょう。</teks>
-				<teks_id>Sekarang saya akan berbicara tentang mentalitas sebagai staf hotel kepada Anda semua yang akan menjadi bagian dari hotel ini. Yang paling sulit adalah menangani keluhan. Anda semua mungkin tidak ingin melakukannya, tetapi selama Anda bekerja di hotel, Anda pasti akan menghadapi situasi di mana Anda harus menangani keluhan dari tamu. Ketika tamu mengajukan keluhan, bukan berarti cukup dengan meminta maaf. Terlepas dari apakah keluhan tersebut sah atau tidak, karena tamu merasa tidak nyaman, jika Anda menangani dengan salah, Anda mungkin akan kehilangan kepercayaan terhadap hotel. Lalu, apa yang harus dilakukan? Pada saat itu, yang paling penting adalah mendengarkan apa yang dikatakan tamu. Daripada menganggapnya sebagai tamu yang hanya menginap beberapa hari, pikirkan sebagai keluarga Anda sendiri dan dengarkan dengan baik sampai akhir.
-
-	Hotel ABK kami telah dinilai tinggi oleh banyak tamu atas kualitas layanan kami dan dicintai. Namun, karena industri hotel akan semakin kompetitif ke depannya, kita tidak bisa merasa tenang. Di era yang akan datang, kita perlu mengejar layanan yang lebih baik dari sebelumnya. Untuk hotel, untuk tamu, mari kita bekerja sama dan berusaha keras.</teks_id>
-			</speech>
+			<content type="speech" cd="10">
+				<teks>今からこのホテルの一員となる皆さんに、ホテルスタッフとしての心構えをお話しします。いちばん難しいのは、苦情処理です。皆さん、やりたくないと思うでしょうが、ホテルで仕事を続ける限り、お客様からのクレームに対応せざるを得ない場面に必ず出合います。お客様が苦情をおっしゃったときは、ただ謝ればいいというものではありません。そのクレームが正当なものかどうかはともかくとして、お客様は不快な気持ちになっていらっしゃるので、対応を間違えるとホテルへの信頼を失いかねません。では、どうすればいいのでしょうか。そのときはお客様のお話を聞くことがいちばん大切です。数日間滞在するだけのお客様というより、自分の家族だと思って、最後まできちんと聞いてください。わがABKホテルは多くのお客様にサービスの質の高さを評価され、愛されてきました。しかし、今後ホテル業界はますます競争が厳しくなりますから、安心してはいられません。これからの時代は、今まで以上によいサービスを追求する必要があります。ホテルのために、お客様のために、力を合わせて、がんばりましょう。</teks>
+				<teks_id>Sekarang saya akan berbicara tentang mentalitas sebagai staf hotel kepada Anda semua yang akan menjadi bagian dari hotel ini. Yang paling sulit adalah menangani keluhan. Anda semua mungkin tidak ingin melakukannya, tetapi selama Anda bekerja di hotel, Anda pasti akan menghadapi situasi di mana Anda harus menangani keluhan dari tamu. Ketika tamu mengajukan keluhan, bukan berarti cukup dengan meminta maaf. Terlepas dari apakah keluhan tersebut sah atau tidak, karena tamu merasa tidak nyaman, jika Anda menangani dengan salah, Anda mungkin akan kehilangan kepercayaan terhadap hotel. Lalu, apa yang harus dilakukan? Pada saat itu, yang paling penting adalah mendengarkan apa yang dikatakan tamu. Daripada menganggapnya sebagai tamu yang hanya menginap beberapa hari, pikirkan sebagai keluarga Anda sendiri dan dengarkan dengan baik sampai akhir. Hotel ABK kami telah dinilai tinggi oleh banyak tamu atas kualitas layanan kami dan dicintai. Namun, karena industri hotel akan semakin kompetitif ke depannya, kita tidak bisa merasa tenang. Di era yang akan datang, kita perlu mengejar layanan yang lebih baik dari sebelumnya. Untuk hotel, untuk tamu, mari kita bekerja sama dan berusaha keras.</teks_id>
+			</content>
 		</header>
 
 		<!-- SUB BAB 22: スタッフとしての心構え - Page 51 -->
@@ -3085,7 +3124,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="15">
+			<content type="speech" cd="15">
 				<teks>次は台風関係のニュースをお伝えします。
 	非常に強い台風5号は8月1日15時には日本の南海上にあって、1時間におよそ30キロメートルの速さで北東に進んでいます。中心の気圧は945ヘクトパスカル、中心付近の最大瞬間風速は35メートルです。今後台風は速度を速めつつ東に進むと予想されます。
 	現在、沖縄を中心に暴風域に入り、広範囲にわたって強い雨が降っています。また、九州沿岸から四国にかけて波も高くなってきています。
@@ -3095,7 +3134,7 @@
 	Saat ini, memasuki area badai dengan Okinawa sebagai pusatnya, hujan lebat turun di area luas. Juga, gelombang menjadi tinggi dari pantai Kyushu sampai Shikoku.
 	Seiring dengan pendekatan taifun, peringatan hujan lebat dan banjir telah dikeluarkan untuk berbagai wilayah termasuk selatan Kyushu. Dari sekarang sampai dini hari besok, ada kemungkinan hujan lebat 70 mm per jam secara lokal. Di wilayah yang berada di jalur taifun, harap berhati-hati juga terhadap kenaikan level sungai bersama dengan angin kencang.
 	Selain itu, kondisi Okinawa yang memasuki area badai akan dilaporkan dalam program segera setelah siaran langsung tersambung.</teks_id>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 30: 速度を速めつつ - Page 63 -->
@@ -3872,7 +3911,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="20">
+			<content type="speech" cd="20">
 				<karakter nama="渡辺">
 					<jp>ねえ、サークルのみんなで旅行に行かない？私もアメリカに留学しちゃったら、みんなにも簡単に会えなくなるし…。去年京都に行ったきり、今年はどこへも行っていないし…。</jp>
 					<id>Hei, mau tidak pergi berlibur bersama semua anggota klub? Jika aku pergi kuliah ke Amerika, aku juga tidak akan bisa bertemu dengan semua orang dengan mudah... Sejak pergi ke Kyoto tahun lalu, tahun ini aku tidak pergi ke mana pun...</id>
@@ -3897,7 +3936,7 @@
 					<jp>求人があるところは全部応募して、自己PR何回書いたことか。</jp>
 					<id>Aku melamar ke semua tempat yang ada lowongan, dan sudah berapa kali aku menulis self-PR.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 37: 京都に行ったきり - Page 72-73 -->
@@ -4395,7 +4434,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="21">
+			<content type="speech" cd="21">
 				<karakter nama="渡辺">
 					<jp>難しいね。やる気さえあれば、採用してもらえるというものじゃないだろうし。</jp>
 					<id>Sulit ya. Bukan berarti jika punya semangat, pasti akan diterima.</id>
@@ -4416,7 +4455,7 @@
 					<jp>だから、とにかくあきらめないで、最後までがんばろうよ。ね。</jp>
 					<id>Jadi, jangan menyerah, berusahalah sampai akhir. Ya.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 43: やる気さえあれば - Page 78-79 -->
@@ -5002,7 +5041,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="25">
+			<content type="speech" cd="25">
 				<karakter nama="渡辺">
 					<jp>とうとう明日ね。初めてのプレゼン。</jp>
 					<id>Akhirnya besok ya. Presentasi pertamamu.</id>
@@ -5031,7 +5070,7 @@
 					<jp>部長は、1日も早くあなたにプロの仕事ができるようになってほしかったのよ。それが上司というものよ。</jp>
 					<id>Kepala bagian ingin kamu segera bisa melakukan pekerjaan profesional. Itulah yang disebut atasan.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 48: 経験がなかったばかりに - Page 86-87 -->
@@ -5438,7 +5477,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="26">
+			<content type="speech" cd="26">
 				<karakter nama="木山">
 					<jp>部長はぼくのことを思えばこそ、厳しく言ってくれたんだよね。部長の気持ちもわからないことはなかったけど、つらかったよ。</jp>
 					<id>Kepala bagian justru karena memikirkanku, dia menegurku dengan keras. Aku mengerti perasaan kepala bagian, tetapi itu sulit.</id>
@@ -5463,7 +5502,7 @@
 					<jp>うん。がんばってね。</jp>
 					<id>Ya. Semangat ya.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 53: ぼくのことを思えばこそ - Page 92-93 -->
@@ -6203,7 +6242,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="32">
+			<content type="speech" cd="32">
 				<karakter nama="ナレーター">
 					<jp>皆さんはオオカミに対してどんなイメージを持っているだろうか。人間の立場から見ると、オオカミは牛などの家畜を襲う敵だ。このイメージから、物語などでもオオカミは悪く書かれることが多かった。</jp>
 					<id>Apa gambaran kalian tentang serigala? Dari sudut pandang manusia, serigala adalah musuh yang menyerang ternak seperti sapi. Dari gambaran ini, serigala sering digambarkan sebagai jahat dalam cerita dan sebagainya.</id>
@@ -6212,7 +6251,7 @@
 					<jp>しかし、その一方で、オオカミはシカなどの草食動物が増えすぎるのを防ぎ、自然のバランスを守る役割も果たしてきたのである。アメリカのイエローストーン国立公園では、オオカミが殺され、絶滅したことから、その食料となっていた大型のシカが急増した。増えすぎたシカは、植物に大きな被害を与えたのみならず、ネズミやビーバーといった小動物の数も減少させた。シカの数が増えるにしたがって、食べ物や住む場所が減り、生きていけなくなったからだ。</jp>
 					<id>Namun, di sisi lain, serigala juga berperan mencegah hewan herbivora seperti rusa berkembang biak terlalu banyak, menjaga keseimbangan alam. Di Taman Nasional Yellowstone Amerika, karena serigala dibunuh dan punah, rusa besar yang menjadi makanannya meningkat drastis. Rusa yang berkembang biak terlalu banyak tidak hanya memberikan kerusakan besar pada tumbuhan, tetapi juga mengurangi jumlah hewan kecil seperti tikus dan berang-berang. Karena seiring dengan bertambahnya jumlah rusa, makanan dan tempat tinggal berkurang, sehingga tidak bisa hidup.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 60: 人間の立場から見ると - Page 103-104 -->
@@ -6775,7 +6814,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="33">
+			<content type="speech" cd="33">
 				<karakter nama="ナレーター">
 					<jp>そこで、国立公園にオオカミを戻そうという取り組みが始まった。オオカミの復活により生態系を回復させ得ると考えたのだ。しかし生物学者の期待に反して、この計画はすぐには実行されなかった。野生のオオカミを連れてくることに関しては、成果が期待される反面、家畜の被害のおそれもあるため、理論上は有効だとわかっていても、受け入れにくいことだったからだ。</jp>
 					<id>Oleh karena itu, upaya untuk mengembalikan serigala ke taman nasional dimulai. Mereka berpikir bahwa dengan kebangkitan serigala, ekosistem dapat dipulihkan. Namun, bertentangan dengan harapan para ahli biologi, rencana ini tidak segera dilaksanakan. Mengenai membawa serigala liar, meskipun secara teori efektif karena ada harapan akan hasil, namun sulit diterima karena ada kekhawatiran kerusakan pada ternak.</id>
@@ -6788,7 +6827,7 @@
 					<jp>同じような取り組みはアメリカに限らず、ヨーロッパでも検討されている。慎重に意見交換を続けながら、自然のバランスをとっていくことになるだろう。こうした意識の変化にともない、オオカミに対する悪いイメージも過去のものになっていくかもしれない。</jp>
 					<id>Upaya serupa tidak hanya di Amerika, tetapi juga sedang dipertimbangkan di Eropa. Sambil terus bertukar pendapat dengan hati-hati, keseimbangan alam akan dijaga. Seiring dengan perubahan kesadaran ini, citra buruk tentang serigala mungkin akan menjadi masa lalu.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 66: 回復させ得る - Page 112 -->
@@ -7319,7 +7358,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="38">
+			<content type="speech" cd="38">
 				<karakter nama="加藤">
 					<jp>田中さん、安田製作所の佐々木様がお見えになりました。</jp>
 					<id>Tanaka-san, Sasaki-sama dari Yasuda Seisakusho telah datang.</id>
@@ -7364,7 +7403,7 @@
 					<jp>ありがとうございます。じゃ、日程につきましては、後ほど…。</jp>
 					<id>Terima kasih. Kalau begitu, mengenai jadwal, nanti…</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 73: 佐々木様がお見えになりました - Page 132-123 -->
@@ -7882,7 +7921,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="42">
+			<content type="speech" cd="42">
 				<karakter nama="小林">
 					<jp>この食べ放題、すごくよかったよ。この前、行ったんだけど、とにかくメニューが多いのなんのって、ピザやスパゲティから肉じゃが、焼き魚、北京ダックまで、和、洋、中なんでもあるんだ。それに全部できたて。</jp>
 					<id>All-you-can-eat ini sangat bagus. Saya pergi yang lalu, dan pokoknya menunya banyak sekali, dari pizza dan spaghetti sampai niku-jaga, ikan bakar, sampai bebek Peking, ada semua masakan Jepang, Barat, dan Cina. Semuanya juga baru saja dibuat.</id>
@@ -7907,7 +7946,7 @@
 					<jp>そうよ。空腹で行ったらたくさん食べるどころか、いつもより食べられなくなっちゃうんだから。そんなことも知らないようじゃ、小林君は、食べ放題初心者ね。</jp>
 					<id>Benar. Kalau pergi dalam keadaan lapar, bukannya bisa makan banyak, malah tidak bisa makan sebanyak biasanya. Kalau tidak tahu hal seperti itu, Kobayashi-kun adalah pemula all-you-can-eat.</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 78: メニューが多いのなんのって - Page 131-132 -->
@@ -8507,7 +8546,7 @@
 				</item>
 			</dekiru_koto>
 
-			<speech cd="43">
+			<content type="speech" cd="43">
 				<karakter nama="小林">
 					<jp>え？食べ放題に初心者って？</jp>
 					<id>Hah? Pemula all-you-can-eat?</id>
@@ -8552,7 +8591,7 @@
 					<jp>大田さんがいれば心強いね。メンバー集めるから、絶対一緒に行こうね。よろしく！</jp>
 					<id>Kalau ada Ōta-san, aku merasa tenang. Aku akan mengumpulkan anggota, kita harus pergi bersama ya. Terima kasih!</id>
 				</karakter>
-			</speech>
+			</content>
 		</header>
 
 		<!-- SUB BAB 85: 上品ぶってもしょうがない - Page 139 -->
@@ -9292,7 +9331,7 @@
 				</item>
 			</dekiru_koto>
 
-			<essay cd="48">
+			<content type="essay" cd="48">
 				<teks>
 					<jp>朝の通勤電車の混雑はつらいものがある。満員電車にストレスを感じない人はいるまい。日々耐えている乗客を見るにつけ、みんな何と我慢強いのだろうと思う。まるで何かの訓練をしているかのようだ。</jp>
 					<id>Kepadatan kereta komuter pagi itu sangat melelahkan. Tidak mungkin ada orang yang tidak merasa stres di kereta yang penuh sesak. Setiap kali melihat penumpang yang menahan diri setiap hari, aku berpikir betapa sabarnya mereka semua. Seolah-olah sedang melakukan semacam latihan.</id>
@@ -9305,7 +9344,7 @@
 					<jp>電車がホームに入ってきた。ドアが開いた。押されながら乗り込み、座っていた高校生の前に立つ。</jp>
 					<id>Kereta masuk ke peron. Pintu terbuka. Terdesak-desak masuk, berdiri di depan siswa SMA yang sedang duduk.</id>
 				</teks>
-			</essay>
+			</content>
 		</header>
 
 		<!-- SUB BAB 92: つらいものがある - Page 148 -->
@@ -9642,7 +9681,7 @@
 				</item>
 			</dekiru_koto>
 
-			<essay cd="49">
+			<content type="essay" cd="49">
 				<teks>
 					<jp>次の駅が近づいてきた。前に座っている女子高生が、見ていた教科書をかばんにしまった。よし、今日は座るぞ。彼女が立つか立たないかのうちに、自分が座るという態度を周りに示す。</jp>
 					<id>Stasiun berikutnya mendekat. Siswi SMA yang duduk di depan memasukkan buku pelajaran yang sedang dibaca ke tas. Baik, hari ini aku akan duduk. Sebelum dia berdiri atau tidak, menunjukkan sikap bahwa aku akan duduk ke sekeliling.</id>
@@ -9655,7 +9694,7 @@
 					<jp>駅に着いて乗客が降りたかと思うと、それ以上の人が乗り込んでくる。結局、立ったまま背中をぐいぐい押され、耐えているうちにまた次の駅に着く。やはり満員電車はつらい訓練の場なのだ。</jp>
 					<id>Begitu tiba di stasiun dan penumpang turun, lebih banyak orang lagi yang naik. Pada akhirnya, tetap berdiri dengan punggung didorong-dorong, sambil menahan diri tiba-tiba sudah sampai di stasiun berikutnya. Memang benar, kereta yang penuh sesak adalah tempat latihan yang melelahkan.</id>
 				</teks>
-			</essay>
+			</content>
 		</header>
 
 		<!-- SUB BAB 96: 立つか立たないかのうちに - Page 153 -->
@@ -10109,7 +10148,7 @@
 				</item>
 			</dekiru_koto>
 
-			<article cd="54">
+			<content type="article" cd="54">
 				<judul>進化する日本食 ラーメンの魅力</judul>
 				<judul_en>The Charm of Ramen: Evolving Japanese Food</judul_en>
 				<judul_id>Pesona Ramen: Makanan Jepang yang Terus Berkembang</judul_id>
@@ -10914,7 +10953,7 @@
 				</item>
 			</dekiru_koto>
 
-			<conversation cd="57">
+			<content type="conversation" cd="57">
 				<dialog>
 					<speaker>川口</speaker>
 					<jp>今度、ミズノから「軽くて疲れない靴」が発売されるとか…。</jp>
@@ -10935,7 +10974,7 @@
 					<jp>女性ですからね。</jp>
 					<id>Karena Anda wanita ya.</id>
 				</dialog>
-			</conversation>
+			</content>
 		</header>
 
 		<!-- SUB BAB 107: 発売されるとか - Page 172-173 -->
@@ -11475,7 +11514,7 @@
 				</item>
 			</dekiru_koto>
 
-			<conversation cd="58">
+			<content type="conversation" cd="58">
 				<dialog>
 					<speaker>川口</speaker>
 					<jp>ええ。だから新商品を作るとしたら、ファッション性も重視しないと。</jp>
@@ -11511,7 +11550,7 @@
 					<jp>そうですね。市場調査をした上で、若い社会人の声にこたえた「見た目もよくて機能性抜群」の商品を考えましょう。</jp>
 					<id>Ya. Setelah melakukan riset pasar, mari kita pikirkan produk yang "tampilannya bagus dan fungsionalitasnya unggul" yang menanggapi suara kaum pekerja muda.</id>
 				</dialog>
-			</conversation>
+			</content>
 		</header>
 
 		<!-- SUB BAB 113: 新商品を作るとしたら - Page 179-180 -->
@@ -12004,7 +12043,7 @@
 				</item>
 			</dekiru_koto>
 
-			<story cd="63">
+			<content type="story" cd="63">
 				<paragraph>
 					<jp>「課長昇進の話はなかったことにする」と部長に告げられたのは3か月前だった。自分では精一杯がんばったつもりだったが、プロジェクトに失敗し、大きな損害を出したのが原因だ。出社しても、毎日がつらくてならなかった。できるものなら、違う世界へ行ってしまいたいと思いながら、日々を過ごしていた。</jp>
 					<id>"Angkat bicara tentang kenaikan jabatan kepala bagian dianggap tidak pernah terjadi," diberitahu oleh kepala bagian 3 bulan yang lalu. Saya pikir sudah berusaha semaksimal mungkin, tetapi karena gagal dalam proyek dan menimbulkan kerugian besar. Meski datang ke kantor, setiap hari sangat menyakitkan. Jika bisa, ingin pergi ke dunia yang berbeda, sambil berpikir begitu, hari-hari berlalu.</id>
@@ -12021,7 +12060,7 @@
 					<jp>もしかして、事件か。こんなときに限って、携帯をうちに置いてきてしまった。行こうか行くまいか迷った末、俺はその家に近づいていった。そしてその家のドアの前まで来たとき、「あのかばんはどこだ！言え！」という低い男の声。そして「助けてー！」という女性の声！</jp>
 					<id>Mungkinkah ini kejahatan? Saat seperti ini, ponsel tertinggal di rumah. Setelah ragu-ragu antara pergi atau tidak pergi, saya mendekati rumah itu. Dan ketika sampai di depan pintu rumah itu, terdengar suara pria rendah "Tas itu di mana! Katakan!" Dan suara wanita "Tolong!"</id>
 				</paragraph>
-			</story>
+			</content>
 		</header>
 
 		<!-- SUB BAB 119: 昇進の話はなかったことにする - Page 189 -->
@@ -12512,7 +12551,7 @@
 				</item>
 			</dekiru_koto>
 
-			<story cd="64">
+			<content type="story" cd="64">
 				<paragraph>
 					<jp>たとえどんな事情があっても、男2人で女性に暴力を振るうなんて許しがたい奴らだ。絶対助け出す。俺は勇気を出して、2階へ続く階段を上った。突き当たりの部屋のドアから光が漏れている。俺はドアを思い切り開けて部屋に飛び込んだ。そして叫んだ。「やめろ！やめるんだ！」俺は入口にいた男が止めるのもかまわず彼女の横にいた男の腹にパンチを入れた。</jp>
 					<id>Bagaimanapun keadaannya, orang yang melakukan kekerasan pada wanita berdua adalah orang yang tidak bisa dimaafkan. Pasti akan saya selamatkan. Saya mengumpulkan keberanian dan naik tangga ke lantai 2. Dari pintu kamar di ujung, cahaya bocor. Saya membuka pintu dengan sekuat tenaga dan terjun ke dalam kamar. Lalu berteriak. "Berhenti! Berhenti!" Saya memukul perut pria di samping wanita itu tanpa memedulikan pria di pintu masuk yang mencoba menghentikan.</id>
@@ -12529,7 +12568,7 @@
 					<jp>～～～～～～～あれから、半年。俺は会社を辞めて、今は自主製作映画の主役だ。主役といっても荷物運びもすれば切符も売る。生活は大変だが、俺はこの出会いに心から、ありがとうと言いたい。何があってもあきらめないでやりぬくぞ。</jp>
 					<id>~~~~~~~~~~ Sejak itu, setengah tahun. Saya berhenti dari perusahaan, sekarang menjadi pemeran utama film produksi mandiri. Meski disebut pemeran utama, saya juga mengangkut barang dan menjual tiket. Kehidupan sulit, tetapi saya ingin mengucapkan terima kasih dari hati atas pertemuan ini. Apapun yang terjadi, tidak akan menyerah dan akan menyelesaikannya.</id>
 				</paragraph>
-			</story>
+			</content>
 		</header>
 
 		<!-- SUB BAB 125: たとえどんな事情があっても - Page 196 -->
@@ -13095,12 +13134,12 @@
 				</item>
 			</dekiru_koto>
 
-			<editorial cd="68">
+			<content type="editorial" cd="68">
 				<paragraph>
 					<jp>オリンピック開催といえば、昔は国を挙げて喜んだものだ。しかし今日ではどこの国でも、オリンピック開催をめぐって意見が対立する。開催国はオリンピックを契機として、国の発展を願う。しかし、オリンピック開催には多くの費用がかかる。それで政府に対する抗議の声が上がることになるわけだ。また、オリンピック開催にあたっては、競技場などの建設用地の確保も重要な課題となる。そのために住民の移転問題も出てくる。住み慣れた土地を離れることは、簡単に納得できることではないだろう。オリンピック憲章の中に、「スポーツを通じて平和な社会を構築する」とある。この理念に基づいて、国際社会の平和を目指すことは素晴らしいことだ。しかし、国民の感情や生活を犠牲にしてオリンピックが開催されることがあってはならない。多くの人が賛同してこそ、オリンピックを開く意義がある。今、世界規模でオリンピックのあり方を、改めて考えるときが来ているのではないだろうか。</jp>
 					<id>Kalau berbicara tentang penyelenggaraan Olimpiade, dulu seluruh negara merayakannya dengan gembira. Namun sekarang di negara mana pun, ada perbedaan pendapat mengenai penyelenggaraan Olimpiade. Negara tuan rumah berharap pembangunan negara dengan mengambil kesempatan Olimpiade. Namun, penyelenggaraan Olimpiade membutuhkan banyak biaya. Itulah sebabnya muncul suara protes terhadap pemerintah. Selain itu, dalam penyelenggaraan Olimpiade, pengadaan lahan untuk pembangunan stadion dll juga menjadi masalah penting. Untuk itu muncul masalah relokasi warga. Meninggalkan tanah yang sudah menjadi kebiasaan bukanlah hal yang bisa diterima dengan mudah. Dalam Piagam Olimpiade tertulis "Membangun masyarakat damai melalui olahraga". Berdasarkan ide ini, menargetkan perdamaian masyarakat internasional adalah hal yang luar biasa. Namun, tidak boleh ada Olimpiade yang diselenggarakan dengan mengorbankan perasaan dan kehidupan rakyat. Hanya dengan persetujuan banyak orang, ada makna menyelenggarakan Olimpiade. Sekarang, bukankah sudah saatnya memikirkan kembali arah Olimpiade dalam skala dunia?</id>
 				</paragraph>
-			</editorial>
+			</content>
 		</header>
 
 		<!-- SUB BAB 132: 国を挙げて喜んだものだ - Page 206 -->
