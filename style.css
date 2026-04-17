@@ -187,6 +187,20 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     border-radius: 0.25rem;
 }
 
+@media (max-width: 768px) {
+    .example-item {
+        padding: 0.875rem;
+    }
+    
+    .example-item .example-jp {
+        font-size: 1.0625rem;  /* Lebih besar di mobile */
+    }
+    
+    .example-item .translation-id {
+        font-size: 0.9375rem;  /* Tetap readable */
+    }
+}
+
 .yatte-miyou { margin-top: 1.25rem; background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; }
 .yatte-miyou-title { font-weight: 700; font-size: 0.9375rem; margin-bottom: 0.75rem; }
 .yatte-miyou-ref { font-size: 0.75rem; color: #6b7280; font-weight: 400; }
