@@ -137,8 +137,55 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
 .grammar-pattern-text { font-weight: 700; color: #be123c; font-size: 1.125rem; }
 .grammar-note { font-size: 0.8125rem; color: #6b7280; margin-bottom: 1rem; }
 
-.example-list { font-size: 1rem; }
-.example-item { margin-bottom: 0.75rem; padding: 0.75rem; background: #f9fafb; border-radius: 0.5rem; line-height: 1.7; }
+.example-list { font-size: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+/* Container untuk setiap contoh */
+.example-item {
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    line-height: 1.7;
+}
+
+/* Paragraf bahasa Jepang */
+.example-item .example-jp {
+    margin: 0;
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 0.5rem;  /* Jarak ke terjemahan */
+}
+
+/* Nomor contoh (①, ②, dst) */
+.example-num {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/* Terjemahan bahasa Indonesia - posisi setelah <p> */
+.example-item .translation-id {
+    display: none;           /* Hidden by default */
+    color: #059669;          /* Hijau */
+    font-size: 0.875rem;     /* Sedikit lebih kecil */
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e5e7eb;  /* Garis pemisah opsional */
+    line-height: 1.6;
+}
+
+/* Saat tombol ID ditekan */
+.example-item .translation-id.visible {
+    display: block;
+}
+
+/* TTS hover effect (jika ada) */
+.example-item .example-jp {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.example-item .example-jp:hover {
+    background-color: rgba(190, 18, 60, 0.05);
+    border-radius: 0.25rem;
+}
 
 .yatte-miyou { margin-top: 1.25rem; background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; }
 .yatte-miyou-title { font-weight: 700; font-size: 0.9375rem; margin-bottom: 0.75rem; }
