@@ -1130,10 +1130,9 @@ function attachTTS() {
         el.style.cursor = 'pointer';
         el.addEventListener('click', function(e) {
             if (e.target.closest('a')) return;
-            speakJapanese(this.textContent); // Hanya 1 parameter
+            speakJapanese(this.textContent);
         });
     });
 }
 
-// Attach TTS setelah render
 setTimeout(attachTTS, 1000);
