@@ -393,3 +393,47 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
         font-size: 1rem;
     }
 }
+
+/* ============================================
+   TTS (Text-to-Speech) Simple Styles
+   ============================================ */
+
+/* Japanese text clickable indicator */
+.tts-enabled {
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: -2px -4px;
+}
+
+/* Hover effect - subtle background */
+.tts-enabled:hover {
+    background-color: rgba(190, 18, 60, 0.08);
+}
+
+/* Active/speaking state */
+.tts-speaking {
+    background-color: rgba(190, 18, 60, 0.2) !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .tts-enabled {
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(190, 18, 60, 0.1);
+    }
+    
+    .tts-enabled:active {
+        background-color: rgba(190, 18, 60, 0.15);
+    }
+}
+
+/* Ensure links inside TTS containers still work */
+.tts-enabled a {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
