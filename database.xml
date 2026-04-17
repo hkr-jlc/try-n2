@@ -532,24 +532,27 @@
     <bab1_content>
         <!-- PAGE 18 - Header & Dekiru Koto -->
         <header halaman="18">
-            <kategori>お知らせを読む</kategori>
-            <kategori_en>Reading an Announcement</kategori_en>
-            <nomor>1</nomor>
-            <judul>スタッフ募集のお知らせ</judul>
-            <judul_en>A Job Ad</judul_en>
+			<kategori>お知らせを読む</kategori>
+			<kategori_en>Reading an Announcement</kategori_en>
+			<kategori_id>Membaca Pengumuman</kategori_id>
+			<nomor>1</nomor>
+			<judul>スタッフ募集のお知らせ</judul>
+			<judul_en>A Job Ad</judul_en>
+			<judul_id>Pengumuman Perekrutan Staf</judul_id>
 
-            <dekiru_koto>
-                <judul>できること</judul>
-                <item>
-                    <jp>お知らせなどの文章が読める。</jp>
-                    <en>Read announcements and the like.</en>
-                </item>
-                <item>
-                    <jp>求人の条件が理解できる。</jp>
-                    <en>Understand the conditions for a job opening.</en>
-                </item>
-            </dekiru_koto>
-
+			<dekiru_koto>
+				<judul>できること</judul>
+				<item>
+					<jp>お知らせなどの文章が読める。</jp>
+					<en>Read announcements and the like.</en>
+					<id>Dapat membaca pengumuman dan tulisan sejenisnya.</id>
+				</item>
+				<item>
+					<jp>求人の条件が理解できる。</jp>
+					<en>Understand the conditions for a job opening.</en>
+					<id>Dapat memahami syarat-syarat lowongan pekerjaan.</id>
+				</item>
+			</dekiru_koto>
             <content type="job_ad">
                 <judul>サニー 店内スタッフ募集</judul>
                 <subjudul>さいわい駅前店オープンにつき、人材を求めています</subjudul>
@@ -663,31 +666,37 @@
             <judul>国籍を問わず</judul>
             <bintang>★★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。</jp>
-                    <en>This is used in an announcement, written introduction and the like to say "anytime, anywhere, anyone" and such.</en>
-                </penjelasan>
-                <pola>Ｎ＋を問わず</pola>
-                <catatan>※「昼夜・国の内外・男女・～の有無」などの言葉と一緒に使われる。</catatan>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<penjelasan>
+					<jp>お知らせや紹介文などで、「いつでも・どこでも・だれでも」などと説明したいときに使われる。</jp>
+					<en>This is used in an announcement, written introduction and the like to say "anytime, anywhere, anyone" and such.</en>
+					<id>Digunakan dalam pengumuman, tulisan pengenalan, dan sejenisnya ketika ingin menjelaskan "kapan saja, di mana saja, siapa saja", dan lain-lain.</id>
+				</penjelasan>
+				<pola>Ｎ＋を問わず</pola>
+				<pola_id>N + を問わず (Tanpa memandang N)</pola_id>
+				<catatan>※「昼夜・国の内外・男女・～の有無」などの言葉と一緒に使われる。</catatan>
+				<catatan_id>※Sering digunakan bersama kata-kata seperti "siang malam, dalam luar negeri, pria wanita, ada tidaknya ~", dan sejenisnya.</catatan_id>
 
-                <contoh>
-                    <item no="1">
-                        <jp>このスポーツセンターは、年齢を問わず、どなたでも利用できます。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>経験の有無を問わず、やる気のある社員を募集します。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>私の国では、老若男女を問わず、みんな、サッカーが好きだ。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
-
+				<contoh>
+					<item no="1">
+						<jp>このスポーツセンターは、年齢を問わず、どなたでも利用できます。</jp>
+						<id>Pusat olahraga ini dapat digunakan oleh siapa saja, tanpa memandang usia.</id>
+					</item>
+					<item no="2">
+						<jp>このスーパーは昼夜を問わず、営業しているので、深夜も働く人にとってありがたい。</jp>
+						<id>Supermarket ini buka tanpa memandang siang atau malam, jadi sangat membantu bagi orang yang bekerja larut malam.</id>
+					</item>
+					<item no="3">
+						<jp>経験の有無を問わず、やる気のある社員を募集します。</jp>
+						<id>Kami merekrut karyawan yang bersemangat, tanpa memandang ada atau tidaknya pengalaman.</id>
+					</item>
+					<item no="4">
+						<jp>私の国では、老若男女を問わず、みんな、サッカーが好きだ。</jp>
+						<id>Di negaraku, semua orang suka sepak bola, tanpa memandang tua muda, pria wanita.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>
             <yatte_miyou>
                 <judul>やってみよう！</judul>
                 <jawaban_ref>別冊P. 1</jawaban_ref>
@@ -734,32 +743,40 @@
             <judul>N2レベル以上の方に限り</judul>
             <bintang>★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「だけ」という意味で、お知らせなどによく使われる。</jp>
-                    <en>This is often used to mean "only / just" in an announcement and the like.</en>
-                </penjelasan>
-                <pola>Ｎ＋に限り / に限る</pola>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「だけ」という意味で、お知らせなどによく使われる。</jp>
+					<en>This is often used to mean "only / just" in an announcement and the like.</en>
+					<id>Digunakan dengan arti "hanya" dalam pengumuman dan sejenisnya.</id>
+				</penjelasan>
+				<pola>Ｎ＋に限り / に限る</pola>
+				<pola_id>N + に限り / に限る (Hanya N)</pola_id>
 
-                <contoh>
-                    <item no="1">
-                        <jp>本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。</jp>
-                    </item>
-                    <item no="2">
-                        <jp>このコーナーのバッグに限り、全品3,000円。</jp>
-                    </item>
-                    <item no="3">
-                        <jp>当動物園は夏休み期間に限り、夜9時まで開園しております。</jp>
-                    </item>
-                    <item no="4">
-                        <jp>初めてのお客様に限り、無料お試しセットをお申し込みいただけます。</jp>
-                    </item>
-                    <item no="5">
-                        <jp>工場の見学は予約された方に限ります。</jp>
-                    </item>
-                </contoh>
-            </dou_tsukau>
+				<contoh>
+					<item no="1">
+						<jp>本日に限り、通常価格100グラム1,500円の牛肉を半額でご提供いたしております。</jp>
+						<id>Hanya hari ini, kami menyediakan daging sapi dengan harga biasa 100 gram 1,500 yen setengah harga.</id>
+					</item>
+					<item no="2">
+						<jp>このコーナーのバッグに限り、全品3,000円。</jp>
+						<id>Hanya tas di sudut ini, semua barang 3,000 yen.</id>
+					</item>
+					<item no="3">
+						<jp>当動物園は夏休み期間に限り、夜9時まで開園しております。</jp>
+						<id>Kebun binatang kami hanya dibuka pada periode liburan musim panas sampai jam 9 malam.</id>
+					</item>
+					<item no="4">
+						<jp>初めてのお客様に限り、無料お試しセットをお申し込みいただけます。</jp>
+						<id>Hanya untuk pelanggan pertama kali, Anda dapat mendaftar set percobaan gratis.</id>
+					</item>
+					<item no="5">
+						<jp>工場の見学は予約された方に限ります。</jp>
+						<id>Kunjungan pabrik hanya diperuntukkan bagi yang telah melakukan reservasi.</id>
+					</item>
+				</contoh>
+			</dou_tsukau>			
         </sub_bab>
 
         <!-- SUB BAB 4: 経験年数に応じ - Page 21 -->
@@ -768,14 +785,17 @@
             <judul>経験年数に応じ</judul>
             <bintang>★★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。</jp>
-                    <en>Use "～に応じ…" when you want to say that something "depends on conditions such as a desire, change, location, situation, age, ability or experience."</en>
-                </penjelasan>
-                <pola>Ｎ＋に応じ / に応じて / に応じた＋Ｎ</pola>
-            </dou_tsukau>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～に応じ…」は、「希望・変化・地域・状況・年齢・能力・経験などの条件に合わせて…する」と言いたいときに使う。</jp>
+					<en>Use "～に応じ…" when you want to say that something "depends on conditions such as a desire, change, location, situation, age, ability or experience."</en>
+					<id>"～に応じ…" digunakan ketika ingin mengatakan "sesuai dengan kondisi seperti keinginan, perubahan, daerah, situasi, usia, kemampuan, atau pengalaman."</id>
+				</penjelasan>
+				<pola>Ｎ＋に応じ / に応じて / に応じた＋Ｎ</pola>
+				<pola_id>N + に応じ / に応じて / に応じた + N (Sesuai dengan N / Tergantung pada N)</pola_id>
+			</dou_tsukau>
         </sub_bab>
 
         <!-- SUB BAB 5: 採否にかかわらず - Page 22 -->
@@ -784,16 +804,21 @@
             <judul>採否にかかわらず</judul>
             <bintang>★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。</jp>
-                    <en>"～にかかわらず…" is used when you want to say "regardless of conditions such as weather, preference, social position, or whether something is there or not there, done or not done, etc."</en>
-                </penjelasan>
-                <pola>Ｖる＋Ｖない / Ｎ＋にかかわらず</pola>
-                <catatan>※「好き嫌い」「いい悪い」「善悪」など、形容詞、名詞の対立する2語を合わせて使われることもある。</catatan>
-            </dou_tsukau>
-        </sub_bab>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～にかかわらず…」は、「天候・好み・地位や、あるなし・するしないなどの条件に関係なく…」と言いたいときに使われる。</jp>
+					<en>"～にかかわらず…" is used when you want to say "regardless of conditions such as weather, preference, social position, or whether something is there or not there, done or not done, etc."</en>
+					<id>"～にかかわらず…" digunakan ketika ingin menyatakan "terlepas dari kondisi seperti cuaca, selera, kedudukan sosial, atau ada tidaknya sesuatu, dilakukan atau tidaknya, dan sebagainya."</id>
+				</penjelasan>
+				<pola>Ｖる＋Ｖない / Ｎ＋にかかわらず</pola>
+				<pola_id>V Biasa + V Negatif / N + にかかわらず (Tanpa memandang V/N)</pola_id>
+				<catatan>※「好き嫌い」「いい悪い」「善悪」など、形容詞、名詞の対立する2語を合わせて使われることもある。</catatan>
+				<catatan_id>※Bisa juga digunakan dengan menggabungkan dua kata yang berlawanan seperti "suka/tidak suka", "baik/buruk", "baik/jahat", yaitu pasangan kata sifat dan kata benda yang berlawanan.</catatan_id>
+			</dou_tsukau>
+		
+		</sub_bab>
 
         <!-- SUB BAB 6: 当店において - Page 23 -->
         <sub_bab id="6" halaman="23">
@@ -801,14 +826,18 @@
             <judul>当店において</judul>
             <bintang>★★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。お知らせやニュースなどで使われることが多い。</jp>
-                    <en>Use "～において" when you want to say a "place, time, field / subject area and so on" as in "京都において・江戸時代においては・生物学における". This is often used in announcements, news and the like.</en>
-                </penjelasan>
-                <pola>Ｎ＋において / における＋Ｎ</pola>
-            </dou_tsukau>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～において」は、「京都において・江戸時代においては・生物学における」のように、「場所・時代・分野などで」と言いたいときに使う。お知らせやニュースなどで使われることが多い。</jp>
+					<en>Use "～において" when you want to say a "place, time, field / subject area and so on" as in "京都において・江戸時代においては・生物学における". This is often used in announcements, news and the like.</en>
+					<id>"～において" digunakan ketika ingin menyatakan "di tempat, pada zaman, dalam bidang, dan sebagainya" seperti dalam "京都において (di Kyoto)・江戸時代においては (pada zaman Edo)・生物学における (dalam biologi)". Sering digunakan dalam pengumuman, berita, dan sejenisnya.</id>
+				</penjelasan>
+				<pola>Ｎ＋において / における＋Ｎ</pola>
+				<pola_id>N + において / における + N (Di/pada N / Dalam N)</pola_id>
+			</dou_tsukau>
+
         </sub_bab>
 
         <!-- SUB BAB 7: 面接の際に - Page 24 -->
@@ -818,15 +847,17 @@
             <bintang>★★</bintang>
             <plus>～に際して</plus>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>「～際」は、「～場合」という意味で、説明書や案内などで使われる。後ろに「してください・必要です・お願いします」などの文が来ることが多い。</jp>
-                    <en>"～際" is used in manuals, guides and the like to mean "if / when ～". Phrases such as "してください・必要です・お願いします" often come afterward.</en>
-                </penjelasan>
-                <pola>Ｖる/Ｖた / Ｎの＋際（に）</pola>
-            </dou_tsukau>
-
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>「～際」は、「～場合」という意味で、説明書や案内などで使われる。後ろに「してください・必要です・お願いします」などの文が来ることが多い。</jp>
+					<en>"～際" is used in manuals, guides and the like to mean "if / when ～". Phrases such as "してください・必要です・お願いします" often come afterward.</en>
+					<id>"～際" digunakan dengan arti "jika/ketika", sering dipakai dalam manual, panduan, dan sejenisnya. Setelahnya biasanya diikuti oleh kalimat seperti "silakan lakukan", "diperlukan", atau "mohon".</id>
+				</penjelasan>
+				<pola>Ｖる/Ｖた / Ｎの＋際（に）</pola>
+				<pola_id>V Biasa/V Lampau / Nの + 際（に）(Pada saat V / Ketika N)</pola_id>
+			</dou_tsukau>
             <plus_section>
                 <judul>Plus ～に際して</judul>
                 <pola>Ｎ＋に際して</pola>
@@ -840,14 +871,17 @@
             <judul>履歴書持参のこと</judul>
             <bintang>★★</bintang>
 
-            <dou_tsukau>
-                <judul>どう使う？</judul>
-                <penjelasan>
-                    <jp>規則や注意事項を説明するときに使う。</jp>
-                    <en>This is often used to explain a rule or warning.</en>
-                </penjelasan>
-                <pola>Ｖる/Ｖない / Ｎの＋こと</pola>
-            </dou_tsukau>
+			<dou_tsukau>
+				<judul>どう使う？</judul>
+				<judul_id>Bagaimana Menggunakannya?</judul_id>
+				<penjelasan>
+					<jp>規則や注意事項を説明するときに使う。</jp>
+					<en>This is often used to explain a rule or warning.</en>
+					<id>Digunakan ketika menjelaskan aturan atau peringatan.</id>
+				</penjelasan>
+				<pola>Ｖる/Ｖない / Ｎの＋こと</pola>
+				<pola_id>V Biasa/V Negatif / Nの + こと (Bersifat V / Hal N)</pola_id>
+			</dou_tsukau>
 
             <yatte_miyou>
                 <judul>やってみよう！</judul>
@@ -866,53 +900,62 @@
         </sub_bab>
 
         <!-- CHECK - Page 26 -->
-        <check halaman="26">
-            <judul>Check</judul>
-            <jawaban_ref>別冊P. 1</jawaban_ref>
+		<check halaman="26">
+			<judul>Check</judul>
+			<judul_id>Latihan</judul_id>
+			<jawaban_ref>別冊P. 1</jawaban_ref>
+			<jawaban_ref_id>Buku Terpisah Hal. 1</jawaban_ref_id>
 
-            <bagian1>
-                <soal id="1">
-                    <teks>わが社では経験（　　）、広く人材を募集している。</teks>
-                </soal>
-                <soal id="2">
-                    <teks>カレーの辛さはお客様のご希望（　　）調整いたします。</teks>
-                </soal>
-                <soal id="3">
-                    <teks>進学説明会は6月3日に東ホテル（　　）行われます。</teks>
-                </soal>
-                <soal id="4">
-                    <teks>毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。</teks>
-                </soal>
-                <pilihan_bagian1>
-                    <item>に限り</item>
-                    <item>を問わず</item>
-                    <item>において</item>
-                    <item>に応じて</item>
-                </pilihan_bagian1>
-            </bagian1>
+			<bagian1>
+				<soal id="1">
+					<teks>わが社では経験（　　）、広く人材を募集している。</teks>
+					<teks_id>Di perusahaan kami, merekrut sumber daya manusia secara luas tanpa memandang pengalaman ( ).</teks_id>
+				</soal>
+				<soal id="2">
+					<teks>カレーの辛さはお客様のご希望（　　）調整いたします。</teks>
+					<teks_id>Tingkat kepedasan kari akan disesuaikan dengan permintaan pelanggan ( ).</teks_id>
+				</soal>
+				<soal id="3">
+					<teks>進学説明会は6月3日に東ホテル（　　）行われます。</teks>
+					<teks_id>Seslanjutnya tentang melanjutkan studi akan dilaksanakan di Hotel Timur pada tanggal 3 Juni ( ).</teks_id>
+				</soal>
+				<soal id="4">
+					<teks>毎週日曜日は先着10名様（　　）、無料で忍者体験ができます。</teks>
+					<teks_id>Setiap hari Minggu, hanya untuk 10 orang pertama ( ), dapat mengalami ninja secara gratis.</teks_id>
+				</soal>
+				<pilihan_bagian1>
+					<item>に限り</item>
+					<item>を問わず</item>
+					<item>において</item>
+					<item>に応じて</item>
+				</pilihan_bagian1>
+			</bagian1>
 
-            <bagian2>
-                <soal id="5">
-                    <teks>お降りの（　　）はバスが止まってから席をお立ちください。</teks>
-                </soal>
-                <soal id="6">
-                    <teks>入学後、引っ越しした場合は学生課に住所変更届を提出する（　　）。</teks>
-                </soal>
-                <soal id="7">
-                    <teks>今回のコンサートは応募者多数（　　）抽選とさせていただきます。</teks>
-                </soal>
-                <soal id="8">
-                    <teks>ご出席、ご欠席（　　）、このはがきは必ずご返送ください。</teks>
-                </soal>
-                <pilihan_bagian2>
-                    <item>際</item>
-                    <item>こと</item>
-                    <item>にかかわらず</item>
-                    <item>につき</item>
-                </pilihan_bagian2>
-            </bagian2>
-        </check>
-
+			<bagian2>
+				<soal id="5">
+					<teks>お降りの（　　）はバスが止まってから席をお立ちください。</teks>
+					<teks_id>Saat turun ( ), silakan berdiri dari kursi setelah bus berhenti.</teks_id>
+				</soal>
+				<soal id="6">
+					<teks>入学後、引っ越しした場合は学生課に住所変更届を提出する（　　）。</teks>
+					<teks_id>Setelah masuk sekolah, jika pindah rumah harus mengajukan formulir perubahan alamat ke bagian kemahasiswaan ( ).</teks_id>
+				</soal>
+				<soal id="7">
+					<teks>今回のコンサートは応募者多数（　　）抽選とさせていただきます。</teks>
+					<teks_id>Konser kali ini karena banyaknya pendaftar ( ), kami akan melakukan undian.</teks_id>
+				</soal>
+				<soal id="8">
+					<teks>ご出席、ご欠席（　　）、このはがきは必ずご返送ください。</teks>
+					<teks_id>Baik hadir maupun tidak hadir ( ), mohon kartu pos ini dikembalikan dengan pasti.</teks_id>
+				</soal>
+				<pilihan_bagian2>
+					<item>際</item>
+					<item>こと</item>
+					<item>にかかわらず</item>
+					<item>につき</item>
+				</pilihan_bagian2>
+			</bagian2>
+		</check>
         <!-- MATOME NO MONDAI - Page 27-28 -->
         <matome halaman_start="27" halaman_end="28">
             <judul>まとめの問題</judul>
