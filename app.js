@@ -693,8 +693,8 @@ function renderCheck(check) {
         html += `
             <p class="check-question">
                 ${q.num}）<span class="sentence-jp">${q.text}</span></p>
-				<span class="translation-en">${q.en}</span>
-				<span class="translation-id">${q.id}</span>
+                ${q.en ? `<span class="translation-en">${q.en}</span>` : ''}
+                ${q.id ? `<span class="translation-id">${q.id}</span>` : ''}
         `;
     });
     
@@ -710,8 +710,8 @@ function renderCheck(check) {
         html += `
             <p class="check-question">
                 ${q.num}）<span class="sentence-jp">${q.text}</span></p>
-				<span class="translation-en">${q.en}</span>
-				<span class="translation-id">${q.id}</span>
+                ${q.en ? `<span class="translation-en">${q.en}</span>` : ''}
+                ${q.id ? `<span class="translation-id">${q.id}</span>` : ''}
         `;
     });
     
