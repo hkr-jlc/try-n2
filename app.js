@@ -1111,30 +1111,39 @@ function showSection(sectionId) {
     }
 }
 
-// Simple TTS Function
-function speakJapanese(text) {
+function speakJapanese(text, element) { // Terima 2 parameter
     if (!('speechSynthesis' in window)) return;
     
-    // Hentikan suara yang sedang berjalan sebelum memulai yang baru
+    // Hentikan suara yang sedang berjalan
     window.speechSynthesis.cancel();
-
+    
     // Hapus highlight dari semua kalimat
-    document.querySelectorAll('.sentence-jp').forEach(el => el.classList.remove('speaking'));
+    document.querySelectorAll('.sentence-jp').forEach(el => {
+        el.classList.remove('speaking');
+        el.style.backgroundColor = '';
+    });
     
     const utterance = new SpeechSynthesisUtterance(text.replace(/<[^>]*>/g, '').trim());
     utterance.lang = 'ja-JP';
     utterance.rate = 0.8;
-	
-    // Tambahkan highlight saat mulai berbicara
+    
+    // Tambahkan highlight
     if (element) {
-        utterance.onstart = () => element.classList.add('speaking');
-        utterance.onend = () => element.classList.remove('speaking');
+        utterance.onstart = () => {
+            element.style.backgroundColor = '#ffeb3b';
+            element.style.padding = '2px 4px';
+            element.style.borderRadius = '3px';
+        };
+        utterance.onend = () => {
+            element.style.backgroundColor = '';
+            element.style.padding = '';
+            element.style.borderRadius = '';
+        };
     }
-	
+    
     window.speechSynthesis.speak(utterance);
 }
 
-// Update attachTTS
 function attachTTS() {
     document.querySelectorAll('.sentence-jp').forEach(el => {
         if (el.dataset.ttsAttached) return;
@@ -1142,7 +1151,7 @@ function attachTTS() {
         el.style.cursor = 'pointer';
         el.addEventListener('click', function(e) {
             if (e.target.closest('a')) return;
-            speakJapanese(this.textContent, this); // Pass element untuk highlight
+            speakJapanese(this.textContent, this); // Pass 2 parameter: text dan element
         });
     });
 }
