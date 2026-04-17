@@ -518,6 +518,13 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     background-color: rgba(190, 18, 60, 0.25) !important;
 }
 
+.speaking {
+    background-color: #ffeb3b;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
 /* Nomor contoh tidak clickable */
 .example-num {
     font-weight: 700;
