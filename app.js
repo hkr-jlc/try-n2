@@ -443,7 +443,7 @@ function renderBabGrammar(bab) {
 				`;
 			});
 			html += `</div>`;
-                        <p class="page-ref">p.${g.page}</p>
+                        <p class="page-ref">${g.page}</p>
                     </div>
                 </article>
             `;
