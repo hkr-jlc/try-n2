@@ -1111,108 +1111,26 @@ function showSection(sectionId) {
     }
 }
 
-// ============================================
-// TTS (Text-to-Speech) Functions
-// ============================================
-
-// Function to speak Japanese text
+// Simple TTS Function
 function speakJapanese(text) {
-    if (!('speechSynthesis' in window)) {
-        console.warn('Browser tidak mendukung Text-to-Speech');
-        return;
-    }
-    
-    // Cancel any ongoing speech
-    window.speechSynthesis.cancel();
-    
-    // Clean up the text (remove any HTML tags if present)
-    const cleanText = text.replace(/<[^>]*>/g, '').trim();
-    
-    if (!cleanText) return;
-    
-    const utterance = new SpeechSynthesisUtterance(cleanText);
+    if (!('speechSynthesis' in window)) return;
+    const utterance = new SpeechSynthesisUtterance(text.replace(/<[^>]*>/g, '').trim());
     utterance.lang = 'ja-JP';
-    utterance.rate = 0.8; // Slightly slower for learning purposes
-    utterance.pitch = 1;
-    
-    // Try to select a Japanese voice if available
-    const voices = window.speechSynthesis.getVoices();
-    const japaneseVoice = voices.find(voice => voice.lang === 'ja-JP' || voice.lang.startsWith('ja'));
-    if (japaneseVoice) {
-        utterance.voice = japaneseVoice;
-    }
-    
+    utterance.rate = 0.8;
     window.speechSynthesis.speak(utterance);
 }
 
-// Fungsi attach TTS hanya ke .sentence-jp
 function attachTTS() {
     document.querySelectorAll('.sentence-jp').forEach(el => {
-        // Hindari double attach
         if (el.dataset.ttsAttached) return;
         el.dataset.ttsAttached = 'true';
-        
+        el.style.cursor = 'pointer';
         el.addEventListener('click', function(e) {
-            // Jangan trigger kalau klik link di dalamnya
             if (e.target.closest('a')) return;
-            
-            const text = this.textContent.trim();
-            if (!text) return;
-            
-            speakJapanese(text);
-            
-            // Visual feedback
-            this.classList.add('tts-speaking');
-            setTimeout(() => {
-                this.classList.remove('tts-speaking');
-            }, 1000);
+            speakJapanese(this.textContent);
         });
     });
 }
 
-// Update showSection to add TTS after rendering
-const originalShowSection = showSection;
-showSection = function(sectionId) {
-    // Call original function
-    document.querySelectorAll('section').forEach(sec => {
-        sec.classList.add('hidden');
-    });
-    
-    const target = document.getElementById(sectionId);
-    if (target) {
-        target.classList.remove('hidden');
-        currentSection = sectionId;
-        
-        const navTitle = document.getElementById('current-section-title');
-        if (sectionId === 'contents') {
-            navTitle.textContent = 'TRY! N2';
-        } else {
-            const match = sectionId.match(/bab-(\d+)-/);
-            if (match) {
-                const babId = parseInt(match[1]);
-                const data = parseXMLData();
-                const bab = data.bab.find(b => b.id == babId);
-                if (bab) navTitle.textContent = `Bab ${bab.number}`;
-            }
-        }
-        
-        window.scrollTo(0, 0);
-        
-        // Add TTS to newly visible content after a short delay
-        setTimeout(addTTSToContent, 100);
-    }
-};
-
-// Panggil attachTTS setelah konten masuk ke DOM
-const originalRenderAllContent = renderAllContent;
-renderAllContent = function() {
-    originalRenderAllContent();
-    setTimeout(attachTTS, 100);
-};
-
-// Juga setiap ganti section
-const originalShowSection = showSection;
-showSection = function(sectionId) {
-    originalShowSection(sectionId);
-    setTimeout(attachTTS, 150);
-};
+// Attach TTS setelah render
+setTimeout(attachTTS, 1000);
