@@ -197,3 +197,199 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     .sidebar-drawer { width: 85vw; }
     .speech-box { font-size: 1rem; padding: 1rem; }
 }
+
+
+/* ============================================
+   NEW CONTENT TYPE STYLES
+   Essay, Conversation, Story, Editorial, Article
+   ============================================ */
+
+/* Essay Box */
+.essay-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.essay-paragraph {
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-size: 1.0625rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+.essay-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Conversation Box */
+.conversation-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.dialog-item {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border-left: 4px solid #be123c;
+}
+
+.dialog-item:last-child {
+    margin-bottom: 0;
+}
+
+.dialog-speaker {
+    display: inline-block;
+    background: linear-gradient(135deg, #be123c 0%, #dc2626 100%);
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.dialog-jp {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Story Box */
+.story-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.story-paragraph {
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-size: 1.0625rem;
+    text-align: justify;
+}
+
+.story-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Editorial Box */
+.editorial-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    border-top: 4px solid #1f2937;
+}
+
+.editorial-paragraph {
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-size: 1.0625rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+}
+
+.editorial-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Article Box */
+.article-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.article-paragraph {
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-size: 1.0625rem;
+    text-align: justify;
+}
+
+.article-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Speech Character (Dialogue format) */
+.speech-character {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border-left: 4px solid #3b82f6;
+}
+
+.speech-character:last-child {
+    margin-bottom: 0;
+}
+
+.character-name {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.character-jp {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Highlight text for grammar patterns */
+.highlight-text {
+    color: #be123c;
+    font-weight: 600;
+    background: #fef2f2;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .essay-box,
+    .conversation-box,
+    .story-box,
+    .editorial-box,
+    .article-box {
+        padding: 1rem;
+    }
+    
+    .essay-paragraph,
+    .story-paragraph,
+    .editorial-paragraph,
+    .article-paragraph {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-indent: 1rem;
+    }
+    
+    .dialog-item,
+    .speech-character {
+        padding: 0.875rem;
+    }
+    
+    .dialog-jp,
+    .character-jp {
+        font-size: 1rem;
+    }
+}
