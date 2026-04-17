@@ -433,15 +433,16 @@ function renderBabGrammar(bab) {
             
             g.examples.forEach((ex, exIdx) => {
                 html += `
-                    <p class="example-item">
-                        <span style="font-weight: 700;">${String.fromCharCode(9312 + exIdx)}</span> ${ex.jp}   
-                    </p>
-                    <span class="translation-id">${ex.id}</span>
-                `;
-            });
-            
-            html += `
-                        </div>
+					<div class="example-item">
+						<p>
+							<span class="example-num">${String.fromCharCode(9312 + exIdx)}</span> 
+							<span class="sentence-jp">${ex.jp}</span>
+						</p>
+						${ex.id ? `<span class="translation-id">${ex.id}</span>` : ''}
+					</div>
+				`;
+			});
+			html += `</div>`;
                         <p class="page-ref">p.${g.page}</p>
                     </div>
                 </article>
@@ -1080,48 +1081,27 @@ function speakJapanese(text) {
     window.speechSynthesis.speak(utterance);
 }
 
-// Function to add TTS capability to Japanese text elements
-function addTTSToContent() {
-    // Selectors for Japanese text content (exclude links and interactive elements)
-    const selectors = [
-        '.dialog-jp', '.character-jp', '.essay-paragraph', 
-        '.article-paragraph', '.story-paragraph', '.editorial-paragraph',
-        '.speech-box p', '.example-item', '.dou-tsukau-text',
-        '.grammar-pattern-text', '.job-section-content p',
-        '.dekiru-item p', '.bab-header-text', '.bab-header-en', '.bab-header-category',
-        '.job-ad-title h2', '.job-ad-subtitle', '.job-section-label', '.job-contact p',
-        '.matome-title', '.mondai-title', '.mondai-instruksi', '.soal-text',
-        '.check-question', '.bacaan-box', '.home-title', '.home-subtitle',
-        '.quick-item-title', '.bab-title-home', '.drawer-item-title', '.drawer-submenu-text'
-    ];
-    
-    selectors.forEach(selector => {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(el => {
-            // Skip if element is a link or inside a link
-            if (el.tagName === 'A' || el.closest('a')) return;
+// Fungsi attach TTS hanya ke .sentence-jp
+function attachTTS() {
+    document.querySelectorAll('.sentence-jp').forEach(el => {
+        // Hindari double attach
+        if (el.dataset.ttsAttached) return;
+        el.dataset.ttsAttached = 'true';
+        
+        el.addEventListener('click', function(e) {
+            // Jangan trigger kalau klik link di dalamnya
+            if (e.target.closest('a')) return;
             
-            // Skip if already has tts class
-            if (el.classList.contains('tts-enabled')) return;
+            const text = this.textContent.trim();
+            if (!text) return;
             
-            // Add TTS class and click handler
-            el.classList.add('tts-enabled');
+            speakJapanese(text);
             
-            el.addEventListener('click', function(e) {
-                // Don't trigger if clicking a link inside this element
-                if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                
-                const text = this.textContent.trim();
-                if (text && text.length > 0) {
-                    speakJapanese(text);
-                    
-                    // Visual feedback - temporary highlight
-                    this.classList.add('tts-speaking');
-                    setTimeout(() => {
-                        this.classList.remove('tts-speaking');
-                    }, 1000);
-                }
-            });
+            // Visual feedback
+            this.classList.add('tts-speaking');
+            setTimeout(() => {
+                this.classList.remove('tts-speaking');
+            }, 1000);
         });
     });
 }
@@ -1159,9 +1139,16 @@ showSection = function(sectionId) {
     }
 };
 
-// Also add TTS after initial render
+// Panggil attachTTS setelah konten masuk ke DOM
 const originalRenderAllContent = renderAllContent;
 renderAllContent = function() {
     originalRenderAllContent();
-    setTimeout(addTTSToContent, 100);
+    setTimeout(attachTTS, 100);
+};
+
+// Juga setiap ganti section
+const originalShowSection = showSection;
+showSection = function(sectionId) {
+    originalShowSection(sectionId);
+    setTimeout(attachTTS, 150);
 };
