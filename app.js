@@ -273,7 +273,7 @@ function renderContentsSection() {
             
             <div class="quick-access">
                 <h2 class="quick-access-title">
-                    もくじ 
+                    <span class="sentence-jp">もくじ</span> 
                     <span class="translation-en">Table of Contents</span>
                     <span class="translation-id">Daftar Isi</span>
                 </h2>
@@ -283,7 +283,7 @@ function renderContentsSection() {
     data.pengantar.forEach(item => {
         html += `
             <div class="quick-item" onclick="showSection('contents')">
-                <span class="quick-item-title">${item.title}</span>
+                <span class="quick-item-title"><span class="sentence-jp">${item.title}</span></span>
                 <span class="translation-en">${item.titleEn}</span>
                 <span class="translation-id">${item.titleId}</span>
                 <span class="quick-item-page">p.${item.page}</span>
@@ -298,12 +298,12 @@ function renderContentsSection() {
                 <div class="bab-number-home">${bab.number}</div>
                 <div class="bab-info-home">
                     <div class="bab-category-home">
-                        ${bab.category}
+                        <span class="sentence-jp">${bab.category}</span>
                         <span class="translation-en">${bab.categoryEn}</span>
                         <span class="translation-id">${bab.categoryId}</span>
                     </div>
                     <div class="bab-title-home">
-                        ${bab.title}
+                        <span class="sentence-jp">${bab.title}</span>
                         <span class="translation-en">${bab.titleEn}</span>
                         <span class="translation-id">${bab.titleId}</span>
                     </div>
@@ -325,13 +325,13 @@ function renderBabHeader(bab) {
         <section id="bab-${bab.id}-header" class="hidden">
             <div class="section-header">
                 <div class="bab-header-category">
-                    ${bab.category}
+                    <span class="sentence-jp">${bab.category}</span>
                     <span class="translation-en">${bab.categoryEn}</span>
                     <span class="translation-id">${bab.categoryId}</span>
                 </div>
                 <div class="bab-header-title">
                     <span class="bab-header-number">${bab.number}</span>
-                    <h1 class="bab-header-text">${bab.title}</h1>
+                    <h1 class="bab-header-text"><span class="sentence-jp">${bab.title}</span></h1>
                     <span class="bab-header-en">${bab.titleEn}</span>
                     <span class="translation-id">${bab.titleId}</span>
                 </div>
@@ -343,7 +343,7 @@ function renderBabHeader(bab) {
         html += `
             <div class="dekiru-box">
                 <h3 class="dekiru-title">
-                    できること
+                    <span class="sentence-jp">できること</span>
                     <span class="translation-en">Dekiru Koto</span>
                     <span class="translation-id">Dapat Melakukan</span>
                 </h3>
@@ -354,7 +354,7 @@ function renderBabHeader(bab) {
                 <li class="dekiru-item">
                     <span class="dekiru-bullet">●</span>
                     <div>
-                        <p>${item.jp}</p>
+                        <p><span class="sentence-jp">${item.jp}</span></p>
                         <span class="translation-en">${item.en}</span>
                         <span class="translation-id">${item.id}</span>
                     </div>
