@@ -498,3 +498,51 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     position: relative;
     z-index: 2;
 }
+
+/* Sentence JP - clickable for TTS */
+.sentence-jp {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: -2px -4px;
+    display: inline; /* atau inline-block */
+}
+
+.sentence-jp:hover {
+    background-color: rgba(190, 18, 60, 0.1);
+}
+
+/* Saat sedang speak */
+.sentence-jp.tts-speaking {
+    background-color: rgba(190, 18, 60, 0.25) !important;
+}
+
+/* Nomor contoh tidak clickable */
+.example-num {
+    font-weight: 700;
+    margin-right: 0.5rem;
+    user-select: none;
+}
+
+/* Container contoh */
+.example-item {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    line-height: 1.7;
+}
+
+.example-item .translation-id {
+    display: none;
+    color: #059669;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e5e7eb;
+}
+
+.example-item .translation-id.visible {
+    display: block;
+}
