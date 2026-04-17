@@ -364,17 +364,21 @@ function renderBabHeader(bab) {
         html += '</ul></div>';
     }
     
-    // Job Ad or Speech
-    if (contentData.jobAd) {
-        html += renderJobAd(contentData.jobAd);
-    } else if (contentData.speech) {
-        html += `
-            <div class="speech-box">
-                <p>${highlightGrammar(contentData.speech)}</p>
-                <span class="translation-en">${contentData.speechEn || ''}</span>
-                <span class="translation-id">${contentData.speechId || ''}</span>
-            </div>
-        `;
+    // Render content based on type
+    if (contentData.contentType === 'job_ad') {
+        html += renderJobAd(contentData.content);
+    } else if (contentData.contentType === 'speech') {
+        html += renderSpeech(contentData.content);
+    } else if (contentData.contentType === 'essay') {
+        html += renderEssay(contentData.content);
+    } else if (contentData.contentType === 'article') {
+        html += renderArticle(contentData.content);
+    } else if (contentData.contentType === 'conversation') {
+        html += renderConversation(contentData.content);
+    } else if (contentData.contentType === 'story') {
+        html += renderStory(contentData.content);
+    } else if (contentData.contentType === 'editorial') {
+        html += renderEditorial(contentData.content);
     }
     
     html += `<p class="page-number">p.${bab.page}</p></section>`;
@@ -454,6 +458,8 @@ function renderBabGrammar(bab) {
     return html;
 }
 
+// Content Type Renderers
+
 function renderJobAd(jobAd) {
     let html = `
         <div class="job-ad">
@@ -496,6 +502,113 @@ function renderJobAd(jobAd) {
             </div>
         </div>
     `;
+    return html;
+}
+
+function renderSpeech(speechData) {
+    let html = '<div class="speech-box">';
+    
+    if (speechData.type === 'simple') {
+        // Simple speech with teks and teks_id
+        html += `<p>${highlightGrammar(speechData.teks)}</p>`;
+        if (speechData.teksId) {
+            html += `<span class="translation-id">${speechData.teksId}</span>`;
+        }
+    } else if (speechData.type === 'dialogue') {
+        // Speech with karakter/dialogue
+        speechData.characters.forEach(char => {
+            html += `
+                <div class="speech-character">
+                    <span class="character-name">${char.nama}</span>
+                    <p class="character-jp">${char.jp}</p>
+                    ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
+                </div>
+            `;
+        });
+    }
+    
+    html += '</div>';
+    return html;
+}
+
+function renderEssay(essayData) {
+    let html = '<div class="essay-box">';
+    
+    essayData.paragraphs.forEach((para, idx) => {
+        html += `
+            <p class="essay-paragraph">
+                ${highlightGrammar(para.jp)}
+                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
+            </p>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function renderArticle(articleData) {
+    let html = '<div class="article-box">';
+    
+    articleData.paragraphs.forEach((para, idx) => {
+        html += `
+            <p class="article-paragraph">
+                ${highlightGrammar(para.jp)}
+                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
+            </p>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function renderConversation(convData) {
+    let html = '<div class="conversation-box">';
+    
+    convData.dialogs.forEach((dialog, idx) => {
+        html += `
+            <div class="dialog-item">
+                <span class="dialog-speaker">${dialog.speaker}</span>
+                <p class="dialog-jp">${dialog.jp}</p>
+                ${dialog.id ? `<span class="translation-id">${dialog.id}</span>` : ''}
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function renderStory(storyData) {
+    let html = '<div class="story-box">';
+    
+    storyData.paragraphs.forEach((para, idx) => {
+        html += `
+            <p class="story-paragraph">
+                ${highlightGrammar(para.jp)}
+                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
+            </p>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function renderEditorial(editorialData) {
+    let html = '<div class="editorial-box">';
+    
+    editorialData.paragraphs.forEach((para, idx) => {
+        html += `
+            <p class="editorial-paragraph">
+                ${highlightGrammar(para.jp)}
+                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
+            </p>
+        `;
+    });
+    
+    html += '</div>';
     return html;
 }
 
@@ -574,7 +687,9 @@ function getBabContent(babId) {
     const result = {
         dekiru: [],
         grammar: [],
-        check: null
+        check: null,
+        contentType: null,
+        content: null
     };
     
     // Parse dekiru
@@ -587,17 +702,35 @@ function getBabContent(babId) {
         });
     });
     
-    // Parse job ad or speech
-    const jobAd = content.querySelector('job_ad');
-    if (jobAd) {
-        result.jobAd = parseJobAd(jobAd);
-    }
-    
-    const speech = content.querySelector('speech > teks');
-    if (speech) {
-        result.speech = speech.textContent;
-        result.speechEn = content.querySelector('speech > teks_en')?.textContent || '';
-        result.speechId = content.querySelector('speech > teks_id')?.textContent || '';
+    // Parse content based on type
+    const contentEl = content.querySelector('content');
+    if (contentEl) {
+        const type = contentEl.getAttribute('type');
+        result.contentType = type;
+        
+        switch(type) {
+            case 'job_ad':
+                result.content = parseJobAd(contentEl);
+                break;
+            case 'speech':
+                result.content = parseSpeech(contentEl);
+                break;
+            case 'essay':
+                result.content = parseEssay(contentEl);
+                break;
+            case 'article':
+                result.content = parseArticle(contentEl);
+                break;
+            case 'conversation':
+                result.content = parseConversation(contentEl);
+                break;
+            case 'story':
+                result.content = parseStory(contentEl);
+                break;
+            case 'editorial':
+                result.content = parseEditorial(contentEl);
+                break;
+        }
     }
     
     // Parse grammar points
@@ -637,64 +770,185 @@ function getBabContent(babId) {
     return result;
 }
 
-function parseJobAd(jobAd) {
-    return {
-        title: jobAd.querySelector('judul')?.textContent || '',
-        titleEn: jobAd.querySelector('judul_en')?.textContent || '',
-        titleId: jobAd.querySelector('judul_id')?.textContent || '',
-        highlight: jobAd.querySelector('subjudul > highlight')?.textContent || '',
-        subtitle: jobAd.querySelector('subjudul')?.childNodes[2]?.textContent || '',
-        subtitleEn: jobAd.querySelector('subjudul_en')?.textContent || '',
-        subtitleId: jobAd.querySelector('subjudul_id')?.textContent || '',
-        sections: parseJobSections(jobAd),
-        contact: {
-            name: jobAd.querySelector('kontak > nama')?.textContent || '',
-            tel: jobAd.querySelector('kontak > tel')?.textContent || '',
-            web: jobAd.querySelector('kontak > web')?.textContent || '',
-            email: jobAd.querySelector('kontak > email')?.textContent || ''
-        }
-    };
-}
+// Content Parsers
 
-function parseJobSections(jobAd) {
+function parseJobAd(jobAdEl) {
     const sections = [];
-    const sectionElements = jobAd.querySelectorAll('section');
+    const sectionElements = jobAdEl.querySelectorAll('section');
     
     sectionElements.forEach(sec => {
         const type = sec.getAttribute('type');
-        const sectionData = {
+        sections.push({
             label: type,
             labelEn: getLabelEn(type),
             labelId: getLabelId(type),
             content: sec.querySelector('isi')?.textContent || '',
             note: sec.querySelector('catatan')?.textContent || ''
-        };
-        sections.push(sectionData);
+        });
     });
     
-    return sections;
+    return {
+        title: jobAdEl.querySelector('judul')?.textContent || '',
+        titleEn: jobAdEl.querySelector('judul_en')?.textContent || '',
+        titleId: jobAdEl.querySelector('judul_id')?.textContent || '',
+        highlight: jobAdEl.querySelector('subjudul > highlight')?.textContent || '',
+        subtitle: jobAdEl.querySelector('subjudul')?.childNodes[2]?.textContent || '',
+        subtitleEn: jobAdEl.querySelector('subjudul_en')?.textContent || '',
+        subtitleId: jobAdEl.querySelector('subjudul_id')?.textContent || '',
+        sections: sections,
+        contact: {
+            name: jobAdEl.querySelector('kontak > nama')?.textContent || '',
+            tel: jobAdEl.querySelector('kontak > tel')?.textContent || '',
+            web: jobAdEl.querySelector('kontak > web')?.textContent || '',
+            email: jobAdEl.querySelector('kontak > email')?.textContent || ''
+        }
+    };
 }
 
-function getLabelEn(type) {
-    const labels = {
-        '仕事': 'Work',
-        '資格': 'Requirements',
-        '給与': 'Salary',
-        '交通費': 'Transportation',
-        '応募': 'Application'
-    };
-    return labels[type] || type;
+function parseSpeech(speechEl) {
+    // Check if it has karakter elements (dialogue format)
+    const karakterElements = speechEl.querySelectorAll('karakter');
+    
+    if (karakterElements.length > 0) {
+        // Dialogue format with characters
+        const characters = [];
+        karakterElements.forEach(char => {
+            characters.push({
+                nama: char.getAttribute('nama') || '',
+                jp: char.querySelector('jp')?.textContent || '',
+                id: char.querySelector('id')?.textContent || ''
+            });
+        });
+        return {
+            type: 'dialogue',
+            characters: characters
+        };
+    } else {
+        // Simple format with teks
+        return {
+            type: 'simple',
+            teks: speechEl.querySelector('teks')?.textContent || '',
+            teksId: speechEl.querySelector('teks_id')?.textContent || ''
+        };
+    }
 }
 
-function getLabelId(type) {
-    const labels = {
-        '仕事': 'Pekerjaan',
-        '資格': 'Kualifikasi',
-        '給与': 'Gaji',
-        '交通費': 'Transportasi',
-        '応募': 'Cara Melamar'
-    };
-    return labels[type] || type;
+function parseEssay(essayEl) {
+    const paragraphs = [];
+    
+    // Try to find paragraph elements
+    const paraElements = essayEl.querySelectorAll('paragraph');
+    
+    if (paraElements.length > 0) {
+        paraElements.forEach(para => {
+            paragraphs.push({
+                jp: para.querySelector('jp')?.textContent || '',
+                id: para.querySelector('id')?.textContent || ''
+            });
+        });
+    } else {
+        // Fallback: treat entire content as one paragraph
+        paragraphs.push({
+            jp: essayEl.textContent || '',
+            id: ''
+        });
+    }
+    
+    return { paragraphs };
+}
+
+function parseArticle(articleEl) {
+    const paragraphs = [];
+    
+    const paraElements = articleEl.querySelectorAll('paragraph');
+    
+    if (paraElements.length > 0) {
+        paraElements.forEach(para => {
+            paragraphs.push({
+                jp: para.querySelector('jp')?.textContent || '',
+                id: para.querySelector('id')?.textContent || ''
+            });
+        });
+    } else {
+        paragraphs.push({
+            jp: articleEl.textContent || '',
+            id: ''
+        });
+    }
+    
+    return { paragraphs };
+}
+
+function parseConversation(convEl) {
+    const dialogs = [];
+    
+    const dialogElements = convEl.querySelectorAll('dialog');
+    
+    if (dialogElements.length > 0) {
+        dialogElements.forEach(dialog => {
+            dialogs.push({
+                speaker: dialog.querySelector('speaker')?.textContent || '',
+                jp: dialog.querySelector('jp')?.textContent || '',
+                id: dialog.querySelector('id')?.textContent || ''
+            });
+        });
+    } else {
+        // Fallback: try karakter format (backward compatibility)
+        const karakterElements = convEl.querySelectorAll('karakter');
+        karakterElements.forEach(char => {
+            dialogs.push({
+                speaker: char.getAttribute('nama') || '',
+                jp: char.querySelector('jp')?.textContent || '',
+                id: char.querySelector('id')?.textContent || ''
+            });
+        });
+    }
+    
+    return { dialogs };
+}
+
+function parseStory(storyEl) {
+    const paragraphs = [];
+    
+    const paraElements = storyEl.querySelectorAll('paragraph');
+    
+    if (paraElements.length > 0) {
+        paraElements.forEach(para => {
+            paragraphs.push({
+                jp: para.querySelector('jp')?.textContent || '',
+                id: para.querySelector('id')?.textContent || ''
+            });
+        });
+    } else {
+        paragraphs.push({
+            jp: storyEl.textContent || '',
+            id: ''
+        });
+    }
+    
+    return { paragraphs };
+}
+
+function parseEditorial(editorialEl) {
+    const paragraphs = [];
+    
+    const paraElements = editorialEl.querySelectorAll('paragraph');
+    
+    if (paraElements.length > 0) {
+        paraElements.forEach(para => {
+            paragraphs.push({
+                jp: para.querySelector('jp')?.textContent || '',
+                id: para.querySelector('id')?.textContent || ''
+            });
+        });
+    } else {
+        paragraphs.push({
+            jp: editorialEl.textContent || '',
+            id: ''
+        });
+    }
+    
+    return { paragraphs };
 }
 
 function parseCheck(check) {
@@ -741,6 +995,28 @@ function parseCheck(check) {
     }
     
     return result;
+}
+
+function getLabelEn(type) {
+    const labels = {
+        '仕事': 'Work',
+        '資格': 'Requirements',
+        '給与': 'Salary',
+        '交通費': 'Transportation',
+        '応募': 'Application'
+    };
+    return labels[type] || type;
+}
+
+function getLabelId(type) {
+    const labels = {
+        '仕事': 'Pekerjaan',
+        '資格': 'Kualifikasi',
+        '給与': 'Gaji',
+        '交通費': 'Transportasi',
+        '応募': 'Cara Melamar'
+    };
+    return labels[type] || type;
 }
 
 function showSection(sectionId) {
