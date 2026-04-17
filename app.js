@@ -325,13 +325,13 @@ function renderBabHeader(bab) {
         <section id="bab-${bab.id}-header" class="hidden">
             <div class="section-header">
                 <div class="bab-header-category">
-                    ${bab.category}
+                    <span class="sentence-jp">${bab.category}</span>
                     <span class="translation-en">${bab.categoryEn}</span>
                     <span class="translation-id">${bab.categoryId}</span>
                 </div>
                 <div class="bab-header-title">
                     <span class="bab-header-number">${bab.number}</span>
-                    <h1 class="bab-header-text">${bab.title}</h1>
+                    <h1 class="bab-header-text"><span class="sentence-jp">${bab.title}</span></h1>
                     <span class="bab-header-en">${bab.titleEn}</span>
                     <span class="translation-id">${bab.titleId}</span>
                 </div>
@@ -343,7 +343,7 @@ function renderBabHeader(bab) {
         html += `
             <div class="dekiru-box">
                 <h3 class="dekiru-title">
-                    できること
+                    <span class="sentence-jp">できること</span>
                     <span class="translation-en">Dekiru Koto</span>
                     <span class="translation-id">Dapat Melakukan</span>
                 </h3>
@@ -354,7 +354,7 @@ function renderBabHeader(bab) {
                 <li class="dekiru-item">
                     <span class="dekiru-bullet">●</span>
                     <div>
-                        <p>${item.jp}</p>
+                        <p><span class="sentence-jp">${item.jp}</span></p>
                         <span class="translation-en">${item.en}</span>
                         <span class="translation-id">${item.id}</span>
                     </div>
@@ -414,17 +414,17 @@ function renderBabGrammar(bab) {
                     <div class="grammar-content">
                         <div class="dou-tsukau">
                             <h3 class="dou-tsukau-title">
-                                どう使う？
+                                <span class="sentence-jp">どう使う？</span>
                                 <span class="translation-en">How to use?</span>
                                 <span class="translation-id">Bagaimana Menggunakannya?</span>
                             </h3>
-                            <p class="dou-tsukau-text">${g.desc}</p>
+                            <p class="dou-tsukau-text"><span class="sentence-jp">${g.desc}</span></p>
                             <span class="translation-en">${g.descEn}</span>
                             <span class="translation-id">${g.descId}</span>
                         </div>
                         
                         <div class="grammar-pattern">
-                            <p class="grammar-pattern-text">${g.pattern}</p>
+                            <p class="grammar-pattern-text"><span class="sentence-jp">${g.pattern}</span></p>
                             <span class="translation-id">${g.patternId}</span>
                         </div>
                         
@@ -465,12 +465,12 @@ function renderJobAd(jobAd) {
     let html = `
         <div class="job-ad">
             <div class="job-ad-title">
-                <h2>${jobAd.title}</h2>
+                <h2><span class="sentence-jp">${jobAd.title}</span></h2>
                 <span class="translation-en">${jobAd.titleEn}</span>
                 <span class="translation-id">${jobAd.titleId}</span>
             </div>
             <p class="job-ad-subtitle">
-                <span class="highlight">${jobAd.highlight}</span>${jobAd.subtitle}
+                <span class="highlight">${jobAd.highlight}</span><span class="sentence-jp">${jobAd.subtitle}</span>
                 <span class="translation-en">${jobAd.subtitleEn}</span>
                 <span class="translation-id">${jobAd.subtitleId}</span>
             </p>
@@ -481,7 +481,7 @@ function renderJobAd(jobAd) {
         html += `
             <div class="job-section">
                 <span class="job-section-label">
-                    ${section.label}▶
+                    <span class="sentence-jp">${section.label}▶</span>
                     <span class="translation-en">${section.labelEn}▶</span>
                     <span class="translation-id">${section.labelId}▶</span>
                 </span>
@@ -521,7 +521,7 @@ function renderSpeech(speechData) {
             html += `
                 <div class="speech-character">
                     <span class="character-name">${char.nama}</span>
-                    <p class="character-jp">${char.jp}</p>
+                    <p class="character-jp"><span class="sentence-jp">${char.jp}</span></p>
                     ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
                 </div>
             `;
@@ -571,7 +571,7 @@ function renderConversation(convData) {
         html += `
             <div class="dialog-item">
                 <span class="dialog-speaker">${dialog.speaker}</span>
-                <p class="dialog-jp">${dialog.jp}</p>
+                <p class="dialog-jp"><span class="sentence-jp">${dialog.jp}</span></p>
                 ${dialog.id ? `<span class="translation-id">${dialog.id}</span>` : ''}
             </div>
         `;
