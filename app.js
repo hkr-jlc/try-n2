@@ -434,9 +434,9 @@ function renderBabGrammar(bab) {
             g.examples.forEach((ex, exIdx) => {
                 html += `
                     <p class="example-item">
-                        <span style="font-weight: 700;">${String.fromCharCode(9312 + exIdx)}</span> ${ex.jp}
-                        <span class="translation-id">${ex.id}</span>
+                        <span style="font-weight: 700;">${String.fromCharCode(9312 + exIdx)}</span> ${ex.jp}   
                     </p>
+                    <span class="translation-id">${ex.id}</span>
                 `;
             });
             
