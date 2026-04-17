@@ -1045,3 +1045,123 @@ function showSection(sectionId) {
         window.scrollTo(0, 0);
     }
 }
+
+// ============================================
+// TTS (Text-to-Speech) Functions
+// ============================================
+
+// Function to speak Japanese text
+function speakJapanese(text) {
+    if (!('speechSynthesis' in window)) {
+        console.warn('Browser tidak mendukung Text-to-Speech');
+        return;
+    }
+    
+    // Cancel any ongoing speech
+    window.speechSynthesis.cancel();
+    
+    // Clean up the text (remove any HTML tags if present)
+    const cleanText = text.replace(/<[^>]*>/g, '').trim();
+    
+    if (!cleanText) return;
+    
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'ja-JP';
+    utterance.rate = 0.8; // Slightly slower for learning purposes
+    utterance.pitch = 1;
+    
+    // Try to select a Japanese voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const japaneseVoice = voices.find(voice => voice.lang === 'ja-JP' || voice.lang.startsWith('ja'));
+    if (japaneseVoice) {
+        utterance.voice = japaneseVoice;
+    }
+    
+    window.speechSynthesis.speak(utterance);
+}
+
+// Function to add TTS capability to Japanese text elements
+function addTTSToContent() {
+    // Selectors for Japanese text content (exclude links and interactive elements)
+    const selectors = [
+        '.dialog-jp', '.character-jp', '.essay-paragraph', 
+        '.article-paragraph', '.story-paragraph', '.editorial-paragraph',
+        '.speech-box p', '.example-item', '.dou-tsukau-text',
+        '.grammar-pattern-text', '.job-section-content p',
+        '.dekiru-item p', '.bab-header-text', '.bab-header-en', '.bab-header-category',
+        '.job-ad-title h2', '.job-ad-subtitle', '.job-section-label', '.job-contact p',
+        '.matome-title', '.mondai-title', '.mondai-instruksi', '.soal-text',
+        '.check-question', '.bacaan-box', '.home-title', '.home-subtitle',
+        '.quick-item-title', '.bab-title-home', '.drawer-item-title', '.drawer-submenu-text'
+    ];
+    
+    selectors.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+            // Skip if element is a link or inside a link
+            if (el.tagName === 'A' || el.closest('a')) return;
+            
+            // Skip if already has tts class
+            if (el.classList.contains('tts-enabled')) return;
+            
+            // Add TTS class and click handler
+            el.classList.add('tts-enabled');
+            
+            el.addEventListener('click', function(e) {
+                // Don't trigger if clicking a link inside this element
+                if (e.target.tagName === 'A' || e.target.closest('a')) return;
+                
+                const text = this.textContent.trim();
+                if (text && text.length > 0) {
+                    speakJapanese(text);
+                    
+                    // Visual feedback - temporary highlight
+                    this.classList.add('tts-speaking');
+                    setTimeout(() => {
+                        this.classList.remove('tts-speaking');
+                    }, 1000);
+                }
+            });
+        });
+    });
+}
+
+// Update showSection to add TTS after rendering
+const originalShowSection = showSection;
+showSection = function(sectionId) {
+    // Call original function
+    document.querySelectorAll('section').forEach(sec => {
+        sec.classList.add('hidden');
+    });
+    
+    const target = document.getElementById(sectionId);
+    if (target) {
+        target.classList.remove('hidden');
+        currentSection = sectionId;
+        
+        const navTitle = document.getElementById('current-section-title');
+        if (sectionId === 'contents') {
+            navTitle.textContent = 'TRY! N2';
+        } else {
+            const match = sectionId.match(/bab-(\d+)-/);
+            if (match) {
+                const babId = parseInt(match[1]);
+                const data = parseXMLData();
+                const bab = data.bab.find(b => b.id == babId);
+                if (bab) navTitle.textContent = `Bab ${bab.number}`;
+            }
+        }
+        
+        window.scrollTo(0, 0);
+        
+        // Add TTS to newly visible content after a short delay
+        setTimeout(addTTSToContent, 100);
+    }
+};
+
+// Also add TTS after initial render
+const originalRenderAllContent = renderAllContent;
+renderAllContent = function() {
+    originalRenderAllContent();
+    setTimeout(addTTSToContent, 100);
+};
