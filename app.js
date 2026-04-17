@@ -692,9 +692,9 @@ function renderCheck(check) {
     check.questions.forEach(q => {
         html += `
             <p class="check-question">
-                ${q.num}）${q.text}
-                <span class="translation-en">${q.en}</span>
-            </p>
+                ${q.num}）<span class="sentence-jp">${q.text}</span></p>
+				<span class="translation-en">${q.en}</span>
+				<span class="translation-id">${q.id}</span>
         `;
     });
     
@@ -709,9 +709,9 @@ function renderCheck(check) {
     check.questions2.forEach(q => {
         html += `
             <p class="check-question">
-                ${q.num}）${q.text}
-                <span class="translation-en">${q.en}</span>
-            </p>
+                ${q.num}）<span class="sentence-jp">${q.text}</span></p>
+				<span class="translation-en">${q.en}</span>
+				<span class="translation-id">${q.id}</span>
         `;
     });
     
