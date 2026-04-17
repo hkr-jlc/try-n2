@@ -393,3 +393,17 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
         font-size: 1rem;
     }
 }
+
+/* TTS Clickable Indicator */
+[data-tts-processed="true"] {
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+[data-tts-processed="true"]:hover {
+    background-color: #fef3c7 !important;
+}
+
+[data-tts-processed="true"]:active {
+    background-color: #fde68a !important;
+}
