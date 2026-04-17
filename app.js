@@ -529,12 +529,12 @@ function renderJobAd(jobAd) {
     let html = `
         <div class="job-ad">
             <div class="job-ad-title">
-                <h2>${jobAd.title}</h2>
+                <h2><span class="sentence-jp">${jobAd.title}</span></h2>
                 <span class="translation-en">${jobAd.titleEn}</span>
                 <span class="translation-id">${jobAd.titleId}</span>
             </div>
             <p class="job-ad-subtitle">
-                <span class="highlight">${jobAd.highlight}</span>${jobAd.subtitle}
+                <span class="highlight">${jobAd.highlight}</span><span class="sentence-jp">${jobAd.subtitle}</span>
                 <span class="translation-en">${jobAd.subtitleEn}</span>
                 <span class="translation-id">${jobAd.subtitleId}</span>
             </p>
@@ -545,7 +545,7 @@ function renderJobAd(jobAd) {
         html += `
             <div class="job-section">
                 <span class="job-section-label">
-                    ${section.label}▶
+                    <span class="sentence-jp">${section.label}</span>▶
                     <span class="translation-en">${section.labelEn}▶</span>
                     <span class="translation-id">${section.labelId}▶</span>
                 </span>
@@ -575,7 +575,7 @@ function renderSpeech(speechData) {
     
     if (speechData.type === 'simple') {
         // Simple speech with teks and teks_id
-        html += `<p>${highlightGrammar(speechData.teks)}</p>`;
+        html += `<p><span class="sentence-jp">${highlightGrammar(speechData.teks)}</span></p>`;
         if (speechData.teksId) {
             html += `<span class="translation-id">${speechData.teksId}</span>`;
         }
@@ -585,7 +585,7 @@ function renderSpeech(speechData) {
             html += `
                 <div class="speech-character">
                     <span class="character-name">${char.nama}</span>
-                    <p class="character-jp">${char.jp}</p>
+                    <p class="character-jp"><span class="sentence-jp">${char.jp}</span></p>
                     ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
                 </div>
             `;
@@ -602,7 +602,7 @@ function renderEssay(essayData) {
     essayData.paragraphs.forEach((para, idx) => {
         html += `
             <p class="essay-paragraph">
-                ${highlightGrammar(para.jp)}
+                <span class="sentence-jp">${highlightGrammar(para.jp)}</span>
                 ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
             </p>
         `;
@@ -618,7 +618,7 @@ function renderArticle(articleData) {
     articleData.paragraphs.forEach((para, idx) => {
         html += `
             <p class="article-paragraph">
-                ${highlightGrammar(para.jp)}
+                <span class="sentence-jp">${highlightGrammar(para.jp)}</span>
                 ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
             </p>
         `;
@@ -635,7 +635,7 @@ function renderConversation(convData) {
         html += `
             <div class="dialog-item">
                 <span class="dialog-speaker">${dialog.speaker}</span>
-                <p class="dialog-jp">${dialog.jp}</p>
+                <p class="dialog-jp"><span class="sentence-jp">${dialog.jp}</span></p>
                 ${dialog.id ? `<span class="translation-id">${dialog.id}</span>` : ''}
             </div>
         `;
@@ -651,7 +651,7 @@ function renderStory(storyData) {
     storyData.paragraphs.forEach((para, idx) => {
         html += `
             <p class="story-paragraph">
-                ${highlightGrammar(para.jp)}
+                <span class="sentence-jp">${highlightGrammar(para.jp)}</span>
                 ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
             </p>
         `;
@@ -667,7 +667,7 @@ function renderEditorial(editorialData) {
     editorialData.paragraphs.forEach((para, idx) => {
         html += `
             <p class="editorial-paragraph">
-                ${highlightGrammar(para.jp)}
+                <span class="sentence-jp">${highlightGrammar(para.jp)}</span>
                 ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
             </p>
         `;
