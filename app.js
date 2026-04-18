@@ -918,18 +918,23 @@ function parseSpeech(speechEl) {
 function parseEssay(essayEl) {
     const paragraphs = [];
     
-    // Coba cari <teks> dulu, kalau tidak ada pakai <paragraph>
-    let elements = essayEl.querySelectorAll('teks');
-    if (elements.length === 0) {
-        elements = essayEl.querySelectorAll('paragraph');
-    }
+    // Cari elemen <teks> (bukan <paragraph>)
+    const teksElements = essayEl.querySelectorAll('teks');
     
-    elements.forEach(el => {
-        paragraphs.push({
-            jp: el.querySelector('jp')?.textContent || '',
-            id: el.querySelector('id')?.textContent || ''
+    if (teksElements.length > 0) {
+        teksElements.forEach(teks => {
+            paragraphs.push({
+                jp: teks.querySelector('jp')?.textContent || '',
+                id: teks.querySelector('id')?.textContent || ''
+            });
         });
-    });
+    } else {
+        // Fallback: treat entire content as one paragraph
+        paragraphs.push({
+            jp: essayEl.textContent || '',
+            id: ''
+        });
+    }
     
     return { paragraphs };
 }
