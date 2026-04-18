@@ -617,9 +617,8 @@ function renderArticle(articleData) {
     articleData.paragraphs.forEach((para, idx) => {
         html += `
             <p class="article-paragraph">
-                <span class="sentence-jp">${highlightGrammar(para.jp)}</span>
+                <span class="sentence-jp">${highlightGrammar(para.jp)}</span></p>
                 ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
-            </p>
         `;
     });
     
