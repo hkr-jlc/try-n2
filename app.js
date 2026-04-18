@@ -599,13 +599,21 @@ function renderSpeech(speechData) {
 function renderEssay(essayData) {
     let html = '<div class="essay-box">';
     
-    essayData.teks.forEach((teks) => {
-        html += `
-            <div class="essay-item">
-                <p><span class="sentence-jp">${highlightGrammar(teks.jp)}</span></p>
-                ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
-            </div>
-        `;
+    essayData.paragraphs.forEach((para) => {
+        // Wrapper per paragraf
+        html += '<div class="essay-item">';
+        
+        // Teks Jepang
+        html += '<p class="essay-paragraph">';
+        html += `<span class="sentence-jp" data-tts-attached="true" style="cursor: pointer;">${highlightGrammar(para.jp)}</span>`;
+        html += '</p>';
+        
+        // Terjemahan - dipisahkan sebagai block baru dengan class untuk toggle
+        if (para.id) {
+            html += `<div class="translation-id indonesian-translation">${para.id}</div>`;
+        }
+        
+        html += '</div>'; // tutup essay-item
     });
     
     html += '</div>';
@@ -898,34 +906,27 @@ function parseSpeech(speechEl) {
 }
 
 function parseEssay(essayEl) {
-    const result = {
-        teks: [] // array untuk menampung {jp, id}
-    };
+    const paragraphs = [];
     
-    // Ambil semua elemen <teks>
-    const teksElements = essayEl.querySelectorAll('teks');
+    // Try to find paragraph elements
+    const paraElements = essayEl.querySelectorAll('paragraph');
     
-    teksElements.forEach(teksEl => {
-        const jp = teksEl.querySelector('jp')?.textContent || '';
-        const id = teksEl.querySelector('id')?.textContent || '';
-        
-        if (jp) {
-            result.teks.push({ jp, id });
-        }
-    });
-    
-    // Fallback jika tidak ada tag <teks> (format lama dengan paragraph)
-    if (result.teks.length === 0) {
-        const paragraphs = essayEl.querySelectorAll('paragraph');
-        paragraphs.forEach(para => {
-            result.teks.push({
+    if (paraElements.length > 0) {
+        paraElements.forEach(para => {
+            paragraphs.push({
                 jp: para.querySelector('jp')?.textContent || '',
                 id: para.querySelector('id')?.textContent || ''
             });
         });
+    } else {
+        // Fallback: treat entire content as one paragraph
+        paragraphs.push({
+            jp: essayEl.textContent || '',
+            id: ''
+        });
     }
     
-    return result;
+    return { paragraphs };
 }
 
 function parseArticle(articleEl) {
