@@ -615,7 +615,7 @@ function renderEssay(essayData) {
         
         // Teks Jepang
         html += '<p class="essay-paragraph">';
-        html += `<span class="sentence-jp" data-tts-attached="true" style="cursor: pointer;">${highlightGrammar(para.jp)}</span>`;
+        html += `<span class="sentence-jp">${highlightGrammar(para.jp)}</span>`;
         html += '</p>';
         
         // Terjemahan - dipisahkan sebagai block baru dengan class untuk toggle
