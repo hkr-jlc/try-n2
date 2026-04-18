@@ -9389,18 +9389,13 @@
 				</item>
 			</dekiru_koto>
 
-			<content type="essay" cd="48">
-				<teks>
-					<jp>朝の通勤電車の混雑はつらいものがある。満員電車にストレスを感じない人はいるまい。日々耐えている乗客を見るにつけ、みんな何と我慢強いのだろうと思う。まるで何かの訓練をしているかのようだ。</jp>
-					<id>Kepadatan kereta komuter pagi itu sangat melelahkan. Tidak mungkin ada orang yang tidak merasa stres di kereta yang penuh sesak. Setiap kali melihat penumpang yang menahan diri setiap hari, aku berpikir betapa sabarnya mereka semua. Seolah-olah sedang melakukan semacam latihan.</id>
-				</teks>
-				<teks>
-					<jp>朝のホームでは、いつも同じ場所に立つ。この路線にはいくつか高校があり、階段の近くに止まるこの車両には高校生がたくさん乗っている。だからこの車両は混んでいるわりには座れるチャンスがあるのだ。</jp>
-					<id>Di peron pagi, selalu berdiri di tempat yang sama. Ada beberapa SMA di jalur ini, dan banyak siswa SMA naik kereta yang berhenti di dekat tangga. Jadi meski kereta ini penuh, ada kesempatan untuk duduk.</id>
-				</teks>
-				<teks>
-					<jp>電車がホームに入ってきた。ドアが開いた。押されながら乗り込み、座っていた高校生の前に立つ。</jp>
-					<id>Kereta masuk ke peron. Pintu terbuka. Terdesak-desak masuk, berdiri di depan siswa SMA yang sedang duduk.</id>
+			<content type="speech" cd="48">
+				<teks>朝の通勤電車の混雑はつらいものがある。満員電車にストレスを感じない人はいるまい。日々耐えている乗客を見るにつけ、みんな何と我慢強いのだろうと思う。まるで何かの訓練をしているかのようだ。</teks>
+				<teks_id>Kepadatan kereta komuter pagi itu sangat melelahkan. Tidak mungkin ada orang yang tidak merasa stres di kereta yang penuh sesak. Setiap kali melihat penumpang yang menahan diri setiap hari, aku berpikir betapa sabarnya mereka semua. Seolah-olah sedang melakukan semacam latihan.</teks_id>
+				<teks>朝のホームでは、いつも同じ場所に立つ。この路線にはいくつか高校があり、階段の近くに止まるこの車両には高校生がたくさん乗っている。だからこの車両は混んでいるわりには座れるチャンスがあるのだ。</teks>
+				<teks_id>Di peron pagi, selalu berdiri di tempat yang sama. Ada beberapa SMA di jalur ini, dan banyak siswa SMA naik kereta yang berhenti di dekat tangga. Jadi meski kereta ini penuh, ada kesempatan untuk duduk.</teks_id>
+				<teks>電車がホームに入ってきた。ドアが開いた。押されながら乗り込み、座っていた高校生の前に立つ。</teks>
+				<teks_id>Kereta masuk ke peron. Pintu terbuka. Terdesak-desak masuk, berdiri di depan siswa SMA yang sedang duduk.</teks_id>
 				</teks>
 			</content>
 		</header>
