@@ -599,11 +599,11 @@ function renderSpeech(speechData) {
 function renderEssay(essayData) {
     let html = '<div class="essay-box">';
     
-    essayData.paragraphs.forEach((para) => {
+    essayData.teks.forEach((teks) => {
         html += `
             <div class="essay-item">
-                <p><span class="sentence-jp">${highlightGrammar(para.jp)}</span></p>
-                <span class="translation-id">${para.id}</span>
+                <p><span class="sentence-jp">$(teks.jp)</span></p>
+                ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
             </div>
         `;
     });
