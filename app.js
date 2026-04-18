@@ -599,11 +599,21 @@ function renderSpeech(speechData) {
 function renderEssay(essayData) {
     let html = '<div class="essay-box">';
     
-    essayData.paragraphs.forEach(para => {
-        html += `
-            <p><span class="sentence-jp">${highlightGrammar(para.jp)}</span></p>
-                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
-        `;
+    essayData.paragraphs.forEach((para) => {
+        // Wrapper per paragraf
+        html += '<div class="essay-item">';
+        
+        // Teks Jepang
+        html += '<p class="essay-paragraph">';
+        html += `<span class="sentence-jp" data-tts-attached="true" style="cursor: pointer;">${highlightGrammar(para.jp)}</span>`;
+        html += '</p>';
+        
+        // Terjemahan - dipisahkan sebagai block baru dengan class untuk toggle
+        if (para.id) {
+            html += `<div class="translation-id indonesian-translation">${para.id}</div>`;
+        }
+        
+        html += '</div>'; // tutup essay-item
     });
     
     html += '</div>';
