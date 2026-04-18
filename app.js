@@ -602,7 +602,7 @@ function renderEssay(essayData) {
     essayData.teks.forEach((teks) => {
         html += `
             <div class="essay-item">
-                <p><span class="sentence-jp">$(teks.jp)</span></p>
+                <p><span class="sentence-jp">${highlightGrammar(teks.jp)}</span></p>
                 ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
             </div>
         `;
@@ -898,38 +898,34 @@ function parseSpeech(speechEl) {
 }
 
 function parseEssay(essayEl) {
-    const paragraphs = [];
+    const result = {
+        teks: [] // array untuk menampung {jp, id}
+    };
     
-    // Try to find paragraph elements (format untuk bab lain)
-    const paraElements = essayEl.querySelectorAll('paragraph');
+    // Ambil semua elemen <teks>
+    const teksElements = essayEl.querySelectorAll('teks');
     
-    if (paraElements.length > 0) {
-        paraElements.forEach(para => {
-            paragraphs.push({
+    teksElements.forEach(teksEl => {
+        const jp = teksEl.querySelector('jp')?.textContent || '';
+        const id = teksEl.querySelector('id')?.textContent || '';
+        
+        if (jp) {
+            result.teks.push({ jp, id });
+        }
+    });
+    
+    // Fallback jika tidak ada tag <teks> (format lama dengan paragraph)
+    if (result.teks.length === 0) {
+        const paragraphs = essayEl.querySelectorAll('paragraph');
+        paragraphs.forEach(para => {
+            result.teks.push({
                 jp: para.querySelector('jp')?.textContent || '',
                 id: para.querySelector('id')?.textContent || ''
             });
         });
-    } else {
-        // Format Bab 15: langsung ada teks dan teks_id
-        const teksEl = essayEl.querySelector('teks');
-        const teksIdEl = essayEl.querySelector('teks_id');
-        
-        if (teksEl && teksIdEl) {
-            paragraphs.push({
-                jp: teksEl.textContent || '',
-                id: teksIdEl.textContent || ''
-            });
-        } else {
-            // Fallback: treat entire content as one paragraph
-            paragraphs.push({
-                jp: essayEl.textContent || '',
-                id: ''
-            });
-        }
     }
     
-    return { paragraphs };
+    return result;
 }
 
 function parseArticle(articleEl) {
