@@ -599,16 +599,11 @@ function renderSpeech(speechData) {
 function renderEssay(essayData) {
     let html = '<div class="essay-box">';
     
-    essayData.paragraphs.forEach((para) => {
-        // Paragraf Jepang dengan atribut TTS
-        html += '<p>';
-        html += `<span class="sentence-jp" data-tts-attached="true" style="cursor: pointer;">${highlightGrammar(para.jp)}</span>`;
-        html += '</p>';
-        
-        // Terjemahan Indonesia (di luar tag p, dengan class visible)
-        if (para.id) {
-            html += `<span class="translation-id visible">${para.id}</span>`;
-        }
+    essayData.paragraphs.forEach(para => {
+        html += `
+            <p><span class="sentence-jp">${highlightGrammar(para.jp)}</span></p>
+                ${para.id ? `<span class="translation-id">${para.id}</span>` : ''}
+        `;
     });
     
     html += '</div>';
