@@ -600,20 +600,12 @@ function renderEssay(essayData) {
     let html = '<div class="essay-box">';
     
     essayData.paragraphs.forEach((para) => {
-        // Wrapper per paragraf
-        html += '<div class="essay-item">';
-        
-        // Teks Jepang
-        html += '<p class="essay-paragraph">';
-        html += `<span class="sentence-jp" data-tts-attached="true" style="cursor: pointer;">${highlightGrammar(para.jp)}</span>`;
-        html += '</p>';
-        
-        // Terjemahan - dipisahkan sebagai block baru dengan class untuk toggle
-        if (para.id) {
-            html += `<div class="translation-id indonesian-translation">${para.id}</div>`;
-        }
-        
-        html += '</div>'; // tutup essay-item
+        html += `
+            <div class="essay-item">
+                <p><span class="sentence-jp">${highlightGrammar(para.jp)}</span></p>
+                <span class="translation-id">${para.id}</span>
+            </div>
+        `;
     });
     
     html += '</div>';
@@ -908,7 +900,7 @@ function parseSpeech(speechEl) {
 function parseEssay(essayEl) {
     const paragraphs = [];
     
-    // Try to find paragraph elements
+    // Try to find paragraph elements (format untuk bab lain)
     const paraElements = essayEl.querySelectorAll('paragraph');
     
     if (paraElements.length > 0) {
@@ -919,11 +911,22 @@ function parseEssay(essayEl) {
             });
         });
     } else {
-        // Fallback: treat entire content as one paragraph
-        paragraphs.push({
-            jp: essayEl.textContent || '',
-            id: ''
-        });
+        // Format Bab 15: langsung ada teks dan teks_id
+        const teksEl = essayEl.querySelector('teks');
+        const teksIdEl = essayEl.querySelector('teks_id');
+        
+        if (teksEl && teksIdEl) {
+            paragraphs.push({
+                jp: teksEl.textContent || '',
+                id: teksIdEl.textContent || ''
+            });
+        } else {
+            // Fallback: treat entire content as one paragraph
+            paragraphs.push({
+                jp: essayEl.textContent || '',
+                id: ''
+            });
+        }
     }
     
     return { paragraphs };
