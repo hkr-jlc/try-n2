@@ -590,6 +590,16 @@ function renderSpeech(speechData) {
                 </div>
             `;
         });
+    } else if (speechData.type === 'dialogue') {
+        // Speech with karakter/dialogue
+        speechData.teks.forEach(teks => {
+            html += `
+                <div class="speech-teks">
+                    <p class="teks-jp"><span class="sentence-jp">${teks.jp}</span></p>
+                    ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
+                </div>
+            `;
+        });
     }
     
     html += '</div>';
