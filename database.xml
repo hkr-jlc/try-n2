@@ -1088,24 +1088,28 @@
     <bab2_content>
         <!-- PAGE 30 - Header & Dekiru Koto -->
         <header halaman="30">
-            <kategori>スピーチをする</kategori>
-            <kategori_en>Giving a Speech</kategori_en>
-            <nomor>2</nomor>
-            <judul>転任のあいさつ（１）</judul>
-            <judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
+		<kategori>スピーチをする</kategori>
+		<kategori_en>Giving a Speech</kategori_en>
+		<kategori_id>Memberikan Pidato</kategori_id>
+		<nomor>2</nomor>
+		<judul>転任のあいさつ（１）</judul>
+		<judul_en>Addressing Co-workers after Receiving a Transfer Order (1)</judul_en>
+		<judul_id>Pidato Perpisahan Saat Pindah Tugas (1)</judul_id>
 
-            <dekiru_koto>
-                <judul>できること</judul>
-                <item>
-                    <jp>改まった形で思い出話などをして、お別れのスピーチができる。</jp>
-                    <en>Give a farewell speech with memorable stories and the like in a formal setting.</en>
-                </item>
-            </dekiru_koto>
+		<dekiru_koto>
+			<judul>できること</judul>
+			<judul_id>Hal yang Bisa Dilakukan</judul_id>
+			<item>
+				<jp>改まった形で思い出話などをして、お別れのスピーチができる。</jp>
+				<en>Give a farewell speech with memorable stories and the like in a formal setting.</en>
+				<id>Memberikan pidato perpisahan dengan cerita kenangan dan sebagainya dalam suasana formal.</id>
+			</item>
+		</dekiru_koto>
 
-            <content type="speech">
-                <teks>皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。入社して以来、この営業部において、部長をはじめ先輩方のご指導のもとで、営業について一から学ぶことができ、たいへん幸運でした。仕事の進め方はもとより、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「人は失敗から学ぶものだ」という言葉は忘れられません。仕事をする上で大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、残念ながらこの職場を離れることになりました。</teks>
-            </content>
-        </header>
+		<content type="speech">
+			<teks>皆様、本日は、私のためにこのような会を開いていただき、ありがとうございます。入社して以来、この営業部において、部長をはじめ先輩方のご指導のもとで、営業について一から学ぶことができ、たいへん幸運でした。仕事の進め方はもとより、取引先との付き合い方など本当に様々なことを教えていただき、心から感謝いたしております。特に部長の、「人は失敗から学ぶものだ」という言葉は忘れられません。仕事をする上で大切なことを、まだまだたくさん学びたかったのですが、このたび大阪支社勤務を命じられ、残念ながらこの職場を離れることになりました。</teks>
+			<teks_id>Semuanya, terima kasih telah mengadakan acara seperti ini untuk saya hari ini. Sejak bergabung dengan perusahaan, saya sangat beruntung dapat belajar tentang penjualan dari awal di departemen penjualan ini di bawah bimbingan Kepala Departemen dan para senior. Saya diajari berbagai hal, mulai dari cara menjalankan pekerjaan hingga cara berhubungan dengan klien, dan saya sangat berterima kasih dari lubuk hati. Terutama, saya tidak akan pernah melupakan kata-kata Kepala Departemen bahwa "Manusia belajar dari kegagalan". Saya masih ingin banyak belajar tentang hal-hal penting dalam bekerja, namun kali ini saya telah diperintahkan untuk bertugas di Kantor Cabang Osaka, jadi sayangnya saya harus meninggalkan tempat kerja ini.</teks_id>
+		</content>
 
         <!-- SUB BAB 9: 入社して以来 - Page 30 -->
         <sub_bab id="9" halaman="30">
@@ -1584,6 +1588,12 @@
 	入社以来慣れ親しんだこの職場を離れることになりましたが、皆様と一緒に仕事をする機会がなくなるというわけではありません。どうぞこれまでと変わることなく、ご指導よろしくお願いいたします。
 
 	最後に、本日は雨にもかかわらず、このように多くの方々が来てくださったこと、皆様の温かいお心遣いに心から感謝しております。本当にありがとうございました。</teks>
+	
+				<teksId>Di Kantor Cabang Osaka, saya akan berpartisipasi dalam proyek yang bertujuan untuk memperluas ekspor ke berbagai negara Asia. Saya berharap ini menjadi kesempatan untuk tantangan baru. Jika saya melakukannya, saya akan berusaha sekuat tenaga.
+
+				Meskipun saya harus meninggalkan tempat kerja yang sudah saya kenal sejak bergabung dengan perusahaan, bukan berarti saya tidak akan memiliki kesempatan untuk bekerja dengan Anda semua. Mohon bimbingannya yang tidak berubah seperti selama ini.
+
+				Terakhir, terima kasih banyak atas kebaikan hati Anda semua yang hadir sebanyak ini meskipun hujan hari ini. Saya sangat berterima kasih dari lubuk hati. Terima kasih banyak.</teksId>	
 			</content>
 		</header>
 
