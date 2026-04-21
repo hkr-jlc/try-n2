@@ -375,10 +375,10 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
 }
 
 .article-paragraph {
-    margin-bottom: 1.25rem;
     line-height: 2;
     font-size: 1.0625rem;
     text-align: justify;
+	margin-top: 1rem;
 }
 
 .article-paragraph:last-child {
@@ -440,7 +440,8 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     .article-paragraph {
         font-size: 1rem;
         line-height: 1.8;
-        text-indent: 1rem;
+        text-indent: 0rem;
+		margin-top: 1rem;
     }
     
     .dialog-item,
