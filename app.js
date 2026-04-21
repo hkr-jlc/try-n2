@@ -942,13 +942,13 @@ function parseEssay(essayEl) {
 function parseArticle(articleEl) {
     const paragraphs = [];
     
-    const paraElements = articleEl.querySelectorAll('paragraph');
+    const teksElements = articleEl.querySelectorAll('teks');
     
-    if (paraElements.length > 0) {
-        paraElements.forEach(para => {
+    if (teksElements.length > 0) {
+        teksElements.forEach(teks => {
             paragraphs.push({
-                jp: para.querySelector('jp')?.textContent || '',
-                id: para.querySelector('id')?.textContent || ''
+                jp: teks.querySelector('jp')?.textContent || '',
+                id: teks .querySelector('id')?.textContent || ''
             });
         });
     } else {
