@@ -274,11 +274,11 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
 }
 
 .essay-paragraph {
-    margin-bottom: 1.25rem;
     line-height: 2;
     font-size: 1.0625rem;
     text-align: justify;
-    text-indent: 1.5rem;
+    text-indent: 0rem;
+	margin-top: 1rem;
 }
 
 .essay-paragraph:last-child {
