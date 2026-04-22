@@ -574,32 +574,40 @@ function renderSpeech(speechData) {
     let html = '<div class="speech-box">';
     
     if (speechData.type === 'simple') {
-        // Simple speech with teks and teks_id
+        // Simple speech dengan teks dan teks_id
         html += `<p><span class="sentence-jp">${highlightGrammar(speechData.teks)}</span></p>`;
         if (speechData.teksId) {
             html += `<span class="translation-id">${speechData.teksId}</span>`;
         }
-    } else if (speechData.type === 'dialogue') {
-        // Speech with karakter/dialogue
-        speechData.characters.forEach(char => {
-            html += `
-                <div class="speech-character">
-                    <span class="character-name">${char.nama}</span>
-                    <p class="character-jp"><span class="sentence-jp">${char.jp}</span></p>
-                    ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
-                </div>
-            `;
-        });
-    } else if (speechData.type === 'dialogue') {
-        // Speech with karakter/dialogue
-        speechData.teks.forEach(teks => {
-            html += `
-                <div class="speech-teks">
-                    <p class="teks-jp"><span class="sentence-jp">${teks.jp}</span></p>
-                    ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
-                </div>
-            `;
-        });
+    } 
+    else if (speechData.type === 'dialogue' || speechData.type === 'speech') {
+        // Speech dengan karakter/dialogue (struktur lama: <karakter nama="...">)
+        if (speechData.characters && speechData.characters.length > 0) {
+            speechData.characters.forEach(char => {
+                html += `
+                    <div class="speech-character">
+                        <span class="character-name">${char.nama}</span>
+                        <p class="character-jp"><span class="sentence-jp">${char.jp}</span></p>
+                        ${char.id ? `<span class="translation-id">${char.id}</span>` : ''}
+                    </div>
+                `;
+            });
+        }
+    } 
+    else if (speechData.type === 'conversation') {
+        // ✅ Handler baru untuk <content type="conversation">
+        // Struktur: <dialog><speaker>...</speaker><jp>...</jp><id>...</id></dialog>
+        if (speechData.dialogs && speechData.dialogs.length > 0) {
+            speechData.dialogs.forEach(dialog => {
+                html += `
+                    <div class="dialogue-box">
+                        <span class="speaker-name">${dialog.speaker}</span>
+                        <p class="dialogue-jp"><span class="sentence-jp">${dialog.jp}</span></p>
+                        ${dialog.id ? `<span class="translation-id">${dialog.id}</span>` : ''}
+                    </div>
+                `;
+            });
+        }
     }
     
     html += '</div>';
