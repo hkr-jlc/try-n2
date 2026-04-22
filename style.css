@@ -572,3 +572,29 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
     margin: 0.5rem 0;
     line-height: 1.8;
 }
+
+.drawer-submenu-item {
+    transition: background-color 0.2s;
+}
+.drawer-submenu-item:hover {
+    background-color: #fef2f2;
+}
+.drawer-grammar-num {
+    font-weight: 700;
+    color: #be123c;
+    font-size: 0.875rem;
+    min-width: 1.25rem;
+}
+.drawer-grammar-title {
+    font-size: 0.8rem;
+    color: #374151;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.drawer-grammar-page {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
