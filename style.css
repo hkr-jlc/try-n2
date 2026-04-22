@@ -551,3 +551,24 @@ body { font-family: 'Noto Sans JP', 'Inter', sans-serif; background-color: #f0f2
 .example-item .translation-id.visible {
     display: block;
 }
+
+.dialogue-box {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 3px solid #3b82f6;
+    background: #f8fafc;
+    border-radius: 0 8px 8px 0;
+}
+
+.speaker-name {
+    display: inline-block;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.dialogue-jp {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
