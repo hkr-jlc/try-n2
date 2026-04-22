@@ -200,6 +200,10 @@ function renderDrawer() {
             html += `<div style="padding: 0.5rem 1rem; font-size: 0.75rem; color: #be123c; font-weight: 600; margin-top: 0.5rem;">${currentCategory}</div>`;
         }
         
+        // Ambil detail grammar points dari content XML
+        const babContent = getBabContent(bab.id);
+        const grammarList = babContent.grammar || [];
+        
         html += `
             <div class="drawer-bab-group">
                 <div class="drawer-item-expandable" onclick="toggleSubmenu(${bab.id})">
@@ -211,17 +215,40 @@ function renderDrawer() {
                     <span class="drawer-expand-icon" id="expand-icon-${bab.id}">▶</span>
                 </div>
                 <div class="drawer-submenu" id="submenu-${bab.id}">
+                    
+                    <!-- Link ke Konten Utama / Header Bab -->
                     <div class="drawer-submenu-item" onclick="showSection('bab-${bab.id}-header'); closeDrawer();">
-                        <span class="drawer-submenu-text">📖 Header Bab</span>
+                        <span class="drawer-submenu-text">📖 本文</span>
                     </div>
-                    <div class="drawer-submenu-item" onclick="showSection('bab-${bab.id}-grammar'); closeDrawer();">
-                        <span class="drawer-submenu-text">📝 Grammar Points (${bab.grammarPoints.length})</span>
+        `;
+        
+        // List Grammar Points dengan nomor, judul, dan halaman
+        if (grammarList.length > 0) {
+            grammarList.forEach((g, idx) => {
+                html += `
+                    <div class="drawer-submenu-item" 
+                         style="display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.75rem; cursor: pointer;"
+                         onclick="showSection('bab-${bab.id}-grammar'); setTimeout(() => { const el = document.getElementById('grammar-${bab.id}-${idx}'); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }, 150); closeDrawer();">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; overflow: hidden; flex: 1;">
+                            <span style="font-weight: 700; color: #be123c; font-size: 0.875rem; min-width: 1.25rem;">${g.num}</span>
+                            <span style="font-size: 0.8rem; color: #374151; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${g.title}</span>
+                        </div>
+                        <span style="font-size: 0.75rem; color: #9ca3af; margin-left: 0.5rem; white-space: nowrap;">p.${g.page}</span>
                     </div>
-                    ${bab.matomePage ? `
+                `;
+            });
+        }
+        
+        // Matome / まとめの問題
+        if (bab.matomePage) {
+            html += `
                     <div class="drawer-submenu-item" onclick="alert('Matome Bab ${bab.number} - Halaman ${bab.matomePage}'); closeDrawer();">
-                        <span class="drawer-submenu-text">✅ Matome (p.${bab.matomePage})</span>
+                        <span class="drawer-submenu-text">📝 まとめの問題</span>
                     </div>
-                    ` : ''}
+            `;
+        }
+        
+        html += `
                 </div>
             </div>
         `;
@@ -590,16 +617,6 @@ function renderSpeech(speechData) {
                 </div>
             `;
         });
-    } else if (speechData.type === 'dialogue') {
-        // Speech with karakter/dialogue
-        speechData.teks.forEach(teks => {
-            html += `
-                <div class="speech-teks">
-                    <p class="teks-jp"><span class="sentence-jp">${teks.jp}</span></p>
-                    ${teks.id ? `<span class="translation-id">${teks.id}</span>` : ''}
-                </div>
-            `;
-        });
     }
     
     html += '</div>';
@@ -711,7 +728,6 @@ function renderCheck(check) {
             <p class="check-question">
                 ${q.num}）<span class="sentence-jp">${q.text}</span></p>
                 ${q.en ? `<span class="translation-en">${q.en}</span>` : ''}
-                ${q.id ? `<span class="translation-id">${q.id}</span>` : ''}
         `;
     });
     
@@ -728,7 +744,6 @@ function renderCheck(check) {
             <p class="check-question">
                 ${q.num}）<span class="sentence-jp">${q.text}</span></p>
                 ${q.en ? `<span class="translation-en">${q.en}</span>` : ''}
-                ${q.id ? `<span class="translation-id">${q.id}</span>` : ''}
         `;
     });
     
@@ -948,7 +963,7 @@ function parseArticle(articleEl) {
         teksElements.forEach(teks => {
             paragraphs.push({
                 jp: teks.querySelector('jp')?.textContent || '',
-                id: teks .querySelector('id')?.textContent || ''
+                id: teks.querySelector('id')?.textContent || ''
             });
         });
     } else {
