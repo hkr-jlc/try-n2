@@ -12609,23 +12609,23 @@
 				</item>
 			</dekiru_koto>
 
-			<content type="story" cd="64">
-				<paragraph>
+			<content type="essay" cd="64">
+				<teks>
 					<jp>たとえどんな事情があっても、男2人で女性に暴力を振るうなんて許しがたい奴らだ。絶対助け出す。俺は勇気を出して、2階へ続く階段を上った。突き当たりの部屋のドアから光が漏れている。俺はドアを思い切り開けて部屋に飛び込んだ。そして叫んだ。「やめろ！やめるんだ！」俺は入口にいた男が止めるのもかまわず彼女の横にいた男の腹にパンチを入れた。</jp>
 					<id>Bagaimanapun keadaannya, orang yang melakukan kekerasan pada wanita berdua adalah orang yang tidak bisa dimaafkan. Pasti akan saya selamatkan. Saya mengumpulkan keberanian dan naik tangga ke lantai 2. Dari pintu kamar di ujung, cahaya bocor. Saya membuka pintu dengan sekuat tenaga dan terjun ke dalam kamar. Lalu berteriak. "Berhenti! Berhenti!" Saya memukul perut pria di samping wanita itu tanpa memedulikan pria di pintu masuk yang mencoba menghentikan.</id>
-				</paragraph>
-				<paragraph>
+				</teks>
+				<teks>
 					<jp>「カット！」眩しい光の中で「誰だ、お前は!?」と低い声の男が俺に問いかけた。その横でカメラを持った男が驚いた顔で俺を見ていた。「あれ？これって、映画？」恥ずかしさのあまり逃げ出したくなった俺に、低い声の男が聞いた。「今の、もう1回できるか？」あまり、逃げ出したくなった俺に…。</jp>
 					<id>"Cut!" Di tengah cahaya menyilaukan, pria bersuara rendah bertanya pada saya "Siapa kamu!?". Di sampingnya, pria yang memegang kamera menatap saya dengan wajah terkejut. "Hah? Ini film?" Karena sangat malu ingin lari, pria bersuara rendah itu bertanya pada saya. "Yang tadi, bisa diulang sekali lagi?" Karena sangat malu ingin lari...</id>
-				</paragraph>
-				<paragraph>
+				</teks>
+				<teks>
 					<jp>「違う！もっと気持ちを込めてやってみろ！…そうだ、いいぞ」</jp>
 					<id>"Salah! Coba lakukan dengan lebih banyak perasaan! ... Ya, bagus"</id>
-				</paragraph>
-				<paragraph>
+				</teks>
+				<teks>
 					<jp>～～～～～～～あれから、半年。俺は会社を辞めて、今は自主製作映画の主役だ。主役といっても荷物運びもすれば切符も売る。生活は大変だが、俺はこの出会いに心から、ありがとうと言いたい。何があってもあきらめないでやりぬくぞ。</jp>
 					<id>~~~~~~~~~~ Sejak itu, setengah tahun. Saya berhenti dari perusahaan, sekarang menjadi pemeran utama film produksi mandiri. Meski disebut pemeran utama, saya juga mengangkut barang dan menjual tiket. Kehidupan sulit, tetapi saya ingin mengucapkan terima kasih dari hati atas pertemuan ini. Apapun yang terjadi, tidak akan menyerah dan akan menyelesaikannya.</id>
-				</paragraph>
+				</teks>
 			</content>
 		</header>
 
@@ -13192,11 +13192,11 @@
 				</item>
 			</dekiru_koto>
 
-			<content type="editorial" cd="68">
-				<paragraph>
+			<content type="essay" cd="68">
+				<teks>
 					<jp>オリンピック開催といえば、昔は国を挙げて喜んだものだ。しかし今日ではどこの国でも、オリンピック開催をめぐって意見が対立する。開催国はオリンピックを契機として、国の発展を願う。しかし、オリンピック開催には多くの費用がかかる。それで政府に対する抗議の声が上がることになるわけだ。また、オリンピック開催にあたっては、競技場などの建設用地の確保も重要な課題となる。そのために住民の移転問題も出てくる。住み慣れた土地を離れることは、簡単に納得できることではないだろう。オリンピック憲章の中に、「スポーツを通じて平和な社会を構築する」とある。この理念に基づいて、国際社会の平和を目指すことは素晴らしいことだ。しかし、国民の感情や生活を犠牲にしてオリンピックが開催されることがあってはならない。多くの人が賛同してこそ、オリンピックを開く意義がある。今、世界規模でオリンピックのあり方を、改めて考えるときが来ているのではないだろうか。</jp>
 					<id>Kalau berbicara tentang penyelenggaraan Olimpiade, dulu seluruh negara merayakannya dengan gembira. Namun sekarang di negara mana pun, ada perbedaan pendapat mengenai penyelenggaraan Olimpiade. Negara tuan rumah berharap pembangunan negara dengan mengambil kesempatan Olimpiade. Namun, penyelenggaraan Olimpiade membutuhkan banyak biaya. Itulah sebabnya muncul suara protes terhadap pemerintah. Selain itu, dalam penyelenggaraan Olimpiade, pengadaan lahan untuk pembangunan stadion dll juga menjadi masalah penting. Untuk itu muncul masalah relokasi warga. Meninggalkan tanah yang sudah menjadi kebiasaan bukanlah hal yang bisa diterima dengan mudah. Dalam Piagam Olimpiade tertulis "Membangun masyarakat damai melalui olahraga". Berdasarkan ide ini, menargetkan perdamaian masyarakat internasional adalah hal yang luar biasa. Namun, tidak boleh ada Olimpiade yang diselenggarakan dengan mengorbankan perasaan dan kehidupan rakyat. Hanya dengan persetujuan banyak orang, ada makna menyelenggarakan Olimpiade. Sekarang, bukankah sudah saatnya memikirkan kembali arah Olimpiade dalam skala dunia?</id>
-				</paragraph>
+				</teks>
 			</content>
 		</header>
 
