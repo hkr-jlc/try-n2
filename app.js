@@ -1369,7 +1369,7 @@ function renderCanDoList() {
                                         ${gp.patternId ? `<span class="can-do-grammar-pattern-id">${gp.patternId}</span>` : ''}
                                     </div>
                                     <span class="can-do-grammar-page">p.${gp.page}</span>
-                                </div>
+                                </div></div>
                                 ${hasExample ? `
                                 <div class="can-do-grammar-example">
                                     <p class="can-do-ex-line">
@@ -1380,7 +1380,7 @@ function renderCanDoList() {
                                     ${firstEx.en ? `<span class="translation-en">${firstEx.en}</span>` : ''}
                                 </div>
                                 ` : ''}
-                            </div>
+                            
                 `;
             });
         }
