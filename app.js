@@ -1361,8 +1361,8 @@ function renderCanDoList() {
                 const hasExample = firstEx && firstEx.jp;
 
                 html += `
-                            <div class="can-do-grammar-card" onclick="showSection('bab-${group.id}-grammar'); setTimeout(() => { const el = document.getElementById('grammar-${group.id}-${idx}'); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }, 150);">
-                                <div class="can-do-grammar-card-header">
+                            <div class="can-do-grammar-card">
+                                <div class="can-do-grammar-card-header" onclick="showSection('bab-${group.id}-grammar'); setTimeout(() => { const el = document.getElementById('grammar-${group.id}-${idx}'); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }, 150);">
                                     <span class="can-do-grammar-num">${gp.num}</span>
                                     <div class="can-do-grammar-meta">
                                         <span class="can-do-grammar-pattern">${displayTitle}</span>
