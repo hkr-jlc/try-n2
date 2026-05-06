@@ -281,7 +281,7 @@ function renderDrawer(currentSection = 'contents') {
         `;
     });
     
-    html += '</div></div><div class="drawer-section"><div class="drawer-section-title">Daftar Isi (Bab 1-16)</div><div class="drawer-list">';
+    html += '</div></div><div class="drawer-section"><div class="drawer-section-title">Daftar Isi (Bab 1-22)</div><div class="drawer-list">';
     
     let currentCategory = '';
     data.bab.forEach((bab) => {
@@ -389,7 +389,7 @@ function renderContentsSection() {
     let html = `
         <section id="contents">
             <div class="home-header">
-                <h1 class="home-title">TRY! N1</h1>
+                <h1 class="home-title">TRY! N2</h1>
                 <p class="home-subtitle">文法から伸ばす日本語</p>
                 <p class="translation-en">Learning Japanese from Grammar</p>
                 <p class="translation-id">Belajar Bahasa Jepang dari Tata Bahasa</p>
@@ -417,7 +417,7 @@ function renderContentsSection() {
         `;
     });
     
-    html += '<div class="quick-section-title">Bab 1-16</div>';
+    html += '<div class="quick-section-title">Bab 1-22</div>';
     data.bab.forEach(bab => {
         html += `
             <div class="bab-card-home" onclick="showSection('bab-${bab.id}-header')">
@@ -439,7 +439,7 @@ function renderContentsSection() {
         `;
     });
     
-    html += '<div class="quick-section-title" style="margin-top: 2rem;">N1「できること」リスト</div>';
+    html += '<div class="quick-section-title" style="margin-top: 2rem;">N2「できること」リスト</div>';
     html += `
         <div class="bab-card-home" onclick="showSection('can-do-list')" style="border-left-color: #059669;">
             <div class="bab-number-home" style="background: #059669;">✓</div>
@@ -450,9 +450,9 @@ function renderContentsSection() {
                     <span class="translation-id">Daftar Kemampuan</span>
                 </div>
                 <div class="bab-title-home">
-                    <span class="sentence-jp">N1「できること」リスト</span>
-                    <span class="translation-en">N1 Can Do List</span>
-                    <span class="translation-id">Daftar Kemampuan N1</span>
+                    <span class="sentence-jp">N2「できること」リスト</span>
+                    <span class="translation-en">N2 Can Do List</span>
+                    <span class="translation-id">Daftar Kemampuan N2</span>
                 </div>
             </div>
             <span class="bab-page-home">p.188-191</span>
@@ -1641,14 +1641,14 @@ function renderCanDoList() {
         <section id="can-do-list" class="hidden">
             <div class="section-header">
                 <div class="bab-header-category">
-                    <span class="sentence-jp">N1「できること」リスト</span>
-                    <span class="translation-en">N1 Can Do List</span>
-                    <span class="translation-id">Daftar Kemampuan N1</span>
+                    <span class="sentence-jp">N2「できること」リスト</span>
+                    <span class="translation-en">N2 Can Do List</span>
+                    <span class="translation-id">Daftar Kemampuan N2</span>
                 </div>
                 <div class="bab-header-title">
                     <h1 class="bab-header-text"><span class="sentence-jp">できることリスト</span></h1>
-                    <span class="bab-header-en">What You Can Do with N1 Grammar</span>
-                    <span class="translation-id">Apa yang Dapat Anda Lakukan dengan Tata Bahasa N1</span>
+                    <span class="bab-header-en">What You Can Do with N2 Grammar</span>
+                    <span class="translation-id">Apa yang Dapat Anda Lakukan dengan Tata Bahasa N2</span>
                 </div>
                 <p class="page-number" style="text-align: center; color: #6b7280; margin-top: 0.5rem;">p.188-191</p>
             </div>
@@ -1824,7 +1824,7 @@ function showSection(sectionId) {
         
         const navTitle = document.getElementById('current-section-title');
         if (sectionId === 'contents') {
-            navTitle.textContent = 'TRY! N1';
+            navTitle.textContent = 'TRY! N2';
         } else if (sectionId === 'can-do-list') {
             navTitle.textContent = 'できることリスト';
         } else {
